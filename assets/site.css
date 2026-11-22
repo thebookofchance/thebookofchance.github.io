@@ -122,3 +122,44 @@ html[data-theme=dark]{color-scheme:dark;--bg:#141a20;--surface:#1b242b;--surface
 img.brand-mark { display: block; object-fit: contain; }
 html[data-theme="dark"] img.brand-mark,
 html[data-theme="dark"] img[src*="brand-mark.svg"] { filter: invert(1); }
+
+/* v0.5 — Optional interest-list forms and privacy page */
+.interest-section{display:grid;grid-template-columns:minmax(0,1fr) minmax(350px,.9fr);gap:clamp(36px,7vw,105px);align-items:start;border-top:1px solid var(--line);padding-top:77px;padding-bottom:90px;margin-top:65px}
+.interest-intro h2{font-size:clamp(39px,4.4vw,58px);line-height:1.16;margin:17px 0 22px}
+.interest-intro p{font-size:14px;line-height:1.85;color:var(--muted);max-width:530px}
+.interest-intro .interest-note{font-size:12px;color:var(--ink-2);border-left:2px solid var(--blue);padding-left:16px;margin-top:26px}
+.interest-panel{border:1px solid var(--line);background:var(--surface);padding:clamp(24px,3vw,40px)}
+.interest-status{font-size:12px;line-height:1.7;padding:13px 15px;margin-bottom:26px;border-left:2px solid var(--line);background:var(--surface-2);color:var(--muted)}
+.interest-status--open{border-color:var(--blue);color:var(--ink)}
+.interest-form{display:grid;gap:18px}
+.form-field{display:flex;flex-direction:column;gap:8px;min-width:0}
+.form-field label{font-size:12px;font-weight:650;letter-spacing:.015em}
+.form-field label small{font-weight:400;color:var(--muted);font-size:11px;margin-left:3px}
+.form-field input,.form-field select{display:block;width:100%;min-height:48px;border:1px solid var(--line);border-radius:2px;background:var(--bg);color:var(--ink);padding:11px 13px;font-size:14px}
+.form-field input::placeholder{color:var(--subtle)}
+.form-field input:focus-visible,.form-field select:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.form-grid-small{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1fr);gap:14px}
+.form-consent{display:flex;align-items:flex-start;gap:12px;line-height:1.7;font-size:12px;color:var(--ink-2)}
+.form-consent input{width:18px;height:18px;flex-shrink:0;margin:3px 0 0;accent-color:var(--blue)}
+.form-consent a,.privacy-prose a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+.interest-form .interest-submit{width:100%;margin-top:5px}
+.interest-submit:disabled{opacity:.48;cursor:not-allowed;transform:none;background:var(--ink);border-color:var(--ink)}
+.interest-response{font-size:12px;line-height:1.7;min-height:1.5em;margin:0;color:var(--muted)}
+.interest-response--success{color:var(--ink)}
+.interest-response--error{color:#af453e}
+.form-fineprint{font-size:11px;line-height:1.6;color:var(--muted);margin:15px 0 0}
+.form-honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.privacy-hero{padding-bottom:55px}
+.privacy-hero>p:not(.lead){max-width:760px;font-size:14px;color:var(--muted)}
+.privacy-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:90px;padding-bottom:90px}
+.privacy-prose{max-width:760px}
+.privacy-prose h2{font-size:27px;margin:32px 0 12px}
+.privacy-prose h2:first-child{margin-top:0}
+.privacy-prose p{font-size:14px;line-height:1.85;color:var(--muted)}
+.privacy-prose strong{color:var(--ink)}
+.privacy-prose .privacy-date{font-size:11px;margin-top:42px}
+.privacy-side{align-self:start;border:1px solid var(--line);padding:28px;display:flex;flex-direction:column;gap:16px}
+.privacy-side p{font-size:13px;line-height:1.7;color:var(--muted)}
+.privacy-side>a:not(.btn){font-size:13px;color:var(--blue)}
+@media(max-width:900px){.interest-section{grid-template-columns:1fr;gap:30px;margin-top:32px;padding-block:52px}.interest-intro p{max-width:720px}.privacy-layout{grid-template-columns:1fr;gap:30px}.privacy-side{max-width:500px}}
+@media(max-width:500px){.interest-panel{padding:22px}.form-grid-small{grid-template-columns:1fr}.interest-section{padding-bottom:58px}.privacy-hero{padding-bottom:34px}}

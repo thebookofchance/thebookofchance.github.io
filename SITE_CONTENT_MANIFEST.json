@@ -1,5 +1,5 @@
 {
-  "website_version": "0.4",
+  "website_version": "0.5",
   "source": "Book_of_Chance_Illustrated_Manuscript_v0.12.md",
   "source_sha256": "25331f87d8f27f9f1c0638d22239ea11756479c3ce3d22cf52adc52a9f050538",
   "chapters": 24,
@@ -9,6 +9,8 @@
   "pdf_reader_proofs": 2,
   "interest_form_live": false,
   "email_collected": false,
+  "interest_forms_built": 2,
+  "form_endpoints_configured": false,
   "fellowship_membership_open": false,
   "library_available_publications": 1,
   "library_planned_categories": 3

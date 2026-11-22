@@ -99,4 +99,56 @@
       if(status)status.textContent=`${kind==='light'?'Light':'Dark'} cover saved on this device. This is not a reservation or order; no details were submitted.`;
     });
   }
+
+  // Optional Formspree interest lists (disabled until H configures them).
+  // This project has no server; do not claim a submission was saved until the provider confirms it.
+  const cfg=window.BOC_FORM_CONFIG||{};
+  const contact=typeof cfg.contactEmail==='string'?cfg.contactEmail.trim():'';
+  const validContact=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact);
+  document.querySelectorAll('[data-privacy-email]').forEach(a=>{
+    if(validContact){a.hidden=false;a.href='mailto:'+contact;a.textContent=contact;}
+  });
+  if(validContact)document.querySelectorAll('[data-privacy-contact-missing]').forEach(el=>el.hidden=true);
+  const formEndpoint=kind=>kind==='fellowship'?cfg.fellowshipEndpoint:cfg.printEndpoint;
+  const validEndpoint=url=>typeof url==='string'&&/^https:\/\/formspree\.io\/f\/[a-zA-Z0-9_-]+$/.test(url.trim());
+  document.querySelectorAll('[data-interest-form]').forEach(form=>{
+    const kind=form.dataset.interestForm;
+    const url=formEndpoint(kind);
+    const enabled=validContact&&validEndpoint(url);
+    const submit=form.querySelector('button[type=submit]');
+    const availability=form.parentElement?.querySelector('[data-form-availability]');
+    const response=form.querySelector('[data-form-response]');
+    if(enabled){
+      if(submit)submit.disabled=false;
+      if(availability){availability.textContent=kind==='print'?'The physical-book interest list is open. No payment or order is taken.':'The Fellowship interest list is open. This is not official membership.';availability.classList.add('interest-status--open');}
+    }else if(availability){
+      availability.textContent='Interest registration is not yet open. No details entered on this form will be submitted.';
+    }
+    if(kind==='print'){
+      const select=form.querySelector('[name=edition]');
+      const syncEdition=()=>{if(select)select.value=document.querySelector('[data-cover-choice][aria-pressed=true]')?.dataset.coverChoice||get('chance-print-cover','light')};
+      syncEdition();
+      document.querySelectorAll('[data-cover-choice]').forEach(b=>b.addEventListener('click',syncEdition));
+      select?.addEventListener('change',()=>document.querySelector('[data-cover-choice="'+select.value+'"]')?.click());
+    }
+    form.addEventListener('submit',async event=>{
+      event.preventDefault();
+      if(!enabled){if(response)response.textContent='The list is not open yet; no details were sent.';return;}
+      if(!form.reportValidity())return;
+      if(form.querySelector('[name="_gotcha"]')?.value)return;
+      if(submit){submit.disabled=true;submit.setAttribute('aria-busy','true');}
+      if(response){response.textContent='Submitting your interest…';response.className='interest-response';}
+      try{
+        const result=await fetch(url.trim(),{method:'POST',headers:{Accept:'application/json'},body:new FormData(form)});
+        if(!result.ok)throw new Error('Submission service returned '+result.status);
+        form.reset();
+        if(kind==='print'){const select=form.querySelector('[name=edition]');if(select)select.value=get('chance-print-cover','light');}
+        if(response){response.textContent=kind==='print'?'Your physical-book interest has been received. This is not an order or reservation.':'Your interest has been received. This is not official Fellowship membership.';response.classList.add('interest-response--success');}
+      }catch(error){
+        if(response){response.textContent='We could not confirm your registration. Please try again later; do not assume it was received.';response.classList.add('interest-response--error');}
+      }finally{
+        if(submit){submit.disabled=false;submit.removeAttribute('aria-busy');}
+      }
+    });
+  });
 })();
