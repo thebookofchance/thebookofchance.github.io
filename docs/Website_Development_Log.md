@@ -220,3 +220,15 @@ It also introduces **Chance Campaigns**, a deferred idea for externally vetted c
 **Preserved:** logo/emblem, forms-config.js, both foundational book editions, all four journal editions and worksheets, and the original Letter 001 edition bytes.
 
 **Validation:** static link and PDF/EPUB checks plus visual layout smoke tests (self-contained browser markup) at desktop/tablet/mobile widths. Direct file navigation, remote deployment, true form delivery, certified accessibility and human approval remain untested/pending.
+
+
+## v0.13 — Letters from H No. 03 (22 November 2026)
+
+- Added *What Do We Owe to Strangers?* as a complete, independent philosophical essay.
+- Produced 6×9-inch PDF (11 pages), EPUB3, custom crossing-path cover and full online reading page.
+- Updated the Letters archive to three issues and featured No. 03 on the Library and homepage. No top-level navigation item added.
+- Catalogue, sitemap, source publishing scripts and editorial progress register updated.
+- Preserved issue 001 and 002 export bytes, all approved book/journal files, logo and live form configuration.
+- Corrected the previous issue integration to only rebuild its PDF/EPUB when absent, preventing inadvertent modifications during routine site regeneration.
+- Source-to-HTML/PDF/EPUB and static-link checks passed; PDF pages visually inspected.
+- Live website/mobile rendering, real e-reader testing, certified PDF accessibility and H sign-off remain pending.

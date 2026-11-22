@@ -1,0 +1,165 @@
+{
+  "patch": "Website v0.13 — Letter 03",
+  "base_version": "0.12",
+  "date": "2026-11-22",
+  "change_count_excluding_manifest": 26,
+  "excludes_private_forms_config": true,
+  "files": [
+    {
+      "path": "PATCH_README.md",
+      "operation": "replace",
+      "bytes": 1478,
+      "sha256": "f5a74e3ef3f2327e2e60408a2baf4811eb277eff61747985e9c32b99b3dd9fe0"
+    },
+    {
+      "path": "README.md",
+      "operation": "replace",
+      "bytes": 9032,
+      "sha256": "9aad57e8fa301909da4867f55436703827af2b79b123be5b47611538cddf077f"
+    },
+    {
+      "path": "SITE_CONTENT_MANIFEST.json",
+      "operation": "replace",
+      "bytes": 1725,
+      "sha256": "3f9e324a8faa13c0bca1491cae3b38702a4bc2bcc306e68d4eac7505cbe28d17"
+    },
+    {
+      "path": "assets/letters/lfh-003-cover.png",
+      "operation": "add",
+      "bytes": 190049,
+      "sha256": "617df3e02d8ad04010d001ffb3c29fa1ef0b74a929405150c5e423425461a277"
+    },
+    {
+      "path": "assets/letters/lfh-003-cover.webp",
+      "operation": "add",
+      "bytes": 78850,
+      "sha256": "04d0144f5af2833c93f6353c6f0620890e80e813cfa283e7123b34c128a4d2d6"
+    },
+    {
+      "path": "docs/Letter_003_Editorial_Review_RC1.md",
+      "operation": "add",
+      "bytes": 4827,
+      "sha256": "b58f2746ba4098bcffd2cae6afc69751764af1483e1c2bb0505178edcc3b635d"
+    },
+    {
+      "path": "docs/Letter_003_QA_Report.json",
+      "operation": "add",
+      "bytes": 823,
+      "sha256": "82efe1b8d5dd1978b70a9f68e3092ab0ce18e42d70436e98b6b3a162a91f359d"
+    },
+    {
+      "path": "docs/Publications_Roadmap_and_Progress.md",
+      "operation": "replace",
+      "bytes": 6761,
+      "sha256": "ab54405b1448f0cfa5409c1e337e3394261df20e089366834d83ad130a43c62d"
+    },
+    {
+      "path": "docs/Website_Development_Log.md",
+      "operation": "replace",
+      "bytes": 24294,
+      "sha256": "4ce24d670fac08ca9cf9c7f8c03a97120837e3fe0f4e94697e9aaf61e348b669"
+    },
+    {
+      "path": "docs/Website_v0.13_Publication_Note.md",
+      "operation": "add",
+      "bytes": 859,
+      "sha256": "cd0ddab66e5b3a78a700e7ff995301059e3d7c1d691a2efaac5b1ce819c48066"
+    },
+    {
+      "path": "downloads/index.html",
+      "operation": "replace",
+      "bytes": 14586,
+      "sha256": "94774725ca65353b52ca684d59b29dcc2b53b5560d482a076c165c9da1dffa9b"
+    },
+    {
+      "path": "files/letters/Letters_from_H_03_What_Do_We_Owe_to_Strangers.epub",
+      "operation": "add",
+      "bytes": 191852,
+      "sha256": "d8761d779d06ddbc2d1649ec3d6fd63f4031a55092b0ef17acf55f5ed7772698"
+    },
+    {
+      "path": "files/letters/Letters_from_H_03_What_Do_We_Owe_to_Strangers.pdf",
+      "operation": "add",
+      "bytes": 46126,
+      "sha256": "2b46c4b4af8baf6bf2db486f8468b3ffc17b99f0536556e97ab9e90ac408843b"
+    },
+    {
+      "path": "index.html",
+      "operation": "replace",
+      "bytes": 11710,
+      "sha256": "7020b62e8434dfdb45290919539992a000e47124d098c55eae306b18636acd09"
+    },
+    {
+      "path": "letters/index.html",
+      "operation": "replace",
+      "bytes": 6666,
+      "sha256": "cbdd7cdb77366624036c49b87d7559ff5dcc58627aeafa4249289f1dd9887cef"
+    },
+    {
+      "path": "letters/what-do-we-owe-to-strangers/index.html",
+      "operation": "add",
+      "bytes": 19381,
+      "sha256": "d30c7497411fbadd5e070a03742d9c33ec68c0026f5834753a448c1133cf1242"
+    },
+    {
+      "path": "scripts/audit_letter_003.py",
+      "operation": "add",
+      "bytes": 4177,
+      "sha256": "e55d6eb5320bf5ccedf0d65e38a97a9ee746a215082c0072697b8fcc3aca31b6"
+    },
+    {
+      "path": "scripts/build_letter_003.py",
+      "operation": "add",
+      "bytes": 6521,
+      "sha256": "f10ba0ec2ae5e6b181e3749a90fb1f1b60b9ca025dda62986ae6651efea4d037"
+    },
+    {
+      "path": "scripts/build_site.py",
+      "operation": "replace",
+      "bytes": 54071,
+      "sha256": "87a68a49a82095ba9ac4d45c19e34fbd355d7c596a0987e597ccfaccc0e50436"
+    },
+    {
+      "path": "scripts/v012_second_letter.py",
+      "operation": "replace",
+      "bytes": 7423,
+      "sha256": "bfd97b3046ab33d5a753655ecc48e4bcacc2aa118824d65c24c92ecc09c5fcd3"
+    },
+    {
+      "path": "scripts/v013_third_letter.py",
+      "operation": "add",
+      "bytes": 7551,
+      "sha256": "734ccd9a9b561e697d2e3d78ec16c67f87fce38ba06f9b9eb9f4263c93bd674a"
+    },
+    {
+      "path": "sitemap.xml",
+      "operation": "replace",
+      "bytes": 2968,
+      "sha256": "1d75bd5c77f4ab152be8b335818ce518f649d6e4b376b565ac6191b40b75cdff"
+    },
+    {
+      "path": "source/letters/003-what-do-we-owe-to-strangers.md",
+      "operation": "add",
+      "bytes": 13281,
+      "sha256": "038e5ecc6dab67b9729b413858b8818155937165ef44deef241a3ec01c3e5332"
+    },
+    {
+      "path": "source/letters/catalogue.json",
+      "operation": "replace",
+      "bytes": 4725,
+      "sha256": "47a753d008da8dafa60b8850ac49012a2649819a35e9c9e513a494c47528d809"
+    },
+    {
+      "path": "source/letters/lfh-003-cover.svg",
+      "operation": "add",
+      "bytes": 3605,
+      "sha256": "f09931c14c97bcf65c609177aa250961b27de1aaf4c564bdf7df5bc881702b83"
+    },
+    {
+      "path": "source/publications.json",
+      "operation": "replace",
+      "bytes": 4205,
+      "sha256": "19493f201cddecce545526b652d75ca24a7053d051bbdde6df7dbdea1a9b42d7"
+    }
+  ]
+}

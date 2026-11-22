@@ -1,0 +1,22 @@
+{
+  "website_version": "0.13",
+  "issue": "BOC-LFH-003",
+  "edition": "1.0-RC1",
+  "status": "editorial candidate — author approval and live verification pending",
+  "source_words": 2173,
+  "pdf_pages": 11,
+  "pdf_size": "6 x 9 in",
+  "epub_zip_test": "PASS",
+  "html_parity_checks": "PASS",
+  "local_html_pages": 37,
+  "local_refs_checked": 1021,
+  "broken_local_references": 0,
+  "html_series_cards": 3,
+  "site_library_publication_count": 4,
+  "approved_logos_prior_letters_books_journals_and_forms": "SHA256 compared to v0.12 separately, preserved",
+  "live_github_verification": "NOT TESTED",
+  "desktop_mobile_browser_render": "NOT TESTED — headless local browser blocked",
+  "physical_ereader_verification": "NOT TESTED",
+  "human_editorial_approval": "PENDING",
+  "pdf_accessibility_tagging": "NOT CERTIFIED"
+}

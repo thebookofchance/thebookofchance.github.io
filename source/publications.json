@@ -95,6 +95,14 @@
         "pdf": "files/letters/Letters_from_H_02_When_Good_Choices_Lead_to_Bad_Outcomes.pdf",
         "epub": "files/letters/Letters_from_H_02_When_Good_Choices_Lead_to_Bad_Outcomes.epub",
         "status": "editorial candidate — author approval and live verification pending"
+      },
+      {
+        "id": "BOC-LFH-003",
+        "title": "What Do We Owe to Strangers?",
+        "url": "letters/what-do-we-owe-to-strangers/",
+        "pdf": "files/letters/Letters_from_H_03_What_Do_We_Owe_to_Strangers.pdf",
+        "epub": "files/letters/Letters_from_H_03_What_Do_We_Owe_to_Strangers.epub",
+        "status": "editorial candidate — author approval and live verification pending"
       }
     ]
   }

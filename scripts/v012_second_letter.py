@@ -9,10 +9,13 @@ from build_letters import build_letter_002
 
 
 def apply_v012(root: Path, document, markdown, info: dict):
-    build_letter_002()
+    # Do not regenerate a previous issue as a side-effect of rebuilding the site.
+    old = json.loads((root/'source/letters/catalogue.json').read_text('utf8'))['available'][1]
+    if not all((root/old[k]).is_file() for k in ('pdf', 'epub', 'cover')):
+        build_letter_002()
     cat = json.loads((root/'source/letters/catalogue.json').read_text('utf8'))
-    assert [e['number'] for e in cat['available']]==[1,2]
-    entry = cat['available'][-1]
+    assert [e['number'] for e in cat['available']][:2]==[1,2]
+    entry = cat['available'][1]
     label = html.escape(entry['title'])
     lead = html.escape(entry['lead'])
     summary = html.escape(entry['summary'])
@@ -37,7 +40,7 @@ def apply_v012(root: Path, document, markdown, info: dict):
     archive = root/'letters/index.html'
     a = BeautifulSoup(archive.read_text('utf8'),'html.parser')
     foot=a.select_one('.letters-series-foot')
-    assert foot and len(a.select('.letters-index-feature'))==2
+    assert foot and len(a.select('.letters-index-feature'))>=2
     foot.select_one('p').string='A third Letter, What Do We Owe to Strangers?, is planned but not yet published. Each issue will be offered freely when it is ready; no release timetable is promised.'
     archive.write_text(str(a),encoding='utf8')
 

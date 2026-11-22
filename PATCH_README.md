@@ -1,24 +1,25 @@
-# Website v0.12 — Update-only patch
+# Website v0.13 — Update-only patch
 
-**Purpose:** Add *Letters from H — No. 02: When Good Choices Lead to Bad Outcomes* to the existing website. Requires v0.11 as the starting point.
+**Purpose:** Add *Letters from H — No. 03: What Do We Owe to Strangers?* to the existing website. Apply after website v0.12.
 
 ## Installation
 
-1. Download and extract the v0.12 ZIP.
-2. Upload only the files and folders inside the archive to the root of your existing GitHub Pages repository, preserving folder paths.
-3. Choose **replace** for existing same-named files; **do not delete** other files or your working Formspree settings.
-4. After GitHub Pages updates, verify `/letters/`, `/letters/when-good-choices-lead-to-bad-outcomes/`, the Library downloads and the two existing interest forms.
-5. Review and approve Letter 002's content before regarding it as a final author-approved edition.
+1. Extract the v0.13 update ZIP.
+2. Upload its **contents** to the root of your existing `thebookofchance.github.io` GitHub Pages repository, preserving folder paths.
+3. Replace matching files only. **Do not delete** existing pages and publication files.
+4. Do not overwrite `assets/forms-config.js`; it is intentionally **excluded** from this package.
+5. Confirm `/letters/`, `/letters/what-do-we-owe-to-strangers/` and `/downloads/#letters-from-h` work, and test both PDF/EPUB downloads.
+6. Check that Letter 001 and Letter 002 remain downloadable and that the two interest forms still work.
 
-## Contents and boundaries
+## Contents
 
-- New complete Letter 002 PDF, EPUB, source Markdown and custom vector/website cover.
-- New full HTML reading page, updated homepage, Letters archive and Library.
-- Updated metadata, sitemap, issue-aware publication scripts and editorial/QA/change documents.
-- **No** logo changes, existing book/journal files, Formspree configuration, backend, membership activation, donations or fundraising.
+- Complete new Letter 003 Markdown, PDF, EPUB and issue cover assets (SVG, PNG and WebP).
+- New online reading route, updates to the Letters archive, homepage, Library, sitemap and catalogue.
+- Issue-specific publishing script, an edition-safe site integration and QA/editorial documents.
+- Updated development log and roadmap, with **The Five Values** next.
 
-## Important distinctions
+## Boundaries
 
-The website documents label the Letter an **editorial candidate** pending H's approval. The PDF/EPUB/HTML are made available for review and potential deployment, but not declared formally released.
+The release changes no existing book or journal publication, previous Letter PDF/EPUB, approved logo or working interest forms. It creates no donation service, active membership or YouTube channel.
 
-If you later edit Letter 002, update its canonical Markdown source and regenerate the PDF/EPUB with `python -c "import sys; sys.path.insert(0, 'scripts'); from build_letters import build_letter_002; build_letter_002()"` from the website root, then run the site builder. Normal site builds do not regenerate Letter 001's PDF or EPUB.
+**Status:** Editorial candidate 1.0-RC1. The user's authorial review and live site verification remain pending.

@@ -1,5 +1,5 @@
 {
-  "website_version": "0.12",
+  "website_version": "0.13",
   "source": "Book_of_Chance_Illustrated_Manuscript_v0.12.md",
   "source_sha256": "25331f87d8f27f9f1c0638d22239ea11756479c3ce3d22cf52adc52a9f050538",
   "chapters": 24,
@@ -35,10 +35,10 @@
     "files/reflection/The_Daily_Reflection_Journal_Fillable.pdf",
     "files/reflection/The_Possibility_Journal_Fillable.pdf"
   ],
-  "letters_series_available": 2,
-  "letters_series_status": "Two editorial candidates; H approval and live testing pending",
+  "letters_series_available": 3,
+  "letters_series_status": "Three editorial candidates; human approval and live deployment verification pending",
   "letters_publication": "BOC-LFH-001",
   "publication_standard": "docs/Publications_Standard_v1.0_RC1.md",
-  "latest_letter_id": "BOC-LFH-002",
+  "latest_letter_id": "BOC-LFH-003",
   "latest_letter_edition": "1.0-RC1"
 }
