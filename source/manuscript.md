@@ -408,10 +408,10 @@ To believe the future is open is one way to understand possibility. To widen ano
 
 # Part II — What We Make Possible
 
-![Thin charcoal and blue diagonal paths intersect, change direction, and diverge, for Part II: What We Make Possible.](artwork/02_part_ii.png)
+![Charcoal and blue paths converge into a decision point, then branch outward in several directions, for Part II: What We Make Possible.](artwork/02_part_ii.png)
 
 ::: {.figure-context}
-**Where choice begins.** Our decisions take place within conditions we inherit, rather than outside them. A path may change direction through preparation, action or an encounter with another person. The blue lines suggest possibilities we can help create, without promising that any particular route will succeed.
+**Where choice begins.** Our decisions take place within conditions we inherit, rather than outside them. A path may change direction through preparation, action or an encounter with another person. The highlighted blue branch suggests possibilities we can help create, without promising that any particular route will succeed.
 :::
 
 
@@ -755,10 +755,10 @@ The good we can do begins close at hand. It need not end there.
 
 # Part III — The Lives We Share
 
-![A woven network of curved intersecting paths in charcoal and blue, for Part III: The Lives We Share.](artwork/03_part_iii.png)
+![A constellation of connected charcoal nodes and fine links, with selected relationships highlighted in blue, for Part III: The Lives We Share.](artwork/03_part_iii.png)
 
 ::: {.figure-context}
-**Lives in relation.** As paths cross and recross, one person’s actions become part of another person’s circumstances. Care, knowledge, institutions and shared effort can alter what becomes possible. The weave remains open because a community is continually made and remade by the people within it.
+**Lives in relation.** In this web of distinct people and relationships, one person’s actions may become part of another person’s circumstances. Care, knowledge, institutions and shared effort can alter what becomes possible. The network remains open because a community is continually made and remade by the people within it.
 :::
 
 

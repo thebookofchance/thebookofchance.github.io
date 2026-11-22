@@ -1,4 +1,4 @@
-# The Book of Chance — Website Prototype v0.1
+# The Book of Chance — Website Prototype v0.3
 
 **Status:** Working static-site prototype. Not a live public publication or an active pre-order system.
 
@@ -33,7 +33,7 @@ Then open **http://localhost:8000** in your browser. Node users can alternativel
 ## Upload to GitHub Pages
 
 1. Create a public GitHub repository for the site.
-2. Extract this ZIP **and upload the contents of the `Book_of_Chance_Website_Prototype_v0.1` folder into the repository root**. The `index.html`, `assets/`, `read/`, `downloads/`, `print/`, `about/` and `files/` directories should be at the top level.
+2. Extract this ZIP **and upload the contents of the `Book_of_Chance_Website_Prototype_v0.3` folder into the repository root**. The `index.html`, `assets/`, `read/`, `downloads/`, `print/`, `about/` and `files/` directories should be at the top level.
 3. In **Settings → Pages**, select *Deploy from a branch*, your default branch, and the repository **root**. (Exact labels may differ.)
 4. Open the published URL and test reader links, images, downloads and search. All internal links use relative paths and therefore work on a project URL such as `username.github.io/repo-name/`.
 5. If adding a custom domain later, configure DNS, HTTPS and the domain name separately.
@@ -42,7 +42,7 @@ This is a static site; **GitHub Pages will not process email submissions or paym
 
 ## Editing the book and rebuilding chapter pages
 
-The complete book source is at `source/manuscript.md` (copied verbatim from the illustrated standalone manuscript v0.11). The chosen source covers and artwork are in `source/covers/` and `source/artwork/`.
+The complete book source is at `source/manuscript.md` (copied verbatim from the illustrated standalone manuscript v0.31). The chosen source covers and artwork are in `source/covers/` and `source/artwork/`.
 
 To regenerate the static chapter pages and web-optimised images after updating the Markdown:
 
@@ -72,4 +72,8 @@ The website styling lives in `assets/site.css` and behaviour in `assets/site.js`
 - All foundational teachings are accessible without payment or membership.
 - The Fellowship is mentioned discreetly as a proposed community, not as a sign-up requirement or functioning service.
 
-**Editorial source:** *Book_of_Chance_Illustrated_Manuscript_v0.11.md*, approved Light and Dark covers, and EPUB candidate v1.0. PDF proof files are derived from the v0.11 illustrated paperback reader previews.
+**Editorial source:** *Book_of_Chance_Illustrated_Manuscript_v0.31.md*, approved Light and Dark covers, and EPUB candidate v1.0. PDF proof files are derived from the v0.31 illustrated paperback reader previews.
+
+
+## v0.3 Artwork Revision
+Part II now uses a branching-path illustration and Part III a relational network. Part I, the cover artwork, and three conceptual diagrams remain unchanged. The website reader, EPUBs and PDFs all use the updated artwork, including revised descriptions.
