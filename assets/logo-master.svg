@@ -1,5 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Fellowship emblem: intersecting diagonal paths within a circle">
-<circle cx="60" cy="60" r="50.3" fill="none" stroke="#172633" stroke-width="3.1"/>
-<g fill="none" stroke="#172633" stroke-width="2.9" stroke-linecap="round"><path d="M12 38 L88 110 M26 26 L102 101 M40 16 L110 88 M55 9 L110 71"/><path d="M10 84 L68 8 M25 102 L91 17 M42 110 L105 34 M55 112 L109 51"/></g>
-<g fill="none" stroke="#1670d9" stroke-width="3.2" stroke-linecap="round"><path d="M12 38 L88 110 M42 110 L105 34"/></g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="42 39 378 378" role="img" aria-labelledby="title">
+  <title id="title">Circular lattice symbol of intersecting lives and chance</title>
+  <g fill="none" stroke="#1c2730" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="231" cy="229" r="173" stroke-width="6.4"/>
+    <g stroke-width="6.0">
+      <path d="M71 151 L266 401"/>
+      <path d="M107 104 L329 379"/>
+      <path d="M150 68 L363 356"/>
+      <path d="M203 53 L391 311"/>
+      <path d="M63 284 L258 51"/>
+      <path d="M102 345 L322 81"/>
+      <path d="M155 381 L369 112"/>
+      <path d="M200 404 L396 159"/>
+    </g>
+  </g>
 </svg>
