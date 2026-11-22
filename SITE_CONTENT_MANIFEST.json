@@ -1,5 +1,5 @@
 {
-  "website_version": "0.24",
+  "website_version": "0.25",
   "source": "Book_of_Chance_Illustrated_Manuscript_v0.12.md",
   "source_sha256": "27fe17a36b5a0cd96a2516dfaaef4e3f0b4692b700d2be192bd8bbc77e3e3682",
   "chapters": 24,
@@ -10,7 +10,7 @@
   "interest_forms_built": 2,
   "form_configuration": "preserved externally; not verified in source",
   "fellowship_membership_open": false,
-  "library_available_publications": 8,
+  "library_available_publications": 9,
   "library_planned_categories": 1,
   "new_pages": [
     "reflect/",
@@ -123,6 +123,14 @@
     "status": "Staged noindex; release checks to follow"
   },
   "literature_approval_status": "Not changed; separate review phase to follow",
+  "reading_room": {
+    "path": "reader/",
+    "books": 9,
+    "sections": 130,
+    "storage": "local reading place only",
+    "new_publications": 0
+  },
+  "cover_changes": 0,
   "correction_status": "Terminology consistency revision; no independent human reader test",
   "book_editorial_source": "source/manuscript.md",
   "letter_editions": [

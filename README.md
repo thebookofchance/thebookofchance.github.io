@@ -1,15 +1,16 @@
-# The Book of Chance — Website v0.24
+# The Book of Chance — Website v0.25
 
 A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, private reflection practices, downloadable resources, and the proposed Fellowship of Chance.
 
 **Public site:** https://thebookofchance.github.io/  
-**Website release:** v0.24 — Guided Reading Journey staged as a reader resource (22 November 2026)
+**Website release:** v0.25 — Reading Room and interactive Library presentation (22 November 2026)
 
 ## Site structure
 
 | Destination | Purpose |
 | --- | --- |
 | `/` | Book-led homepage, weekly reflection entry and current focus |
+| `/reader/` | Paginated in-browser eReader for nine literature titles, chapter contents and device-only reading place |
 | `/read/` | Entire book: twelve readings, sections, notes and original illustrations |
 | `/reflect/` | Private guided reflection editor, weekly question rotation and offline guides |
 | `/downloads/` | Book editions, three Letters, new Five Values illustrated booklet, four journal editions and fillable worksheets |
@@ -37,7 +38,7 @@ A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, 
 
 ## Deploy update-only ZIPs
 
-The current versioned `Book_of_Chance_Website_Update_Only_v0.24.zip` contains changed and new files **only**. Extract it and upload its contents to the existing GitHub Pages repository, replacing files with the same paths and **without deleting other files**.
+The current versioned `Book_of_Chance_Website_Update_Only_v0.25.zip` contains changed and new files **only**. Extract it and upload its contents to the existing GitHub Pages repository, replacing files with the same paths and **without deleting other files**.
 
 **Do not overwrite or publish private information.** `assets/forms-config.js` (the file containing your working Formspree endpoint identifiers and public contact email) has intentionally **not** been included or modified.
 
@@ -49,7 +50,7 @@ Check the accepted favicon/logo, both form flows and the `/reflect/` download fe
 - The available/planned publication catalogue is `source/publications.json`. It includes free practice guides, the first three Letters and The Five Values as editorial candidate.
 - Weekly questions live in `source/reflection-prompts.json` and follow a repeating 12-week cycle starting Monday, 23 November 2026.
 - The current goal, supporting page and homepage callouts are maintained through `scripts/v07_enhancements.py`.
-- The site generator is `scripts/build_site.py`; it includes the source-driven publication/reader integrations through v0.24. Run `python scripts/audit_journey_v024.py` after regenerating HTML to check links and reading-path anchors.
+- The site generator is `scripts/build_site.py`; it includes the source-driven publication/reader integrations through v0.25. Run `python scripts/audit_journey_v024.py` after regenerating HTML to check links and reading-path anchors.
 
 ```bash
 python -m pip install -r scripts/requirements.txt
@@ -155,3 +156,11 @@ to `noindex,follow` until formal release checks are completed.
 ## v0.23 — Questions About Chance
 
 `questions/` provides a non-tracking, searchable FAQ with native expandable answers and five category filters. The FAQ has a proposed cover, 17-page PDF, EPUB, and canonical manuscript/structured data in `source/resources/`. Its status is editorial candidate and the page is `noindex,follow` until H approves the text and cover and remaining independent/accessibility checks are completed. Run `python scripts/build_questions_faq.py` only when intentionally regenerating the PDF/EPUB, then `python scripts/build_site.py` for HTML. No membership or donation service is activated.
+
+## v0.25 reading room notes
+
+- The Library offers an eReader launch option for nine titles alongside their existing HTML/PDF/EPUB editions. Content is extracted from existing public website readers by `scripts/v025_library_reader.py`; changes to canonical HTML are reflected when the site is rebuilt.
+- Section pages use CSS columns computed for the current screen width and font size. **Page numbers are relative to the current section**; they will change when font size or viewport changes.
+- Reading place and preferred text size are stored only in this browser, can be cleared, and are not transmitted to the website. All literature remains accessible without JavaScript using existing reading links.
+- `reader/` is intentionally `noindex` to avoid competing with the canonical publication pages. It is excluded from the sitemap. Editorial-candidate labels for unfinished release checks remain in place.
+- Cover images are unchanged. The new Library shelf backgrounds are a presentation treatment, not new cover artwork or founder approval of a new cover design.
