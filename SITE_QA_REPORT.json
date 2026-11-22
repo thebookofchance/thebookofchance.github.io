@@ -1,0 +1,31 @@
+{
+  "status": "static_checks_pass",
+  "html_pages": 29,
+  "book_readings": 12,
+  "reading_words": {
+    "action-within-uncertainty": 1621,
+    "arrival": 1380,
+    "death-and-the-unknown": 1194,
+    "fellowship": 1527,
+    "fortune-and-hardship": 1363,
+    "hope": 1159,
+    "reflection-and-growth": 1334,
+    "shared-fortune": 1623,
+    "stewardship": 1231,
+    "the-living-world": 1813,
+    "the-open-future": 1506,
+    "the-unfolding": 1107
+  },
+  "approved_artwork_placements": 6,
+  "assets_images": 17,
+  "local_link_checks": 526,
+  "broken_local_links": 0,
+  "epub_files": 2,
+  "pdf_reader_proof_files": 2,
+  "javascript_syntax": "pass",
+  "http_endpoints_tested": 10,
+  "browser_visual_check": "not completed: browser runner blocked by administrator in this environment",
+  "interest_form_connected": false,
+  "emails_collected": false,
+  "manuscript_source_sha256": "c08b6d9d744fc3d3de2c731fb0fdd01823c013affc276b3131ca1803ed06e7fc"
+}

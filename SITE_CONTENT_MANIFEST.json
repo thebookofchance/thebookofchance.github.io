@@ -1,0 +1,12 @@
+{
+  "website_version": "0.1",
+  "source": "Book_of_Chance_Illustrated_Manuscript_v0.11.md",
+  "source_sha256": "c08b6d9d744fc3d3de2c731fb0fdd01823c013affc276b3131ca1803ed06e7fc",
+  "chapters": 24,
+  "readings": 12,
+  "illustration_placements": 6,
+  "epub_files": 2,
+  "pdf_reader_proofs": 2,
+  "interest_form_live": false,
+  "email_collected": false
+}
