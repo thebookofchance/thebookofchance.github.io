@@ -178,3 +178,17 @@ It also introduces **Chance Campaigns**, a deferred idea for externally vetted c
 5. Later: vetted, consent-based membership/community infrastructure and any Chance Campaign selection rules.
 
 *The site can remain useful without active membership: the book, worksheets and private reflection practice must stay accessible to everyone.*
+
+---
+
+## v0.10 — Publication system and Letters from H / 01 (22 November 2026)
+
+- Added a versioned **Publications Standard v1.0-RC1** based on the actual *Book of Chance* illustrated manuscript, Light/Dark cover family and agreed Fellowship principles. Sets house style, author voice, source/rights discipline, metadata, publication categories, print/digital criteria and explicit editorial review gates.
+- Added **Letters from H**, a new series of complete standalone essays, with an index page at `/letters/` and a canonical first issue at `/letters/on-the-people-we-never-meet/`.
+- Created original issue 001, *On the People We Never Meet*, exploring indirect responsibility toward strangers and future generations, with limitations and voluntary reflections. All illustrative scenes are labelled as such in the note on the letter.
+- Created a book-family cover and a **10-page PDF** and **EPUB3** built from one Markdown manuscript, plus complete free web reading page.
+- Featured the Letter on the homepage and Library; updated sitemap and publication catalogue; deliberately did not add another top-level navigation item.
+- Created `docs/Publications_Roadmap_and_Progress.md`, preserving the owner's one-at-a-time publication sequence and deferring all YouTube/video work until the recommended literature is complete.
+- Repaired `v09_enhancements.py` resource-catalogue regeneration so rebuilding the site cannot duplicate four journal entries.
+- Preserved existing books, book artwork, accepted emblem, reflection library, Formspree endpoint configuration and non-operating membership/donation services.
+- **Review status:** source checks and browser inlined rendering checks completed; H approval, deployed-link tests, real e-reader tests and independent editorial review remain pending.

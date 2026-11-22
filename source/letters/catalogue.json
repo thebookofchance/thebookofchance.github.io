@@ -1,0 +1,29 @@
+{
+  "series": "Letters from H",
+  "description": "Standalone philosophical letters that extend questions raised in The Book of Chance without becoming additional commandments.",
+  "available": [
+    {
+      "id": "BOC-LFH-001",
+      "number": 1,
+      "slug": "on-the-people-we-never-meet",
+      "title": "On the People We Never Meet",
+      "author": "H",
+      "language": "en-NZ",
+      "edition": "1.0-RC1",
+      "date_prepared": "2026-11-22",
+      "status": "editorial candidate — author approval and live deployment pending",
+      "summary": "An essay about the strangers who make our lives possible, and the responsibility we carry toward people who may never know our names.",
+      "themes": ["dignity", "interdependence", "stewardship", "future generations"],
+      "foundation_readings": ["VIII — Shared Fortune", "X — The Living World", "XI — Stewardship"],
+      "file": "source/letters/001-on-the-people-we-never-meet.md",
+      "pdf": "files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.pdf",
+      "epub": "files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.epub",
+      "cover": "assets/letters/lfh-001-cover.webp",
+      "url": "letters/on-the-people-we-never-meet/"
+    }
+  ],
+  "planned": [
+    {"number": 2, "title": "When Good Choices Lead to Bad Outcomes", "status": "planned; not drafted"},
+    {"number": 3, "title": "What Do We Owe to Strangers?", "status": "planned; not drafted"}
+  ]
+}

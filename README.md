@@ -81,3 +81,13 @@ See `docs/Website_Development_Log.md` and `docs/Reflection_Journal_Production_No
 - Digital editions are free and **no physical journals are on sale**.
 
 The patch preserves the approved logo and live Formspree configuration. The owner must merge changed files into the existing repository without deleting unrelated files.
+
+## v0.10 publications system and Letters from H
+
+- The proposed editorial house standard is `docs/Publications_Standard_v1.0_RC1.md` (also supplied as PDF); its principles are derived from the published *Book of Chance* manuscript and approved cover family, with clearly noted recommendations and unresolved editorial decisions.
+- The publication roadmap is `docs/Publications_Roadmap_and_Progress.md`; the owner chose **one new publication at a time**, with YouTube/video work following completion of the recommended literature programme.
+- `Letters from H` is now at `/letters/`, with issue 001, *On the People We Never Meet*, at `/letters/on-the-people-we-never-meet/`. The entire essay is available as HTML plus PDF and EPUB download.
+- Canonical source: `source/letters/001-on-the-people-we-never-meet.md` and its metadata `source/letters/catalogue.json`. The generator `scripts/build_letters.py` creates EPUB, PDF and cover assets (requires Pandoc CLI, WeasyPrint and CairoSVG to rebuild); `scripts/v010_publications.py` integrates the website pages, homepage, Library and sitemap during `python scripts/build_site.py`.
+- A new cover uses the original book's intersecting-line design language. It does **not** replace the approved site emblem or foundational book covers.
+- The first Letter is an **editorial release candidate**, pending H's final approval and a real deployed-site/e-reader check.
+- For GitHub, apply the `Book_of_Chance_Website_Update_Only_v0.10.zip` patch on top of the existing v0.9 site. It contains only changed/new paths; keep all others and retain your real `assets/forms-config.js`.

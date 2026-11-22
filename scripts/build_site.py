@@ -222,6 +222,8 @@ from v08_enhancements import apply_v08
 apply_v08(ROOT, info)
 from v09_enhancements import apply_v09
 apply_v09(ROOT, info)
+from v010_publications import apply_v010
+apply_v010(ROOT, document, markdown, info)
 (ROOT/'SITE_CONTENT_MANIFEST.json').write_text(json.dumps(info,indent=2),encoding='utf8')
 print('generated sections',len(sections),'readings',len(reader_ids),'figures',sum(s['figure_count'] for s in sections))
 print('section titles',[(s['slug'],s['title']) for s in sections]);print('root',ROOT)

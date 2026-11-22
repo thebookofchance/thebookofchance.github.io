@@ -58,6 +58,6 @@ def apply_v09(root:Path,info:dict):
      {'id':'daily-reflection-journal','title':'The Daily Reflection Journal','kind':'Free fillable journal PDF','file':DAILY},
      {'id':'possibility-journal','title':'The Possibility Journal','kind':'Free fillable journal PDF','file':POSS}
     ]
-    data['resources']=[e for e in data['resources'] if e.get('id')!='reflection-journal']
+    data['resources']=[e for e in data['resources'] if e.get('id') not in {'reflection-journal','reflection-journal-dark','daily-reflection-journal','possibility-journal'}]
     data['resources']=extra+data['resources'];catalogue.write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n','utf8')
     info.update({'website_version':'0.9','journal_titles':3,'journal_digital_editions':4,'reflection_journal_pages':48,'physical_journals_available':False,'journal_files':[MAIN,DARK,DAILY,POSS]})

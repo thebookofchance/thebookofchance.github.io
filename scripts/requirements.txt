@@ -3,3 +3,5 @@ beautifulsoup4>=4.12,<5
 Pillow>=10,<13
 reportlab>=4.0,<5
 PyMuPDF>=1.24,<2  # optional PDF form and print QA
+weasyprint>=65,<70  # publication PDF typesetting
+CairoSVG>=2.7,<3  # vector-cover previews; also requires Cairo system library

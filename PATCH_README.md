@@ -1,39 +1,40 @@
-# The Book of Chance Website — v0.9 update-only patch
+# The Book of Chance — Website v0.10 Update Only
 
-**Upload these files to your existing GitHub Pages repository**, preserving the folders and replacing matching paths. Do not delete anything else from the repository. This is **not a full-site ZIP**.
+**Base required:** the v0.9 website (with any subsequent working Formspree endpoint settings preserved).
 
-## This update contains
+## What this patch adds
 
-- Refined 48-page **Reflection Journal**, now with matching Light and Dark editions (same interior)
-- New 40-page **Daily Reflection Journal** and 40-page **Possibility Journal**, with distinct reflection practices
-- Redesigned 48-page printer-oriented layout study (not a commercial print master)
-- New cover previews under `assets/journals/`
-- Updated `/downloads/`, `/reflect/`, homepage journal copy and journal collection catalogue
-- PDF generation source, website overlay and automated verification script
-- Publishing design / physical edition notes and website development log
+- A proposed **Book of Chance Publications Standard v1.0-RC1** in Markdown and PDF.
+- A detailed publications release order and progress register, including the owner's one-at-a-time sequence and deferral of videos/YouTube until the literature programme is complete.
+- **Letters from H** index at `letters/`.
+- **Letter No. 01 — On the People We Never Meet**, complete web edition + 10-page PDF and EPUB + original cover.
+- New promotional blocks for this first Letter on the Library and homepage, new styles and sitemap routes.
+- Source manuscripts, metadata, reproducible publication build scripts and a documented release QA report.
 
-## This update does NOT include or alter
+**No required user account or payment:** the whole Letter is readable on the website and downloadable for free. The Letter does not represent a launched fundraising, Fellowship membership or charitable programme.
 
-- `assets/forms-config.js` or any Formspree identifiers
-- The approved site logo and favicon
-- The foundational book's EPUB, PDF, illustrations, cover images or manuscript
-- Any other unchanged HTML pages
+## Installation
 
-## After upload
+1. Unzip the update.
+2. Upload the files and folders *inside* the ZIP to the same paths in your GitHub Pages repository, replacing only matching files.
+3. **Do not delete other website files.** Do not replace your live `assets/forms-config.js`; it is intentionally excluded.
+4. Check `/letters/`, `/letters/on-the-people-we-never-meet/`, homepage and Library on desktop and mobile.
+5. Download/open the PDF and EPUB on at least one real device. Confirm both interest forms still work.
+6. Review and approve the editorial standard and Letter before treating version 1.0 as formally released. The files are staged at an editorial candidate status.
 
-1. Visit `/downloads/` and test all four journal buttons.
-2. Visit `/reflect/` and verify that the journal feature and PDF worksheet links work.
-3. Confirm that both Formspree lists still work and that the site logo is unchanged.
-4. Open a new journal in a PDF reader with form support, type an innocuous sample entry, save, close and reopen it.
-5. Check actual mobile/desktop display; only source-level/static verification is claimed for v0.9.
+## Safeguards
 
-## Rebuild
+- The approved circular website emblem and both original book covers and manuscripts are unmodified.
+- The four journals, original reader downloads and both Formspree lists remain unchanged.
+- No donation button, membership payment, charity wheel or book preorder was added.
+- Direct local-browser navigation was blocked in the build environment; a 12-case inlined-browser layout review at 1365/768/390 px passed. Live deployment and device checks remain pending.
+
+## Maintaining the publication series
+
+Edit `source/letters/001-on-the-people-we-never-meet.md` (not the generated HTML). Then run:
 
 ```bash
-python -m pip install -r scripts/requirements.txt
-python scripts/build_reflection_pdfs.py
 python scripts/build_site.py
-python scripts/audit_v09.py
 ```
 
-The journaling resources remain free and private by default. No paid hardcopies, donation flows or fundraising elements are added. The current print-oriented proof is not approved by any printer.
+The generator builds the Letter PDF/EPUB/cover and both series pages as part of the regular website build. Rebuilding PDFs/EPUBs locally requires the Python packages in `scripts/requirements.txt` plus the **Pandoc command-line application** on the PATH. Website visitors need none of these tools. Publication standards, status, version and future titles are recorded under `docs/` and `source/letters/catalogue.json`.

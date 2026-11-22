@@ -27,11 +27,6 @@
   ],
   "planned": [
     {
-      "category": "Short-form literature",
-      "title": "Reflections from H",
-      "summary": "Occasional essays exploring questions raised by the book, considering new examples and other philosophical perspectives."
-    },
-    {
       "category": "Community learning",
       "title": "Further readings",
       "summary": "Future discussions and supplementary texts that draw connections with established ideas and contemporary experiences."
@@ -80,5 +75,19 @@
       "kind": "Fillable PDF worksheet",
       "file": "files/reflection/A_Week_of_Possibilities_Fillable.pdf"
     }
-  ]
+  ],
+  "letters": {
+    "series": "Letters from H",
+    "index": "letters/",
+    "issues": [
+      {
+        "id": "BOC-LFH-001",
+        "title": "On the People We Never Meet",
+        "url": "letters/on-the-people-we-never-meet/",
+        "pdf": "files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.pdf",
+        "epub": "files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.epub",
+        "status": "editorial candidate — author approval and live deployment pending"
+      }
+    ]
+  }
 }
