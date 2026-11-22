@@ -42,8 +42,6 @@ Second, **there are circumstances we did not choose**: our place of birth, early
 
 Third, Confluent Humanism holds as a **philosophical belief** that chance is fundamental to reality and the future is not wholly predetermined. There is an important difference here. In one view, tomorrow is already settled, but nobody can predict it perfectly. In another, tomorrow is not entirely settled, even if we knew everything about today's conditions. Confluent Humanism is committed to the second view. That is a conviction to examine, **not** something the Fellowship claims science has conclusively proved. How it fits with causation and free will remains an open philosophical question.
 
-The Fellowship sometimes uses **RNG**, a term borrowed from random number generation, as an informal metaphor for the uncertainty of life. It does **not** mean that the universe is literally a game, that a computer chooses our fates, or that we can accumulate a hidden quantity of luck.
-
 Nor is chance treated as a conscious judge. It does not choose favourites, reward generosity or punish people who suffer. A favourable event may inspire gratitude, but an unfavourable event is not evidence that someone lacked faith, effort or worth.
 
 ## 3. Do choices matter if so much is outside our control?

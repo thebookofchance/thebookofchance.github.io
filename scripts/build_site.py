@@ -241,7 +241,15 @@ from v020_library_refinement import apply_v020
 apply_v020(ROOT, info)
 from v021_beginner_guide import apply_v021
 apply_v021(ROOT, document, markdown, info)
-info.update({'website_version':'0.21','correction_status':'Targeted editorial revisions; no independent human reader test','book_editorial_source':'source/manuscript.md','letter_editions':[e['edition'] for e in json.loads((ROOT/'source/letters/catalogue.json').read_text('utf8'))['available']]})
+info.update({'website_version':'0.22','correction_status':'Terminology consistency revision; no independent human reader test','book_editorial_source':'source/manuscript.md','letter_editions':[e['edition'] for e in json.loads((ROOT/'source/letters/catalogue.json').read_text('utf8'))['available']]})
+(ROOT/'SITE_CONTENT_MANIFEST.json').write_text(json.dumps(info,indent=2),encoding='utf8')
+# Public-facing copy must not inherit the retired gaming shorthand from old drafts.
+import re
+for public_source in (ROOT/'source/manuscript.md', ROOT/'source/conversations/conversations-of-chance.md', ROOT/'source/guides/beginners-guide-to-confluent-humanism.md'):
+ assert not re.search(r'\bRNG\b',public_source.read_text('utf8'),flags=re.IGNORECASE),public_source
+for output in [ROOT/'read/note-on-language/index.html',ROOT/'publications/conversations-of-chance/index.html',ROOT/'publications/beginners-guide-to-confluent-humanism/index.html',ROOT/'search-index.json']:
+ assert not re.search(r'\bRNG\b',output.read_text('utf8'),flags=re.IGNORECASE),output
+info['public_terminology_standard'] = 'docs/Public_Terminology_Standard_v1.0.md'
 (ROOT/'SITE_CONTENT_MANIFEST.json').write_text(json.dumps(info,indent=2),encoding='utf8')
 print('generated sections',len(sections),'readings',len(reader_ids),'figures',sum(s['figure_count'] for s in sections))
 print('section titles',[(s['slug'],s['title']) for s in sections]);print('root',ROOT)

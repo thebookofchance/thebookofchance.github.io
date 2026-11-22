@@ -1,25 +1,29 @@
-# The Book of Chance — Website v0.21 UPDATE ONLY
+# Website Update Only v0.22 — Public Vocabulary Alignment
 
-**Required base:** v0.20 website (with the Library search/filter refinement).  
-**Contents:** only new and changed files, not a full repository.
+**Base:** Existing v0.21 GitHub Pages repository  
+**Target:** v0.22  
+**Scope:** Only new or changed files. No removals or unrelated redesigns.
 
 ## Installation
 
-1. Extract `Book_of_Chance_Website_Update_Only_v0.21.zip`.
-2. Upload all extracted files and folders to the **root** of your existing GitHub repository, preserving the folder structure and replacing matching files.
-3. Keep all other existing files; **do not delete** anything not included in the ZIP.
-4. Commit and allow GitHub Pages to deploy, then test the homepage, Library, guide reading page and downloads on desktop and mobile.
+Extract the ZIP and copy its contents into the root of your existing website repository, preserving relative folders. Replace files with matching paths. Do **not** delete other repository files. Existing forms, images and non-affected publications are intentionally left alone.
 
-## Changes
+## What changes
 
-- Complete new introductory reader: `publications/beginners-guide-to-confluent-humanism/`.
-- The reviewed 13-page PDF, EPUB and unmodified visual-system cover are included.
-- A new “Start here” link and feature on the homepage, plus nine-item searchable Library catalogue (six books/companions and three Letters).
-- Added source manuscript, guide build script, reproducible v0.21 website integration stage and updated catalogue/roadmap.
-- Preserved the foundational book, existing companion publications, three Letters, journals, themes, forms and all existing navigation routes.
+- The foundational book's glossary and its regenerated Light/Dark PDF and EPUB editions.
+- The conversation companion's online reader and PDF/EPUB editions.
+- The Beginner's Guide online reader and PDF/EPUB editions.
+- Website search index and content manifest.
+- The publication vocabulary standard, change record and QA evidence.
+- Source manuscripts and the site build guard that prevents the retired gaming shorthand returning during rebuilds.
 
-**Status:** Revised editorial candidate staged for reading, not an independently approved final release. The guide page is `noindex,follow` and deliberately excluded from the sitemap pending formal release checks.
+## What does not change
 
-**Excluded:** `assets/forms-config.js`, existing publication PDFs/EPUBs, and other unchanged resources. Form submission and live GitHub Pages delivery were not tested from the local test environment.
+- The public names of the philosophy, book or Fellowship.
+- Any covers, illustrations, navigation, colours, site forms or reader interaction code.
+- Other books, parables, Letters, journals and worksheets.
+- Editorial-candidate status or release approvals.
 
-See `docs/Website_v0.21_Beginners_Guide_and_QA.md` for the validation report.
+## Deployment checks
+
+After upload, open each affected online reading, refresh the page and download its PDFs/EPUBs to verify the live versions. Clear browser download cache if an old PDF or EPUB appears. The FAQ candidate and private foundational identity revisions are delivered in separate editorial packages and are **not** included in the public website ZIP.

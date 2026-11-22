@@ -1,7 +1,7 @@
 {
-  "website_version": "0.21",
+  "website_version": "0.22",
   "source": "Book_of_Chance_Illustrated_Manuscript_v0.12.md",
-  "source_sha256": "997a36f2aa8265129ea7ec8638a95783065c8fc7649f5505023a243f569384e9",
+  "source_sha256": "27fe17a36b5a0cd96a2516dfaaef4e3f0b4692b700d2be192bd8bbc77e3e3682",
   "chapters": 24,
   "readings": 12,
   "illustration_placements": 6,
@@ -102,11 +102,12 @@
   },
   "guide_status": "Approved for website staging; independent human review, accessibility and live deployment checks pending",
   "sitemap_publication_gate": "Noindex on the guide until formal release approval",
-  "correction_status": "Targeted editorial revisions; no independent human reader test",
+  "correction_status": "Terminology consistency revision; no independent human reader test",
   "book_editorial_source": "source/manuscript.md",
   "letter_editions": [
     "1.0-RC3",
     "1.0-RC2",
     "1.0-RC2"
-  ]
+  ],
+  "public_terminology_standard": "docs/Public_Terminology_Standard_v1.0.md"
 }

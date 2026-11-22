@@ -163,7 +163,7 @@ Suppose a missed train leads to a conversation that becomes a friendship. Years 
 
 This matters when we offer comfort. 'Everything happens for a reason' may feel reassuring to someone speaking it. To a person who has suffered, it may sound as though their pain was necessary for a later good. Our language can honour unexpected benefits without asking anyone to call a loss a gift. The traveller can be grateful for a friend while still regretting a missed opportunity.
 
-The idea of the unfolding includes both events we call chance and the ordinary chains of cause through which lives intersect. Someone's recommendation, a public transport schedule and an inherited skill may all shape what happens. Calling these connections 'RNG' is an informal metaphor within the Fellowship, not a claim that a computer rolls numbers behind human affairs.
+The idea of the unfolding includes both events we call chance and the ordinary chains of cause through which lives intersect. Someone's recommendation, a public transport schedule and an inherited skill may all shape what happens. These connections are part of the unfolding of lives: neither pure accident nor complete personal control.
 
 **Thought experiment — The invitation**
 
@@ -391,7 +391,7 @@ Do not require an example of personal grief, illness or unmet hope. Allow religi
 
 **Opening consideration**
 
-The phrase 'share your RNG' can be memorable, but it is easy to misunderstand. Fortune is not a liquid that runs out when poured into someone else's cup. In the Fellowship's language, the phrase means recognising a circumstance that gives us room to help and asking whether we can responsibly widen another person's possibilities.
+We cannot give someone else our good fortune as though it were a possession. What we can sometimes share are the resources, opportunities or relationships that circumstances have made available to us. The question is whether we can responsibly widen another person's possibilities without taking away their freedom to choose.
 
 Sometimes what we can share is money. At other times it is reliable information, patient teaching, an introduction with everyone's consent, a useful resource, an opportunity to participate or simple companionship. Each has limits. A referral may create an unfair advantage if it bypasses a necessary selection process. Advice may be harmful when offered without expertise. A donation may be inappropriate if it leaves a household without essentials.
 
@@ -641,7 +641,7 @@ This page is a simple reminder for people using the discussions informally. It i
 
 **Chance** is used in several related senses: uncertainties in what we know, advantages or hardships we did not choose, and a philosophical conviction that reality itself contains fundamental indeterminacy. These senses should not be treated as identical.
 
-**RNG** is informal Fellowship language for chance and contingency. It does not describe a verified computer-like mechanism determining human lives. To 'increase one's RNG' means changing practical conditions and capacities that may improve prospects, not acquiring a substance called luck.
+**Improving prospects** means changing practical conditions or capacities that may make an opportunity more accessible or reduce avoidable risks. It does not mean accumulating a substance called luck or guaranteeing any particular outcome.
 
 **Confluent Humanism** is a developing philosophy associated with the proposed Fellowship of Chance, not an academically established school or a scientific theory. Its ethical commitments require argument and reflection rather than an automatic inference from randomness.
 

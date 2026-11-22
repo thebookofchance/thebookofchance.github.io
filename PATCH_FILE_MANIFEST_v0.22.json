@@ -1,0 +1,30 @@
+{
+  "website": "The Book of Chance",
+  "from": "0.21",
+  "to": "0.22",
+  "new_or_modified_files": 21,
+  "files": [
+    "PATCH_README.md",
+    "SITE_CONTENT_MANIFEST.json",
+    "docs/Public_Terminology_Standard_v1.0.md",
+    "docs/Website_v0.22_QA.json",
+    "docs/Website_v0.22_Terminology_Revision.md",
+    "files/The_Book_of_Chance_Dark.epub",
+    "files/The_Book_of_Chance_Dark_PDF_Reader_Proof.pdf",
+    "files/The_Book_of_Chance_Light.epub",
+    "files/The_Book_of_Chance_Light_PDF_Reader_Proof.pdf",
+    "files/conversations/Conversations_of_Chance_Editorial_Proof_v0.1.epub",
+    "files/conversations/Conversations_of_Chance_Editorial_Proof_v0.1.pdf",
+    "files/guides/A_Beginners_Guide_to_Confluent_Humanism_Editorial_Proof_v0.2.epub",
+    "files/guides/A_Beginners_Guide_to_Confluent_Humanism_Editorial_Proof_v0.2.pdf",
+    "publications/beginners-guide-to-confluent-humanism/index.html",
+    "publications/conversations-of-chance/index.html",
+    "read/note-on-language/index.html",
+    "scripts/build_site.py",
+    "search-index.json",
+    "source/conversations/conversations-of-chance.md",
+    "source/guides/beginners-guide-to-confluent-humanism.md",
+    "source/manuscript.md"
+  ],
+  "note": "Unchanged files intentionally omitted; archive originals retained outside public package."
+}

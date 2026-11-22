@@ -1152,7 +1152,7 @@ Some people find a short regular entry useful because changes become visible ove
 
 **Moral luck.** The problem of judging people when their circumstances, character or actions' outcomes depend partly on factors outside their control. The book distinguishes appraisal of an act from duties to address harm that actually occurs.
 
-**RNG.** An informal borrowing from the language of random-number generation. Here it is a metaphor for chance, not a claim that the universe operates as a literal computer program. To improve one's RNG means to improve prospects through conditions and preparation, not to accumulate luck.
+**Improving our prospects.** Learning, preparation, relationships and changes to institutions can sometimes make valuable opportunities more accessible or reduce avoidable risks. This does not mean that effort can guarantee outcomes, that luck can be accumulated, or that a person controls every condition of their life.
 
 **Blessing of chance.** A poetic expression of gratitude or wonder at good fortune, without implying that chance intentionally favoured someone.
 
