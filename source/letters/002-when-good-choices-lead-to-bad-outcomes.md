@@ -20,7 +20,7 @@ But there is another question: *Was the choice reasonable when it was made?*
 
 These questions are related, but they are not identical. A person can act carelessly and escape harm by good fortune. Another can act carefully and encounter a consequence that could not reasonably have been predicted. To judge only by the visible ending is to overlook what either person was actually choosing between.
 
-The distinction is not a way to escape responsibility. It is a way to locate responsibility more accurately.
+The distinction helps us locate responsibility more accurately: first in the care a person took when choosing, then in how they respond to the result.
 
 Before a decision, we have the information available to us, the people we can consult, the time we have, the options we can recognise and the risks we can reasonably anticipate. Afterward, we know at least one thing we did not know before: what happened. It is tempting to carry that knowledge backward and imagine that it was obvious all along.
 
@@ -34,7 +34,7 @@ Imagine that a person offers a friend a job opportunity in another city. The fri
 
 What matters includes the care taken before acting: whether important risks were investigated, whether claims were honest, whether consent was meaningful, whether those affected had room to decline and whether there were safer alternatives. Power matters too. A manager making a decision for a whole team owes more preparation than a friend offering a tentative suggestion over coffee.
 
-We should not demand impossible foresight. We should expect attention proportionate to the consequences a choice may impose on others.
+Reasonable care grows with the consequences a choice may impose on others. It asks for preparation proportionate to the risk, rather than impossible foresight.
 
 Sometimes there is no good option. A parent may have to choose between insecure work and an uncertain relocation. A caregiver may face incompatible needs. Someone with little money may be unable to purchase the safer option available to a wealthier person. Calling these decisions 'choices' must not erase the narrowness of the paths offered.
 
@@ -50,9 +50,7 @@ There are several kinds of response. The organisers can listen rather than defen
 
 An apology can acknowledge harm without falsely claiming that all harm was foreseeable. Where a person or organisation owes a remedy, that obligation should not depend solely on proving bad intentions. And where no remedy is possible, people affected still deserve to be heard.
 
-We sometimes treat responsibility as a verdict pronounced on character: guilty or innocent, wise or foolish, good or bad. Often it is more useful to think of responsibility as something that continues after a choice has been made. It includes the willingness to examine consequences, repair what we can and alter a practice when new evidence arrives.
-
-This does not mean accepting blame for every misfortune. It means refusing to make uncertainty an excuse for indifference.
+We sometimes treat responsibility as a verdict pronounced on character: guilty or innocent, wise or foolish, good or bad. But it can also be a practice that continues after a choice: examining what followed, repairing what we can, and changing a procedure when new evidence arrives. A cancelled gathering might be followed by a shared transport arrangement or an accessible alternative date. Such a response cannot erase disappointment. It can show people that their difficulty has been taken seriously.
 
 ## Who carries the risk?
 
@@ -76,7 +74,7 @@ This requires a particular kind of honesty. We must be able to say, 'I chose as 
 
 The philosopher Thomas Nagel and the philosopher Bernard Williams helped frame a related problem often called *moral luck*: outcomes and circumstances beyond our control can shape how our conduct is judged. Their work does not offer a simple test for every decision. It helps explain why the gap between what we control and what we are praised or blamed for can be so troubling.
 
-The Fellowship's emphasis on chance need not tell us that choices are meaningless. It asks for a more careful account of what a choice can accomplish. Deliberation matters precisely because consequences matter—even though no deliberation can command them.
+Taking chance seriously asks for a more careful account of what a choice can accomplish. Deliberation matters because consequences matter, including those we could not guarantee or foresee.
 
 ## The choice we can make now
 
@@ -88,7 +86,7 @@ Between them is a harder practice. Look truthfully at the information you had. L
 
 Return to the gathering that was postponed. The organisers do not earn wisdom because the storm comes, nor become fools because it does not. Their decision must be examined in the light in which it was made, and its effects in the light that followed.
 
-We cannot arrange for every careful choice to end well. We can try to ensure that our care is genuine before we act, and that it does not disappear when the result disappoints us.
+We can prepare with care, respond with generosity when plans fail, and let what we learn improve the next decision. An imperfect result may still be followed by a useful act of solidarity.
 
 A good outcome is something to welcome. A good decision is something we must learn to make without the promise of one.
 

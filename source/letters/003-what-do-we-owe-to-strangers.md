@@ -74,15 +74,15 @@ This also means accepting that an offer may be declined. A refusal does not canc
 
 Individual generosity matters. It can relieve a particular difficulty at precisely the moment it is felt. But some needs are repeated so often that a private favour cannot be a satisfactory answer.
 
-If a public building has a staircase that excludes many visitors, it is good to help someone find another entrance. It is better still to ask why the entrance remains inaccessible and who is responsible for changing it. If someone must repeatedly ask strangers for help navigating an essential service, the service itself may need to change.
+Imagine that a public service sends an important notice in language too complex for many of its recipients to understand. A neighbour might sit down and explain it. That can be a genuine kindness. But if the same confusion recurs every week, the agency responsible for the notice should make its instructions clear, offer accessible formats and check its meaning with the people who rely on it. The kindness reveals a problem that better design could prevent.
 
 The burden should not rest exclusively with the person who happened to notice the problem. Institutions with resources, authority and public responsibilities can owe duties that no passer-by could fulfil alone. Fair rules, decent working conditions, accessible services and accountable decisions make ordinary care less dependent on a lucky encounter.
 
 Nor can charitable giving replace questions of justice. A donation may help someone today while leaving intact the policy or arrangement that makes the same help necessary tomorrow. There is room for both immediate assistance and the patient work of changing conditions. Neither should be used to dismiss the other.
 
-This is one reason a future Fellowship ought to be careful about how it speaks of giving. Voluntary support may enable worthwhile projects, but no amount donated should purchase status or influence. A campaign should explain its purpose, the limits of what it can accomplish, and how decisions and spending will be accounted for. If those arrangements are not yet in place, the honest action is to build them before asking people for money.
+People who organise shared giving should make its purpose, decision-making and use of funds open to scrutiny. Those receiving help should have a voice where possible, and contribution should never buy power over them. These are obligations of care and accountability, whether the effort is led by neighbours, an established charity or a public institution.
 
-We cannot make kindness into a substitute for trustworthy public systems. We can, sometimes, make those systems more trustworthy together.
+Trustworthy systems make care more dependable. People can sometimes improve those systems together, so the next person need not rely on a fortunate encounter.
 
 ## The reach of an ordinary life
 
@@ -94,7 +94,7 @@ We do not owe every person the same relationship. We cannot offer unlimited time
 
 The question is not finally answered by an amount. It remains a judgement we must make with imperfect information and with other legitimate claims upon us.
 
-The person at the checkout may be helped. They may decline. You may discover that you can spare nothing safely. A decent response is not guaranteed by a generous intention, and a decent person need not be the hero of the scene.
+At the checkout, the person might quietly accept an offer, smile with relief and continue with their day. They might decline, and both people can continue with dignity. Or you may discover you cannot safely spare anything. Care lies in how we regard one another, as well as what we are able to give.
 
 Perhaps the smallest change is this: the boundary of our concern need not be the boundary of our acquaintance.
 
@@ -115,4 +115,4 @@ The supermarket and directions scenes are imagined illustrations, not reports of
 
 Questions about duties to strangers, special obligations, beneficence, justice and the moral limits of sacrifice are well-established areas of philosophical disagreement. Further reading includes the *Stanford Encyclopedia of Philosophy* entries on [Special Obligations](https://plato.stanford.edu/entries/special-obligations/), [The Principle of Beneficence in Applied Ethics](https://plato.stanford.edu/entries/principle-beneficence/) and [Moral Demands and Permissions](https://plato.stanford.edu/entries/moral-demands-permissions/). These sources contextualise the question; this Letter does not claim to resolve the debate.
 
-This is a philosophical invitation, not a demand to donate, join a community or disclose private experiences. Readers are welcome to disagree.
+This philosophical letter stands on its own. Readers are welcome to disagree, and no personal disclosure or contribution is requested.

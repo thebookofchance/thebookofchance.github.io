@@ -86,7 +86,7 @@ Throughout this book we will return to five values: hope, acceptance, reflection
 
 The book's invitation is to practise them together, with discernment.
 
-There is no need to begin by agreeing with every proposition. Begin, instead, with a question.
+You can begin without agreeing with every proposition. Begin, instead, with a question.
 
 What had to happen before you could make your first choice? And now that you are here, what can your choices make possible for someone else?
 
@@ -360,9 +360,13 @@ Physics often uses probabilities, but what they reveal about reality is conteste
 
 The question of openness is philosophical as well as scientific. One picture holds that the complete past and natural laws fix all later events, even when nobody can predict them. Another allows at least some *real alternatives* until events occur. Confluent Humanism provisionally favours the latter: possibility may describe something in the world, not only a gap in an observer's knowledge. This preference is a conviction to defend and revise, not an inference from the mere feeling that life is unpredictable.
 
+Why give that preference a place in a philosophy of living? It reminds us to leave room, in our picture of reality, for outcomes that may be more than the inevitable unfolding of what came before. There is intellectual value in distinguishing a future we cannot *predict* from one that may not yet be *settled*. We find the second picture compelling, while recognising that compelling is not conclusive. This is a way of interpreting existence, not a discovery from which ethical rules can be calculated.
+
+For everyday action, a further distinction is more immediate. Uncertainty means we may lack knowledge; fundamental chance would mean that even complete knowledge of the past did not settle every event; practical possibility means that access, time, trust and resources can change what someone is able to do. The case for fairness, care and shared opportunity rests on people's lives and needs under **either** account of reality. We need not resolve the first two questions before acting responsibly on the third.
+
 The difference is substantial, even though it does not settle how anyone ought to behave. If the first picture is true, the traveller who missed a bus never had a different physical future available at that moment, given the very same past and laws. If the second is true, some genuine alternatives may have remained. Neither picture tells us which friendship was deserved, whether the traveller had enough information to choose well, or what another person owes them. Those questions require other kinds of reasons.
 
-A determinist can reasonably answer that the first picture already accounts for experience without postulating indeterminacy. Equally, successful prediction does not by itself establish that *every* event in the universe is fixed. Neither universal determinism nor its denial follows merely from our everyday experience of uncertainty. No decisive argument in these pages settles the question. Confluent Humanism’s preference for an open future remains subject to philosophical criticism and revision in light of further inquiry.
+A determinist may reasonably find that the first picture already accounts for experience. Equally, successful prediction of many events does not establish that *every* event is fixed. Everyday uncertainty settles neither dispute. Confluent Humanism therefore keeps its preference for an open future available to philosophical criticism and revision.
 
 What, then, would change in this book if determinism were true? Its account of the *ultimate character of reality* would change. Its invitation to pay attention, study causes, weigh reasons, resist exploitation and widen another person's practical options would not simply disappear. These ethical commitments stand upon the dignity and vulnerability of living beings, the effects of our actions and the possibility of fair cooperation—not upon randomness delivering moral instructions.
 
@@ -392,7 +396,7 @@ There is an important difference between finding meaning in an event and insisti
 
 ### What remains worth doing
 
-Whatever the deepest answer, there are choices before us. We can investigate a risk, keep a promise, repair a dangerous crossing or insist that people facing hardship receive fair treatment. Those acts draw their justification from vulnerability, fairness and shared life.
+Whatever the deepest answer, there are choices before us. We can investigate a risk, keep a promise, make a public service easier to use or insist that people facing hardship receive fair treatment. Those acts draw their justification from vulnerability, fairness and shared life.
 
 To believe the future is open is one way to understand possibility. To widen another person's possibilities is work we can begin with the knowledge we have.
 

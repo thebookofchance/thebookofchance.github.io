@@ -9,9 +9,9 @@
       "title": "On the People We Never Meet",
       "author": "H",
       "language": "en-NZ",
-      "edition": "1.0-RC2",
+      "edition": "1.0-RC3",
       "date_prepared": "2026-11-22",
-      "status": "revised editorial candidate — final author approval and live deployment check pending",
+      "status": "editorially revised candidate — founder approval and live check outstanding",
       "summary": "An essay about the strangers who make our lives possible, and the responsibility we carry toward people who may never know our names.",
       "themes": [
         "dignity",
@@ -30,7 +30,7 @@
       "cover": "assets/letters/lfh-001-cover.webp",
       "url": "letters/on-the-people-we-never-meet/",
       "last_revised": "2026-11-22",
-      "editorial_note": "Revised for clarity and stronger distinction between private kindness, dependable institutions and unseen responsibility. Fictional scenes expressly identified. Founder approval pending."
+      "editorial_note": "Cross-publication simulated review corrections: clearer positive argument, more varied human examples, consolidated qualifications; no independent human pilot conducted."
     },
     {
       "id": "BOC-LFH-002",
@@ -39,9 +39,9 @@
       "title": "When Good Choices Lead to Bad Outcomes",
       "author": "H",
       "language": "en-NZ",
-      "edition": "1.0-RC1",
+      "edition": "1.0-RC2",
       "date_prepared": "2026-11-22",
-      "status": "editorial candidate — author approval and live verification pending",
+      "status": "editorially revised candidate — founder approval and live check outstanding",
       "summary": "A letter about making careful decisions when outcomes are uncertain, and remaining accountable when things go wrong.",
       "subtitle": "A letter on judgement, uncertainty and the care that follows",
       "lead": "A good decision cannot guarantee a good ending. What can we ask of ourselves when careful choices still cause pain?",
@@ -63,7 +63,7 @@
       "cover": "assets/letters/lfh-002-cover.webp",
       "url": "letters/when-good-choices-lead-to-bad-outcomes/",
       "last_revised": "2026-11-22",
-      "editorial_note": "First complete editorial candidate. Imagined scenes labelled; comparison with philosophical moral luck acknowledged and linked."
+      "editorial_note": "Cross-publication simulated review corrections: clearer positive argument, more varied human examples, consolidated qualifications; no independent human pilot conducted."
     },
     {
       "id": "BOC-LFH-003",
@@ -72,9 +72,9 @@
       "title": "What Do We Owe to Strangers?",
       "author": "H",
       "language": "en-NZ",
-      "edition": "1.0-RC1",
+      "edition": "1.0-RC2",
       "date_prepared": "2026-11-22",
-      "status": "editorial candidate — author approval and live verification pending",
+      "status": "editorially revised candidate — founder approval and live check outstanding",
       "summary": "A letter on the duties we have to strangers, the promises we keep to loved ones, and how to help without turning care into an unlimited demand.",
       "subtitle": "A letter on dignity, obligation and the limits of giving",
       "lead": "We cannot answer every need. But we need not know someone to recognise that they matter.",
@@ -97,7 +97,7 @@
       "cover": "assets/letters/lfh-003-cover.webp",
       "url": "letters/what-do-we-owe-to-strangers/",
       "last_revised": "2026-11-22",
-      "editorial_note": "First complete editorial candidate; fictitious scenes identified, philosophical relatives named with further reading. Author sign-off pending."
+      "editorial_note": "Cross-publication simulated review corrections: clearer positive argument, more varied human examples, consolidated qualifications; no independent human pilot conducted."
     }
   ],
   "planned": []

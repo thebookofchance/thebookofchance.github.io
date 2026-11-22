@@ -1,0 +1,254 @@
+{
+  "version": "0.14",
+  "base_required": "0.13",
+  "change_count_excluding_this_manifest": 48,
+  "changed_files": [
+    {
+      "path": "PATCH_README.md",
+      "bytes": 1641,
+      "sha256": "6e238075c16f503b95ddacdff92fff0eb504dba53e61bc70ed3cc5522ff13a89"
+    },
+    {
+      "path": "SITE_CONTENT_MANIFEST.json",
+      "bytes": 1937,
+      "sha256": "e2a66b0a347e0c07590ca58e6a20ecf0dada59612041203b39f61e6b0826c31b"
+    },
+    {
+      "path": "docs/Editorial_Corrections_v0.14.md",
+      "bytes": 8515,
+      "sha256": "4befcaec8d14fe33a2f954b73725536b452a68fa15e6c275b1f793f026cc530d"
+    },
+    {
+      "path": "docs/Editorial_Corrections_v0.14.pdf",
+      "bytes": 42760,
+      "sha256": "85bec0bb350612d3b8d95b231af5ffb833e9e8f70e33eee54c304d52d027a15a"
+    },
+    {
+      "path": "docs/Editorial_Corrections_v0.14_QA.json",
+      "bytes": 2481,
+      "sha256": "72b05fa3a1c617d0655a8f58318ac8628c7d645842b0f12e774410b96423c686"
+    },
+    {
+      "path": "docs/Publications_Roadmap_and_Progress.md",
+      "bytes": 7415,
+      "sha256": "0661bd964cd30403dea9dba19feabda090dcd0f3e8ca20f144c0b5d834a55247"
+    },
+    {
+      "path": "docs/Publications_Status_Addendum_v0.14.md",
+      "bytes": 1079,
+      "sha256": "cceaa7648d3d9cb8a9e2588b9db5494a825f519bcc6fed20a1214cdc8719f9f2"
+    },
+    {
+      "path": "docs/Website_Development_Log.md",
+      "bytes": 25191,
+      "sha256": "bf49e3c9cebbac134dab84adbd5bf521d378211018a6d8875c5138f03a9032e7"
+    },
+    {
+      "path": "downloads/index.html",
+      "bytes": 14728,
+      "sha256": "7e43c7b6e3f9fe916b66439fe7eabf8afebf2e0c6cc19f9f5dc8c0d323d12b24"
+    },
+    {
+      "path": "files/The_Book_of_Chance_Dark.epub",
+      "bytes": 5673971,
+      "sha256": "8c37a0ef1e90bb47a5fec0dbcdea4fe117f040000eb3e41f9ffebaf1f210dd22"
+    },
+    {
+      "path": "files/The_Book_of_Chance_Dark_PDF_Reader_Proof.pdf",
+      "bytes": 6241858,
+      "sha256": "2ebd8756c8232342beb18c0e8e933de6b0c31b7a8ff00cfbcbb94827053f13bd"
+    },
+    {
+      "path": "files/The_Book_of_Chance_Light.epub",
+      "bytes": 5688987,
+      "sha256": "b09ba86e89ab1f535e6c7d11b93b3d5279d6030bed048aba361521b7da7fb005"
+    },
+    {
+      "path": "files/The_Book_of_Chance_Light_PDF_Reader_Proof.pdf",
+      "bytes": 6149949,
+      "sha256": "98c63773d40b897d6170b7d403d2c4f073e824d13f30e3491025a48e854c930a"
+    },
+    {
+      "path": "files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.epub",
+      "bytes": 138211,
+      "sha256": "61198db89157cd114244dedf411ca011a503210d7cbb5426c56bf90f195ca0e5"
+    },
+    {
+      "path": "files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.pdf",
+      "bytes": 48551,
+      "sha256": "4b86694ff425287b9560ef1cfe1a0247f754ca5c77e80073f675240838d76bae"
+    },
+    {
+      "path": "files/letters/Letters_from_H_02_When_Good_Choices_Lead_to_Bad_Outcomes.epub",
+      "bytes": 123347,
+      "sha256": "454f71e297aaeefb785b5527a08ce1433acf3fe132239c8c4451f10d9c69ccad"
+    },
+    {
+      "path": "files/letters/Letters_from_H_02_When_Good_Choices_Lead_to_Bad_Outcomes.pdf",
+      "bytes": 47799,
+      "sha256": "5de6366c6e8c1a9e76c811c5fe87ad57c6fb63a1387807243e3f366e4c90b259"
+    },
+    {
+      "path": "files/letters/Letters_from_H_03_What_Do_We_Owe_to_Strangers.epub",
+      "bytes": 191891,
+      "sha256": "b78639db363c49893387d8314ad92dfd3dcfce93a7d68ddb4007eae8917eeae0"
+    },
+    {
+      "path": "files/letters/Letters_from_H_03_What_Do_We_Owe_to_Strangers.pdf",
+      "bytes": 46778,
+      "sha256": "400d54b9982de79e69eebb76b08660547c96182a29465123b66586b3f4154a8e"
+    },
+    {
+      "path": "files/reflection/A_Week_of_Possibilities_Fillable.pdf",
+      "bytes": 69918,
+      "sha256": "e8d8cf1ac45f97a9b3f2c98f789f78ad939eb55b880defa61fc96e804d62e1a0"
+    },
+    {
+      "path": "files/reflection/The_Act_of_Possibility_Fillable.pdf",
+      "bytes": 69956,
+      "sha256": "f4fff33e5aeae010861afdacd55cd22d765886254fa8e010483076b3fb3ac95e"
+    },
+    {
+      "path": "files/reflection/The_Daily_Reflection_Journal_Fillable.pdf",
+      "bytes": 233434,
+      "sha256": "fe37201d8adf81589c471c982e6ebefe420e58ce04d92e27321020707e8d5e38"
+    },
+    {
+      "path": "files/reflection/The_Possibility_Journal_Fillable.pdf",
+      "bytes": 228672,
+      "sha256": "ff2372fc41b49e9a1a83fe6e9c015d481edfcc5966c493c23bffd3963c4330ab"
+    },
+    {
+      "path": "files/reflection/The_Reflection_Journal_Dark_Fillable.pdf",
+      "bytes": 244659,
+      "sha256": "9199626595c7e520091a0d981e3de445b5291cb3ed790ae2a5493212fcdb3b56"
+    },
+    {
+      "path": "files/reflection/The_Reflection_Journal_Fillable.pdf",
+      "bytes": 244643,
+      "sha256": "91dedd0983be394df071da06cbf8d86ec78b9951bbe17e94d6860cdc21f8057b"
+    },
+    {
+      "path": "files/reflection/The_Reflection_Journal_Print_Layout_Proof.pdf",
+      "bytes": 144199,
+      "sha256": "50490a737fbb1936f0bd10ef801cce02ba7f4fb37a109e9e435631e9e96740e1"
+    },
+    {
+      "path": "files/reflection/The_Reflection_of_Chance_Fillable.pdf",
+      "bytes": 69916,
+      "sha256": "bab8337a95ebb70756a23845f6ce67af406f621e366922b586d88a05bd41be90"
+    },
+    {
+      "path": "letters/on-the-people-we-never-meet/index.html",
+      "bytes": 18782,
+      "sha256": "0acccd230fc8a44bd5bdd36ef39103039f5f8044a989031dc74666422d0168ed"
+    },
+    {
+      "path": "letters/what-do-we-owe-to-strangers/index.html",
+      "bytes": 19499,
+      "sha256": "52917095a2e11dc7ab4996e2d26339a54f41621031d8046bb5ab3906c4f568e9"
+    },
+    {
+      "path": "letters/when-good-choices-lead-to-bad-outcomes/index.html",
+      "bytes": 17601,
+      "sha256": "fe3d83ee3706e8c8d383e92a8548051d6c1e08861702f324f20e7adb47c62ea6"
+    },
+    {
+      "path": "privacy/index.html",
+      "bytes": 7709,
+      "sha256": "95e33bdc6efa480f76d3617c852919457aa6048938de3f044da27c8cae75aafd"
+    },
+    {
+      "path": "read/introduction/index.html",
+      "bytes": 9627,
+      "sha256": "27d9d8180b2cae997608a95aa76b3b861ddc1e83481ec1e74cf007336d6df66b"
+    },
+    {
+      "path": "read/the-open-future/index.html",
+      "bytes": 16621,
+      "sha256": "bc3ad7d9206b1ed36c3c1298ac383ee863d14ee1f3c128ff614169a68b95882e"
+    },
+    {
+      "path": "reflect/index.html",
+      "bytes": 17730,
+      "sha256": "a178f5c60429343f2e01bb98981328b1a8b36e5696d9970de08fd1d979ac9945"
+    },
+    {
+      "path": "scripts/build_book_publications.py",
+      "bytes": 9824,
+      "sha256": "e90323aa6ab322d9d2da62d127dfe3c1dc75af1a88da4ef7bd290fff7c9665aa"
+    },
+    {
+      "path": "scripts/build_journal_series.py",
+      "bytes": 22293,
+      "sha256": "b30defd9bd4fc370577e5b6918c8810c5d65d91fd3ef5a37041b6d28a200c335"
+    },
+    {
+      "path": "scripts/build_reflection_pdfs.py",
+      "bytes": 14251,
+      "sha256": "f75113d0e80e12cc7a26ed1cd3e8b73990bad0f28ef53e81585ba927fc76a1e4"
+    },
+    {
+      "path": "scripts/build_site.py",
+      "bytes": 54367,
+      "sha256": "bcd2a8739525c9069a2da37597711d35759f9e932a5f2a6518e9c01cdf659016"
+    },
+    {
+      "path": "scripts/v08_enhancements.py",
+      "bytes": 12379,
+      "sha256": "ba2fd76de313084e1e66670d5e5473b563af5f889750a81dc23f90f2c95bb9cc"
+    },
+    {
+      "path": "scripts/v09_enhancements.py",
+      "bytes": 8227,
+      "sha256": "2794f8b5f6e21c0ebd2b5ede3da2106822beda03453ec65e576389ef4bf9e043"
+    },
+    {
+      "path": "search-index.json",
+      "bytes": 134843,
+      "sha256": "b3d57a74ad1ba1143d69e16fe6f492fdbea77cd986587bc30f3751e8713276c8"
+    },
+    {
+      "path": "source/book-print-base.css",
+      "bytes": 4799,
+      "sha256": "a226f6a22c6767dec978e00c546750414bb9149e723993450e4020edeafdb965"
+    },
+    {
+      "path": "source/letters/001-on-the-people-we-never-meet.md",
+      "bytes": 13163,
+      "sha256": "21545952773c17e3f925e193f1fbe3f213b84019b604cb7da00df04ae3f0a262"
+    },
+    {
+      "path": "source/letters/002-when-good-choices-lead-to-bad-outcomes.md",
+      "bytes": 11769,
+      "sha256": "0143d795bd30fca5f46a90fe3d9dc90d1e2621b814179bf8015b8e51096c4144"
+    },
+    {
+      "path": "source/letters/003-what-do-we-owe-to-strangers.md",
+      "bytes": 13399,
+      "sha256": "e6621c9ad5ed4a24fecb0ff1d19f6788bd90707ee2439c8d440872ebd670832a"
+    },
+    {
+      "path": "source/letters/catalogue.json",
+      "bytes": 4783,
+      "sha256": "40bd98d4a62b08630d74b507a57668c4d6a2f099daea48ec31906671affafe50"
+    },
+    {
+      "path": "source/manuscript.md",
+      "bytes": 130461,
+      "sha256": "997a36f2aa8265129ea7ec8638a95783065c8fc7649f5505023a243f569384e9"
+    },
+    {
+      "path": "source/publications.json",
+      "bytes": 4211,
+      "sha256": "9097502031b90f147a59e63d441d46c54d8df4ee36f4205287ac5eb5e0283281"
+    }
+  ],
+  "unchanged_configuration_files": [
+    "assets/forms-config.js",
+    "assets/brand-mark.svg",
+    "assets/logo-master.svg"
+  ],
+  "not_a_full_site": true,
+  "real_reader_testing": "not performed"
+}

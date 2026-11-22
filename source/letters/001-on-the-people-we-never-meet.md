@@ -18,7 +18,7 @@ These are not all acts of generosity. People may have been paid, required by law
 
 Yet the effect remains: lives are made more or less possible through work that rarely enters anyone's personal story. I can walk across a bridge without meeting the person who inspected it. I can rely on instructions improved by a stranger's patience. I can benefit from a public decision made years before I arrived.
 
-There is something humbling in this. We are more dependent than the stories of individual achievement tend to suggest. That dependency does not erase effort or make achievement unreal. It gives effort a setting. A person who finishes a difficult course has done something substantial. They may also have relied on safe roads, working electricity, someone who maintained the classroom, and more than one person willing to teach.
+There is something humbling, and sometimes heartening, in this. A stranger's careful work may make an ordinary good day possible: the first swim at a clean beach, a concert reached on a reliable bus, a quiet hour in a library. We are more dependent than stories of individual achievement tend to suggest. That dependency does not erase effort or make achievement unreal. It gives effort a setting. A person who finishes a difficult course has done something substantial. They may also have relied on safe roads, working electricity, someone who maintained the classroom, and more than one person willing to teach.
 
 To notice that is not to diminish anyone. It is to tell a fuller story.
 
@@ -48,7 +48,9 @@ That is a small imagined story, not evidence of a hidden law that good deeds ret
 
 Still, we can recognise something worth doing: leaving accurate information where it can be found, improving a tool other people use, making a space easier to enter, or correcting a mistake before it is passed along. There is a kind of care that does not require an audience.
 
-The absence of thanks does not make care worthless. Neither does it make every well-intended action wise. We owe strangers attention to the likely effects of what we leave behind, not merely confidence in our motives.
+Imagine, too, the ordinary pleasure of someone finding the note useful and adding a clearer reference for the next reader. Nobody knows who began the exchange. Its value lies in a small piece of knowledge becoming easier to share.
+
+We can leave useful things behind with care and without demanding thanks. Our responsibility is to consider their likely effects, to correct them when they mislead, and to welcome the possibility that someone else will improve them.
 
 ## The stranger is not an imagined version of ourselves
 
@@ -62,7 +64,7 @@ Good intentions do not give us the right to decide for people we have not consul
 
 When possible, we should listen to those affected, involve them in decisions and remain willing to revise our plans. When direct consultation is impossible—because the people live far away, have not yet been born, or cannot speak for themselves—we should be more modest, not more certain. We can draw on reliable evidence, protect room for future choices and avoid making irreversible decisions merely because those who bear the cost cannot object today.
 
-This is not an argument for saving the whole world in a single gesture. It is an argument against mistaking distance for absence.
+Our attention can begin with one consequence we can reasonably understand. Distance does not make the person affected disappear.
 
 ## The people who have not arrived
 
@@ -88,7 +90,7 @@ We can begin more simply.
 
 Where our work affects others, we can try to do it carefully. Where we possess useful knowledge, we can share it accurately and without claiming more certainty than we have. Where a rule excludes people unnecessarily, we can ask whether it should change. Where we have the capacity to support an accountable public or community effort, we can consider doing so. Where we are unable to help, we need not manufacture guilt to prove that we care.
 
-Not every useful contribution costs money. Not every contribution needs to be public. And a person who is exhausted, unwell, unsafe or struggling to meet basic needs has not failed because their attention must turn inward for a time.
+Useful contributions take many forms: reliable work, quiet corrections, time, advocacy, or resources when we can safely spare them. They need not be public. And a person who is exhausted, unwell, unsafe or struggling to meet basic needs has not failed because their attention must turn inward for a time.
 
 The measure is not how many invisible lives we can claim to have improved. That would turn people we have never met into evidence for our own virtue. We can be responsible for the care of an action without being entitled to a satisfying story about its effects.
 

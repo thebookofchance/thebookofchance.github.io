@@ -1,6 +1,6 @@
 # H Publications — Release Roadmap and Progress Register
 
-**Updated:** 22 November 2026 · v0.13  
+**Updated:** 22 November 2026 · v0.14 (targeted editorial correction pass; no human reader pilot)  
 **Sequence rule:** Develop and review **one publication at a time**. After completing the recommended literature programme, plan and launch the Fellowship's YouTube/video channel. No concurrent video production is assumed.
 
 ## Working order
@@ -20,7 +20,7 @@ The initial programme's *Letters from H* collection is intended to remain open t
 
 ## Current source of truth
 
-- Foundational text: `source/manuscript.md` (v0.12 source, no changes).
+- Foundational text: `source/manuscript.md` (revised v0.14 editorial candidate).
 - House standard: `docs/Publications_Standard_v1.0_RC1.md`.
 - Journal-specific standard: `docs/Journal_Series_Editorial_and_Print_Plan.md`.
 - Canonical letters: `source/letters/001-on-the-people-we-never-meet.md`, `source/letters/002-when-good-choices-lead-to-bad-outcomes.md` and `source/letters/003-what-do-we-owe-to-strangers.md`.
@@ -64,3 +64,8 @@ The release expands the Letters catalogue and Library, features Letter 002 on th
 The essay recognises the existing disputes about special obligations, beneficence and demandingness, with specific further-reading references, and avoids portraying the Fellowship as accepting donations or running hardship services. It is an **editorial candidate**, not a claim of founder sign-off.
 
 The archive now lists three Letters. The homepage and Library link to issue 003 while issues 001 and 002 remain intact. The generator for issue 002 was also adjusted to avoid automatic regeneration of its already existing PDF/EPUB during ordinary website rebuilds. The next recommended text is **The Five Values**; YouTube remains deferred. See `docs/Letter_003_Editorial_Review_RC1.md` and `docs/Letter_003_QA_Report.json`.
+
+
+## v0.14 — Targeted simulated-review corrections
+
+Following the source-grounded simulated review, amended the foundational manuscript, all three Letters and the journal privacy/pause language. The Letter candidates are now RC3/RC2/RC2 respectively; the book retains its title and artwork but has a revised editorial text. No independent human reader testing is claimed. Completion of a technical audit is not proof of reader comprehension, accessibility or an H-approved final release. See `docs/Editorial_Corrections_v0.14.md` for passage-by-passage rationale and residual gates.

@@ -140,7 +140,7 @@ def single_worksheet(path,key):
     for i,(q,hint) in enumerate(qs,1):
         top=question(c,i,q,hint,m,top,w-2*m,60,f'{key}_q{i}',fontsize=12)
     c.setFillColor(MUTED);c.setFont('BookSans',7.5)
-    c.drawString(m,56,'Free to use · Private by default · Save a copy in your PDF reader to keep your writing.')
+    c.drawString(m,56,'Save privately; on shared devices avoid sensitive details. You may skip questions.')
     c.save()
 
 def intro_journal(c,w,h):
@@ -151,7 +151,7 @@ def intro_journal(c,w,h):
     p=['This journal is not a record of achievement. It is a place to notice what you did not choose, where you could act, and whose lives meet your own.',
        'Use any practice in any order. You can leave questions unanswered. Some days a few words are enough.',
        'The fillable edition contains editable text boxes. Open it in a PDF reader that supports forms and save a new copy when you have finished. You can also print the pages and write by hand.',
-       'Your writing belongs to you. No entries are submitted to the Fellowship. Do not include other people\'s private details without permission.']
+       'Your writing belongs to you; nothing is sent to the Fellowship. Save in a private location, especially on shared devices. Avoid others\' private details without permission.']
     y=h-158
     for item in p:y=line_text(c,item,x,y,w-98,'BookSans',9.2,15,INK)-17
     c.setFillColor(BLUE);c.setFont('BookSansBold',8);c.drawString(x,y-5,'THREE RETURNING PRACTICES')

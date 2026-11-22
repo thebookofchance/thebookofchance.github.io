@@ -1,0 +1,96 @@
+{
+  "pages": 37,
+  "links_checked": 1021,
+  "broken_links": [],
+  "pdfs": {
+    "The_Book_of_Chance_Light_PDF_Reader_Proof.pdf": {
+      "pages": 114,
+      "bytes": 6149949
+    },
+    "The_Book_of_Chance_Dark_PDF_Reader_Proof.pdf": {
+      "pages": 114,
+      "bytes": 6241858
+    },
+    "Letters_from_H_01_On_the_People_We_Never_Meet.pdf": {
+      "pages": 11,
+      "bytes": 48551
+    },
+    "Letters_from_H_02_When_Good_Choices_Lead_to_Bad_Outcomes.pdf": {
+      "pages": 11,
+      "bytes": 47799
+    },
+    "Letters_from_H_03_What_Do_We_Owe_to_Strangers.pdf": {
+      "pages": 12,
+      "bytes": 46778
+    }
+  },
+  "epubs": {
+    "The_Book_of_Chance_Light.epub": {
+      "bytes": 5688987,
+      "archive_items": 40
+    },
+    "The_Book_of_Chance_Dark.epub": {
+      "bytes": 5673971,
+      "archive_items": 40
+    },
+    "Letters_from_H_01_On_the_People_We_Never_Meet.epub": {
+      "bytes": 138211,
+      "archive_items": 11
+    },
+    "Letters_from_H_02_When_Good_Choices_Lead_to_Bad_Outcomes.epub": {
+      "bytes": 123347,
+      "archive_items": 11
+    },
+    "Letters_from_H_03_What_Do_We_Owe_to_Strangers.epub": {
+      "bytes": 191891,
+      "archive_items": 11
+    }
+  },
+  "baseline_unchanged": {
+    "assets/logo-master.svg": true,
+    "assets/brand-mark.svg": true,
+    "assets/forms-config.js": true,
+    "source/covers/Book_of_Chance_Light_Cover.png": true,
+    "source/covers/Book_of_Chance_Dark_Cover.png": true
+  },
+  "website_version": "0.14",
+  "human_reader_testing": "not performed",
+  "editorial_author_approval": "pending",
+  "journals": {
+    "The_Reflection_Journal_Fillable.pdf": {
+      "pages": 48,
+      "fields": 116,
+      "sample_entry_persisted": true
+    },
+    "The_Reflection_Journal_Dark_Fillable.pdf": {
+      "pages": 48,
+      "fields": 116,
+      "sample_entry_persisted": true
+    },
+    "The_Daily_Reflection_Journal_Fillable.pdf": {
+      "pages": 40,
+      "fields": 116,
+      "sample_entry_persisted": true
+    },
+    "The_Possibility_Journal_Fillable.pdf": {
+      "pages": 40,
+      "fields": 110,
+      "sample_entry_persisted": true
+    },
+    "The_Reflection_of_Chance_Fillable.pdf": {
+      "pages": 1,
+      "fields": 6,
+      "sample_entry_persisted": true
+    },
+    "The_Act_of_Possibility_Fillable.pdf": {
+      "pages": 1,
+      "fields": 6,
+      "sample_entry_persisted": true
+    },
+    "A_Week_of_Possibilities_Fillable.pdf": {
+      "pages": 1,
+      "fields": 6,
+      "sample_entry_persisted": true
+    }
+  }
+}

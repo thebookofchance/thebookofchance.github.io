@@ -1,7 +1,7 @@
 {
-  "website_version": "0.13",
+  "website_version": "0.14",
   "source": "Book_of_Chance_Illustrated_Manuscript_v0.12.md",
-  "source_sha256": "25331f87d8f27f9f1c0638d22239ea11756479c3ce3d22cf52adc52a9f050538",
+  "source_sha256": "997a36f2aa8265129ea7ec8638a95783065c8fc7649f5505023a243f569384e9",
   "chapters": 24,
   "readings": 12,
   "illustration_placements": 6,
@@ -40,5 +40,12 @@
   "letters_publication": "BOC-LFH-001",
   "publication_standard": "docs/Publications_Standard_v1.0_RC1.md",
   "latest_letter_id": "BOC-LFH-003",
-  "latest_letter_edition": "1.0-RC1"
+  "latest_letter_edition": "1.0-RC2",
+  "correction_status": "Targeted editorial revisions; no independent human reader test",
+  "book_editorial_source": "source/manuscript.md",
+  "letter_editions": [
+    "1.0-RC3",
+    "1.0-RC2",
+    "1.0-RC2"
+  ]
 }

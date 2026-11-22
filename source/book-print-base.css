@@ -1,0 +1,64 @@
+
+@page {
+ size: 5.5in 8.5in;
+ margin-top: .79in; margin-bottom: .78in;
+ margin-left: .79in; margin-right: .67in;
+ @top-right { content: string(chapter); font-family: "Lato", sans-serif; font-size:7.5pt; letter-spacing:.08em; color: #858585; text-transform: uppercase; }
+ @bottom-right { content: counter(page); font-family:"Lato",sans-serif; font-size:8pt; color:#777777; }
+}
+@page :left {
+ margin-left:.67in; margin-right:.79in;
+ @top-right { content:none; }
+ @top-left { content: string(chapter); font-family:"Lato",sans-serif; font-size:7.5pt; letter-spacing:.07em; color:#858585; text-transform: uppercase; }
+ @bottom-right {content:none;}
+ @bottom-left { content:counter(page);font-family:"Lato",sans-serif;font-size:8pt;color:#777777; }
+}
+@page title { margin:0; @top-left{content:none;} @top-right{content:none;} @bottom-right{content:none;} @bottom-left{content:none;} }
+@page part { margin:0; @top-left{content:none;} @top-right{content:none;} @bottom-right{content:none;} @bottom-left{content:none;} }
+@page :blank { @top-left{content:none;} @top-right{content:none;} @bottom-left{content:none;} @bottom-right{content:none;} }
+html {font-family:"Gentium Book Plus", "Gentium", serif; color:#292a2c; font-size:10.7pt; }
+body {margin:0;}
+p {text-align:justify; line-height:1.43; margin:0 0 .72em; hyphens:auto; orphans:3;widows:3;}
+a {color:inherit;text-decoration:none;}
+strong {font-weight:700;}
+em {font-style:italic;}
+h1,h2,h3 {font-family:"EB Garamond",serif; color:#27282a; font-weight:500; hyphens:none;}
+h2.front-heading, h2.appendix-heading, h2.chapter-heading {font-size:26pt;line-height:1.12; margin:0 0 24pt;break-before:page; break-after:avoid; string-set:chapter content(text);}
+h2.chapter-heading {padding-top:.66in; margin-bottom:22pt;}
+h2.chapter-heading::before {content:"THE BOOK OF CHANCE";display:block; font-family:Lato,sans-serif; color:#6a6b6c; font-size:7pt;letter-spacing:.18em; font-weight:600;margin-bottom:12pt;}
+h2.front-heading{padding-top:.3in;}
+h2.appendix-heading{padding-top:.25in;}
+h3.section-heading{font-family:"EB Garamond",serif;font-size:15pt; line-height:1.2;margin:22pt 0 10pt;break-after:avoid;}
+h3.parable-heading {font-style:italic; font-size:16pt;}
+h3.reflection-heading {font-style:italic;color:#46484b;border-top:.5pt solid #b9bbbd;padding-top:10pt;margin-top:24pt;}
+ul,ol{padding-left:1.2em;margin:.35em 0 .7em;} li{line-height:1.39;margin:0 0 .32em;orphans:2;widows:2;}
+li::marker{color:#5b6063;}
+blockquote {margin:1em 0 1em 1em;padding-left:.75em;border-left:.8pt solid #a7abae; font-style:italic;}
+blockquote p{margin-bottom:.45em;}
+.prose-divider {display:none;}
+h1.part-heading, h1.resources-heading {page:part; break-before:right; break-after:page; padding:2.65in .7in 0; margin:0; box-sizing:border-box;min-height:8.45in;text-align:center;font-size:32pt;line-height:1.14;letter-spacing:.005em;}
+h1.part-heading:after,h1.resources-heading:after{content:"";display:block;width:1in;height:1pt;background:#7c8287;margin:25pt auto;}
+.title-page, .verso {page:title;break-after:page; height:8.5in;box-sizing:border-box;}
+.title-page {position:relative; padding:2in .8in .8in; text-align:center;}
+.top-kicker {font-family:Lato,sans-serif; font-size:8.5pt; letter-spacing:.25em; color:#6b757c;}
+.book-title {font-family:"EB Garamond",serif; font-size:38pt;line-height:1.02; font-weight:500;letter-spacing:.012em;margin:23pt 0 10pt;}
+.book-subtitle {font-family:"EB Garamond",serif; font-size:15pt;font-style:italic;line-height:1.3;max-width:4in;margin:0 auto;}
+.rule {width:1in;border-top:1pt solid #657584;margin:31pt auto;}
+.title-author {font-family:"EB Garamond",serif;font-size:21pt;margin-top:50pt;letter-spacing:.06em;}
+.proof-stamp {position:absolute;bottom:1in;left:0;right:0;font:8pt Lato,sans-serif;color:#7a8085;letter-spacing:.09em;}
+.verso {padding:2.2in .85in 0;}
+.verso p {text-align:left;font:9pt/1.65 Lato,sans-serif;color:#5b5f61;margin-bottom:1em;}
+.verso h2 {font:11pt Lato,sans-serif;text-transform:uppercase;letter-spacing:.15em;margin-bottom:20pt;}
+.toc-page{break-after:page; padding-top:.42in;}
+.toc-page h2{font-family:"EB Garamond",serif;font-size:29pt;margin:0 0 25pt;}
+.toc-entry {margin:0 0 8pt;line-height:1.1;text-align:left;}
+.toc-entry a {font-family:"EB Garamond",serif;font-size:12pt;display:block;text-decoration:none;}
+.toc-entry a::after {content: leader('.') target-counter(attr(href), page);font-family:"Lato",sans-serif;font-size:8pt;color:#737779;}
+.toc-part {margin:15pt 0 8pt;}
+.toc-part a {font-size:12.7pt;font-style:italic;}
+.toc-chapter {padding-left:.16in;}
+.toc-appendix {padding-left:.16in;}
+.toc-front {margin-bottom:10pt;}
+body > p {margin-top:0;}
+/* Keep web addresses readable in book reference section. */
+a[href^="http"]{color:#424b53;overflow-wrap:anywhere;word-break:break-word;}

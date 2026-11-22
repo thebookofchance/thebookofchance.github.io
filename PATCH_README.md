@@ -1,25 +1,29 @@
-# Website v0.13 — Update-only patch
+# The Book of Chance — Website v0.14 (update-only patch)
 
-**Purpose:** Add *Letters from H — No. 03: What Do We Owe to Strangers?* to the existing website. Apply after website v0.12.
+This update addresses issues raised in the simulated cross-publication reader stress test.
+It includes only files changed or added since the v0.13 website; it is not a fresh install.
 
-## Installation
+## Install
 
-1. Extract the v0.13 update ZIP.
-2. Upload its **contents** to the root of your existing `thebookofchance.github.io` GitHub Pages repository, preserving folder paths.
-3. Replace matching files only. **Do not delete** existing pages and publication files.
-4. Do not overwrite `assets/forms-config.js`; it is intentionally **excluded** from this package.
-5. Confirm `/letters/`, `/letters/what-do-we-owe-to-strangers/` and `/downloads/#letters-from-h` work, and test both PDF/EPUB downloads.
-6. Check that Letter 001 and Letter 002 remain downloadable and that the two interest forms still work.
+1. Your GitHub repository should already contain v0.13.
+2. Extract the ZIP and upload its contents into the **root** of the existing repository. Preserve folder paths.
+3. Replace matching files. Do **not** delete unrelated files.
+4. Verify the updated book and Letters online and download one PDF and one EPUB.
+5. Confirm your existing forms still work, as this patch does not include form credentials.
 
-## Contents
+## Edited content
 
-- Complete new Letter 003 Markdown, PDF, EPUB and issue cover assets (SVG, PNG and WebP).
-- New online reading route, updates to the Letters archive, homepage, Library, sitemap and catalogue.
-- Issue-specific publishing script, an edition-safe site integration and QA/editorial documents.
-- Updated development log and roadmap, with **The Five Values** next.
+- `source/manuscript.md` plus matching Book of Chance Light and Dark PDFs/EPUBs.
+- The three Letters' canonical Markdown, online pages, PDF/EPUB exports and catalogue statuses.
+- Four journal PDFs and three A4 sheets, focusing on privacy, pausing and shared-device instructions.
+- Reader and Library copy, search index, relevant generation scripts, roadmap and editorial change log.
 
-## Boundaries
+## Preserved
 
-The release changes no existing book or journal publication, previous Letter PDF/EPUB, approved logo or working interest forms. It creates no donation service, active membership or YouTube channel.
+The official logo, original cover artwork, illustrations, membership/fundraising status and configured Formspree endpoints are not changed.
 
-**Status:** Editorial candidate 1.0-RC1. The user's authorial review and live site verification remain pending.
+## Limitations
+
+No human reader test was performed. The PDF forms passed programmatic save/reopen tests only, not multi-device or screen-reader certification. This is an editorial revision, not a claimed independently approved or fully accessibility-tested release.
+
+See `docs/Editorial_Corrections_v0.14.md` for the detailed decisions, and `docs/Editorial_Corrections_v0.14_QA.json` for the machine-readable test results.

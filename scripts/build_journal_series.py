@@ -151,10 +151,10 @@ class Journal:
         txt(c,49,552,'A NOTE TO THE READER','NB',8.2,BLUE)
         txt(c,49,507,'A place to return to.','S',26)
         y=466
-        chunks=[intro,'There is no score to reach, no correct feeling, and no obligation to write every day. You may leave a question unanswered or close the journal whenever you wish.',
-          'The form fields belong to your PDF on your device. Open a downloaded copy in a compatible reader and save your changes. The website does not receive your words.']
+        chunks=[intro,'A page may be left blank. Pause, skip an entry, or close the journal whenever reflection stops being helpful. There is no score and no required daily practice.',
+          'Your entries are stored in the PDF you save, not sent to this website. Save in a private folder; on shared or public devices, avoid sensitive details and delete downloaded or temporary copies when finished.']
         if how:chunks.append(how)
-        chunks.append('Keep your own entries private. Do not identify other people without permission. If reflection becomes distressing or repetitive, pause and seek support if you need it.')
+        chunks.append('Check that your PDF reader can save a short test entry. Printed pages and shared backups can also reveal private words. If reflection becomes distressing, take a break and seek support if needed.')
         for block in chunks:
             y=wrap(c,50,y,block,330,'N',10,16,INK)-25
         self.end()
@@ -224,7 +224,9 @@ class Journal:
             txt(c,51,553,'ENTRY '+str(entryno).zfill(2)+'  /  '+str(side)+' OF 2','NB',8,BLUE)
             txt(c,50,519,entryname,'S',21)
             txt(c,50,495,'DATE OR MOMENT  ·  OPTIONAL','NB',7.1,GREY)
-            if side==1:self._field(f'{key}_{entryno}_date',240,488,137,21)
+            if side==1:
+                self._field(f'{key}_{entryno}_date',240,488,137,21)
+                if entryno==1:txt(c,51,469,'SKIP ANY QUESTION  ·  PAUSE WHEN YOU WISH','N',6.8,GREY)
             else:
                 stroke(c,FAINT);c.line(240,488,377,488)
             y=451

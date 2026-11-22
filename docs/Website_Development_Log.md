@@ -232,3 +232,10 @@ It also introduces **Chance Campaigns**, a deferred idea for externally vetted c
 - Corrected the previous issue integration to only rebuild its PDF/EPUB when absent, preventing inadvertent modifications during routine site regeneration.
 - Source-to-HTML/PDF/EPUB and static-link checks passed; PDF pages visually inspected.
 - Live website/mobile rendering, real e-reader testing, certified PDF accessibility and H sign-off remain pending.
+
+
+## v0.14 — Cross-publication editorial corrections · 22 November 2026
+
+Updated the book's explanation of fundamental chance in Reading IV; refined all three Letters for concrete variety and stronger positive claims; removed the specific Fellowship fundraising aside from Letter 03; improved visible permission to skip journal questions and shared-device privacy warnings. Rebuilt book Light/Dark PDF and EPUB, all Letter PDF/EPUB assets, journal PDF editions and three A4 worksheets. The accepted branding and Formspree configuration are unchanged.
+
+Local QA: 37 pages, 1,021 local reference checks; EPUB integrity; 7 fillable PDF checks and sample save/reopen; selected page raster previews. **No real-reader pilot was run; founder approval and live publication checks remain outstanding.** Full details: `docs/Editorial_Corrections_v0.14.md` and `docs/Editorial_Corrections_v0.14_QA.json`.
