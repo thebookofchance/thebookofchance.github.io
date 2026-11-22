@@ -1,0 +1,41 @@
+{
+  "version": "v0.16",
+  "result": "local structural validation PASS; full deployment not verified",
+  "generated_at": "2026-11-22",
+  "source_version": "Conversations of Chance manuscript v0.1",
+  "source_word_count": 9219,
+  "pdf_pages": 48,
+  "epub_integrity": "passed",
+  "html_conversation_headings": 12,
+  "original_book_links": 12,
+  "toc_links_with_matching_targets": 30,
+  "library_count": 6,
+  "home_feature": "present",
+  "library_feature": "present",
+  "css_inlined_chromium_desktop_1440px": {
+    "pass": true,
+    "horizontal_overflow": false
+  },
+  "css_inlined_chromium_mobile_390px": {
+    "pass": true,
+    "horizontal_overflow": false
+  },
+  "live_gitHub_pages_test": "not run",
+  "full_existing_website_Javascript": "not exercised; supplied v0.15 source was update-only and lacks prior site.js",
+  "real_deployment_forms": "not exercised; assets/forms-config.js is intentionally unmodified",
+  "metadata": {
+    "editorial_candidate": true,
+    "noindex": true,
+    "in_sitemap": false
+  },
+  "assets_preserved": "Earlier books, letter files, images, accepted emblem and forms are not included or modified in the new patch",
+  "content_signoff": "H approval and independent reader feedback outstanding",
+  "epub_e_reader_testing": "not performed",
+  "mobile_chromium_mode": "inlined CSS render because local browser navigation to localhost is blocked",
+  "file_hashes_sha256": {
+    "source/conversations/conversations-of-chance.md": "4cd8646260826aa1d2e5da547eee47dd0cc6f04918cc29444e5097ffab413c3c",
+    "files/conversations/Conversations_of_Chance_Editorial_Proof_v0.1.pdf": "4c000e6fe63c001538bf3114b9384889ba5d8b25c685091acd6a8eeccfd00a2e",
+    "files/conversations/Conversations_of_Chance_Editorial_Proof_v0.1.epub": "270eca2d5344d801e9c60144910a9bc4815a12398e730cb453da18a7251f3323"
+  },
+  "checks": "TOC targets, title and metadata, IDs, edition status, catalogue, PDF/EPUB bytes, link resolution, Python syntax, CSS and 2 responsive viewports"
+}

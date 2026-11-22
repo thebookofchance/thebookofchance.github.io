@@ -250,3 +250,14 @@ Local QA: 37 pages, 1,021 local reference checks; EPUB integrity; 7 fillable PDF
 - Expanded the release/catalogue metadata, sitemap, roadmap, and editorial documentation. Reproducible generators were added.
 - Kept all existing books, Letters, reflection journals and working form configuration unchanged. See `docs/Five_Values_Editorial_Review_RC1.md` and `docs/Five_Values_QA_v0.15.json`.
 - Residual gates: founder approval, true deployed website checks, ebook-reader compatibility and screen-reader accessibility. No human reader study occurred.
+
+
+## v0.16 — Conversations of Chance integrated candidate · 22 November 2026
+
+- Used the v0.15 update-only archive as the starting point rather than designing a competing site. The original stand-alone v0.16 reader page was replaced with an integrated page using the approved site navigation, theme system, editorial layout and brand mark.
+- Added a complete twelve-session reader at `publications/conversations-of-chance/`, source in `source/conversations/`, PDF/EPUB under `files/conversations/`, and precise links back to corresponding foundational readings.
+- Added the new title to homepage, Library and the structured catalogue, updated library count 05 → 06, added CSS scoped to conversations and versioned website manifest.
+- Added `scripts/v016_conversations.py` and invocation from `scripts/build_site.py` for repeatable site integration.
+- Kept page labelled editorial candidate and `noindex`; intentionally deferred its sitemap entry pending H's final editorial sign-off.
+- Preserved prior asset paths, Formspree controls, other publication sources, member and donation status, and the site's existing theme/nav controls. The supplied v0.15 patch does not contain prior full-repository assets or application JavaScript.
+- Local checks: 12 conversation headings with 12 matched original-readings links; 48-page PDF and valid EPUB; HTML/CSS inlined Chromium render at 1440px and 390px found no horizontal overflow. Browser execution against localhost was blocked by the environment, so full live-site JS integration and GitHub Pages deployment remain untested.

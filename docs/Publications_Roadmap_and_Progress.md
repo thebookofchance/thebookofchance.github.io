@@ -1,6 +1,6 @@
 # H Publications — Release Roadmap and Progress Register
 
-**Updated:** 22 November 2026 · v0.15 (first illustrated companion booklet; no human reader pilot)  
+**Updated:** 22 November 2026 · v0.16 (Conversations of Chance editorial candidate integrated; no human reader pilot)  
 **Sequence rule:** Develop and review **one publication at a time**. After completing the recommended literature programme, plan and launch the Fellowship's YouTube/video channel. No concurrent video production is assumed.
 
 ## Working order
@@ -11,8 +11,8 @@
 | 1.2 | **Letters from H · No. 02 — When Good Choices Lead to Bad Outcomes** | Draft complete; 1.0-RC1 PDF, EPUB and web reading prepared; author/live approval pending | Text and design approved; live downloads verified |
 | 1.3 | **Letters from H · No. 03 — What Do We Owe to Strangers?** | Full 1.0-RC1 editorial candidate prepared; HTML/PDF/EPUB complete; H approval and live verification pending | Review for fairness and publishable voice; check deployed downloads |
 | 2 | **The Five Values** | **Editorial candidate 1.0-RC1 complete:** 3,500-word source, 17-page illustrated PDF, EPUB, full HTML reading page | H approves wording and visual design; deployed PDF/EPUB and page verified |
-| 3 | **Conversations of Chance** | **Next:** Proposed guide to twelve optional facilitated discussion sessions | The Five Values published; safeguarding and facilitation boundaries reviewed |
-| 4 | **The Little Book of Possibilities** | Proposed 40–60-page accessible companion | Discussion guide published; original contribution distinguished from main book |
+| 3 | **Conversations of Chance** | **Editorial candidate v0.1 prepared:** twelve discussions, 48-page PDF proof, EPUB and full HTML reader; H approval and live checks pending | H reviews wording, safeguarding boundaries and editorial quality; deployed formats verified |
+| 4 | **The Little Book of Possibilities** | **Next to draft:** proposed 40–60-page accessible companion | Discussion guide reviewed; original contribution distinguished from main book |
 | 5 | **The Parables of Chance** | Proposed illustrated fiction collection, approx. 60–90 pages | Other publications complete; each story labelled as fiction; rights reviewed |
 | 6 | **Fellowship YouTube / video channel** | **Deferred by owner** until above recommended publications are finished | Library programme complete; then plan content format, voice and distribution |
 
@@ -76,4 +76,12 @@ Following the source-grounded simulated review, amended the foundational manuscr
 
 Production: `scripts/build_five_values.py` writes `files/booklets/The_Five_Values.pdf`, `files/booklets/The_Five_Values.epub` and web assets. `scripts/v015_five_values.py` provides website integration and is called after the three Letters. This new booklet is a full web reading page, PDF and EPUB, and a featured Library/Home publication. It is an **editorial candidate**, pending H approval and a live website / actual e-reader check.
 
-**Next after H approves the booklet:** *Conversations of Chance*. The Little Book of Possibilities and The Parables of Chance follow before work begins on YouTube/video, as agreed.
+**Next editorial manuscript to develop:** *The Little Book of Possibilities*, after review of the conversation guide. *The Parables of Chance* follows before YouTube/video development. H approvals and live checks remain separate publication gates.
+
+## v0.16 — Conversations of Chance integrated discussion companion
+
+**BOC-CNV-001 — Conversations of Chance: Twelve Discussions for an Uncertain Life** is a complete editorial candidate (v0.1, 22 November 2026) accompanying the twelve foundational readings. Each session includes an opening consideration, an explicitly invented dilemma, questions, voluntary private reflection, an Act of Possibility and a host note. The guide does not assert active Fellowship group services or require agreement, personal disclosure or financial participation.
+
+Website: `publications/conversations-of-chance/` with site-wide header/footer and responsive typography. Formats: `files/conversations/Conversations_of_Chance_Editorial_Proof_v0.1.pdf` (48-page reader proof) and `.epub`; editable source at `source/conversations/conversations-of-chance.md`. The homepage and Library point to this guide, and its 12 sections link to their relevant foundational reading pages.
+
+**Outstanding:** founder editorial sign-off, reader testing with diverse backgrounds, live GitHub Pages link and interaction checks, device-based PDF/EPUB checks, publication metadata and final approval to index. This candidate is currently `noindex`, with its sitemap entry deferred. Creating this candidate before formal approval of *The Five Values* reflects the owner's direction to proceed through the planned literature, **not** retrospective approval of earlier titles. The subsequent planned title is *The Little Book of Possibilities*.

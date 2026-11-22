@@ -111,3 +111,8 @@ The patch preserves the approved logo and live Formspree configuration. The owne
 The canonical source is `source/booklets/the-five-values.md`. Its 17-page PDF reader edition, EPUB and original illustrations are available under `files/booklets/` and `assets/booklets/`. The full text is on `/booklets/the-five-values/` with clearly clickable value navigation and direct download buttons.
 
 This is **BOC-BKL-001 · 1.0-RC1** and awaits founder approval and live device review. The booklet's digital PDF is not a commercial print-ready interior. For editorial details see `docs/Five_Values_Editorial_Review_RC1.md`. YouTube/video development remains deferred until the literature plan is completed.
+
+
+## Conversations of Chance · v0.16 update
+
+The newly prepared **Conversations of Chance** discussion companion is presented as an editorial candidate, not a final H-approved publication. Its full HTML reader is at `publications/conversations-of-chance/`, with matching PDF and EPUB under `files/conversations/`; it is linked on the home page and in the Library. Rebuilds incorporate this page through `scripts/v016_conversations.py` after `v015_five_values.py`. The canonical Markdown manuscript is `source/conversations/conversations-of-chance.md`. The reader uses the established logo/theme system and is marked `noindex` until approved. No changes to the existing forms, paid services, member access, book manuscripts, journals or older publications are required.

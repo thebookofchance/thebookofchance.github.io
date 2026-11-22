@@ -123,5 +123,23 @@
       "pdf": "files/booklets/The_Five_Values.pdf",
       "epub": "files/booklets/The_Five_Values.epub"
     }
+  ],
+  "conversations": [
+    {
+      "id": "BOC-CNV-001",
+      "title": "Conversations of Chance",
+      "subtitle": "Twelve Discussions for an Uncertain Life",
+      "author": "H",
+      "series": "The Book of Chance — Companions",
+      "edition": "v0.1",
+      "status": "editorial candidate; founder approval and live testing outstanding",
+      "language": "en-NZ",
+      "date_prepared": "2026-11-22",
+      "source": "source/conversations/conversations-of-chance.md",
+      "url": "publications/conversations-of-chance/",
+      "pdf": "files/conversations/Conversations_of_Chance_Editorial_Proof_v0.1.pdf",
+      "epub": "files/conversations/Conversations_of_Chance_Editorial_Proof_v0.1.epub",
+      "sessions": 12
+    }
   ]
 }
