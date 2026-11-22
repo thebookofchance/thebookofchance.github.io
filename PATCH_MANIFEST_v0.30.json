@@ -1,0 +1,220 @@
+{
+  "version": "v0.30",
+  "baseline": "v0.28",
+  "type": "update-only",
+  "purpose": "Production corrections ahead of final literature approvals",
+  "source_manuscripts_changed": false,
+  "release_status_changed": false,
+  "files": [
+    {
+      "path": "PATCH_README.md",
+      "bytes": 1324,
+      "sha256": "6c087f8d996288b6e3e50c6eb12efaf9ff139a866be91259f92277e2648fad9c"
+    },
+    {
+      "path": "assets/covers/light-cover.jpg",
+      "bytes": 242531,
+      "sha256": "4ba98042987393449245481e35d1e8345f8f55bcc8a2eca8a0ad399e323fb430"
+    },
+    {
+      "path": "assets/covers/light-cover.webp",
+      "bytes": 156658,
+      "sha256": "6de28e3ac146314a654c2b4274ce31bd8eaac6d8cb8a7c1743448d8bf7160b0f"
+    },
+    {
+      "path": "docs/Website_v0.30_Production_Corrections_and_QA.md",
+      "bytes": 5671,
+      "sha256": "0f3aad1cdffb091f4a39a4644658f8de962efe6bef8285d76751acefebcf450f"
+    },
+    {
+      "path": "docs/Website_v0.30_Production_Verification.json",
+      "bytes": 8263,
+      "sha256": "304e187b2611a4afa47f585747d931f3ad4c5cebb2bcb85073c566ff21e51c58"
+    },
+    {
+      "path": "downloads/index.html",
+      "bytes": 30809,
+      "sha256": "f752f5cbfde5d7999e79e50519c397cb03664e318552910c2ffaf9177959fbf9"
+    },
+    {
+      "path": "files/The_Book_of_Chance_Dark_PDF_Reader_Proof.pdf",
+      "bytes": 6774139,
+      "sha256": "faeb2a63de654b05b4fd2bd8f6208fca50fbda87a54674874e485d0e18c5ca69"
+    },
+    {
+      "path": "files/The_Book_of_Chance_Light.epub",
+      "bytes": 6226448,
+      "sha256": "a21904ecd5d9c5fa149b3ada17ea79b6512d974e4dbbf73d010e90bca7c21fdf"
+    },
+    {
+      "path": "files/The_Book_of_Chance_Light_PDF_Reader_Proof.pdf",
+      "bytes": 7320693,
+      "sha256": "5c75e1c938c21b938044c66f8a4e28e8945348d5a7bb09fad1a5bbab75b4c770"
+    },
+    {
+      "path": "files/booklets/The_Five_Values.pdf",
+      "bytes": 2303498,
+      "sha256": "7e9edb35956edc838c17865784afc4b1c32eaa87aec1da1a16875ad795c4d348"
+    },
+    {
+      "path": "files/booklets/The_Little_Book_of_Possibilities_Editorial_Proof_v0.2.pdf",
+      "bytes": 2255687,
+      "sha256": "47eec935046b32af7d7dd13fe74cb1de723d1ea839d38c000f243c4f969fb69b"
+    },
+    {
+      "path": "files/conversations/Conversations_of_Chance_Editorial_Proof_v0.1.pdf",
+      "bytes": 2010559,
+      "sha256": "14ddf1b9fd21d441b6214cbbd7585f8e6dccf81cdfe7e814ce52c92261fd4289"
+    },
+    {
+      "path": "files/guides/A_Beginners_Guide_to_Confluent_Humanism_Editorial_Proof_v0.2.pdf",
+      "bytes": 2053333,
+      "sha256": "e60fafcae3becec57bf5859495b54304def07638ae35e977e5063ecbadbe3973"
+    },
+    {
+      "path": "files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.pdf",
+      "bytes": 1664483,
+      "sha256": "2a4028bcdf1ad90fd1bd046ac63e777f66fe05678e46feb416a90ee0b7cd3320"
+    },
+    {
+      "path": "files/letters/Letters_from_H_02_When_Good_Choices_Lead_to_Bad_Outcomes.pdf",
+      "bytes": 1594776,
+      "sha256": "41593c4b074be722ff9304a9c442a4a65a64e049c66f79c9923f905ed2c56e0d"
+    },
+    {
+      "path": "files/letters/Letters_from_H_03_What_Do_We_Owe_to_Strangers.pdf",
+      "bytes": 1655154,
+      "sha256": "a649eea04d63e0ed714705385a15b1f0cc83d05dbd16d59546c6a6f58fafdd09"
+    },
+    {
+      "path": "files/parables/The_Parables_of_Chance_Editorial_Proof_v0.2.1.pdf",
+      "bytes": 2401800,
+      "sha256": "5794f68fb5fe1e9e8e9b21d284d259d3e620306dd67880f9e71a9910fe2050e6"
+    },
+    {
+      "path": "files/resources/Questions_About_Chance_FAQ_Editorial_Proof_v0.3.pdf",
+      "bytes": 2002763,
+      "sha256": "f86b7d4c7e31f1f2f1d5af5b379bc819b1f21cdde7975d92283389eb11edb159"
+    },
+    {
+      "path": "index.html",
+      "bytes": 15573,
+      "sha256": "6432649f52e616085a3428820e6c56b772658589db57172d12adb2794887a59f"
+    },
+    {
+      "path": "letters/index.html",
+      "bytes": 6705,
+      "sha256": "b33be62baf21e5e3788d04addc2ca940ca34a940a091890df226f8d1b5c44456"
+    },
+    {
+      "path": "questions/index.html",
+      "bytes": 56799,
+      "sha256": "cf40c25a2fd20672b18da903b310d6b7ca52a2ce70d7dd6e5458bc6a219d9965"
+    },
+    {
+      "path": "scripts/approved_cover_assets.py",
+      "bytes": 537,
+      "sha256": "fcc884ac68d07a7f850997efc83d03c7134509e27baee3dee717f5e32875e0d6"
+    },
+    {
+      "path": "scripts/build_beginner_guide.py",
+      "bytes": 6925,
+      "sha256": "255dc79cf7fe34084f18fd6269fb6ae9d64c167f0d1c14775ee68649bbff9a2e"
+    },
+    {
+      "path": "scripts/build_book_publications.py",
+      "bytes": 10478,
+      "sha256": "c50f6dad8c0364bbbb4cc45bddd03467065f3120be88121d137334c68cf69f12"
+    },
+    {
+      "path": "scripts/build_conversations.py",
+      "bytes": 7794,
+      "sha256": "27ccf171284917a7eaa5f36a49398649b1bfb5c32baa849cea507477eb0dde80"
+    },
+    {
+      "path": "scripts/build_five_values.py",
+      "bytes": 9939,
+      "sha256": "504b7649ffd586abdbc530a082ece19a437072b2fc5601c27d03b88c017e2985"
+    },
+    {
+      "path": "scripts/build_letter_003.py",
+      "bytes": 4547,
+      "sha256": "6472209840ff61c0d204b6d366c3874ce289d5e27e8a834567e691bbed599684"
+    },
+    {
+      "path": "scripts/build_letters.py",
+      "bytes": 9125,
+      "sha256": "e64c80cbab97149003660fac8aa9a1ba4c12d98347dbae3beb57e540aa174948"
+    },
+    {
+      "path": "scripts/build_parables.py",
+      "bytes": 9805,
+      "sha256": "2709c5ca2f7e491beedaa4c3aa0050649f31c9979d9877d2e736212c65de8e9e"
+    },
+    {
+      "path": "scripts/build_possibilities.py",
+      "bytes": 9721,
+      "sha256": "1881a05c76881a09ef63106ec7055463043528e3aef65b359b099b43a86dab31"
+    },
+    {
+      "path": "scripts/build_questions_faq.py",
+      "bytes": 7211,
+      "sha256": "f07147ac88098b0ea20d3725fc18a497595b595be88dfade5b7518d0e42a2699"
+    },
+    {
+      "path": "scripts/build_site.py",
+      "bytes": 56180,
+      "sha256": "5158551cdffb0e73ecf7725a044d66c6a6860a86fa7262c7185343836d3a1fec"
+    },
+    {
+      "path": "scripts/pdf_release_metadata.py",
+      "bytes": 708,
+      "sha256": "5970982c16eff908e7cda44dfe71d6fc9e4c4d17aebd4b6254a2972ad7e56f7a"
+    },
+    {
+      "path": "scripts/publication_visual_system.py",
+      "bytes": 4701,
+      "sha256": "c6ffade645b131742576df9f7e3c5460dab00327fcf49bd1f270ab446b3ed3b5"
+    },
+    {
+      "path": "scripts/v010_publications.py",
+      "bytes": 9966,
+      "sha256": "c47583fa4d3f0c3dc6476e721c9008a900e17ada8b6783b24b1bb24383b58ebc"
+    },
+    {
+      "path": "scripts/v012_second_letter.py",
+      "bytes": 7503,
+      "sha256": "0c8e2542e044be238248e9530621eaa6e4512662cc3236ab0f66c7da88479b75"
+    },
+    {
+      "path": "scripts/v013_third_letter.py",
+      "bytes": 7637,
+      "sha256": "42b423a529b993ab50fe20e936d4384041957abf1b025d8f8cdf748175d6cd6e"
+    },
+    {
+      "path": "scripts/v023_questions_faq.py",
+      "bytes": 10456,
+      "sha256": "edd1f3a48ab21db24e8aaaba19209715773f6f11b438bd5abec6f5bee69df74c"
+    },
+    {
+      "path": "scripts/v024_reading_journey.py",
+      "bytes": 12052,
+      "sha256": "eabf3ae0aa4d33ade81dcfafdb4a4ba0010e0750c426e0cdb25e79b67316f312"
+    },
+    {
+      "path": "scripts/verify_literature_production_v030.py",
+      "bytes": 7450,
+      "sha256": "87307950bf1ee6732ad08478286a7e4ec84b4a6a463be341e56663ed7e21f0c3"
+    },
+    {
+      "path": "source/approved_cover_assets_v030.json",
+      "bytes": 2004,
+      "sha256": "b3a310934bf00eb5c9ea4ec779e82c8ee17dec308464e8bd4d30417d3ab15ca3"
+    },
+    {
+      "path": "source/covers/Book_of_Chance_Light_Cover.png",
+      "bytes": 1678409,
+      "sha256": "fb5773c08316e3f3f5049f1f1ce38be6e0d98790f6910ff8540d13620a119124"
+    }
+  ]
+}

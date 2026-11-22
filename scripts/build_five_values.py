@@ -10,6 +10,8 @@ import mistune
 import cairosvg
 from PIL import Image
 from weasyprint import HTML
+from approved_cover_assets import check_cover
+from pdf_release_metadata import set_pdf_info
 
 ROOT=Path(__file__).resolve().parents[1]
 DEST=ROOT/'files/booklets'
@@ -93,30 +95,13 @@ def render_art():
 
 
 def render_cover():
-    # Separate vector cover for this booklet — same fine blue/charcoal identity,
-    # but no copying of the original The Book of Chance book jacket.
-    lines=''
-    for j in range(5):
-        st=620+47*j
-        lines+=path(f'M -50 {st} C 275 {st-70} 320 {st+120} 520 {st-10} S 775 {st-150} 1040 {st+20}', BLUE if j==2 else CHAR,4.3 if j==2 else 2.65,.85 if j==2 else .52)
-    cover='''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="1000" height="1500"><rect width="1000" height="1500" fill="white"/>
-    <text x="500" y="126" font-family="Lato,Liberation Sans,sans-serif" fill="#286CB8" text-anchor="middle" font-size="25" letter-spacing="5.5">THE BOOK OF CHANCE · COMPANIONS</text>
-    <text x="500" y="310" font-family="Liberation Serif,Georgia,serif" fill="#26313B" text-anchor="middle" font-size="91">The Five</text>
-    <text x="500" y="405" font-family="Liberation Serif,Georgia,serif" fill="#26313B" text-anchor="middle" font-size="91">Values</text>
-    <text x="500" y="494" font-family="Liberation Serif,Georgia,serif" font-size="27" font-style="italic" fill="#60717B" text-anchor="middle">Hope · Acceptance · Reflection</text>
-    <text x="500" y="535" font-family="Liberation Serif,Georgia,serif" font-size="27" font-style="italic" fill="#60717B" text-anchor="middle">Growth · Community</text>
-    <g>'''+lines+'''</g>
-    <line x1="458" y1="1328" x2="542" y2="1328" stroke="#286CB8" stroke-width="2"/>
-    <text x="500" y="1395" font-family="Liberation Serif,Georgia,serif" text-anchor="middle" font-size="50" fill="#26313B">H</text></svg>'''
-    (ART/'the-five-values-cover.svg').write_text(cover,encoding='utf8')
-    cairosvg.svg2png(bytestring=cover.encode('utf8'),write_to=str(ART/'the-five-values-cover.png'),output_width=1000,output_height=1500)
-    img=Image.open(ART/'the-five-values-cover.png').convert('RGB')
-    img.save(ART/'the-five-values-cover.webp','WEBP',quality=92,method=6)
+    """Retain the approved series cover; never regenerate an old design."""
+    return check_cover('five-values')
 
 
 def build():
     DEST.mkdir(parents=True,exist_ok=True)
-    render_art();render_cover()
+    render_art();check_cover('five-values')
     md=SOURCE.read_text('utf8')
     h=mistune.create_markdown(escape=True,plugins=['table','strikethrough','url'])(md)
     # Remove cover material, which has been typeset more deliberately as the PDF cover/intro.
@@ -154,7 +139,8 @@ def build():
     '''
     pdfpage=f'''<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>The Five Values — H</title><style>{css}</style></head><body><div class="cover"><img alt="The Five Values cover" src="{cover}"/></div><div class="opening">The Book of Chance · Companion 01</div>{h}</body></html>'''
     pdf_path=DEST/'The_Five_Values.pdf'
-    HTML(string=pdfpage,base_url=SOURCE.parent.as_uri()+'/').write_pdf(str(pdf_path))
+    HTML(string=pdfpage,base_url=SOURCE.parent.as_uri()+'/').write_pdf(str(pdf_path),pdf_variant='pdf/ua-1')
+    set_pdf_info(pdf_path,'The Five Values','Hope, Acceptance, Reflection, Growth and Community')
     css_epub=ROOT/'source/booklets/booklet-epub.css'
     css_epub.write_text('body { font-family: serif; line-height: 1.6; color: #26313B; } h1,h2 { color:#172633; } h2 { margin-top: 2em; } blockquote { border-left: 2px solid #286CB8; padding-left: 1em; } img { max-width: 100%; height: auto; }',encoding='utf8')
     epub_path=DEST/'The_Five_Values.epub'

@@ -2,6 +2,8 @@ from pathlib import Path
 import re, shutil, subprocess, html, zipfile, hashlib, json
 from bs4 import BeautifulSoup
 from weasyprint import HTML
+from approved_cover_assets import check_cover
+from pdf_release_metadata import set_pdf_info
 import fitz
 
 R=Path(__file__).resolve().parents[1]
@@ -68,7 +70,7 @@ css+='''
 @page illustrated { size:5.5in 8.5in; margin:0;
  @top-left{content:none;} @top-right{content:none;} @bottom-left{content:none;} @bottom-right{content:none;} }
 .part-plate,.diagram-plate{page:illustrated; break-before:page; break-after:page; width:5.5in;height:8.48in;overflow:hidden;position:relative;box-sizing:border-box;margin:0;padding:0;background:white}
-.part-plate{break-before:right}
+.part-plate{break-before:page}
 .part-plate h1.part-heading{position:absolute;top:0;left:0;width:0;height:0;min-height:0;overflow:hidden;font-size:0;line-height:0;padding:0;margin:0;page:auto;break-before:auto;break-after:auto}
 .part-plate figure,.diagram-plate figure {margin:0;padding:0;display:block;position:absolute;top:.06in;left:.11in;width:5.28in;height:6.43in;}
 .part-plate img,.diagram-plate img {display:block;width:5.28in;height:6.43in;object-fit:contain;margin:0;padding:0;}
@@ -90,7 +92,7 @@ full=f'<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"/><title>The
 (W/'contextual_print_v014.html').write_text(full,encoding='utf-8')
 pdf=W/'book_interior_v014.pdf'
 print('Generating PDF...',flush=True)
-HTML(string=full,base_url=str(NEW)).write_pdf(str(pdf))
+HTML(string=full,base_url=str(NEW)).write_pdf(str(pdf),pdf_variant='pdf/ua-1')
 
 # Ebook: preserve caption blocks as real selectable text after figures.
 ebooklines=[]
@@ -111,20 +113,24 @@ rights: Contextual illustrated reader's proof; publication details pending.
 ''',encoding='utf-8')
 # Keep the approved cover images and the same revised body in both editions.
 for kind in ('Light','Dark'):
-    cover=NEW/'covers'/f'Book_of_Chance_{kind}_Cover.png'
+    cover=check_cover('book-'+kind.lower())
     epubout=R/'files'/f'The_Book_of_Chance_{kind}.epub'
     print('Generating revised EPUB',kind,flush=True)
     cmd=['pandoc',str(ebookbody),'-f','markdown+smart+fenced_divs','-t','epub3','--standalone','--toc','--toc-depth=1','--split-level=1',
          '--epub-title-page=true','--epub-cover-image',str(cover),'--css',str(epub_css),'--metadata-file',str(meta),'-o',str(epubout)]
     subprocess.run(cmd,cwd=NEW,capture_output=True,text=True,check=True)
     assert zipfile.ZipFile(epubout).testzip() is None
-    # Prefix the already illustrated interior with the matching original cover.
+    # Render a *single* tagged document, cover and interior together.
+    # Merging PDFs with insert_pdf would discard the interior structure tree.
     pdfout=R/'files'/f'The_Book_of_Chance_{kind}_PDF_Reader_Proof.pdf'
-    with fitz.open() as result, fitz.open(str(pdf)) as interior:
-        first=result.new_page(width=interior[0].rect.width,height=interior[0].rect.height)
-        first.insert_image(first.rect,filename=str(cover),keep_proportion=True)
-        result.insert_pdf(interior)
-        result.save(str(pdfout),garbage=4,deflate=True)
+    cover_css='''@page cover{size:5.5in 8.5in;margin:0;@top-left{content:none}@top-right{content:none}@bottom-left{content:none}@bottom-right{content:none}}
+    .approved-cover{page:cover;break-after:page;width:5.5in;height:8.5in;margin:0;padding:0}
+    .approved-cover img{display:block;width:5.5in;height:8.5in;object-fit:cover}'''
+    cover_markup='<div class="approved-cover"><img src="'+cover.as_uri()+'" alt="The Book of Chance '+kind+' Edition cover"></div>'
+    full_with_cover=full.replace('</style>','\n'+cover_css+'</style>',1).replace('<body>','<body>'+cover_markup,1)
+    HTML(string=full_with_cover,base_url=str(NEW)).write_pdf(str(pdfout),pdf_variant='pdf/ua-1')
+    set_pdf_info(pdfout,'The Book of Chance — '+kind+' Edition',
+                 'On the Lives We Inherit and the Futures We Shape')
     print('Created',pdfout.name, len(fitz.open(pdfout)), 'pages',flush=True)
 
 print('Book editions complete')

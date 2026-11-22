@@ -10,6 +10,7 @@ import cairosvg
 import fitz
 from bs4 import BeautifulSoup
 from weasyprint import HTML
+from approved_cover_assets import check_cover
 
 ROOT=Path(__file__).resolve().parents[1]
 SRC=ROOT/'source/guides/beginners-guide-to-confluent-humanism.md'
@@ -24,35 +25,8 @@ EPUB=OUT/(STEM+'_Editorial_Proof_v0.2.epub')
 
 (ROOT/'_build_beginner_guide').mkdir(parents=True, exist_ok=True)
 
-# Draw twelve open, understated paths. The lines converge momentarily, then
-# separate and continue, communicating meaningful influence but not fate.
-paths=[]
-for i in range(8):
-    y=670+i*36
-    c='#286CB8' if i in (2,6) else ('#26313B' if i%2 else '#929AA1')
-    w=3.1 if i in (2,6) else (1.9 if i%2 else 1.4)
-    op='.85' if i in (2,6) else ('.70' if i%2 else '.48')
-    # First groups rise, second groups fall; each trajectory remains open.
-    if i%2==0:
-        d=f'M -60 {y-85} C 200 {y+80} 330 {y-70} 505 {y+12} S 760 {y+110} 1060 {y-55}'
-    else:
-        d=f'M -60 {y+82} C 220 {y-125} 347 {y+110} 505 {y-12} S 770 {y-100} 1060 {y+55}'
-    paths.append(f'<path d="{d}" stroke="{c}" stroke-width="{w}" stroke-opacity="{op}" fill="none" stroke-linecap="round"/>')
-cover=f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="1000" height="1500">
-<rect width="1000" height="1500" fill="#FBFBFA"/>
-<text x="500" y="118" font-family="Liberation Sans,Lato,sans-serif" font-size="25" letter-spacing="5.5" text-anchor="middle" fill="#286CB8">THE BOOK OF CHANCE · INTRODUCTORY GUIDES</text>
-<text x="500" y="294" font-family="Liberation Serif,Georgia,serif" font-size="73" text-anchor="middle" fill="#26313B">A Beginner’s Guide</text>
-<text x="500" y="381" font-family="Liberation Serif,Georgia,serif" font-size="56" font-style="italic" text-anchor="middle" fill="#26313B">to</text>
-<text x="500" y="471" font-family="Liberation Serif,Georgia,serif" font-size="71" text-anchor="middle" fill="#26313B">Confluent Humanism</text>
-<g>{''.join(paths)}</g>
-<text x="500" y="1170" font-family="Liberation Serif,Georgia,serif" font-size="30" text-anchor="middle" font-style="italic" fill="#586773">Chance, Choice and the Lives We Share</text>
-<line x1="430" y1="1340" x2="570" y2="1340" stroke="#286CB8" stroke-width="2.2"/>
-<text x="500" y="1410" font-family="Liberation Serif,Georgia,serif" font-size="49" text-anchor="middle" fill="#26313B">H</text>
-</svg>'''
-COVER_SVG.write_text(cover,encoding='utf8')
-img=Image.open(BytesIO(cairosvg.svg2png(bytestring=cover.encode('utf8'),output_width=1000,output_height=1500))).convert('RGB')
-img.save(COVER_PNG,'PNG',optimize=True)
-img.save(COVER_WEBP,'WEBP',quality=92,method=6)
+# Cover is approved artwork; never overwrite it when rebuilding editions.
+check_cover('beginner')
 
 # Convert markdown into HTML. Skip typeset cover-leaf text (not the author's content).
 res=subprocess.run(['pandoc',str(SRC),'-f','markdown+smart','-t','html5','--wrap=none'],check=True,capture_output=True,text=True)
@@ -104,9 +78,9 @@ a{color:#286CB8;text-decoration:underline}
 front='''<section class="opening"><div class="label">The Book of Chance · Introductory Guides</div>
 <h1>A Beginner's Guide<br>to Confluent Humanism</h1><p class="subtitle">Chance, Choice and the Lives We Share</p>
 <p class="meta">By H · BOC-GDE-001 · Editorial candidate v0.2 · 22 November 2026</p></section>'''
-source='<html lang="en-NZ"><head><meta charset="utf-8"><title>'+escape(TITLE)+'</title><style>'+css+'</style></head><body><div class="cover"><img src="'+COVER_SVG.as_uri()+'" alt=""></div>'+front+html+'</body></html>'
+source='<html lang="en-NZ"><head><meta charset="utf-8"><title>'+escape(TITLE)+'</title><style>'+css+'</style></head><body><div class="cover"><img src="'+COVER_PNG.as_uri()+'" alt="Cover: A Beginner&#39;s Guide to Confluent Humanism by H"></div>'+front+html+'</body></html>'
 ( ROOT/'_build_beginner_guide/_guide_typeset.html').write_text(source,encoding='utf8')
-HTML(string=source,base_url=ROOT.as_uri()+'/').write_pdf(str(PDF))
+HTML(string=source,base_url=ROOT.as_uri()+'/').write_pdf(str(PDF),pdf_variant='pdf/ua-1')
 with fitz.open(PDF) as pdf:
     md=pdf.metadata
     md.update({'title':TITLE,'author':'H','subject':'Introductory guide to Confluent Humanism — editorial candidate v0.2','keywords':'The Book of Chance, Confluent Humanism, Fellowship of Chance, beginner guide'})

@@ -142,7 +142,7 @@ def apply_v024(root:Path, document, info:dict):
     faq.insert_before(promo)
     shortcuts=lib.select_one('.section-shortcuts'); assert shortcuts
     catalog_shortcut=shortcuts.find('a',href='#publication-catalogue')
-    a=lib.new_tag('a',href='#reading-journeys');a.string='Reading paths'
+    a=lib.new_tag('a',href='../journey/');a.string='Reading paths'
     if catalog_shortcut:catalog_shortcut.insert_after(a)
     else:shortcuts.append(a)
     lib_path.write_text(str(lib),encoding='utf8')

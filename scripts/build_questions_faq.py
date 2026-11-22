@@ -6,6 +6,7 @@ import re, json, html, subprocess, zipfile
 import cairosvg
 from bs4 import BeautifulSoup
 from weasyprint import HTML
+from approved_cover_assets import check_cover
 import fitz
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -18,27 +19,8 @@ COVER=ROOT/'assets/resources/questions-about-chance-cover.png'
 DATA=ROOT/'source/resources/questions-about-chance.json'
 HTML_FRAGMENT=WORK/'questions-about-chance-web-content.html'
 
-# A restrained, editorial front cover: path motifs carry the established visual language.
-svg='''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="1000" height="1500">
-<rect width="1000" height="1500" fill="#fbfbfa"/>
-<text x="500" y="112" text-anchor="middle" font-family="Lato,Liberation Sans,sans-serif" font-size="25" letter-spacing="5" fill="#286CB8">THE BOOK OF CHANCE · READER RESOURCES</text>
-<text x="500" y="315" text-anchor="middle" font-family="Liberation Serif,Georgia,serif" font-size="94" fill="#26313B">Questions</text>
-<text x="500" y="420" text-anchor="middle" font-family="Liberation Serif,Georgia,serif" font-size="94" fill="#26313B">About Chance</text>
-<text x="500" y="530" text-anchor="middle" font-family="Liberation Serif,Georgia,serif" font-size="31" font-style="italic" fill="#68747c">Twenty-Six Questions about Confluent Humanism</text>
-<text x="500" y="575" text-anchor="middle" font-family="Liberation Serif,Georgia,serif" font-size="31" font-style="italic" fill="#68747c">and the Fellowship of Chance</text>
-<g fill="none" stroke-linecap="round">
-<path d="M-80 790 C210 715 400 875 570 800 S850 665 1080 805" stroke="#26313B" stroke-width="2.4" stroke-opacity=".65"/>
-<path d="M-80 850 C220 925 395 725 560 825 S840 970 1080 855" stroke="#286CB8" stroke-width="3.4" stroke-opacity=".9"/>
-<path d="M-80 910 C200 805 380 990 565 900 S870 780 1080 930" stroke="#8e959a" stroke-width="2" stroke-opacity=".55"/>
-<path d="M-80 970 C215 1050 395 845 595 960 S850 1110 1080 990" stroke="#26313B" stroke-width="2.2" stroke-opacity=".6"/>
-<path d="M-80 1030 C190 950 400 1110 565 1015 S870 910 1080 1060" stroke="#286CB8" stroke-width="2.8" stroke-opacity=".75"/>
-<path d="M-80 1090 C205 1190 400 975 580 1080 S860 1210 1080 1100" stroke="#8e959a" stroke-width="1.8" stroke-opacity=".4"/>
-</g>
-<line x1="430" y1="1340" x2="570" y2="1340" stroke="#286CB8" stroke-width="2"/>
-<text x="500" y="1412" text-anchor="middle" font-family="Liberation Serif,Georgia,serif" font-size="56" fill="#26313B">H</text>
-</svg>'''
-cairosvg.svg2png(bytestring=svg.encode('utf8'),write_to=str(COVER),output_width=1000,output_height=1500)
-(ROOT/'assets/resources/questions-about-chance-cover.svg').write_text(svg,encoding='utf8')
+# Always use the approved cover artwork, not the older generated SVG.
+check_cover('faq')
 
 source=SOURCE.read_text('utf8')
 # Extract public content excluding editorial metadata and the separate sources note.
@@ -108,8 +90,8 @@ a{color:#286CB8;text-decoration:none}
 .faq-section:last-of-type{break-before:page}
 '''
 cover_url=COVER.as_uri()
-page=f'''<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>Questions About Chance — Editorial Proof</title><style>{css}</style></head><body><div class="cover"><img src="{cover_url}" alt=""/></div><div class="opening">THE BOOK OF CHANCE · PUBLIC READER RESOURCES</div>{print_body}</body></html>'''
-HTML(string=page,base_url=ROOT.as_uri()+'/').write_pdf(str(PDF))
+page=f'''<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>Questions About Chance — Editorial Proof</title><style>{css}</style></head><body><div class="cover"><img src="{cover_url}" alt="Cover: Questions About Chance by H"/></div><div class="opening">THE BOOK OF CHANCE · PUBLIC READER RESOURCES</div>{print_body}</body></html>'''
+HTML(string=page,base_url=ROOT.as_uri()+'/').write_pdf(str(PDF),pdf_variant='pdf/ua-1')
 with fitz.open(PDF) as pdf:
     pdf.set_metadata({'title':'Questions About Chance — Editorial Proof v0.3','author':'H','subject':'Twenty-Six Questions About Confluent Humanism and the Fellowship of Chance','keywords':'Confluent Humanism, Fellowship of Chance, FAQ, chance, ethics'})
     pdf.save(str(WORK/'_pdf_tmp.pdf'),garbage=4,deflate=True)

@@ -7,6 +7,8 @@ from pathlib import Path
 import subprocess, zipfile, re
 from bs4 import BeautifulSoup
 from weasyprint import HTML
+from approved_cover_assets import check_cover
+from pdf_release_metadata import set_pdf_info
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'source/conversations/conversations-of-chance.md'
@@ -28,6 +30,7 @@ def markdown_to_html(md_text: str) -> str:
 
 
 def build_pdf() -> int:
+    check_cover('conversations')
     text = SOURCE.read_text('utf8')
     start = text.index('## A Note on This Edition\n')
     body_md = text[start:]
@@ -83,7 +86,7 @@ def build_pdf() -> int:
     cite{font-style:italic}
     '''
 
-    title_page = f'''<div class="cover"><img alt="" src="{COVER_SVG.as_uri()}"></div>
+    title_page = f'''<div class="cover"><img alt="Cover: Conversations of Chance by H" src="{COVER_PNG.as_uri()}"></div>
     <div class="title-page"><div class="eyebrow">The Book of Chance · Discussion companion 01</div>
     <h1 class="page-title">Conversations of Chance</h1>
     <p class="subtitle">Twelve Discussions for an Uncertain Life · H</p>
@@ -93,7 +96,8 @@ def build_pdf() -> int:
     <p class="front-note">The thought experiments are fictional and are included to help readers examine ideas rather than to report events. No registration, donation or membership is required to read or share the publication links.</p>
     </div>'''
     page = f'<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>Conversations of Chance — editorial proof</title><style>{css}</style></head><body>{title_page}{str(soup)}</body></html>'
-    HTML(string=page, base_url=ROOT.as_uri() + '/').write_pdf(str(PDF))
+    HTML(string=page, base_url=ROOT.as_uri() + '/').write_pdf(str(PDF),pdf_variant='pdf/ua-1')
+    set_pdf_info(PDF,'Conversations of Chance','Twelve Discussions for an Uncertain Life')
     info = subprocess.run(['pdfinfo', str(PDF)], capture_output=True, text=True, check=True).stdout
     m = re.search(r'^Pages:\s+(\d+)', info, flags=re.M)
     return int(m.group(1))

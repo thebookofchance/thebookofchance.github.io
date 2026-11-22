@@ -67,7 +67,7 @@ def apply_v023(root:Path, document, markdown, info:dict):
       <a class="btn btn-outline" href="../{PDF}" download>Download PDF ↓</a>
       <a class="btn btn-outline" href="../{EPUB}" download>Download EPUB ↓</a></div>
       <p class="v23-faq-status">By H · 26 questions · 5 themes · Free · Revised editorial candidate v0.3</p></div>
-      <img class="v23-faq-cover" src="../{COVER}" width="1000" height="1500" alt="Proposed Questions About Chance cover with fine crossing charcoal and blue paths" loading="eager">
+      <img class="v23-faq-cover" src="../{COVER}" width="1000" height="1500" alt="Approved Questions About Chance cover, with a question-mark motif in flowing blue and charcoal lines" loading="eager">
     </section>'''
     body=hero+f'''<div class="shell v23-faq-intro">{pre_html}</div>
     <section class="shell v23-faq-explorer" id="faq-explorer" aria-labelledby="v23-explore-title">

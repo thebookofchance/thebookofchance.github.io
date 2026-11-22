@@ -6,6 +6,7 @@ import cairosvg, fitz
 from PIL import Image
 from bs4 import BeautifulSoup
 from weasyprint import HTML
+from approved_cover_assets import check_cover
 
 ROOT=Path(__file__).resolve().parents[1]
 SRC=ROOT/'source/parables/the-parables-of-chance.md'
@@ -13,37 +14,11 @@ ASSETS=ROOT/'assets/publications'; OUTPUT=ROOT/'files/parables'; WORK=ROOT/'_bui
 for d in (ASSETS,OUTPUT,WORK):d.mkdir(parents=True,exist_ok=True)
 INK='#26313B'; BLUE='#286CB8'; PAPER='#FBFBFA'; GREY='#68747c'
 
-def cover_svg():
-    strands=[]
-    for i in range(12):
-        y0=745+i*29; y1=825+i*18; bend=(i-5.5)*24
-        c2=765+bend*.75
-        col=BLUE if i in (2,9) else (INK if i in (0,5,7,11) else '#9099a0')
-        opacity='.90' if i in (2,9) else ('.64' if i in (0,5,7,11) else '.40')
-        width=3 if i in (2,9) else 1.65
-        strands.append(f'<path d="M -52 {y0} C 183 {y0-134+bend*.18:.1f}, 333 {y0+168-bend*.2:.1f}, 504 {830+bend*.3:.1f} S 799 {y1-140+bend*.2:.1f}, 1055 {y1}" fill="none" stroke="{col}" stroke-width="{width}" opacity="{opacity}" stroke-linecap="round"/>')
-    for i in range(5):
-        y=765+i*47
-        strands.append(f'<path d="M 1070 {y-125} C 832 {y-68}, 690 {y+136}, 520 {835+i*15} S 220 {y+170}, -70 {y+85}" fill="none" stroke="{BLUE if i==3 else INK}" stroke-width="{2.3 if i==3 else 1.4}" opacity="{.80 if i==3 else .35}"/>')
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500">
-<rect width="1000" height="1500" fill="{PAPER}"/>
-<text x="500" y="120" text-anchor="middle" font-family="Lato,Liberation Sans,sans-serif" letter-spacing="5.7" font-size="24" fill="{BLUE}">THE BOOK OF CHANCE · STORIES</text>
-<text x="500" y="293" text-anchor="middle" font-family="Liberation Serif,Georgia,serif" font-size="94" fill="{INK}">The Parables</text>
-<text x="335" y="392" text-anchor="middle" font-family="Liberation Serif,Georgia,serif" font-size="75" font-style="italic" fill="{INK}">of</text>
-<text x="571" y="392" text-anchor="middle" font-family="Liberation Serif,Georgia,serif" font-size="98" fill="{INK}">Chance</text>
-<text x="500" y="500" text-anchor="middle" font-family="Liberation Serif,Georgia,serif" font-size="29" font-style="italic" fill="{GREY}">Twelve Stories about Fortune, Choice</text>
-<text x="500" y="540" text-anchor="middle" font-family="Liberation Serif,Georgia,serif" font-size="29" font-style="italic" fill="{GREY}">and the Lives We Share</text>
-<g>{''.join(strands)}</g>
-<line x1="433" y1="1328" x2="567" y2="1328" stroke="{BLUE}" stroke-width="2"/>
-<text x="500" y="1395" text-anchor="middle" font-family="Liberation Serif,Georgia,serif" font-size="50" fill="{INK}">H</text>
-</svg>'''
+# The Parables cover is approved artwork and no longer generated procedurally.
 
 def build_cover():
-    raw=cover_svg().encode()
-    (ASSETS/'parables-of-chance-cover.svg').write_bytes(raw)
-    png=cairosvg.svg2png(bytestring=raw,output_width=1000,output_height=1500)
-    (ASSETS/'parables-of-chance-cover.png').write_bytes(png)
-    Image.open(BytesIO(png)).convert('RGB').save(ASSETS/'parables-of-chance-cover.webp','WEBP',quality=93,method=6)
+    """Only verify the approved new artwork. Never generate a legacy cover."""
+    return check_cover('parables')
 
 def body_source():
     manuscript=SRC.read_text('utf8')
@@ -119,8 +94,8 @@ a{color:#286CB8;text-decoration:none}
 '''
 
 def build_pdf(markup):
-    cover=(ASSETS/'parables-of-chance-cover.svg').as_uri()
-    first=f'''<div class="cover"><img alt="" src="{cover}"></div>
+    cover=check_cover('parables').as_uri()
+    first=f'''<div class="cover"><img alt="Cover: The Parables of Chance by H" src="{cover}"></div>
     <div class="title-page"><div class="small">The Book of Chance · Stories and Parables</div>
     <h1>The Parables of Chance</h1>
     <div class="subtitle">Twelve Stories about Fortune, Choice<br>and the Lives We Share</div>
@@ -129,7 +104,7 @@ def build_pdf(markup):
     html=f'<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>The Parables of Chance — editorial proof v0.2.1</title><style>{CSS}</style></head><body>{first}{markup}</body></html>'
     (WORK/'typeset.html').write_text(html,encoding='utf8')
     out=OUTPUT/'The_Parables_of_Chance_Editorial_Proof_v0.2.1.pdf'
-    HTML(string=html,base_url=ROOT.as_uri()+'/').write_pdf(out)
+    HTML(string=html,base_url=ROOT.as_uri()+'/').write_pdf(out,pdf_variant='pdf/ua-1')
     # WeasyPrint's metadata dictionary is not guaranteed to set the Author field.
     # Apply author, subject and language through PyMuPDF in a second pass.
     temp=out.with_name(out.stem+'-metadata.pdf')

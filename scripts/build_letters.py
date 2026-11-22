@@ -5,6 +5,8 @@ from io import BytesIO
 import cairosvg
 import mistune
 from weasyprint import HTML
+from approved_cover_assets import check_cover
+from pdf_release_metadata import set_pdf_info
 
 ROOT=Path(__file__).resolve().parents[1]
 LETTER=ROOT/'source/letters/001-on-the-people-we-never-meet.md'
@@ -13,41 +15,15 @@ PDF=ROOT/META['pdf']
 EPUB=ROOT/META['epub']
 COVER=ROOT/META['cover']
 
-# An original restrained variation on the intersecting paths from the approved cover family.
-def cover_svg():
-    paths=[]
-    for i in range(7):
-        # gentle mirrored arcs, different entry heights; blue used only in one or two paths
-        start=550+i*24
-        end=1190-i*25
-        middle=840+(i-3)*9
-        col='#1e70b8' if i in (1,5) else ('#929b9d' if i%3==0 else '#24313b')
-        opacity='0.9' if i in (1,5) else ('0.47' if i%3==0 else '0.78')
-        paths.append(f'<path d="M -70,{start} C 280,{start+140} 425,{middle-105} 650,{middle} S 1010,{end-155} 1090,{end}" fill="none" stroke="{col}" stroke-width="{2.1 if i in (1,5) else 1.35}" opacity="{opacity}"/>')
-        paths.append(f'<path d="M 1090,{start} C 760,{start+140} 610,{middle-105} 410,{middle} S 120,{end-155} -70,{end}" fill="none" stroke="{col}" stroke-width="{2.1 if i in (1,5) else 1.35}" opacity="{opacity}"/>')
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500">
-    <rect width="1000" height="1500" fill="#fff"/>
-    <text x="500" y="120" fill="#286cb8" font-family="Lato, sans-serif" font-size="24" letter-spacing="6" text-anchor="middle">LETTERS FROM H</text>
-    <text x="500" y="205" fill="#69757a" font-family="Lato, sans-serif" font-size="20" letter-spacing="4" text-anchor="middle">NO. 01</text>
-    <text x="500" y="330" fill="#1b2933" font-family="Liberation Serif, serif" font-size="64" text-anchor="middle">On the People</text>
-    <text x="500" y="425" fill="#1b2933" font-family="Liberation Serif, serif" font-size="64" text-anchor="middle">We Never Meet</text>
-    <g>{''.join(paths)}</g>
-    <text x="500" y="1290" fill="#394853" font-family="Liberation Serif, serif" font-style="italic" font-size="29" text-anchor="middle">A letter on unseen lives and shared responsibility</text>
-    <line x1="451" y1="1380" x2="549" y2="1380" stroke="#286cb8" stroke-width="2"/>
-    <text x="500" y="1440" fill="#24313b" font-family="Liberation Serif, serif" font-size="45" text-anchor="middle">H</text>
-    </svg>'''
+# Approved cover art is verified by `check_cover` during each build.
+# Legacy procedural cover generators were deliberately retired in v0.30.
 
 def build():
     PDF.parent.mkdir(parents=True,exist_ok=True)
     COVER.parent.mkdir(parents=True,exist_ok=True)
     source=LETTER.read_text(encoding='utf-8')
-    svg=cover_svg()
-    svg_path=ROOT/'source/letters/lfh-001-cover.svg'
-    svg_path.write_text(svg, encoding='utf-8')
-    raw_png=cairosvg.svg2png(bytestring=svg.encode('utf-8'),output_width=1000,output_height=1500)
-    image=Image.open(BytesIO(raw_png)).convert('RGB')
-    image.save(COVER,'WEBP',quality=91,method=6)
-    image.save(COVER.with_suffix('.png'),'PNG',optimize=True)
+    # Reuse approved, hash-verified Letter 01 cover. No generated SVG is written.
+    check_cover('letter-01')
     # Convert the canonical Markdown using the same rule-based renderer as the website.
     md=mistune.create_markdown(escape=True,plugins=['table','strikethrough','url'])
     article=md(source)
@@ -76,12 +52,13 @@ def build():
       .edition{font:8pt/1.65 Lato,sans-serif;color:#6d797f;border-top:.6pt solid #dee3e5;padding-top:10pt;margin-top:20pt}
       a{color:#286cb8}
     '''
-    book_html=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><title>On the People We Never Meet — Letters from H No. 01</title><style>{css}</style></head><body>
-    <div class="cover"><img alt="" src="{svg_path.as_uri()}"></div>
+    book_html=f'''<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>On the People We Never Meet — Letters from H No. 01</title><style>{css}</style></head><body>
+    <div class="cover"><img alt="Cover: On the People We Never Meet by H" src="{COVER.with_suffix('.png').as_uri()}"></div>
     <div class="start"><div class="eyebrow">Letters from H · No. 01</div><h1>On the People We Never Meet</h1><p class="subtitle">A letter on unseen lives and shared responsibility · H</p></div>
     {article}<p class="edition">The Book of Chance · Letters from H · BOC-LFH-001<br>Editorial candidate, version {META["edition"]} · Revised 22 November 2026<br>Free to read and share by linking to the published source. No membership or payment required.</p>
     </body></html>'''
-    HTML(string=book_html,base_url=ROOT.as_uri()+'/').write_pdf(str(PDF),metadata={'title':'On the People We Never Meet'})
+    HTML(string=book_html,base_url=ROOT.as_uri()+'/').write_pdf(str(PDF), pdf_variant='pdf/ua-1')
+    set_pdf_info(PDF,'On the People We Never Meet','Letters from H · No. 01')
     epub_css=ROOT/'source/letters/epub-letter.css'
     epub_css.write_text('body{font-family:serif;line-height:1.65;color:#26313b}h1,h2,h3{font-weight:normal}h2{margin-top:1.6em;color:#172633}h3{font-variant:small-caps;color:#286cb8}p{margin:.85em 0}hr{border:0;border-top:1px solid #ccc}\n','utf-8')
     cmd=['pandoc',str(LETTER),'-f','markdown','-t','epub3','--standalone','--metadata=title:On the People We Never Meet','--metadata=author:H','--metadata=lang:en-NZ','--metadata=subtitle:Letters from H · No. 01','--epub-cover-image',str(COVER.with_suffix('.png')),'--css',str(epub_css),'-o',str(EPUB)]
@@ -110,34 +87,8 @@ def build_letter_002():
     pdf.parent.mkdir(parents=True, exist_ok=True)
     cover.parent.mkdir(parents=True, exist_ok=True)
 
-    # A motif about branching outcomes: the shared starting paths fork into several
-    # distinct but equally weighted directions. It is original vector artwork, not
-    # an externally sourced illustration.
-    paths = []
-    for j in range(7):
-        sy = 770 + j*23
-        hue = '#1e70b8' if j in (2,5) else ('#929b9d' if j%3==0 else '#24313b')
-        opacity = '.92' if j in (2,5) else ('.45' if j%3==0 else '.73')
-        sw='2.4' if j in (2,5) else '1.6'
-        paths.append(f'<path d="M -90,{sy} C 210,{sy-65} 405,{sy-47} 548,{sy-1} S 810,{sy-150-j*7} 1100,{sy-210-j*10}" fill="none" stroke="{hue}" stroke-width="{sw}" opacity="{opacity}"/>')
-        paths.append(f'<path d="M -90,{sy} C 210,{sy-65} 405,{sy-47} 548,{sy-1} S 805,{sy+110+j*10} 1100,{sy+205+j*15}" fill="none" stroke="{hue}" stroke-width="{sw}" opacity="{opacity}"/>')
-    svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500">
-        <rect width="1000" height="1500" fill="#fff"/>
-        <text x="500" y="120" fill="#286cb8" font-family="Lato, sans-serif" font-size="24" letter-spacing="6" text-anchor="middle">LETTERS FROM H</text>
-        <text x="500" y="206" fill="#69757a" font-family="Lato, sans-serif" font-size="20" letter-spacing="4" text-anchor="middle">NO. 02</text>
-        <text x="500" y="329" fill="#1b2933" font-family="Liberation Serif,serif" font-size="64" text-anchor="middle">When Good Choices</text>
-        <text x="500" y="418" fill="#1b2933" font-family="Liberation Serif,serif" font-size="64" text-anchor="middle">Lead to Bad Outcomes</text>
-        <g>{''.join(paths)}</g>
-        <text x="500" y="1290" fill="#394853" font-family="Liberation Serif,serif" font-style="italic" font-size="28" text-anchor="middle">A letter on judgement, uncertainty and care</text>
-        <line x1="452" y1="1380" x2="548" y2="1380" stroke="#286cb8" stroke-width="2"/>
-        <text x="500" y="1440" fill="#24313b" font-family="Liberation Serif,serif" font-size="45" text-anchor="middle">H</text>
-    </svg>'''
-    svgpath.write_text(svg, encoding='utf8')
-    pngraw = cairosvg.svg2png(bytestring=svg.encode('utf8'),output_width=1000,output_height=1500)
-    img=Image.open(BytesIO(pngraw)).convert('RGB')
-    img.save(cover,'WEBP',quality=91,method=6)
-    img.save(cover.with_suffix('.png'),'PNG',optimize=True)
-
+    # Preserve approved Letter 02 cover; never regenerate an older variant.
+    check_cover('letter-02')
     md = mistune.create_markdown(escape=True, plugins=['table','strikethrough','url'])
     article = md(path.read_text('utf8'))
     article = re.sub(r'<h1>.*?</h1>','',article,count=1,flags=re.S)
@@ -165,11 +116,12 @@ def build_letter_002():
     .edition{font:8pt/1.65 Lato,sans-serif;color:#6d797f;border-top:.6pt solid #dee3e5;padding-top:10pt;margin-top:20pt}
     a{color:#286cb8}
     '''
-    source_html=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{item['title']} — Letters from H No. 02</title><style>{css}</style></head><body>
-    <div class="cover"><img alt="" src="{svgpath.as_uri()}"></div>
+    source_html=f'''<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>{item['title']} — Letters from H No. 02</title><style>{css}</style></head><body>
+    <div class="cover"><img alt="Cover: When Good Choices Lead to Bad Outcomes by H" src="{cover.with_suffix('.png').as_uri()}"></div>
     <div class="start"><div class="eyebrow">Letters from H · No. 02</div><h1>{item['title']}</h1><p class="subtitle">{item['subtitle']} · H</p></div>
     {article}<p class="edition">The Book of Chance · Letters from H · BOC-LFH-002<br>Editorial candidate, version {item['edition']} · Prepared 22 November 2026<br>Free to read or download without membership or payment. Share a link to the original source.</p></body></html>'''
-    HTML(string=source_html,base_url=ROOT.as_uri()+'/').write_pdf(str(pdf))
+    HTML(string=source_html,base_url=ROOT.as_uri()+'/').write_pdf(str(pdf),pdf_variant='pdf/ua-1')
+    set_pdf_info(pdf,item['title'],'Letters from H · No. 02')
     css_path=ROOT/'source/letters/epub-letter.css'
     subprocess.run(['pandoc',str(path),'-f','markdown','-t','epub3','--standalone',
         '--metadata=title:'+item['title'],'--metadata=author:H','--metadata=lang:en-NZ',

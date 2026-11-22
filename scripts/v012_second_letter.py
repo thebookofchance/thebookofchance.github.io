@@ -54,7 +54,7 @@ def apply_v012(root: Path, document, markdown, info: dict):
     # The main featured card becomes the latest issue. Letter 01 receives its own link below.
     first=section.select_one('.letters-library-card')
     assert first
-    feature=BeautifulSoup(f'''<article class="letters-library-card"><img src="../{entry['cover']}" alt="Cover of Letter 02, with fine branching paths" loading="lazy" width="1000" height="1500"><div><span class="eyebrow">No. 02 · Latest letter</span><h3>{label}</h3><p>{summary}</p><div class="button-line"><a class="btn btn-primary" href="../{entry['url']}">Read online →</a><a class="btn btn-outline" href="../{entry['pdf']}" download>PDF ↓</a><a class="btn btn-outline" href="../{entry['epub']}" download>EPUB ↓</a></div><a class="text-link" href="../letters/">Read both Letters →</a></div></article>''','html.parser').article
+    feature=BeautifulSoup(f'''<article class="letters-library-card"><img src="../{entry['cover']}" alt="Cover of Letter 02, featuring a large H threaded with blue and charcoal paths" loading="lazy" width="1000" height="1500"><div><span class="eyebrow">No. 02 · Latest letter</span><h3>{label}</h3><p>{summary}</p><div class="button-line"><a class="btn btn-primary" href="../{entry['url']}">Read online →</a><a class="btn btn-outline" href="../{entry['pdf']}" download>PDF ↓</a><a class="btn btn-outline" href="../{entry['epub']}" download>EPUB ↓</a></div><a class="text-link" href="../letters/">Read both Letters →</a></div></article>''','html.parser').article
     first.replace_with(feature)
     # Place a non-redundant link to previous issue below featured card.
     prev = cat['available'][0]

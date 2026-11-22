@@ -9,6 +9,7 @@ from xml.sax.saxutils import escape
 from PIL import Image
 import cairosvg
 from weasyprint import HTML
+from approved_cover_assets import check_cover
 from bs4 import BeautifulSoup
 import fitz
 
@@ -32,16 +33,7 @@ def p(d, color=INK, w=1.7, opacity=1):
 
 
 def verify_approved_cover():
-    # Exact accepted v0.1 cover assets from publication QA; never regenerate them.
-    expected={
-       '.svg':'d016e2e9d12a154853cc59ba9c6f3f41349ea989f77f07125405edff4b9eead7',
-       '.png':'3552fa6ba5c85c7957f7ab1280b8859d4a61862c52b76b3a132bf2f566d2e99c',
-       '.webp':'214ce2ce0fb79434e2f54cfec96315afcdd798faec190c218708c5bb4b00fa3f',
-    }
-    for ext, accepted_hash in expected.items():
-       path=ART/f'{COVER}{ext}'
-       assert path.is_file(), 'Approved cover asset missing: '+str(path)
-       assert hashlib.sha256(path.read_bytes()).hexdigest()==accepted_hash, 'Approved cover changed: '+str(path)
+    return check_cover('possibilities')
 
 CSS = r'''
 @page { size: 6in 9in; margin:.76in .74in .73in .74in;
@@ -124,10 +116,10 @@ def make_pdf():
             ptag['class']=['question']
         if 'Editorial and Authorship Record' in (ptag.find_previous('h2').get_text(' ',strip=True) if ptag.find_previous('h2') else ''):
             ptag['class']=['editorial-end']
-    title=f'''<div class="cover"><img alt="" src="{(ART/f'{COVER}.svg').as_uri()}"></div>
+    title=f'''<div class="cover"><img alt="Cover: The Little Book of Possibilities by H" src="{(ART/f'{COVER}.png').as_uri()}"></div>
 <div class="titlepage"><p class="kicker">The Book of Chance · Companion collection</p><h1>The Little Book<br>of Possibilities</h1><p class="subtitle">On Small Openings and the Conditions We Create</p><p class="byline">H</p><p class="status">Editorial reader’s proof v0.2 · Prepared 22 November 2026<br>For author review. This is not a final release or print-ready interior.<br>Copyright, imprint, ISBN and publication rights remain to be confirmed.</p></div>'''
     html=f'<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>{escape(TITLE)}</title><style>{CSS}</style></head><body>{title}<section class="main-content">{str(soup)}</section></body></html>'
-    HTML(string=html,base_url=ROOT.as_uri()+'/').write_pdf(str(PDF),metadata={'title':TITLE,'author':'H','subject':SUBTITLE})
+    HTML(string=html,base_url=ROOT.as_uri()+'/').write_pdf(str(PDF),pdf_variant='pdf/ua-1')
     with fitz.open(PDF) as _document:
         metadata = _document.metadata
         metadata.update({'title': TITLE, 'author':'H','subject':SUBTITLE + ' — editorial proof v0.2','keywords':'The Book of Chance; Confluent Humanism; possibilities; editorial candidate'})

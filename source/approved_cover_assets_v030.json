@@ -1,0 +1,50 @@
+{
+  "version": "v0.30",
+  "approved_on": "author cover approval in preceding conversation",
+  "covers": {
+    "book-light": {
+      "path": "source/covers/Book_of_Chance_Light_Cover.png",
+      "sha256": "fb5773c08316e3f3f5049f1f1ce38be6e0d98790f6910ff8540d13620a119124"
+    },
+    "book-dark": {
+      "path": "source/covers/Book_of_Chance_Dark_Cover.png",
+      "sha256": "d7137eb57fa0b887a0067b14e4742e1238b644249aa5d4e397a84bfd5600aaba"
+    },
+    "letter-01": {
+      "path": "assets/letters/lfh-001-cover.png",
+      "sha256": "749c12788854db4a0cb31115611f0acd7be3cfbeb264de20669c4963061b48de"
+    },
+    "letter-02": {
+      "path": "assets/letters/lfh-002-cover.png",
+      "sha256": "27b7df815b5d285d390d6c4fbf890048f724fae0e6f326458184100b8113ab4b"
+    },
+    "letter-03": {
+      "path": "assets/letters/lfh-003-cover.png",
+      "sha256": "bab13c9a43091a2eb309788bd25b72ac9e56f78195cd7af1b588fb2ad66277da"
+    },
+    "five-values": {
+      "path": "assets/booklets/the-five-values-cover.png",
+      "sha256": "00e4a15b9335116644d72e547586aa7430555d51dfb338a5ff1433a481f2a77a"
+    },
+    "conversations": {
+      "path": "assets/publications/conversations-of-chance-cover.png",
+      "sha256": "0dbe558e86efc4cde1c74b71c9690fb4cc3b2a7f5bcef886854d1f175fa4f2fa"
+    },
+    "possibilities": {
+      "path": "assets/booklets/the-little-book-of-possibilities-cover.png",
+      "sha256": "a408ebed0c8a3a053fc65b8c1328a34133ae7b6bdf52257d47a915a8e44039b6"
+    },
+    "parables": {
+      "path": "assets/publications/parables-of-chance-cover.png",
+      "sha256": "e2320646bab6fd0d4aa3528801c835e69ec9c498817ffa66b96d87dd5b89d557"
+    },
+    "beginner": {
+      "path": "assets/guides/beginners-guide-to-confluent-humanism-cover.png",
+      "sha256": "78a5768467fdc4c625bae04c161b97e68f83a907e29bf3eda3f8083d179c374c"
+    },
+    "faq": {
+      "path": "assets/resources/questions-about-chance-cover.png",
+      "sha256": "4dc3ba150aaeaf29fb4e405221535f7aaf0bd9659536bd12465120e7800b6565"
+    }
+  }
+}

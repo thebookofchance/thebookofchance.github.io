@@ -1,11 +1,17 @@
-# Book of Chance Website Update Only v0.28 — Letters from H 01 Cover Fix
+# Book of Chance Website Update v0.30 — Production Corrections
 
-This patch updates **Letters from H 01 — On the People We Never Meet** so it matches the approved visual series used by Letters 02 and 03.
+**Baseline:** Your existing v0.28 repository. This is an **update-only patch**.
 
-## Included updates
-- Replaced website/library cover assets for `lfh-001-cover`
-- Updated the downloadable PDF first page to use the approved new cover
-- Updated the downloadable EPUB embedded cover image
-- Updated the source SVG wrapper for `lfh-001-cover.svg`
+## Installation
+Extract the ZIP into the repository root, keeping folder structure and **replacing matching files**. Do not delete other repository files. No form config is included.
 
-No other literature files are changed in this patch.
+## Corrections
+- New approved braided **Light Edition** cover in source, web thumbnails, PDF and EPUB. Existing Dark Edition cover remains in use.
+- All 11 PDFs regenerated cleanly with author/title/language metadata and tagged PDF/UA-1 export structures; older cover text is not hidden underneath replacement images.
+- Standalone publication builders now use hash-verified approved covers; older design generator functions are disabled.
+- Corrected the persistent Reading Paths shortcut and updated cover alternative text in source templates.
+- No manuscript or editorial-status changes. `noindex` and candidate notices remain in force.
+
+**Note:** Tag generation is not a substitute for formal accessibility conformance checks or real screen-reader testing. See `docs/Website_v0.30_Production_Corrections_and_QA.md`.
+
+**QA:** 11 PDF/EPUB pairs, 45 public HTML pages, 1,615 internal references and 246 anchors passed local structural tests. Live GitHub Pages verification remains outstanding.

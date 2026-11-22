@@ -89,23 +89,12 @@ def conversation_motif():
 
 
 def build_conversations_assets(out_dir: Path):
-    out_dir.mkdir(parents=True, exist_ok=True)
-    svg = render_svg(
-        ['Conversations', 'of Chance'],
-        ['Twelve Discussions', 'for an Uncertain Life'],
-        'THE BOOK OF CHANCE · COMPANIONS',
-        conversation_motif(),
-        title_y=298,
-        subtitle_y=505,
-        top_y=94,
-    )
-    (out_dir/'conversations-of-chance-cover.svg').write_text(svg, encoding='utf8')
-    if cairosvg is None or Image is None:
-        return
-    png_path = out_dir/'conversations-of-chance-cover.png'
-    cairosvg.svg2png(bytestring=svg.encode('utf8'), write_to=str(png_path), output_width=1000, output_height=1500)
-    img = Image.open(png_path).convert('RGB')
-    img.save(out_dir/'conversations-of-chance-cover.webp', 'WEBP', quality=92, method=6)
+    """Retained compatibility entry point; refuses to overwrite approved artwork."""
+    from approved_cover_assets import check_cover
+    approved = check_cover('conversations')
+    if out_dir.resolve() != approved.parent.resolve():
+        raise RuntimeError('The approved Conversations cover must stay in its canonical location')
+    return approved
 
 
 if __name__ == '__main__':
