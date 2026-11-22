@@ -1,0 +1,26 @@
+{
+  "version": "0.18",
+  "date": "2026-11-22",
+  "book": "The Little Book of Possibilities",
+  "edition": "v0.2",
+  "status": "Editorial candidate; cover approved; manuscript sign-off pending",
+  "checks": {
+    "chapters": 12,
+    "parts": 3,
+    "pdf_pages": 42,
+    "epub_zip_integrity": "pass",
+    "approved_cover_hashes": "pass",
+    "internal_toc_anchors": "pass",
+    "home_and_library_entries": "pass",
+    "all_publication_links_resolve_locally": "pass",
+    "clean_website_rebuild": "pass",
+    "mobile_desktop_no_horizontal_overflow": "pass (inline CSS browser preview)"
+  },
+  "not_tested": [
+    "live GitHub Pages deployment",
+    "external device EPUB reader",
+    "PDF accessibility tagging and screen-reader order",
+    "independent human editorial review",
+    "rights sign-off"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "publication": "BOC-BKL-002",
+  "version": "v0.2",
+  "date": "2026-11-22",
+  "status": "editorial candidate; cover approved; manuscript awaiting author sign-off",
+  "manuscript_words_whitespace_delimited": 9235,
+  "chapter_count": 12,
+  "question_to_carry_count": 12,
+  "four_optional_questions_present": true,
+  "covered_prior_review_scenarios": {
+    "chapter_4_replaced": true,
+    "chapter_7_replaced": true,
+    "chapter_9_replaced": true
+  },
+  "cover_verification": {
+    "svg": {
+      "approved_sha256": "d016e2e9d12a154853cc59ba9c6f3f41349ea989f77f07125405edff4b9eead7",
+      "included_sha256": "d016e2e9d12a154853cc59ba9c6f3f41349ea989f77f07125405edff4b9eead7",
+      "unchanged": true
+    },
+    "png": {
+      "approved_sha256": "3552fa6ba5c85c7957f7ab1280b8859d4a61862c52b76b3a132bf2f566d2e99c",
+      "included_sha256": "3552fa6ba5c85c7957f7ab1280b8859d4a61862c52b76b3a132bf2f566d2e99c",
+      "unchanged": true
+    },
+    "webp": {
+      "approved_sha256": "214ce2ce0fb79434e2f54cfec96315afcdd798faec190c218708c5bb4b00fa3f",
+      "included_sha256": "214ce2ce0fb79434e2f54cfec96315afcdd798faec190c218708c5bb4b00fa3f",
+      "unchanged": true
+    }
+  },
+  "pdf_checks": {
+    "page_count": 42,
+    "page_size_inches": [
+      6.0,
+      9.0
+    ],
+    "metadata_author": "H",
+    "metadata_title": "The Little Book of Possibilities",
+    "selectable_text": true,
+    "all_12_chapter_titles_present": true,
+    "no_empty_interior_pages": true,
+    "external_link_annotations": 6,
+    "tagged_pdf": false
+  },
+  "epub_checks": {
+    "zip_integrity_pass": true,
+    "cover_embedded": true,
+    "cover_byte_identical_to_approved": true,
+    "all_12_chapter_titles_in_navigation": true,
+    "version_in_metadata": true,
+    "author_in_metadata": true,
+    "further_reading_external_links": 4
+  },
+  "checks_not_performed": [
+    "independent human reading/sensitivity review",
+    "PDF tagging and screen-reader reading-order validation",
+    "physical-device EPUB review",
+    "live website integration",
+    "printer-specific print QA",
+    "rights or legal approval"
+  ]
+}

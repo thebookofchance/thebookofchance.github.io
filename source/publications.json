@@ -122,6 +122,24 @@
       "cover": "assets/booklets/the-five-values-cover.webp",
       "pdf": "files/booklets/The_Five_Values.pdf",
       "epub": "files/booklets/The_Five_Values.epub"
+    },
+    {
+      "id": "BOC-BKL-002",
+      "title": "The Little Book of Possibilities",
+      "subtitle": "On Small Openings and the Conditions We Create",
+      "author": "H",
+      "series": "The Book of Chance — Companions",
+      "edition": "v0.2",
+      "status": "editorial candidate; cover approved; manuscript author sign-off and live check outstanding",
+      "language": "en-NZ",
+      "date_prepared": "2026-11-22",
+      "source": "source/booklets/the-little-book-of-possibilities.md",
+      "url": "booklets/the-little-book-of-possibilities/",
+      "cover": "assets/booklets/the-little-book-of-possibilities-cover.webp",
+      "pdf": "files/booklets/The_Little_Book_of_Possibilities_Editorial_Proof_v0.2.pdf",
+      "epub": "files/booklets/The_Little_Book_of_Possibilities_Editorial_Proof_v0.2.epub",
+      "chapters": 12,
+      "pdf_pages": 42
     }
   ],
   "conversations": [

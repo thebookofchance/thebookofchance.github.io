@@ -261,3 +261,12 @@ Local QA: 37 pages, 1,021 local reference checks; EPUB integrity; 7 fillable PDF
 - Kept page labelled editorial candidate and `noindex`; intentionally deferred its sitemap entry pending H's final editorial sign-off.
 - Preserved prior asset paths, Formspree controls, other publication sources, member and donation status, and the site's existing theme/nav controls. The supplied v0.15 patch does not contain prior full-repository assets or application JavaScript.
 - Local checks: 12 conversation headings with 12 matched original-readings links; 48-page PDF and valid EPUB; HTML/CSS inlined Chromium render at 1440px and 390px found no horizontal overflow. Browser execution against localhost was blocked by the environment, so full live-site JS integration and GitHub Pages deployment remain untested.
+
+
+## v0.18 — The Little Book of Possibilities
+
+- Added a full source-driven online reader with twelve chapters and an accessible chapter navigation.
+- Added the approved v0.1 cover, v0.2 PDF proof (42 pages) and EPUB to free Library downloads.
+- Added homepage and Library features matching the existing visual publishing system.
+- Updated the publication catalogue, site status manifest and roadmap without modifying forms, identity marks or existing books.
+- Editorial candidate only; H manuscript approval, independent testing and deployment verification remain outstanding.

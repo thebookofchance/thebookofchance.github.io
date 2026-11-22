@@ -1,5 +1,5 @@
 {
-  "website_version": "0.16",
+  "website_version": "0.18",
   "source": "Book_of_Chance_Illustrated_Manuscript_v0.12.md",
   "source_sha256": "997a36f2aa8265129ea7ec8638a95783065c8fc7649f5505023a243f569384e9",
   "chapters": 24,
@@ -10,7 +10,7 @@
   "interest_forms_built": 2,
   "form_configuration": "preserved externally; not verified in source",
   "fellowship_membership_open": false,
-  "library_available_publications": 6,
+  "library_available_publications": 7,
   "library_planned_categories": 1,
   "new_pages": [
     "reflect/",
@@ -41,7 +41,7 @@
   "publication_standard": "docs/Publications_Standard_v1.0_RC1.md",
   "latest_letter_id": "BOC-LFH-003",
   "latest_letter_edition": "1.0-RC2",
-  "latest_companion_id": "BOC-BKL-001",
+  "latest_companion_id": "BOC-BKL-002",
   "companion_page_count_pdf": 17,
   "companion_status": "Editorial candidate; approval and deployed verification outstanding",
   "values_booklet": {
@@ -66,6 +66,16 @@
     "source": "source/conversations/conversations-of-chance.md",
     "sessions": 12
   },
-  "publications_represented_in_library": 6,
-  "conversations_page_count_pdf": 53
+  "publications_represented_in_library": 7,
+  "conversations_page_count_pdf": 53,
+  "possibilities_status": "Editorial candidate v0.2; cover approved; manuscript sign-off, accessibility and live checks outstanding",
+  "possibilities": {
+    "online": "booklets/the-little-book-of-possibilities/",
+    "pdf": "files/booklets/The_Little_Book_of_Possibilities_Editorial_Proof_v0.2.pdf",
+    "epub": "files/booklets/The_Little_Book_of_Possibilities_Editorial_Proof_v0.2.epub",
+    "source": "source/booklets/the-little-book-of-possibilities.md",
+    "cover": "assets/booklets/the-little-book-of-possibilities-cover.webp",
+    "chapters": 12,
+    "pdf_pages": 42
+  }
 }

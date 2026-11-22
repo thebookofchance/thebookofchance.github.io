@@ -1,0 +1,135 @@
+{
+  "update": "v0.18",
+  "based_on": "v0.17",
+  "new_publication": "The Little Book of Possibilities v0.2",
+  "status": "cover approved, manuscript editorial candidate",
+  "file_count": 21,
+  "files": [
+    {
+      "path": "SITE_CONTENT_MANIFEST.json",
+      "sha256": "ad891a41924f7a60d46dbea35b479089bde93413d86b30c87b3038dd5b48402c",
+      "bytes": 3486,
+      "action": "replace"
+    },
+    {
+      "path": "assets/booklets/the-little-book-of-possibilities-cover.png",
+      "sha256": "3552fa6ba5c85c7957f7ab1280b8859d4a61862c52b76b3a132bf2f566d2e99c",
+      "bytes": 93524,
+      "action": "add"
+    },
+    {
+      "path": "assets/booklets/the-little-book-of-possibilities-cover.svg",
+      "sha256": "d016e2e9d12a154853cc59ba9c6f3f41349ea989f77f07125405edff4b9eead7",
+      "bytes": 2819,
+      "action": "add"
+    },
+    {
+      "path": "assets/booklets/the-little-book-of-possibilities-cover.webp",
+      "sha256": "214ce2ce0fb79434e2f54cfec96315afcdd798faec190c218708c5bb4b00fa3f",
+      "bytes": 55602,
+      "action": "add"
+    },
+    {
+      "path": "assets/site.css",
+      "sha256": "245a25b9091bd47a2f4710f6077308b9b2aead3b1f383c44c01c96a9a34616a7",
+      "bytes": 91905,
+      "action": "replace"
+    },
+    {
+      "path": "booklets/the-little-book-of-possibilities/index.html",
+      "sha256": "d5bc3ba6b476f6d9b969d01647e9b28d5a4eb2f586c5aa171332f0cbeb900b3b",
+      "bytes": 70537,
+      "action": "add"
+    },
+    {
+      "path": "docs/Little_Book_of_Possibilities_QA_v0.2.json",
+      "sha256": "3e1aecb4f76fe99c9a4565d6c96165be8e586c4668412129b7141ee82d8afa41",
+      "bytes": 2091,
+      "action": "add"
+    },
+    {
+      "path": "docs/Little_Book_of_Possibilities_Revision_Notes_v0.2.md",
+      "sha256": "2fc1cb385189609ea4721ba2c422a549b45f3f31b1138c8183374b82abb07489",
+      "bytes": 5850,
+      "action": "add"
+    },
+    {
+      "path": "docs/Publications_Roadmap_and_Progress.md",
+      "sha256": "64efe606ad80054252d5c80b75557215c46f9c787af6e8cc46f298d3cd9b6b9c",
+      "bytes": 11100,
+      "action": "replace"
+    },
+    {
+      "path": "docs/Website_Development_Log.md",
+      "sha256": "373c1cbf48e4d58878e18934429e44753b1d7f628e79c67a05e12eade02a3198",
+      "bytes": 28785,
+      "action": "replace"
+    },
+    {
+      "path": "docs/Website_v0.18_Patch_Notes.md",
+      "sha256": "1800e3b2f2e99cf9a0c1298f74d1be65169b72fa3324034172c60251e9c65d68",
+      "bytes": 2172,
+      "action": "add"
+    },
+    {
+      "path": "docs/Website_v0.18_Possibilities_QA.json",
+      "sha256": "599ef5febfb80d356176af09e5ab7b3eccb85912d70d8a5a9cf23bd40697e280",
+      "bytes": 804,
+      "action": "add"
+    },
+    {
+      "path": "downloads/index.html",
+      "sha256": "cff060c1839867424ba594acb1df216ad887c2a4478020d4b0a5b9c3e2f25ad3",
+      "bytes": 19403,
+      "action": "replace"
+    },
+    {
+      "path": "files/booklets/The_Little_Book_of_Possibilities_Editorial_Proof_v0.2.epub",
+      "sha256": "ea1b42ca4f2a012a77e3e2d56a02b4356e36ea55d9985ef4a8ad80ee0b00ef1a",
+      "bytes": 120233,
+      "action": "add"
+    },
+    {
+      "path": "files/booklets/The_Little_Book_of_Possibilities_Editorial_Proof_v0.2.pdf",
+      "sha256": "a0bffdb035d68a909d988e92770eece6e8caee576469cb83d1fe45fa5dc80560",
+      "bytes": 155465,
+      "action": "add"
+    },
+    {
+      "path": "index.html",
+      "sha256": "2c4ee5383fe9f742155c67674d44f0e0e9603a83ecf4d11e8394ab02275950a8",
+      "bytes": 14359,
+      "action": "replace"
+    },
+    {
+      "path": "scripts/build_possibilities.py",
+      "sha256": "495b79d953cf10fee9d9b16e9b7e5f85e497e66f31fb8a567a906539f3035ec7",
+      "bytes": 10242,
+      "action": "add"
+    },
+    {
+      "path": "scripts/build_site.py",
+      "sha256": "518505b15a7605b35b22ad311fdad41b829009e06aba59e0dcdea7ebabed9f41",
+      "bytes": 54731,
+      "action": "replace"
+    },
+    {
+      "path": "scripts/v018_possibilities.py",
+      "sha256": "79ccfbe9edc102e62eaa572e08266654577790ccb3f2a02a2670559f2580e177",
+      "bytes": 15327,
+      "action": "add"
+    },
+    {
+      "path": "source/booklets/the-little-book-of-possibilities.md",
+      "sha256": "9ee3bfdd691b24cc91bd51c6b4cb30d63d7ec6c122bb6684ca22fa6598e1d573",
+      "bytes": 57613,
+      "action": "add"
+    },
+    {
+      "path": "source/publications.json",
+      "sha256": "741ab22fcb065f024a26f65a9a7af65bf67ddcc4d4d519651e035dc3590af803",
+      "bytes": 6561,
+      "action": "replace"
+    }
+  ]
+}
