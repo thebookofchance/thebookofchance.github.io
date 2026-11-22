@@ -36,6 +36,7 @@
     const fill=document.querySelector('[data-progress-fill]');
     let ticking=false;
     const updateProgress=()=>{
+      if(document.querySelector('script[src*="book-pages.js"]')){ticking=false;return;}
       const top=article.getBoundingClientRect().top+window.scrollY;
       const height=article.offsetHeight;
       let amount=Math.max(0,Math.min(100,100*((window.scrollY+window.innerHeight*.7-top)/Math.max(height,1))));

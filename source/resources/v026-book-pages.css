@@ -1,0 +1,43 @@
+/* v0.26 — Screen-height, one-page-at-a-time reading of the original book chapters.
+   Only applies once JS has constructed the paged view. Print and no-JS remain flowing. */
+body.book-paged-mode{height:100vh;height:100dvh;display:flex;flex-direction:column;overflow:hidden}
+.book-paged-mode>.site-header{flex:0 0 auto;z-index:25}
+.book-paged-mode main#main{flex:1;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+.book-paged-mode .site-footer{display:none}
+.book-paged-mode .reader-topbar{flex:0 0 auto;padding-top:11px;padding-bottom:10px}
+.book-paged-mode .reader-layout{flex:1;min-height:0;overflow:hidden;grid-template-columns:minmax(135px,1fr) minmax(0,710px) minmax(0,1fr);align-items:stretch;gap:clamp(16px,2.5vw,38px);padding-bottom:12px}
+.book-paged-mode .reader-sidebar{position:static;align-self:start;padding-top:26px}
+.book-paged-mode .reader-rail{padding-top:22px}
+.book-paged-mode .reading-article{height:100%;min-height:0;min-width:0;display:flex;flex-direction:column}
+.book-paged-mode .reading-article>.chapter-pager{display:none}
+.book-pages-shell{min-height:0;flex:1;display:flex;flex-direction:column;padding:clamp(13px,2.2vw,28px) clamp(18px,3.3vw,38px);background:var(--surface);border:1px solid var(--line);box-shadow:0 5px 22px rgba(31,46,58,.045);overflow:hidden}
+.book-pages-viewport{flex:1;min-height:0;width:100%;outline-offset:-2px;overflow:hidden;touch-action:pan-y}
+.book-pages-viewport:focus-visible{outline:2px solid var(--blue)}
+.book-pages-flow{width:100%;height:100%;column-fill:auto;column-gap:0;overflow:visible;transition:transform 130ms ease-out;box-sizing:border-box}
+.book-pages-flow .chapter-heading{margin:14px 0 27px;text-align:center;break-after:avoid}
+.book-pages-flow .chapter-heading h1{font-size:clamp(29px,3vw,47px);line-height:1.12;margin:13px 0 15px}
+.book-pages-flow .heading-ornament{margin:0 auto 15px}
+.book-pages-flow .reading-body{font-size:calc(17px * var(--reader-scale));line-height:1.63}
+.book-pages-flow .reading-body>p{margin:0 0 1em}
+.book-pages-flow .reading-body h2{font-size:calc(25px * var(--reader-scale));line-height:1.21;margin:1.25em 0 .55em;break-after:avoid}
+.book-pages-flow .reading-body h3{font-size:calc(21px * var(--reader-scale));margin:1em 0 .5em;break-after:avoid}
+.book-pages-flow .reading-body li{margin-bottom:.45em}
+.book-pages-flow .reading-body hr{margin:26px 0}
+.book-pages-flow .book-figure{margin:12px 0 18px;break-inside:avoid}
+.book-pages-flow .book-figure img{max-height:min(37dvh,320px);object-fit:contain}
+.book-pages-flow .book-figure figcaption{padding:12px 4px 0;line-height:1.45;font-size:12px}
+.book-pages-flow .reading-body blockquote{margin:.8em 0}
+.book-pages-controls{flex:0 0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(150px,1.1fr) minmax(0,1fr);align-items:center;gap:9px;margin-top:10px;padding:9px 0 0;border-top:1px solid var(--line)}
+.book-turn{display:flex;align-items:center;justify-content:center;gap:5px;min-height:44px;border:1px solid var(--line);border-radius:3px;background:var(--surface);color:var(--ink);font:600 12px/1.25 var(--sans);cursor:pointer}
+.book-turn:hover{border-color:var(--blue);color:var(--blue)}
+.book-turn:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.book-turn:disabled{opacity:.34;cursor:default}
+.book-page-location{text-align:center;display:flex;flex-direction:column;gap:3px;min-width:0}
+.book-page-location strong{font:600 14px/1.25 var(--sans);color:var(--ink)}
+.book-page-location span{font:400 11px/1.35 var(--sans);color:var(--muted);white-space:normal}
+@media(max-width:1050px){.book-paged-mode .reader-layout{display:flex;max-width:780px;justify-content:center}.book-paged-mode .reading-article{width:100%;margin:0}.book-paged-mode .reader-rail,.book-paged-mode .reader-sidebar{display:none}}
+@media(max-width:720px){.book-paged-mode .reader-topbar{padding-top:7px;padding-bottom:7px}.book-paged-mode .reader-preferences{gap:5px}.book-paged-mode .reader-preferences button{min-height:36px;padding:6px 8px}.book-paged-mode .reader-layout{width:min(100% - 20px,650px);padding-bottom:6px}.book-pages-shell{padding:14px 15px}.book-pages-flow .chapter-heading{margin:6px 0 16px}.book-pages-flow .chapter-heading h1{font-size:clamp(28px,7vw,40px);margin:8px 0 14px}.book-pages-flow .reading-body{font-size:calc(16px * var(--reader-scale));line-height:1.55}.book-pages-controls{grid-template-columns:minmax(64px,1fr) minmax(118px,1.5fr) minmax(64px,1fr);gap:5px;margin-top:7px;padding-top:7px}.book-page-location strong{font-size:13px}.book-page-location span{font-size:10px}.book-turn{min-height:42px;font-size:12px}}
+@media(max-width:360px){.book-pages-shell{padding:11px}.book-pages-flow .reading-body{font-size:calc(15.5px * var(--reader-scale))}.book-turn span{display:none}.book-page-location span{font-size:9.5px}}
+@media(max-height:620px){.book-paged-mode .reader-topbar{padding-top:4px;padding-bottom:4px}.book-pages-shell{padding-top:9px;padding-bottom:9px}.book-pages-flow .chapter-heading h1{font-size:30px}.book-pages-flow .chapter-heading{margin-bottom:14px}.book-pages-flow .book-figure img{max-height:28dvh}}
+@media(prefers-reduced-motion:reduce){.book-pages-flow{transition:none}}
+@media print{body.book-paged-mode{height:auto!important;display:block;overflow:visible!important}.book-paged-mode main#main,.book-paged-mode .reader-layout,.book-paged-mode .reading-article{height:auto!important;overflow:visible!important;display:block!important}.book-pages-shell,.book-pages-viewport,.book-pages-flow{height:auto!important;width:auto!important;column-width:auto!important;columns:auto!important;overflow:visible!important;transform:none!important;border:0;box-shadow:none;padding:0}.book-pages-controls{display:none!important}}

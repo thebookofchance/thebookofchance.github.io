@@ -164,3 +164,7 @@ to `noindex,follow` until formal release checks are completed.
 - Reading place and preferred text size are stored only in this browser, can be cleared, and are not transmitted to the website. All literature remains accessible without JavaScript using existing reading links.
 - `reader/` is intentionally `noindex` to avoid competing with the canonical publication pages. It is excluded from the sitemap. Editorial-candidate labels for unfinished release checks remain in place.
 - Cover images are unchanged. The new Library shelf backgrounds are a presentation treatment, not new cover artwork or founder approval of a new cover design.
+
+### Website v0.26 — paged original Book of Chance readings
+
+The original `read/<section>/` routes now have a page-by-page reading experience with a visible page count, keyboard/touch and next/previous controls, locally saved position and a non-JavaScript scrolling fallback. This does not change manuscript content, publication approval flags or the separate nine-book Reading Room. See `docs/Website_v0.26_Paged_Book_Reader_QA.md`. Build module: `scripts/v026_book_paging.py`; style/script source: `source/resources/v026-book-pages.*`.

@@ -1,5 +1,5 @@
 {
-  "website_version": "0.25",
+  "website_version": "0.26",
   "source": "Book_of_Chance_Illustrated_Manuscript_v0.12.md",
   "source_sha256": "27fe17a36b5a0cd96a2516dfaaef4e3f0b4692b700d2be192bd8bbc77e3e3682",
   "chapters": 24,
@@ -131,6 +131,8 @@
     "new_publications": 0
   },
   "cover_changes": 0,
+  "book_reading_mode": "Paged chapter reading, visible page counts and local-only position; no scroll-progress bar",
+  "book_paged_sections": 24,
   "correction_status": "Terminology consistency revision; no independent human reader test",
   "book_editorial_source": "source/manuscript.md",
   "letter_editions": [

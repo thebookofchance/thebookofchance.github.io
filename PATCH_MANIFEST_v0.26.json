@@ -1,0 +1,190 @@
+{
+  "update": "v0.26",
+  "baseline": "v0.25",
+  "type": "update-only",
+  "changed_file_count": 35,
+  "changes": [
+    {
+      "file": "PATCH_README.md",
+      "bytes": 1666,
+      "sha256": "898723be1eb0d95fd0696860fed2fc0d215787682a3a9a74fb95332c63d69a5f"
+    },
+    {
+      "file": "README.md",
+      "bytes": 16196,
+      "sha256": "744f50e7a72850fdfeeaddd6bf294f1c4147eb9448542081695593b419f9826a"
+    },
+    {
+      "file": "SITE_CONTENT_MANIFEST.json",
+      "bytes": 6374,
+      "sha256": "5642b6610b90ad5acfe4d6232e1afe9819a9454475a066cd31131f6f95e55dc3"
+    },
+    {
+      "file": "assets/book-pages.js",
+      "bytes": 7581,
+      "sha256": "869ef516488006782bddc6c19e5cbbb784ca1524d92421f83fd6146fe87b7a42"
+    },
+    {
+      "file": "assets/site.css",
+      "bytes": 141200,
+      "sha256": "d3d5bbcef461e0fd354a30b55d1011b41f75e25e25ff5850b6f35a030dd90620"
+    },
+    {
+      "file": "assets/site.js",
+      "bytes": 11805,
+      "sha256": "8392f0a75bd30df15fe54e05d6e7cfd5c8c92931fd3543fc919a56ac3acb32d8"
+    },
+    {
+      "file": "docs/Website_v0.26_Paged_Book_Reader_QA.md",
+      "bytes": 3696,
+      "sha256": "ed81759f90faacf538f44de40f3517e72370885036d304d7fb27cd7d49d64488"
+    },
+    {
+      "file": "read/action-within-uncertainty/index.html",
+      "bytes": 15363,
+      "sha256": "3c9d8c986779683defcf1d14fe0f72b65f07257cd841818f8750415e1b6923b6"
+    },
+    {
+      "file": "read/afterword/index.html",
+      "bytes": 7137,
+      "sha256": "4290b09e8cd7b4dab1d388806b2cf1b7341ea0be0db4550379514a12c3cc5292"
+    },
+    {
+      "file": "read/arrival/index.html",
+      "bytes": 13775,
+      "sha256": "3270ef10aebceedbd036c06520ed0af1f314460d212f83584dfb1605c73d3812"
+    },
+    {
+      "file": "read/death-and-the-unknown/index.html",
+      "bytes": 12443,
+      "sha256": "315e4de84ec8051bb988edcb846aaba5083c9894bcad0c68f03e58d2a591735d"
+    },
+    {
+      "file": "read/fellowship/index.html",
+      "bytes": 14932,
+      "sha256": "7a9e71401ffefc79c53d5dfb8011fb7e4446d851f10696a2c40510f11e7578bd"
+    },
+    {
+      "file": "read/fortune-and-hardship/index.html",
+      "bytes": 13808,
+      "sha256": "81754a866887bcef3651af5be9dbd404ab30b4ec5d626592e8f4ceed6bb69e0e"
+    },
+    {
+      "file": "read/further-reading/index.html",
+      "bytes": 12478,
+      "sha256": "3d265592867ff750175bc3b6b7e2bb2ca9a4e8640043d8ef1af26c40e3ed9d78"
+    },
+    {
+      "file": "read/hope/index.html",
+      "bytes": 12198,
+      "sha256": "f23693656c6080f06fcd8ff7662294fcd230ece24aada40fc860a932122e2a2b"
+    },
+    {
+      "file": "read/introduction/index.html",
+      "bytes": 9623,
+      "sha256": "8382afae037a1e28a6e04bde79f0db72528797fcecc8e0cf0f669a2483bcb36c"
+    },
+    {
+      "file": "read/note-on-language/index.html",
+      "bytes": 8586,
+      "sha256": "6128025ddf915f6a491df201219523f6368960272029f71b94d030d2e5aa1514"
+    },
+    {
+      "file": "read/note-on-the-fellowship/index.html",
+      "bytes": 6046,
+      "sha256": "3166f9e17952a9637e602dff6f85e8a88b828940afc526199b4697a4b68fb2d9"
+    },
+    {
+      "file": "read/note-on-this-edition/index.html",
+      "bytes": 5469,
+      "sha256": "b1f07af74caa83febd67b94eb73cf969bf8bb62e365cbe644ba872396ecefe55"
+    },
+    {
+      "file": "read/note-to-reader/index.html",
+      "bytes": 7222,
+      "sha256": "881e3ac4198a5d2c5aecfb995da22ed45037d98b561f352b1c6f069c218a756d"
+    },
+    {
+      "file": "read/part-one/index.html",
+      "bytes": 5547,
+      "sha256": "d1577f5e6a9ecd02e9016ffdb077b81945bf66c930285aa8c01c3c80db144b00"
+    },
+    {
+      "file": "read/part-three/index.html",
+      "bytes": 5679,
+      "sha256": "cc06d68d025fe3e3a78a18337dc0614df2ab0ee5478885b2f2524016f4d88cfa"
+    },
+    {
+      "file": "read/part-two/index.html",
+      "bytes": 5714,
+      "sha256": "d3f4881f98cb8edfa83fef519ef249de78adc1055e7930a0e6f91aa2c7fc8f0e"
+    },
+    {
+      "file": "read/reader-resources/index.html",
+      "bytes": 5292,
+      "sha256": "f965079733fffd0a0511c28b476c0c378dac25f2b79f92b99552ae588b65e978"
+    },
+    {
+      "file": "read/reflection-and-growth/index.html",
+      "bytes": 14119,
+      "sha256": "9b5e82aaf8272e05042821aa4e4ffca3af211d5ac797f8f40f66dffb8ac7684a"
+    },
+    {
+      "file": "read/shared-fortune/index.html",
+      "bytes": 15857,
+      "sha256": "b9b5c48b8bc2c80c33d0e18c585cf3d05645493eb84a39d01e64914129313750"
+    },
+    {
+      "file": "read/stewardship/index.html",
+      "bytes": 12985,
+      "sha256": "34f48c311b9de209630c829ebc56a0d50e14bc1fe6295bf02fd4a55ec23a54a7"
+    },
+    {
+      "file": "read/the-living-world/index.html",
+      "bytes": 16845,
+      "sha256": "3ab9a26a5ebd4e2a738f82a76d774f54853849c545f7c1549198a5582997fd88"
+    },
+    {
+      "file": "read/the-open-future/index.html",
+      "bytes": 16622,
+      "sha256": "185554fef17b58ebdb59b6513926fcbe7d1c6104158759287aca349744b7ef74"
+    },
+    {
+      "file": "read/the-unfolding/index.html",
+      "bytes": 11910,
+      "sha256": "a8f925ad03771314aa88e22170578245c5daf9d6c788151ccc013322878236c3"
+    },
+    {
+      "file": "read/ways-of-reflecting/index.html",
+      "bytes": 8003,
+      "sha256": "b041617f0336a5daa138c2ce4c7a3aa375b6ab591f9f793c9cef30f381af3291"
+    },
+    {
+      "file": "scripts/build_site.py",
+      "bytes": 56179,
+      "sha256": "de7fba0a379b85527e685ab743e16f65b0d9caab82695ac5092cfda2b984d54e"
+    },
+    {
+      "file": "scripts/v026_book_paging.py",
+      "bytes": 2481,
+      "sha256": "0ffba51f138b31a000c324fff825b314c2e70bbcda0044e1fba7046b80544f5b"
+    },
+    {
+      "file": "source/resources/v026-book-pages.css",
+      "bytes": 5746,
+      "sha256": "5dff1959690f68da417ea68fedcbb7b77cf4e932186c5c68074a2eab4b87eaaa"
+    },
+    {
+      "file": "source/resources/v026-book-pages.js",
+      "bytes": 7581,
+      "sha256": "869ef516488006782bddc6c19e5cbbb784ca1524d92421f83fd6146fe87b7a42"
+    }
+  ],
+  "deleted_files": [],
+  "exclusions": [
+    "literature source manuscripts",
+    "PDF/EPUB exports",
+    "approved covers",
+    "forms configuration"
+  ]
+}

@@ -247,7 +247,9 @@ from v024_reading_journey import apply_v024
 apply_v024(ROOT, document, info)
 from v025_library_reader import apply_v025
 apply_v025(ROOT, document, info)
-info.update({'website_version':'0.25','correction_status':'Terminology consistency revision; no independent human reader test','book_editorial_source':'source/manuscript.md','letter_editions':[e['edition'] for e in json.loads((ROOT/'source/letters/catalogue.json').read_text('utf8'))['available']]})
+from v026_book_paging import apply_v026
+apply_v026(ROOT, info)
+info.update({'website_version':'0.26','correction_status':'Terminology consistency revision; no independent human reader test','book_editorial_source':'source/manuscript.md','letter_editions':[e['edition'] for e in json.loads((ROOT/'source/letters/catalogue.json').read_text('utf8'))['available']]})
 (ROOT/'SITE_CONTENT_MANIFEST.json').write_text(json.dumps(info,indent=2),encoding='utf8')
 # Public-facing copy must not inherit the retired gaming shorthand from old drafts.
 import re
