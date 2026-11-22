@@ -1,6 +1,6 @@
 # H Publications — Release Roadmap and Progress Register
 
-**Updated:** 22 November 2026 · v0.11  
+**Updated:** 22 November 2026 · v0.12  
 **Sequence rule:** Develop and review **one publication at a time**. After completing the recommended literature programme, plan and launch the Fellowship's YouTube/video channel. No concurrent video production is assumed.
 
 ## Working order
@@ -8,8 +8,8 @@
 | Order | Publication | Current stage | Approval to move on |
 |---|---|---|---|
 | 1.1 | **Letters from H · No. 01 — On the People We Never Meet** | Editorially refined to 1.0-RC2. HTML, PDF and EPUB prepared; human sign-off/live verification pending | H reviews text and visuals; deployed downloads checked |
-| 1.2 | **Letters from H · No. 02 — When Good Choices Lead to Bad Outcomes** | Planned; not drafted | Issue 001 approved |
-| 1.3 | **Letters from H · No. 03 — What Do We Owe to Strangers?** | Planned; not drafted | Issue 002 approved; distinct ethical argument from issue 001 |
+| 1.2 | **Letters from H · No. 02 — When Good Choices Lead to Bad Outcomes** | Draft complete; 1.0-RC1 PDF, EPUB and web reading prepared; author/live approval pending | Text and design approved; live downloads verified |
+| 1.3 | **Letters from H · No. 03 — What Do We Owe to Strangers?** | Planned; not drafted | Issue 002 approved; distinct ethical argument from issues 001 and 002 |
 | 2 | **The Five Values** | Proposed 10–15-page illustrated beginner booklet | Three Letters complete; editorial concept signed off |
 | 3 | **Conversations of Chance** | Proposed guide to twelve optional facilitated discussion sessions | The Five Values published; safeguarding and facilitation boundaries reviewed |
 | 4 | **The Little Book of Possibilities** | Proposed 40–60-page accessible companion | Discussion guide published; original contribution distinguished from main book |
@@ -23,10 +23,10 @@ The initial programme's *Letters from H* collection is intended to remain open t
 - Foundational text: `source/manuscript.md` (v0.12 source, no changes).
 - House standard: `docs/Publications_Standard_v1.0_RC1.md`.
 - Journal-specific standard: `docs/Journal_Series_Editorial_and_Print_Plan.md`.
-- Letter source: `source/letters/001-on-the-people-we-never-meet.md`.
+- Canonical letters: `source/letters/001-on-the-people-we-never-meet.md` and `source/letters/002-when-good-choices-lead-to-bad-outcomes.md`.
 - Publication entries and statuses: `source/letters/catalogue.json` and `source/publications.json`.
-- First letter generator: `scripts/build_letters.py`.
-- Site integration: `scripts/v010_publications.py` called from `scripts/build_site.py`.
+- Letter generators: `scripts/build_letters.py` (issue-specific routines; prior issue assets are preserved by website builds).
+- Site integration: `scripts/v010_publications.py` then `scripts/v012_second_letter.py`, both called by `scripts/build_site.py`.
 
 ## Review protocol at the end of each publication
 
@@ -49,3 +49,9 @@ The initial programme's *Letters from H* collection is intended to remain open t
 ## Issue 001 — v0.11 revision
 
 Refined the first Letter without adding a new title or changing its core argument. The revised work is 1.0-RC2 (editorial candidate). The detailed editorial record is `docs/Letter_001_Editorial_Review_RC2.md`. No video production or second Letter has started.
+
+## Issue 002 — v0.12 editorial candidate
+
+The full essay **When Good Choices Lead to Bad Outcomes** (1.0-RC1) has been prepared as a freely readable HTML article, a 10-page 6×9-inch PDF and a reflowable EPUB. It distinguishes the reasonableness of a choice from its actual consequences; places limits on hindsight, pure intentions and imposed risk; and asks for listening, repair and learning after harm. It acknowledges the existing moral-luck debate (Nagel, Williams) without claiming originality for that debate. The two scenes are explicitly fictional.
+
+The release expands the Letters catalogue and Library, features Letter 002 on the homepage, adds the stable route to the sitemap and preserves existing Letter 001 and all core publications. **No independent human review, author approval or live deployment check is claimed.** See `docs/Letter_002_Editorial_Review_RC1.md` and `docs/Letter_002_QA_Report.json`.

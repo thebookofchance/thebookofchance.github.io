@@ -10,7 +10,13 @@ LETTER_TITLE='On the People We Never Meet'
 
 
 def apply_v010(root: Path, document, md, info: dict):
-    build_letter_assets()
+    # Do not mutate a previously produced Letter merely by rebuilding the website.
+    # Rebuild the issue deliberately with build_letters.py after an editorial change.
+    required=[root/'files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.pdf',
+              root/'files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.epub',
+              root/'assets/letters/lfh-001-cover.webp']
+    if not all(x.is_file() for x in required):
+        build_letter_assets()
     metadata_path=root/'source/letters/catalogue.json'
     catalogue=json.loads(metadata_path.read_text('utf-8'))
     entry=catalogue['available'][0]

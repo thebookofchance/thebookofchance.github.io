@@ -201,3 +201,22 @@ It also introduces **Chance Campaigns**, a deferred idea for externally vetted c
 - Added an editorial review, release-gate table, and refreshed progress register.
 - Preserved the foundational book, journals, approved emblem and Formspree configuration.
 - Issued only changed/new website files.
+
+
+---
+
+## Website v0.12 — Second Letter from H (22 November 2026)
+
+**Editorial addition:** Letters from H No. 02, *When Good Choices Lead to Bad Outcomes*, a new ~1,900-word standalone essay. Editorial candidate 1.0-RC1, awaiting authorial sign-off.
+
+**Publication formats:** 6×9-inch illustrated, 10-page PDF, reflowable EPUB3, and complete HTML reading page. Cover artwork preserves the house typography and path motif, but interprets divergent outcomes with branching lines.
+
+**Discoverability:** archive lists both Letters; Library features the newest and links to the first; homepage highlights the new Letter; sitemap and machine-readable publication catalogue updated. No registration required.
+
+**Editorial safeguards:** Fictional weather/guidance illustrations identified; reference notes credit the established moral-luck debate; all reader prompts voluntary; no membership, fundraising or medical advice claims. The next issue remains planned, not available.
+
+**Reproducibility:** `scripts/build_letters.py` now has an issue-specific Letter 002 builder. `scripts/v012_second_letter.py` integrates the Letter after `v010_publications.py`. Existing Letter 001 assets are no longer regenerated merely by rebuilding the website. Run `python scripts/build_site.py`, then `python scripts/audit_letter_002.py`.
+
+**Preserved:** logo/emblem, forms-config.js, both foundational book editions, all four journal editions and worksheets, and the original Letter 001 edition bytes.
+
+**Validation:** static link and PDF/EPUB checks plus visual layout smoke tests (self-contained browser markup) at desktop/tablet/mobile widths. Direct file navigation, remote deployment, true form delivery, certified accessibility and human approval remain untested/pending.

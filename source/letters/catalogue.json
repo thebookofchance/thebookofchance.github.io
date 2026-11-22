@@ -31,14 +31,42 @@
       "url": "letters/on-the-people-we-never-meet/",
       "last_revised": "2026-11-22",
       "editorial_note": "Revised for clarity and stronger distinction between private kindness, dependable institutions and unseen responsibility. Fictional scenes expressly identified. Founder approval pending."
+    },
+    {
+      "id": "BOC-LFH-002",
+      "number": 2,
+      "slug": "when-good-choices-lead-to-bad-outcomes",
+      "title": "When Good Choices Lead to Bad Outcomes",
+      "author": "H",
+      "language": "en-NZ",
+      "edition": "1.0-RC1",
+      "date_prepared": "2026-11-22",
+      "status": "editorial candidate — author approval and live verification pending",
+      "summary": "A letter about making careful decisions when outcomes are uncertain, and remaining accountable when things go wrong.",
+      "subtitle": "A letter on judgement, uncertainty and the care that follows",
+      "lead": "A good decision cannot guarantee a good ending. What can we ask of ourselves when careful choices still cause pain?",
+      "foundation_readings": [
+        "III — Fortune and Hardship",
+        "V — Action Within Uncertainty",
+        "VI — Reflection and Growth"
+      ],
+      "themes": [
+        "moral luck",
+        "decision quality",
+        "responsibility",
+        "repair",
+        "uncertainty"
+      ],
+      "file": "source/letters/002-when-good-choices-lead-to-bad-outcomes.md",
+      "pdf": "files/letters/Letters_from_H_02_When_Good_Choices_Lead_to_Bad_Outcomes.pdf",
+      "epub": "files/letters/Letters_from_H_02_When_Good_Choices_Lead_to_Bad_Outcomes.epub",
+      "cover": "assets/letters/lfh-002-cover.webp",
+      "url": "letters/when-good-choices-lead-to-bad-outcomes/",
+      "last_revised": "2026-11-22",
+      "editorial_note": "First complete editorial candidate. Imagined scenes labelled; comparison with philosophical moral luck acknowledged and linked."
     }
   ],
   "planned": [
-    {
-      "number": 2,
-      "title": "When Good Choices Lead to Bad Outcomes",
-      "status": "planned; not drafted"
-    },
     {
       "number": 3,
       "title": "What Do We Owe to Strangers?",

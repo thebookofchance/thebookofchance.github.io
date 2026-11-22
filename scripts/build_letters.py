@@ -89,3 +89,90 @@ def build():
     print('LETTER OUTPUTS', PDF.name, EPUB.name, COVER.name)
 
 if __name__=='__main__': build()
+
+
+# Letter 002 is built independently so subsequent updates never regenerate or silently
+# revise the approved/candidate files for Letter 001. Shared house colours and type
+# system are inherited; all body text comes exclusively from the canonical Markdown.
+def build_letter_002():
+    import json, re
+    from io import BytesIO
+    from PIL import Image
+    from weasyprint import HTML
+    import cairosvg, mistune, subprocess
+
+    item = next(x for x in json.loads((ROOT/'source/letters/catalogue.json').read_text('utf8'))['available'] if x['number']==2)
+    path = ROOT/item['file']
+    pdf = ROOT/item['pdf']
+    epub = ROOT/item['epub']
+    cover = ROOT/item['cover']
+    svgpath = ROOT/'source/letters/lfh-002-cover.svg'
+    pdf.parent.mkdir(parents=True, exist_ok=True)
+    cover.parent.mkdir(parents=True, exist_ok=True)
+
+    # A motif about branching outcomes: the shared starting paths fork into several
+    # distinct but equally weighted directions. It is original vector artwork, not
+    # an externally sourced illustration.
+    paths = []
+    for j in range(7):
+        sy = 770 + j*23
+        hue = '#1e70b8' if j in (2,5) else ('#929b9d' if j%3==0 else '#24313b')
+        opacity = '.92' if j in (2,5) else ('.45' if j%3==0 else '.73')
+        sw='2.4' if j in (2,5) else '1.6'
+        paths.append(f'<path d="M -90,{sy} C 210,{sy-65} 405,{sy-47} 548,{sy-1} S 810,{sy-150-j*7} 1100,{sy-210-j*10}" fill="none" stroke="{hue}" stroke-width="{sw}" opacity="{opacity}"/>')
+        paths.append(f'<path d="M -90,{sy} C 210,{sy-65} 405,{sy-47} 548,{sy-1} S 805,{sy+110+j*10} 1100,{sy+205+j*15}" fill="none" stroke="{hue}" stroke-width="{sw}" opacity="{opacity}"/>')
+    svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500">
+        <rect width="1000" height="1500" fill="#fff"/>
+        <text x="500" y="120" fill="#286cb8" font-family="Lato, sans-serif" font-size="24" letter-spacing="6" text-anchor="middle">LETTERS FROM H</text>
+        <text x="500" y="206" fill="#69757a" font-family="Lato, sans-serif" font-size="20" letter-spacing="4" text-anchor="middle">NO. 02</text>
+        <text x="500" y="329" fill="#1b2933" font-family="Liberation Serif,serif" font-size="64" text-anchor="middle">When Good Choices</text>
+        <text x="500" y="418" fill="#1b2933" font-family="Liberation Serif,serif" font-size="64" text-anchor="middle">Lead to Bad Outcomes</text>
+        <g>{''.join(paths)}</g>
+        <text x="500" y="1290" fill="#394853" font-family="Liberation Serif,serif" font-style="italic" font-size="28" text-anchor="middle">A letter on judgement, uncertainty and care</text>
+        <line x1="452" y1="1380" x2="548" y2="1380" stroke="#286cb8" stroke-width="2"/>
+        <text x="500" y="1440" fill="#24313b" font-family="Liberation Serif,serif" font-size="45" text-anchor="middle">H</text>
+    </svg>'''
+    svgpath.write_text(svg, encoding='utf8')
+    pngraw = cairosvg.svg2png(bytestring=svg.encode('utf8'),output_width=1000,output_height=1500)
+    img=Image.open(BytesIO(pngraw)).convert('RGB')
+    img.save(cover,'WEBP',quality=91,method=6)
+    img.save(cover.with_suffix('.png'),'PNG',optimize=True)
+
+    md = mistune.create_markdown(escape=True, plugins=['table','strikethrough','url'])
+    article = md(path.read_text('utf8'))
+    article = re.sub(r'<h1>.*?</h1>','',article,count=1,flags=re.S)
+    article = re.sub(r'<p><em>Letters from H · No. 02</em></p>','',article,count=1)
+    article = article.replace('<hr />','<hr>')
+    css = '''
+    @page{size:6in 9in;margin:.80in .72in .73in .72in;
+      @top-center{content:"LETTERS FROM H  ·  NO. 02";font-family:Lato,sans-serif;font-size:7pt;letter-spacing:1.4pt;color:#77848d;}
+      @bottom-center{content:counter(page);font-family:Lato,sans-serif;font-size:8pt;color:#77848d;}}
+    @page cover{margin:0;@top-center{content:none}@bottom-center{content:none}}
+    body{font:11.4pt/1.61 'Liberation Serif',Georgia,serif;color:#26313b;margin:0;background:white}
+    .cover{page:cover;break-after:page;margin:0;width:6in;height:9in}
+    .cover img{width:6in;height:9in;object-fit:cover;display:block}
+    h1{font:normal 24pt/1.18 'Liberation Serif',serif;color:#172633;margin:0 0 15pt}
+    .eyebrow{font:700 8pt Lato,sans-serif;letter-spacing:1.8pt;color:#286cb8;text-transform:uppercase;margin-bottom:15pt}
+    .subtitle{font:italic 11.5pt/1.5 'Liberation Serif',serif;color:#62717b;margin:0 0 27pt}
+    .start{margin-top:8pt}
+    .start::after{content:'';display:block;border-bottom:.7pt solid #d6dce0;margin:0 0 24pt}
+    p{margin:0 0 11pt;orphans:3;widows:3}
+    h2{font:normal 16pt/1.18 'Liberation Serif',serif;margin:26pt 0 12pt;color:#172633;break-after:avoid}
+    h3{font:700 8.5pt/1.5 Lato,sans-serif;letter-spacing:1.3pt;margin:22pt 0 12pt;color:#286cb8;text-transform:uppercase;break-after:avoid}
+    ul{padding-left:18pt;margin-bottom:15pt}li{margin-bottom:9pt;orphans:2;widows:2}
+    strong{font-weight:bold}em{font-style:italic}
+    hr{border:0;border-top:1pt solid #d7dddf;margin:22pt 0}
+    .edition{font:8pt/1.65 Lato,sans-serif;color:#6d797f;border-top:.6pt solid #dee3e5;padding-top:10pt;margin-top:20pt}
+    a{color:#286cb8}
+    '''
+    source_html=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{item['title']} — Letters from H No. 02</title><style>{css}</style></head><body>
+    <div class="cover"><img alt="" src="{svgpath.as_uri()}"></div>
+    <div class="start"><div class="eyebrow">Letters from H · No. 02</div><h1>{item['title']}</h1><p class="subtitle">{item['subtitle']} · H</p></div>
+    {article}<p class="edition">The Book of Chance · Letters from H · BOC-LFH-002<br>Editorial candidate, version {item['edition']} · Prepared 22 November 2026<br>Free to read or download without membership or payment. Share a link to the original source.</p></body></html>'''
+    HTML(string=source_html,base_url=ROOT.as_uri()+'/').write_pdf(str(pdf))
+    css_path=ROOT/'source/letters/epub-letter.css'
+    subprocess.run(['pandoc',str(path),'-f','markdown','-t','epub3','--standalone',
+        '--metadata=title:'+item['title'],'--metadata=author:H','--metadata=lang:en-NZ',
+        '--metadata=subtitle:Letters from H · No. 02','--epub-cover-image',str(cover.with_suffix('.png')),
+        '--css',str(css_path),'-o',str(epub)],check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+    print('LETTER 002 GENERATED', pdf, epub, cover)
