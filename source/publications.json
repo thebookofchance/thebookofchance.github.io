@@ -160,5 +160,25 @@
       "sessions": 12,
       "cover": "assets/publications/conversations-of-chance-cover.webp"
     }
+  ],
+  "parables": [
+    {
+      "id": "BOC-PAR-001",
+      "title": "The Parables of Chance",
+      "subtitle": "Twelve Stories about Fortune, Choice and the Lives We Share",
+      "author": "H",
+      "series": "The Book of Chance — Stories and Parables",
+      "edition": "v0.2.1",
+      "status": "final copyedit candidate; external review, accessibility and live checks outstanding",
+      "language": "en-NZ",
+      "date_prepared": "2026-11-22",
+      "source": "source/parables/the-parables-of-chance.md",
+      "url": "publications/parables-of-chance/",
+      "cover": "assets/publications/parables-of-chance-cover.webp",
+      "pdf": "files/parables/The_Parables_of_Chance_Editorial_Proof_v0.2.1.pdf",
+      "epub": "files/parables/The_Parables_of_Chance_Editorial_Proof_v0.2.1.epub",
+      "stories": 12,
+      "pdf_pages": 69
+    }
   ]
 }

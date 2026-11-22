@@ -1,0 +1,12 @@
+{
+  "status": "structural proof complete; editorial approval and real-device accessibility tests outstanding",
+  "manuscript_words": 14006,
+  "stories": 12,
+  "pdf_pages": 69,
+  "page_size": "6 x 9 in",
+  "edition": "v0.2.1",
+  "prepared": "2026-11-22",
+  "source": "source/parables/the-parables-of-chance.md",
+  "pdf": "files/parables/The_Parables_of_Chance_Editorial_Proof_v0.2.1.pdf",
+  "epub": "files/parables/The_Parables_of_Chance_Editorial_Proof_v0.2.1.epub"
+}

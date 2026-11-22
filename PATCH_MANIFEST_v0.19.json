@@ -1,0 +1,113 @@
+{
+  "base": "v0.18",
+  "target": "v0.19",
+  "type": "update-only",
+  "changed_file_count": 22,
+  "files": [
+    {
+      "path": "PATCH_README.md",
+      "sha256": "7ffa8f562c55b931c5f201f099c8f7834bbad4f2f96c57b98ac279e12935c384",
+      "bytes": 1941
+    },
+    {
+      "path": "README.md",
+      "sha256": "a58dade47a4ce81213dbe5ca85760b15c1d9c714ba571dfcab6b97adb13adb28",
+      "bytes": 12157
+    },
+    {
+      "path": "SITE_CONTENT_MANIFEST.json",
+      "sha256": "fd3bee7faeb621da1d2f9311b4bd9e1a1d7d589a1c6b13c1ba805f8ac0586140",
+      "bytes": 4075
+    },
+    {
+      "path": "assets/publications/parables-of-chance-cover.png",
+      "sha256": "c00ee1fba1aff3745ca434bddb93cf84c709cf0b5580ff99ca435f92138075e8",
+      "bytes": 193033
+    },
+    {
+      "path": "assets/publications/parables-of-chance-cover.svg",
+      "sha256": "15f21bcdad32dc734d73d0bbc08b697912c2b28c53964b849a1d42e1d67d8ce9",
+      "bytes": 3938
+    },
+    {
+      "path": "assets/publications/parables-of-chance-cover.webp",
+      "sha256": "feef9be627c8a2e2fa841f47c9740243cc3515f9ada80282020a110fd7e3e38f",
+      "bytes": 80610
+    },
+    {
+      "path": "assets/site.css",
+      "sha256": "a6c35241eabc53af89076a278dd05d33050cd1ba4843dd87093710e40c5bae25",
+      "bytes": 94918
+    },
+    {
+      "path": "docs/Parables_Final_Copyedit_v0.2.1.md",
+      "sha256": "927dda522522db695298ce465366f02f7636d8f29cc3d4c2446ebb0d04eb142c",
+      "bytes": 1314
+    },
+    {
+      "path": "docs/Parables_Production_QA_v0.2.1.json",
+      "sha256": "472a9f9623398c44ebf163c567244d4333084c901ce3a0594a759a1f8a100e73",
+      "bytes": 467
+    },
+    {
+      "path": "docs/Publications_Roadmap_and_Progress.md",
+      "sha256": "4a4984f023cea98e79a6a8f45cf86bff3f566db446725154e07bcc7e41c81dc6",
+      "bytes": 11280
+    },
+    {
+      "path": "docs/Website_Development_Log.md",
+      "sha256": "c8f84ac286b15935f144c1ac2535e45ec37d0fd7979424a51100bf96b18ee483",
+      "bytes": 29572
+    },
+    {
+      "path": "downloads/index.html",
+      "sha256": "bae8546d1f3cc9078ef8365a5fc778e24cb4571ce0d56936c344aaba46f500b5",
+      "bytes": 20977
+    },
+    {
+      "path": "files/parables/The_Parables_of_Chance_Editorial_Proof_v0.2.1.epub",
+      "sha256": "8c71082a510b6247e08c741c836a07b4dc6a65b643061b9458d9b77079361421",
+      "bytes": 226601
+    },
+    {
+      "path": "files/parables/The_Parables_of_Chance_Editorial_Proof_v0.2.1.pdf",
+      "sha256": "502a3e8b293e30170abb055748ad7bec7b1024bf3d7544cf96df065bdd275bff",
+      "bytes": 170118
+    },
+    {
+      "path": "index.html",
+      "sha256": "cc93196962916e631450ae341404b0f0a6eee6b9cc9f9a5a1fce037699ddf21a",
+      "bytes": 15244
+    },
+    {
+      "path": "publications/parables-of-chance/index.html",
+      "sha256": "afb3f5098f1ec3a051b4cb4fab03958d83dc249da6c73def101371f0b64e1891",
+      "bytes": 95102
+    },
+    {
+      "path": "scripts/build_parables.py",
+      "sha256": "80600d335ce7b4bcda5d68ed177f2b6623550228e08d815caa4494d9ec18593c",
+      "bytes": 12067
+    },
+    {
+      "path": "scripts/build_site.py",
+      "sha256": "55dc788ccc133761eeebe95e72b683fb38a8591fe871678583f7314dfb04c9d1",
+      "bytes": 54811
+    },
+    {
+      "path": "scripts/v019_parables.py",
+      "sha256": "ef67185d692bc746495b42d94add556d90b5190f1dd6a27165e4c1c8dde86135",
+      "bytes": 12027
+    },
+    {
+      "path": "source/parables/the-parables-of-chance.md",
+      "sha256": "9a8146477626a1662882dd33ab3b1dbfca9ceabe6c4dbd14848855788b1a66a1",
+      "bytes": 81156
+    },
+    {
+      "path": "source/publications.json",
+      "sha256": "7f1f5bc4650fc35143c5dacfa4e95deb23389c6a0de4aa5df97f330ba3054229",
+      "bytes": 7407
+    }
+  ]
+}

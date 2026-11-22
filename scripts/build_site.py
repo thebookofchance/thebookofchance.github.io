@@ -235,7 +235,9 @@ from v016_conversations import apply_v016
 apply_v016(ROOT, document, markdown, info)
 from v018_possibilities import apply_v018
 apply_v018(ROOT, document, markdown, info)
-info.update({'website_version':'0.18','correction_status':'Targeted editorial revisions; no independent human reader test','book_editorial_source':'source/manuscript.md','letter_editions':[e['edition'] for e in json.loads((ROOT/'source/letters/catalogue.json').read_text('utf8'))['available']]})
+from v019_parables import apply_v019
+apply_v019(ROOT, document, markdown, info)
+info.update({'website_version':'0.19','correction_status':'Targeted editorial revisions; no independent human reader test','book_editorial_source':'source/manuscript.md','letter_editions':[e['edition'] for e in json.loads((ROOT/'source/letters/catalogue.json').read_text('utf8'))['available']]})
 (ROOT/'SITE_CONTENT_MANIFEST.json').write_text(json.dumps(info,indent=2),encoding='utf8')
 print('generated sections',len(sections),'readings',len(reader_ids),'figures',sum(s['figure_count'] for s in sections))
 print('section titles',[(s['slug'],s['title']) for s in sections]);print('root',ROOT)

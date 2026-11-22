@@ -1,36 +1,21 @@
-# The Book of Chance — Website v0.16 · Update-only patch
+# Book of Chance — v0.19 UPDATE ONLY (Parables of Chance)
 
-**Base required:** v0.15 already installed in your existing GitHub Pages repository. This ZIP includes only the files added or changed for *Conversations of Chance*. It is not a complete website.
+**Required base:** existing v0.18 website. This is NOT the complete repository.
 
 ## Install
+1. Extract `Book_of_Chance_Website_Update_Only_v0.19.zip`.
+2. Upload the files/folders **inside** the ZIP to the root of your existing GitHub Pages repository, preserving their relative paths. Replace matching files; do not remove files absent from this patch.
+3. Do not overwrite, remove or publish your existing `assets/forms-config.js` (the patch does not include it).
+4. After GitHub Pages deploys, visit `/publications/parables-of-chance/` and `/downloads/#parables-of-chance`.
+5. Verify both downloads, the homepage cover/card, theme and mobile navigation, the original book, previous companions and Letters, and the two existing interest forms.
 
-1. Open the ZIP and copy its **contents** to the **root** of the same repository that currently contains v0.15, preserving folder paths. Do not replace the repository with the extracted folder or delete files omitted from this patch.
-2. Allow GitHub Pages to deploy, then visit `publications/conversations-of-chance/`.
-3. Confirm the new feature appears on the homepage and in the Library at `downloads/#conversations-of-chance`.
-4. Open and download both formats: `files/conversations/Conversations_of_Chance_Editorial_Proof_v0.1.pdf` and `files/conversations/Conversations_of_Chance_Editorial_Proof_v0.1.epub`.
-5. Check the site's existing theme toggle, mobile navigation, original book, Letters, journals, **The Five Values**, and both existing interest forms in the live deployment.
+## v0.19 contents
+- *The Parables of Chance* BOC-PAR-001, **final copyedit candidate v0.2.1**, twelve complete original stories in HTML, PDF and EPUB.
+- Minimal continuity corrections to Stories 3 and 9; **H** populated as PDF Author; EPUB cover preserved. The cover SVG, PNG and WEBP are byte-for-byte the same as the earlier proposed artwork.
+- Dedicated webpage, homepage feature, Library entry, downloadable exports, site styles, metadata and regenerable source/build scripts.
+- Final copyedit notes, production QA and updated roadmap.
 
-## What's changed
+## Stage, do not automatically label released
+The reader page intentionally has `<meta name="robots" content="noindex,follow">` and is not included in `sitemap.xml` because explicit release approval, independent human and specialist review, accessibility and live checks remain outstanding. The live site will still allow anyone with the link to read it after upload.
 
-- **Conversations of Chance**, BOC-CNV-001: twelve original discussions linked to each of the twelve readings of *The Book of Chance*. Complete public HTML reader, 48-page PDF reader proof, EPUB and editable canonical source.
-- New v0.16 page uses the existing website's header, footer, Library navigation, fonts, CSS variables, light/dark styling and original brand asset (it **does not** introduce a replacement logo).
-- New homepage feature, dedicated Library section, publication catalogue entry, updated Library count and navigation shortcut.
-- Updated build integration (`scripts/v016_conversations.py`, plus call from `scripts/build_site.py`), manifest, progress register, development log and QA report.
-
-## Publication status
-
-This is **editorial candidate v0.1**, not H-approved final writing or verified public release. The page is accessible to readers once deployed but carries a `noindex,follow` tag and is **not yet listed in the sitemap** to avoid presenting the editorial candidate as an approved publication. Remove `noindex` and add the URL to `sitemap.xml` after editorial approval.
-
-The Fellowship's Council, membership service, mentoring, hardship assistance, donation programmes and official Local Fellowships are not represented as operational.
-
-## What this patch intentionally does not touch
-
-- No changes to `assets/forms-config.js`, the accepted site brand assets, the master *Book of Chance* manuscript, existing Letters, the Five Values manuscript, PDFs/EPUBs of earlier works, reflection journals or the other existing pages.
-- No fundraising, subscriptions, membership applications or new tracking scripts.
-- No deletion of previous content. If the **earlier stand-alone v0.16** ZIP was already uploaded, this integrated patch updates the same `publications/conversations-of-chance/` reader and uses canonical downloads under `files/conversations/`; the old duplicate files in the publication folder can remain harmlessly until you choose to clean them up.
-
-## Tested and still to verify
-
-Verified locally: source and generated HTML contain 12 discussions; PDF has 48 pages; EPUB package integrity; download paths; site links into the established reading routes; and desktop/mobile inlined-Chromium layout without horizontal overflow. **Not verified:** your actual GitHub Pages deployment, operation of site JavaScript in the full repository, all browser/reader variants, Formspree delivery or external human/editorial review. The provided v0.15 package was itself an **update-only ZIP**, so files from earlier baseline versions were not available for a complete local site smoke test.
-
-See `docs/Conversations_of_Chance_QA_v0.16.json` and `docs/Publications_Roadmap_and_Progress.md`.
+This patch contains **only changed/new files compared to the provided v0.18 baseline**. No form configuration, private files, original book editions, previous companion manuscripts or unrelated generated assets are included.

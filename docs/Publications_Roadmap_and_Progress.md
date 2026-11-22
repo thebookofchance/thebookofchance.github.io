@@ -1,6 +1,6 @@
 # H Publications — Release Roadmap and Progress Register
 
-**Updated:** 22 November 2026 · v0.18 (The Little Book of Possibilities v0.2 integrated; cover approved, manuscript pending)  
+**Updated:** 22 November 2026 · v0.19 (The Parables of Chance v0.2.1 final copyedit staged; external and live checks pending)  
 **Sequence rule:** Develop and review **one publication at a time**. After completing the recommended literature programme, plan and launch the Fellowship's YouTube/video channel. No concurrent video production is assumed.
 
 ## Working order
@@ -13,7 +13,7 @@
 | 2 | **The Five Values** | **Editorial candidate 1.0-RC1 complete:** 3,500-word source, 17-page illustrated PDF, EPUB, full HTML reading page | H approves wording and visual design; deployed PDF/EPUB and page verified |
 | 3 | **Conversations of Chance** | **Editorial candidate v0.1 prepared:** twelve discussions, 53-page PDF proof, EPUB and full HTML reader; H approval and live checks pending | H reviews wording, safeguarding boundaries and editorial quality; deployed formats verified |
 | 4 | **The Little Book of Possibilities** | **Editorial candidate v0.2:** 12 chapters, approved cover, 42-page PDF proof and EPUB; manuscript approval and live checks pending | H reviews v0.2 text; independent human review, accessibility and live downloads verified |
-| 5 | **The Parables of Chance** | Proposed illustrated fiction collection, approx. 60–90 pages | Other publications complete; each story labelled as fiction; rights reviewed |
+| 5 | **The Parables of Chance** | **Final copyedit candidate v0.2.1:** twelve original stories, retained cover, 69-page PDF proof, EPUB and full online reader staged; author, external, accessibility and live checks pending | Obtain final H sign-off and independent reader feedback, verify specialist details and accessible downloads, test live deployment |
 | 6 | **Fellowship YouTube / video channel** | **Deferred by owner** until above recommended publications are finished | Library programme complete; then plan content format, voice and distribution |
 
 The initial programme's *Letters from H* collection is intended to remain open to future occasional issues after the first three, but does not need to become a fixed weekly output commitment.

@@ -1,9 +1,9 @@
-# The Book of Chance — Website v0.15
+# The Book of Chance — Website v0.19
 
 A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, private reflection practices, downloadable resources, and the proposed Fellowship of Chance.
 
 **Public site:** https://thebookofchance.github.io/  
-**Website release:** v0.15 (22 November 2026)
+**Website release:** v0.19 — editorial publication staging (22 November 2026)
 
 ## Site structure
 
@@ -14,6 +14,9 @@ A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, 
 | `/reflect/` | Private guided reflection editor, weekly question rotation and offline guides |
 | `/downloads/` | Book editions, three Letters, new Five Values illustrated booklet, four journal editions and fillable worksheets |
 | `/booklets/the-five-values/` | Complete illustrated text of *The Five Values* with direct PDF and EPUB downloads |
+| `/booklets/the-little-book-of-possibilities/` | Companion book on conditions and accessible opportunities |
+| `/publications/conversations-of-chance/` | Twelve-discussion companion for individuals and groups |
+| `/publications/parables-of-chance/` | Twelve original fictional parables; staged final copyedit candidate v0.2.1 |
 | `/letters/` | Three standalone philosophical Letters from H, with online reading and PDF/EPUB downloads |
 | `/community/` | Proposed Fellowship, reasons to participate, future funding principles and a Fellowship interest form |
 | `/focus/` | Current organisational development goal, roadmap, potential funding criteria and deferred Chance Campaigns |
@@ -116,3 +119,10 @@ This is **BOC-BKL-001 · 1.0-RC1** and awaits founder approval and live device r
 ## Conversations of Chance · v0.16 update
 
 The newly prepared **Conversations of Chance** discussion companion is presented as an editorial candidate, not a final H-approved publication. Its full HTML reader is at `publications/conversations-of-chance/`, with matching PDF and EPUB under `files/conversations/`; it is linked on the home page and in the Library. Rebuilds incorporate this page through `scripts/v016_conversations.py` after `v015_five_values.py`. The canonical Markdown manuscript is `source/conversations/conversations-of-chance.md`. The reader uses the established logo/theme system and is marked `noindex` until approved. No changes to the existing forms, paid services, member access, book manuscripts, journals or older publications are required.
+
+
+## v0.19 — The Parables of Chance (editorial staging)
+
+`publications/parables-of-chance/` presents the complete twelve-story fiction collection, PDF and EPUB proofs, and its established literary cover. `source/parables/the-parables-of-chance.md` is the editable canonical text. Run `python scripts/build_parables.py` only to rebuild its exports; normal site rebuilding uses `python scripts/build_site.py`, including the `v019_parables` integration. The stories are visibly fictional and do not imply working Fellowship services.
+
+The v0.19 ZIP is an update-only patch: upload changed files over the current repository, preserving paths, and do not delete or replace existing unrelated content. Private and working form configuration is not included. This edition remains an editorial candidate, not a fully verified public release.

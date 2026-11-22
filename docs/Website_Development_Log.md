@@ -270,3 +270,12 @@ Local QA: 37 pages, 1,021 local reference checks; EPUB integrity; 7 fillable PDF
 - Added homepage and Library features matching the existing visual publishing system.
 - Updated the publication catalogue, site status manifest and roadmap without modifying forms, identity marks or existing books.
 - Editorial candidate only; H manuscript approval, independent testing and deployment verification remain outstanding.
+
+
+## v0.19 — The Parables of Chance final copyedit candidate (22 November 2026)
+
+- Added the complete twelve-story HTML reading page at `publications/parables-of-chance/`, an editorial Library feature, and homepage cover card.
+- Added source manuscript, byte-preserved cover assets, PDF and EPUB proofs, and reproducible production/build integration.
+- Corrected the duration in Story 3, the committee speaker in Story 9, and PDF Author/Subject/language metadata.
+- **Editorial staging, not approved release:** pending final author sign-off, independent human reading, accessibility and setting-specific checks, and live GitHub Pages verification.
+- No change to forms configuration, approved book and letter assets, journal content, brand mark, membership status or funding controls.
