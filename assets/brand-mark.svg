@@ -1,16 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="42 39 378 378" role="img" aria-labelledby="title">
-  <title id="title">Circular lattice symbol of intersecting lives and chance</title>
-  <g fill="none" stroke="#1c2730" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="231" cy="229" r="173" stroke-width="6.4"/>
-    <g stroke-width="6.0">
-      <path d="M71 151 L266 401"/>
-      <path d="M107 104 L329 379"/>
-      <path d="M150 68 L363 356"/>
-      <path d="M203 53 L391 311"/>
-      <path d="M63 284 L258 51"/>
-      <path d="M102 345 L322 81"/>
-      <path d="M155 381 L369 112"/>
-      <path d="M200 404 L396 159"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Fellowship emblem: evenly spaced intersecting diagonal paths within a circle">
+  <rect width="120" height="120" fill="white"/>
+  <g fill="none" stroke="#172633" stroke-width="2.85" stroke-linecap="round">
+    <line x1="-8" y1="16" x2="128" y2="152"/>
+    <line x1="-8" y1="32" x2="128" y2="168"/>
+    <line x1="-8" y1="48" x2="128" y2="184"/>
+    <line x1="-8" y1="64" x2="128" y2="200"/>
+    <line x1="-8" y1="104" x2="128" y2="-32"/>
+    <line x1="-8" y1="120" x2="128" y2="-16"/>
+    <line x1="-8" y1="136" x2="128" y2="0"/>
+    <line x1="-8" y1="152" x2="128" y2="16"/>
   </g>
+  <circle cx="60" cy="60" r="49.3" fill="none" stroke="#172633" stroke-width="3.0"/>
 </svg>
