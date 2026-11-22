@@ -1,79 +1,65 @@
-# The Book of Chance — Website Prototype v0.3
+# The Book of Chance — Website Prototype v0.4
 
-**Status:** Working static-site prototype. Not a live public publication or an active pre-order system.
+**A GitHub Pages-ready static site** for the complete illustrated book, its free digital formats, and the developing Fellowship of Chance.
 
-A minimal, responsive digital home for *The Book of Chance* by H, built from the actual approved covers and illustrated manuscript. No frameworks, analytics, remote fonts, user accounts or paid services are needed to run the website.
+## What changed in v0.4
 
-## What's included
+- **New faithful circular-lattice identity:** the large header and footer mark is based on the founding sketch (a circle crossed by straight diagonal paths), with restrained blue accents. The browser favicon, standalone vector, social/avatar-size image and header now use the same design. The mark is kept as editable SVG at `assets/logo-master.svg`.
+- **Fellowship page:** `/community/` now explains the proposed community's purpose, values, genuine relationship-building, mentorship, collective projects, support priorities and the future Follower/Member/Senior Member structure. This is an inviting explanation **without pretending the community has already opened**.
+- **Expandable library:** `/downloads/` is now a catalogue. The Book of Chance remains the featured available publication; future categories for reflections, guides and further writings are clearly labelled as **in development**, not available for download.
+- **Catalogue source:** Edit `source/publications.json` to manage available and planned publication entries. Existing EPUB/PDF files are unchanged.
+- **Navigation:** A clearly named *Fellowship* destination and a *Library* destination have been added to desktop and mobile menus, and the homepage now links to the community vision.
+- The complete manuscript, 12 readings, all six book illustrations, covers, EPUBs and PDFs are **unchanged** from v0.3.
 
-| Area | Implemented |
-| --- | --- |
-| Home | Book introduction, **actual** Light and Dark covers, three parts, prominent reading/download actions |
-| Read | **Full illustrated manuscript**, all 12 readings, original parables, front/back matter and six figure captions; individual shareable chapter URLs |
-| Reader preferences | Light/dark theme, adjustable font size, local reading progress, local bookmarks, previous/next chapter links |
-| Reader directory | Contents grouped by part, title/full-text search (from generated local index), resume-reading action |
-| Downloads | Final *candidate* Light/Dark EPUB files plus Light/Dark illustrated PDF **reader proofs**; no sign-up |
-| Physical edition | Two cover choices with a local-only preference and clear future print campaign explanation |
-| About | Confluent Humanism, intellectual influences, H, and a discreet, accurate Fellowship note |
+## Install on GitHub Pages
 
-There is **no live interest form** and no user email information is collected. The print page cannot take a reservation or payment. It only saves the selected cover on the visitor's own device.
+1. **Extract the ZIP**. It contains the site files at its top level (`index.html`, `assets/`, `community/`, `read/`, `downloads/`, `print/`, `about/`, `files/`, `source/`, `scripts/`).
+2. Upload those files and folders into the **root** of your existing `TheBookOfChance` website repository, replacing older files with the same paths. Do **not** upload the ZIP itself or nest everything in another directory.
+3. Wait for GitHub Pages to deploy, then open `https://thebookofchance.github.io/` and test the Fellowship and Library links. If the old favicon persists, force-refresh or test in a private browsing window; browsers cache icons aggressively.
+4. Test at phone width and on desktop. The logo is now larger, and the navigation switches to a menu on smaller screens.
 
-## Run it locally
+## Future publishing additions
 
-The pages use normal static directory links (`read/arrival/`) and a local JSON search index. Use a local web server rather than opening `index.html` directly from the file system.
+`source/publications.json` includes the current book plus three future categories. To publish another work:
 
-From inside the extracted project directory:
+1. Place **real files** in `files/` and the real cover artwork in `assets/covers/` (or another stable asset path).
+2. Add an `available` entry with title, subtitle, summary and edition file paths, following the existing example. The generator validates that referenced EPUB/PDF files exist.
+3. Run `python -m pip install -r scripts/requirements.txt` once, then `python scripts/build_site.py` in the project root to rebuild the catalogue and site pages.
+4. Don't list an unpublished work as downloadable. Keep plans under the `planned` group until actually released.
+
+**Note:** `build_site.py` regenerates the static site pages from `source/manuscript.md`, its cover/artwork source files and `source/publications.json`. It does not remake EPUB/PDF files, change the manuscript or accept any user data.
+
+## Important readiness boundaries
+
+The site is a **prototype**, not an active Fellowship enrolment or fundraising service. There is **no member signup, live interest register, email collection, donation processor or paid pre-order form**. The future member spaces, mentorship services, Local Fellowships and support arrangements described on `/community/` have not launched. Members are intended to be adult (18+) with free registration when ready. The website remains open to readers of all ages without registration.
+
+The book and its digital downloads remain freely accessible. PDFs are still labelled reader proofs because physical-print and final digital-accessibility checks are outstanding. Official Member registration, privacy policies, safeguarding and service procedures should be completed **before** a real signup form is added.
+
+The local preference on `/print/` only records a cover choice in the visitor's browser; it is not a reservation.
+
+## Local testing
+
+Run a simple HTTP server from the extracted site root:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then open **http://localhost:8000** in your browser. Node users can alternatively run `npx serve .` if they already have that tooling.
+Then open `http://localhost:8000/`. No framework, remote fonts, analytics, accounts or application server are required. Reading preferences are stored locally in the browser.
 
-## Upload to GitHub Pages
+## Files worth knowing
 
-1. Create a public GitHub repository for the site.
-2. Extract this ZIP **and upload the contents of the `Book_of_Chance_Website_Prototype_v0.3` folder into the repository root**. The `index.html`, `assets/`, `read/`, `downloads/`, `print/`, `about/` and `files/` directories should be at the top level.
-3. In **Settings → Pages**, select *Deploy from a branch*, your default branch, and the repository **root**. (Exact labels may differ.)
-4. Open the published URL and test reader links, images, downloads and search. All internal links use relative paths and therefore work on a project URL such as `username.github.io/repo-name/`.
-5. If adding a custom domain later, configure DNS, HTTPS and the domain name separately.
+| Path | Purpose |
+| --- | --- |
+| `index.html` | Book-led homepage, with a discreet link to the Fellowship |
+| `community/index.html` | New Fellowship community overview |
+| `downloads/index.html` | Expandable publication catalogue |
+| `source/publications.json` | Data for available and planned publications |
+| `assets/brand-mark.svg` | Clean symbol for use within the website |
+| `assets/logo-master.svg` | Editable standalone emblem reference |
+| `assets/favicon.svg` | Browser favicon |
+| `assets/brand-avatar-512.png` | Large square icon for profiles and phone shortcuts |
+| `scripts/build_site.py` | Rebuilds pages from the manuscript and catalogue |
+| `SITE_QA_REPORT.json` | Automated checks and remaining limitations |
 
-This is a static site; **GitHub Pages will not process email submissions or payments**. Connect an approved interest-registration provider later if you want real sign-ups.
-
-## Editing the book and rebuilding chapter pages
-
-The complete book source is at `source/manuscript.md` (copied verbatim from the illustrated standalone manuscript v0.31). The chosen source covers and artwork are in `source/covers/` and `source/artwork/`.
-
-To regenerate the static chapter pages and web-optimised images after updating the Markdown:
-
-```bash
-python -m pip install -r scripts/requirements.txt
-python scripts/build_site.py
-```
-
-The generator retains the complete reading prose and six approved illustration/context pairings, and updates the local search index. It **does not regenerate the EPUB or PDF files**; these are provided in `files/` and can be replaced with new independently verified publication files after a manuscript revision.
-
-The website styling lives in `assets/site.css` and behaviour in `assets/site.js`. The site is dependency-free at runtime. The generator is specifically mapped to the current 24-section manuscript structure; update the section mapping if a later edition adds or removes chapters.
-
-## What requires completion before a public launch
-
-- Choose and add final legal/copyright and contact information, if required, and confirm author rights in the text, images and covers.
-- Complete independent ebook device/accessibility checks, EPUBCheck if distributing through retailers, and a final accessible **digital PDF** export. The existing PDFs are labelled reader proofs on purpose.
-- Decide whether the site will later include a real interest form, and publish a privacy notice for the data it collects before enabling submissions. A privacy notice is **not yet needed for a backend that does not exist**; there is currently no analytics or remote form service.
-- Confirm the eventual paperback print costs, threshold, deadline, refund policy and shipping arrangements **before** accepting money.
-- Test the site in desktop and mobile browsers, including reader controls, actual EPUB/PDF downloads and assistive technologies.
-- Add a contact route or support email once there is a real, maintained address.
-- Consider a formal declaration of the book's edition/date once the public release is approved.
-
-## Privacy and reader independence
-
-- No accounts, cookies, analytics, web tracking or external content requests are included.
-- Theme, font size, bookmarks and reading progress use **localStorage on the device only**. The site does not send that data anywhere.
-- All foundational teachings are accessible without payment or membership.
-- The Fellowship is mentioned discreetly as a proposed community, not as a sign-up requirement or functioning service.
-
-**Editorial source:** *Book_of_Chance_Illustrated_Manuscript_v0.31.md*, approved Light and Dark covers, and EPUB candidate v1.0. PDF proof files are derived from the v0.31 illustrated paperback reader previews.
-
-
-## v0.3 Artwork Revision
-Part II now uses a branching-path illustration and Part III a relational network. Part I, the cover artwork, and three conceptual diagrams remain unchanged. The website reader, EPUBs and PDFs all use the updated artwork, including revised descriptions.
+**Visual-browser testing remains a manual launch gate:** the browser automation runner in this environment is blocked from local pages. Static HTML, link, asset and JavaScript validation can still be completed.

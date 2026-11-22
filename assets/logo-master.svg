@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Fellowship emblem: intersecting diagonal paths within a circle">
+<circle cx="60" cy="60" r="50.3" fill="none" stroke="#172633" stroke-width="3.1"/>
+<g fill="none" stroke="#172633" stroke-width="2.9" stroke-linecap="round"><path d="M12 38 L88 110 M26 26 L102 101 M40 16 L110 88 M55 9 L110 71"/><path d="M10 84 L68 8 M25 102 L91 17 M42 110 L105 34 M55 112 L109 51"/></g>
+<g fill="none" stroke="#1670d9" stroke-width="3.2" stroke-linecap="round"><path d="M12 38 L88 110 M42 110 L105 34"/></g>
+</svg>

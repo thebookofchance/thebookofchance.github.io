@@ -1,0 +1,45 @@
+{
+  "available": [
+    {
+      "id": "book-of-chance",
+      "title": "The Book of Chance",
+      "subtitle": "On the Lives We Inherit and the Futures We Shape",
+      "summary": "Twelve readings, original parables and six illustrated interpretations of uncertainty, agency, dignity and shared possibility. A standalone work of reflective philosophy by H.",
+      "editions": [
+        {
+          "name": "Light Edition",
+          "label": "A page of possibility",
+          "description": "White, charcoal and blue. The complete illustrated text.",
+          "cover": "assets/covers/light-cover.webp",
+          "epub": "files/The_Book_of_Chance_Light.epub",
+          "pdf": "files/The_Book_of_Chance_Light_PDF_Reader_Proof.pdf"
+        },
+        {
+          "name": "Dark Edition",
+          "label": "A different first choice",
+          "description": "Charcoal, ivory and blue. Exactly the same words and illustrations.",
+          "cover": "assets/covers/dark-cover.webp",
+          "epub": "files/The_Book_of_Chance_Dark.epub",
+          "pdf": "files/The_Book_of_Chance_Dark_PDF_Reader_Proof.pdf"
+        }
+      ]
+    }
+  ],
+  "planned": [
+    {
+      "category": "Short-form literature",
+      "title": "Reflections from H",
+      "summary": "Occasional essays exploring questions raised by the book, considering new examples and other philosophical perspectives."
+    },
+    {
+      "category": "Personal practice",
+      "title": "Reflection guides & journals",
+      "summary": "Optional prompts and formats for thinking through circumstances, choices, learning and the possibilities ahead."
+    },
+    {
+      "category": "Community learning",
+      "title": "Further readings",
+      "summary": "Future discussions and supplementary texts that draw connections with established ideas and contemporary experiences."
+    }
+  ]
+}
