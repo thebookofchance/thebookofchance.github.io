@@ -89,16 +89,9 @@ def apply_v016(root:Path, document, markdown, info:dict):
         <p class="lead">Twelve Discussions for an Uncertain Life</p>
         <p>Questions for individuals, friends and future gatherings. Explore twelve thoughtful dilemmas about the lives we inherit and the possibilities we shape. You may disagree, read privately or simply follow a question that interests you.</p>
         <div class="button-line"><a class="btn btn-primary" href="#conversations-text">Begin reading ↓</a><a class="btn btn-outline" href="../../{PDF}" download>Download PDF ↓</a><a class="btn btn-outline" href="../../{EPUB}" download>Download EPUB ↓</a></div>
-        <p class="conversations-status">12 conversations · 48-page PDF proof · Free · Editorial candidate v0.1 — not a final release</p>
+        <p class="conversations-status">12 conversations · 53-page PDF proof · Free · Editorial candidate v0.1 — now presented within the publication cover system</p>
       </div>
-      <div class="conversations-cover" aria-label="Conversations of Chance, twelve discussions for an uncertain life, H">
-        <div class="conversations-cover-top">THE BOOK OF CHANCE <span>·</span> COMPANIONS</div>
-        <div class="conversations-cover-symbol" aria-hidden="true"><img src="../../assets/brand-mark.svg?v=5" alt="" width="94" height="94"/></div>
-        <span class="conversations-cover-number">12 conversations</span>
-        <strong>Conversations<br><i>of</i> Chance</strong>
-        <span class="conversations-cover-sub">Twelve Discussions<br>for an Uncertain Life</span>
-        <span class="conversations-cover-author">H</span>
-      </div>
+      <div class="conversations-cover-art"><img src="../../assets/publications/conversations-of-chance-cover.webp" width="1000" height="1500" alt="Conversations of Chance by H, companion cover with fine charcoal and blue paths" loading="eager"></div>
     </section>
     <div class="shell conversations-lead"><p><strong>A book that makes room for disagreement.</strong> Each conversation corresponds to one of the twelve foundational readings. Each includes an imagined dilemma, questions, an optional private reflection and a practical invitation. No group, registration, payment or personal disclosure is required.</p><details class="conversations-mobile-contents"><summary>Explore all twelve conversations</summary>{toc}</details></div>
     <div class="shell conversations-layout" id="conversations-text"><aside class="conversations-toc" aria-label="Conversation contents"><strong>Contents</strong><p>Follow a theme or read in order.</p>{toc}</aside>
@@ -109,17 +102,14 @@ def apply_v016(root:Path, document, markdown, info:dict):
     # The earlier v0.16 stand-alone proof used noindex, retained for this unapproved editorial candidate.
     d.write_text(document('Conversations of Chance',body,base='../../',active='downloads',
         desc='Twelve thoughtful discussions for an uncertain life: a free conversation companion by H to The Book of Chance, with online reader, PDF and EPUB.',
-        extra_head='<link rel="canonical" href="https://thebookofchance.github.io/publications/conversations-of-chance/"><meta name="robots" content="noindex,follow">'),encoding='utf8')
+        extra_head='<link rel="canonical" href="https://thebookofchance.github.io/publications/conversations-of-chance/"><meta name="robots" content="noindex,follow">',og_image='assets/publications/conversations-of-chance-cover.png'),encoding='utf8')
 
     # Library - keep the published presentation intact and add a dedicated feature.
     library=root/'downloads/index.html';lib=BeautifulSoup(library.read_text('utf8'),'html.parser')
     old=lib.select_one('#conversations-of-chance')
     if old:old.decompose()
     sec=BeautifulSoup(f'''<section class="conversations-library-feature" id="conversations-of-chance">
-    <div class="conversations-library-type"><span class="eyebrow">New companion · BOC-CNV-001</span><span class="conversations-library-count" aria-hidden="true">12</span></div>
-    <div class="conversations-library-content"><div><h2>Twelve questions worth discussing.</h2><p>What does it mean to make a fair choice when our starting conditions differ? What can hope ask of us when nothing is guaranteed? And how can a group disagree well? <cite>Conversations of Chance</cite> offers twelve original scenarios and guided discussions that follow the twelve readings of <cite>The Book of Chance</cite>.</p><p class="conversations-library-meta">By H · Complete online · 48-page PDF proof · EPUB · Editorial candidate</p>
-    <div class="button-line"><a class="btn btn-primary" href="../{PAGE}">Read online →</a><a class="btn btn-outline" href="../{PDF}" download>PDF ↓</a><a class="btn btn-outline" href="../{EPUB}" download>EPUB ↓</a></div></div>
-    <div class="conversations-library-quote"><span>FROM THE DISCUSSIONS</span><p>“A useful unresolved question is a result.”</p><small>— H</small></div></div></section>''','html.parser').section
+    <div class="conversations-library-heading"><span class="eyebrow">New companion · BOC-CNV-001</span><h2>Twelve questions worth discussing.</h2><p>What does it mean to make a fair choice when our starting conditions differ? What can hope ask of us when nothing is guaranteed? And how can a group disagree well? <cite>Conversations of Chance</cite> offers twelve original scenarios and guided discussions that follow the twelve readings of <cite>The Book of Chance</cite>.</p></div><div class="conversations-library-card"><img src="../assets/publications/conversations-of-chance-cover.webp" alt="Conversations of Chance by H — discussion companion cover" loading="lazy" width="1000" height="1500"><div><span class="eyebrow">Discussion companion · 12 conversations · Free</span><h3>Conversations of Chance</h3><p>A literary discussion companion designed to sit naturally beside the foundational book and the other companion publications.</p><p class="conversations-library-meta">By H · Complete online · 53-page PDF proof · EPUB · Editorial candidate</p><div class="button-line"><a class="btn btn-primary" href="../{PAGE}">Read online →</a><a class="btn btn-outline" href="../{PDF}" download>PDF ↓</a><a class="btn btn-outline" href="../{EPUB}" download>EPUB ↓</a></div><p class="conversations-library-quote-inline">“A useful unresolved question is a result.” <span>— H</span></p></div></div></section>''','html.parser').section
     before=lib.select_one('#five-values-booklet')
     assert before, 'v0.15 Library feature missing; refusing to overwrite'
     before.insert_before(sec)
@@ -141,8 +131,8 @@ def apply_v016(root:Path, document, markdown, info:dict):
     prior=s.select_one('.conversations-home-feature')
     if prior:prior.decompose()
     feature=BeautifulSoup(f'''<section class="shell conversations-home-feature section-space">
-        <div><span class="eyebrow">A new conversation companion · by H</span><h2>What happens when we ask better questions together?</h2><p>Twelve discussions on chance, choices, shared responsibility and the lives we shape. Start on your own, or bring a scenario to friends. You need not agree with every answer—or share anything personal.</p><div class="button-line"><a class="btn btn-primary" href="{PAGE}">Explore Conversations of Chance →</a><a class="btn btn-outline" href="downloads/#conversations-of-chance">Browse the Library</a></div><p class="conversations-home-meta">Free online, PDF and EPUB · Editorial candidate for review</p></div>
-        <div class="conversations-home-graphic" aria-hidden="true"><span>THE BOOK OF CHANCE · COMPANIONS</span><strong>12</strong><div class="conversations-graphic-lines"></div><p>QUESTIONS FOR AN UNCERTAIN LIFE</p></div>
+        <div><span class="eyebrow">A new conversation companion · by H</span><h2>What happens when we ask better questions together?</h2><p>Twelve discussions on chance, choices, shared responsibility and the lives we shape. Start on your own, or bring a scenario to friends. The new cover now places the publication clearly within the growing Book of Chance library.</p><div class="button-line"><a class="btn btn-primary" href="{PAGE}">Explore Conversations of Chance →</a><a class="btn btn-outline" href="downloads/#conversations-of-chance">Browse the Library</a></div><p class="conversations-home-meta">Free online, PDF and EPUB · Now with a dedicated companion cover</p></div>
+        <img src="assets/publications/conversations-of-chance-cover.webp" alt="Cover of Conversations of Chance, a discussion companion by H" loading="lazy" width="1000" height="1500">
     </section>''','html.parser').section
     anchor=s.select_one('.values-home-feature');assert anchor,'Homepage v0.15 Five Values feature missing'
     anchor.insert_before(feature)
@@ -155,7 +145,7 @@ def apply_v016(root:Path, document, markdown, info:dict):
         'series':'The Book of Chance — Companions','edition':'v0.1',
         'status':'editorial candidate; founder approval and live testing outstanding',
         'language':'en-NZ','date_prepared':'2026-11-22',
-        'source':SOURCE,'url':PAGE,'pdf':PDF,'epub':EPUB,'sessions':12}]
+        'source':SOURCE,'url':PAGE,'cover':'assets/publications/conversations-of-chance-cover.webp','pdf':PDF,'epub':EPUB,'sessions':12}]
     catfile.write_text(json.dumps(pub,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
     # Do not add an unapproved noindex candidate to the public-facing sitemap.
     info.update({'website_version':'0.16','latest_discussion_id':'BOC-CNV-001',

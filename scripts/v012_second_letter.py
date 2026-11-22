@@ -34,7 +34,7 @@ def apply_v012(root: Path, document, markdown, info: dict):
     <section class="shell letters-postscript"><div><span class="eyebrow">Continue reading</span><h2>A larger conversation.</h2><p>The first two Letters explore different kinds of responsibility: toward people we never meet, and after decisions whose outcomes we cannot control.</p></div><a class="btn btn-outline" href="../">Explore the series →</a></section>'''
     destination = root/'letters'/entry['slug']/'index.html'
     destination.parent.mkdir(exist_ok=True,parents=True)
-    destination.write_text(document(entry['title'],page_body,base='../../',active='downloads',desc=entry['summary'],extra_head=f'<link rel="canonical" href="https://thebookofchance.github.io/{entry["url"]}">'),encoding='utf8')
+    destination.write_text(document(entry['title'],page_body,base='../../',active='downloads',desc=entry['summary'],extra_head=f'<link rel="canonical" href="https://thebookofchance.github.io/{entry["url"]}">',og_image=entry['cover'].replace('.webp','.png')),encoding='utf8')
 
     # The v0.10 generator creates both issue cards from the series catalogue.
     archive = root/'letters/index.html'

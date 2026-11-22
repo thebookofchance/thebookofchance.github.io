@@ -139,7 +139,8 @@
       "url": "publications/conversations-of-chance/",
       "pdf": "files/conversations/Conversations_of_Chance_Editorial_Proof_v0.1.pdf",
       "epub": "files/conversations/Conversations_of_Chance_Editorial_Proof_v0.1.epub",
-      "sessions": 12
+      "sessions": 12,
+      "cover": "assets/publications/conversations-of-chance-cover.webp"
     }
   ]
 }

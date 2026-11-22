@@ -34,7 +34,7 @@ def apply_v013(root:Path, document, markdown, info:dict):
     <section class="shell letters-postscript"><div><span class="eyebrow">The opening collection</span><h2>Three questions. More ways to think.</h2><p>These first three Letters explore unseen interdependence, decisions under uncertainty, and our obligations to strangers. They remain independent essays rather than compulsory teachings.</p></div><a class="btn btn-outline" href="../">Read the collection →</a></section>'''
     dst=root/item['url']/'index.html'
     dst.parent.mkdir(parents=True,exist_ok=True)
-    dst.write_text(document(item['title'],body,base='../../',active='downloads',desc=item['summary'],extra_head=f'<link rel="canonical" href="https://thebookofchance.github.io/{item["url"]}">'),encoding='utf8')
+    dst.write_text(document(item['title'],body,base='../../',active='downloads',desc=item['summary'],extra_head=f'<link rel="canonical" href="https://thebookofchance.github.io/{item["url"]}">',og_image=item['cover'].replace('.webp','.png')),encoding='utf8')
 
     archive=root/'letters/index.html'
     arch=BeautifulSoup(archive.read_text('utf8'),'html.parser')
