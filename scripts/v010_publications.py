@@ -27,7 +27,7 @@ def apply_v010(root: Path, document, md, info: dict):
     summary=html.escape(entry['summary'])
 
     letter_body=f'''<div class="shell letters-reading-top"><a class="back-to-toc" href="../">← All Letters from H</a><a class="back-to-toc" href="../../downloads/#letters-from-h">The Library</a></div>
-    <header class="shell letters-reading-hero"><span class="eyebrow">Letters from H · No. 01</span><h1>{topic}</h1><p class="lead">A letter on unseen lives and shared responsibility.</p><p class="letters-meta">By H · Prepared 22 November 2026 · Editorial candidate v1.0-RC1</p></header>
+    <header class="shell letters-reading-hero"><span class="eyebrow">Letters from H · No. 01</span><h1>{topic}</h1><p class="lead">A letter on unseen lives and shared responsibility.</p><p class="letters-meta">By H · Revised 22 November 2026 · Editorial candidate {html.escape(entry["edition"])}</p></header>
     <div class="shell letters-reading-layout"><article class="reading-body letters-prose" aria-label="Full text of Letter 01">{article_markup}</article><aside class="letters-side"><span class="eyebrow">This letter</span><p>A standalone essay that extends themes in <cite>The Book of Chance</cite>. No account, donation or Fellowship membership is required.</p><img src="../../{entry['cover']}" alt="White literary cover with crossing black and blue paths and the title On the People We Never Meet" loading="lazy" width="1000" height="1500"><a class="btn btn-primary" href="../../{entry['pdf']}" download>Download PDF ↓</a><a class="btn btn-outline" href="../../{entry['epub']}" download>Download EPUB ↓</a><a class="text-link" href="../../read/shared-fortune/">Related: Shared Fortune ↗</a></aside></div>
     <section class="shell letters-postscript"><div><span class="eyebrow">Keep reading</span><h2>More letters will follow.</h2><p>Each Letter will explore one philosophical question in full, with care for uncertainty, dignity and the people our choices touch.</p></div><a class="btn btn-outline" href="../">Explore the series →</a></section>'''
     letter_page=root/'letters'/entry['slug']/'index.html'
@@ -85,4 +85,4 @@ def apply_v010(root: Path, document, md, info: dict):
     smpath.write_text(sm,'utf-8')
 
     # This is an editorial candidate pending human author approval and a live website check.
-    info.update({'website_version':'0.10','letters_series_available':1,'letters_series_status':'First issue editorial candidate; author/live review pending','letters_publication':entry['id'],'publication_standard':'docs/Publications_Standard_v1.0_RC1.md'})
+    info.update({'website_version':'0.11','letters_series_available':1,'letters_series_status':'First issue editorial candidate; author/live review pending','letters_publication':entry['id'],'publication_standard':'docs/Publications_Standard_v1.0_RC1.md'})

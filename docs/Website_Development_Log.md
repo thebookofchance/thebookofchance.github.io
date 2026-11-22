@@ -192,3 +192,12 @@ It also introduces **Chance Campaigns**, a deferred idea for externally vetted c
 - Repaired `v09_enhancements.py` resource-catalogue regeneration so rebuilding the site cannot duplicate four journal entries.
 - Preserved existing books, book artwork, accepted emblem, reflection library, Formspree endpoint configuration and non-operating membership/donation services.
 - **Review status:** source checks and browser inlined rendering checks completed; H approval, deployed-link tests, real e-reader tests and independent editorial review remain pending.
+
+
+### v0.11 — First Letter editorial refinement (22 November 2026)
+- Revised the canonical manuscript for BOC-LFH-001: opening scene signalled as imagined, institutional care and consultation deepened, future-options and feedback arguments clarified, note and section heading adjusted.
+- Rebuilt its PDF, EPUB and web reading page from the same source.
+- Updated issue metadata to 1.0-RC2 with approval/live-verification still pending.
+- Added an editorial review, release-gate table, and refreshed progress register.
+- Preserved the foundational book, journals, approved emblem and Formspree configuration.
+- Issued only changed/new website files.

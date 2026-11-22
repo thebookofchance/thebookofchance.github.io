@@ -1,34 +1,26 @@
 {
-  "site_pages": 35,
-  "local_refs_checked": 954,
-  "letter_pdf_pages": 10,
-  "letter_epub_bytes": 137322,
-  "pdf_bytes": 45734,
-  "preservation": [
+  "date": "2026-11-22",
+  "website_version": "0.11",
+  "publication_id": "BOC-LFH-001",
+  "edition": "1.0-RC2",
+  "status": "editorial candidate",
+  "html_pages": 35,
+  "html_local_refs_checked": 954,
+  "broken_local_refs": [],
+  "letter_pdf_pages": 11,
+  "pdf_bytes": 48099,
+  "epub_bytes": 138030,
+  "epub_archive_valid": true,
+  "web_pdf_epub_same_source": true,
+  "protected_files_unchanged": [
     "source/manuscript.md",
     "assets/logo-master.svg",
     "assets/brand-mark.svg",
     "assets/forms-config.js",
-    "existing Light/Dark EPUB files"
+    "files/reflection/The_Reflection_Journal_Fillable.pdf",
+    "source/covers/Book_of_Chance_Light_Cover.png"
   ],
-  "errors": [],
-  "browser_inlined_render_checks": {
-    "cases": 12,
-    "viewports": [
-      390,
-      768,
-      1365
-    ],
-    "routes_checked": [
-      "homepage",
-      "Library",
-      "Letters index",
-      "Letter 001"
-    ],
-    "horizontal_overflow_cases": 0,
-    "method": "CSS and image assets inlined into headless Chromium; direct local-server/file navigation blocked"
-  },
-  "live_deployment_verified": false,
-  "e_reader_physical_device_tested": false,
-  "human_editorial_approval": false
+  "human_author_approval": "pending",
+  "live_website_verified": false,
+  "live_reader_device_tested": false
 }

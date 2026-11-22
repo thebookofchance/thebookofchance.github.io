@@ -9,21 +9,40 @@
       "title": "On the People We Never Meet",
       "author": "H",
       "language": "en-NZ",
-      "edition": "1.0-RC1",
+      "edition": "1.0-RC2",
       "date_prepared": "2026-11-22",
-      "status": "editorial candidate — author approval and live deployment pending",
+      "status": "revised editorial candidate — final author approval and live deployment check pending",
       "summary": "An essay about the strangers who make our lives possible, and the responsibility we carry toward people who may never know our names.",
-      "themes": ["dignity", "interdependence", "stewardship", "future generations"],
-      "foundation_readings": ["VIII — Shared Fortune", "X — The Living World", "XI — Stewardship"],
+      "themes": [
+        "dignity",
+        "interdependence",
+        "stewardship",
+        "future generations"
+      ],
+      "foundation_readings": [
+        "VIII — Shared Fortune",
+        "X — The Living World",
+        "XI — Stewardship"
+      ],
       "file": "source/letters/001-on-the-people-we-never-meet.md",
       "pdf": "files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.pdf",
       "epub": "files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.epub",
       "cover": "assets/letters/lfh-001-cover.webp",
-      "url": "letters/on-the-people-we-never-meet/"
+      "url": "letters/on-the-people-we-never-meet/",
+      "last_revised": "2026-11-22",
+      "editorial_note": "Revised for clarity and stronger distinction between private kindness, dependable institutions and unseen responsibility. Fictional scenes expressly identified. Founder approval pending."
     }
   ],
   "planned": [
-    {"number": 2, "title": "When Good Choices Lead to Bad Outcomes", "status": "planned; not drafted"},
-    {"number": 3, "title": "What Do We Owe to Strangers?", "status": "planned; not drafted"}
+    {
+      "number": 2,
+      "title": "When Good Choices Lead to Bad Outcomes",
+      "status": "planned; not drafted"
+    },
+    {
+      "number": 3,
+      "title": "What Do We Owe to Strangers?",
+      "status": "planned; not drafted"
+    }
   ]
 }

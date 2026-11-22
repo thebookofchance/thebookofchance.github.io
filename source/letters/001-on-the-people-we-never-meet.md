@@ -2,7 +2,7 @@
 
 *Letters from H · No. 01*
 
-There is a handrail beside a steep flight of steps in a public building. Most people who use it do not think about the person who requested it, the person who measured its height, or the worker who fixed it to the wall. Some may never need it. Others arrive on a difficult morning and find something steady to hold.
+Imagine a handrail beside a steep flight of steps in a public building. Most people who use it do not think about the person who requested it, the person who measured its height, or the worker who fixed it to the wall. Some may never need it. Others arrive on a difficult morning and find something steady to hold.
 
 The people involved in making that rail may never know whose fall it prevented, whose climb it made possible, or whether it helped at all. Their work belongs to the lives of strangers.
 
@@ -22,6 +22,10 @@ There is something humbling in this. We are more dependent than the stories of i
 
 To notice that is not to diminish anyone. It is to tell a fuller story.
 
+And the story has another side. A functioning town cannot rely only on people who feel generous today. Water must still be safe when the technician is tired. The bus must still be accessible when nobody is watching. A public service should not require its users to know the right person or earn someone's personal favour. Sometimes the most valuable form of care is a dependable arrangement that survives changes in mood, personnel and attention.
+
+That is why recognising the unseen worker should lead to more than private gratitude. It can lead us to ask whether the worker is safe, properly supported and able to raise a concern without punishment. The people who depend on a system and the people who maintain it both deserve consideration.
+
 ## When influence travels without permission
 
 Our connections to strangers are not always beneficial. A careless decision can make someone's work harder. A policy written at a distance can close a door. A habit that seems insignificant in one household may become consequential when repeated by many.
@@ -34,7 +38,7 @@ A more workable standard asks what we could reasonably have known, what power we
 
 This is one reason that kindness, while essential, is insufficient by itself. Helping a stranger cross a difficult street matters. So does asking why the crossing is dangerous, and whether it can be made safer for everyone who comes afterward.
 
-## A letter that arrives too late
+## A message left behind
 
 Imagine a person who finds an old note tucked into the back of a borrowed book. The note is brief: a previous reader has listed three useful sources on a difficult subject. There is no name, no request for thanks and no way to know whether the note was intended for anyone else.
 
@@ -51,6 +55,8 @@ The absence of thanks does not make care worthless. Neither does it make every w
 It is tempting to think of an unknown person as someone just like us, living farther away or later in time. Sometimes that helps us extend concern beyond our familiar circle. But it can also mislead us.
 
 The person using that handrail might have needs we have never considered. The person receiving our advice may face risks we do not share. A community may have its own understanding of what help would be useful, what counts as respect, or which problem deserves attention first.
+
+Consultation is not merely a kind gesture offered after the important decisions have been made. When a decision will shape other people’s lives, their knowledge can reveal a problem we would otherwise fail even to recognise. Listening may change the proposed solution, the way it is delivered, or whether it should happen at all.
 
 Good intentions do not give us the right to decide for people we have not consulted.
 
@@ -70,6 +76,8 @@ This connects to a conviction running through *The Book of Chance*: we begin amo
 
 The future may be open, but openness does not cancel consequences. A choice can narrow what someone else can reasonably attempt even if no particular outcome was ever guaranteed. Conversely, care can preserve a possibility without ensuring that anyone uses it.
 
+Leaving room for others is not the same as insisting that they follow the path we prefer. The useful inheritance may be a reliable library, a healthier landscape, a record that can be questioned, or an institution capable of changing when its rules no longer serve people well. Good stewardship leaves tools for correction, not only monuments to its own intentions.
+
 It is enough to matter that the possibility remains.
 
 ## What we can reasonably give
@@ -83,6 +91,8 @@ Where our work affects others, we can try to do it carefully. Where we possess u
 Not every useful contribution costs money. Not every contribution needs to be public. And a person who is exhausted, unwell, unsafe or struggling to meet basic needs has not failed because their attention must turn inward for a time.
 
 The measure is not how many invisible lives we can claim to have improved. That would turn people we have never met into evidence for our own virtue. We can be responsible for the care of an action without being entitled to a satisfying story about its effects.
+
+If we receive feedback, especially criticism, it can help us correct what we have done. But some of the people affected will remain unknown. We can still insist on fair processes, look for evidence of harm, and support ways for those who are affected to be heard. Responsibility does not require omniscience. It does require a willingness to learn.
 
 ## A place to hold
 
@@ -107,4 +117,4 @@ Perhaps that begins with a modest question: *What am I helping to leave in place
 
 ### A note on this letter
 
-This letter extends themes in *The Book of Chance*, especially **Shared Fortune**, **The Living World** and **Stewardship**. The handrail and found note are illustrative scenes; they are not reports of verified events. The reflection is an ethical argument offered for consideration, not a promise that good intentions will produce good outcomes. Readers may disagree without belonging to any organisation.
+This letter extends themes in *The Book of Chance*, especially **Shared Fortune**, **The Living World** and **Stewardship**. The opening handrail and the found note are imagined illustrations, not reports of verified events. The argument concerns unseen interdependence and the conditions we leave to others; it does not claim to resolve every competing duty to distant strangers. It is an ethical reflection offered for consideration, not a promise that good intentions will produce good outcomes. Readers may disagree without belonging to any organisation.

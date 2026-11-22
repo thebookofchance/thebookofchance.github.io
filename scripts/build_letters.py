@@ -79,7 +79,7 @@ def build():
     book_html=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><title>On the People We Never Meet — Letters from H No. 01</title><style>{css}</style></head><body>
     <div class="cover"><img alt="" src="{svg_path.as_uri()}"></div>
     <div class="start"><div class="eyebrow">Letters from H · No. 01</div><h1>On the People We Never Meet</h1><p class="subtitle">A letter on unseen lives and shared responsibility · H</p></div>
-    {article}<p class="edition">The Book of Chance · Letters from H · BOC-LFH-001<br>Editorial candidate, version 1.0-RC1 · Prepared 22 November 2026<br>Free to read and share by linking to the published source. No membership or payment required.</p>
+    {article}<p class="edition">The Book of Chance · Letters from H · BOC-LFH-001<br>Editorial candidate, version {META["edition"]} · Revised 22 November 2026<br>Free to read and share by linking to the published source. No membership or payment required.</p>
     </body></html>'''
     HTML(string=book_html,base_url=ROOT.as_uri()+'/').write_pdf(str(PDF),metadata={'title':'On the People We Never Meet'})
     epub_css=ROOT/'source/letters/epub-letter.css'

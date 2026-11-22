@@ -1,0 +1,22 @@
+{
+  "version": "0.11",
+  "base": "0.10",
+  "changed_files": [
+    "PATCH_README.md",
+    "SITE_CONTENT_MANIFEST.json",
+    "docs/Letter_001_Editorial_Review_RC2.md",
+    "docs/Publication_001_QA_Report.json",
+    "docs/Publications_Roadmap_and_Progress.md",
+    "docs/Website_Development_Log.md",
+    "files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.epub",
+    "files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.pdf",
+    "letters/on-the-people-we-never-meet/index.html",
+    "scripts/build_letters.py",
+    "scripts/v010_publications.py",
+    "source/letters/001-on-the-people-we-never-meet.md",
+    "source/letters/catalogue.json",
+    "source/publications.json"
+  ],
+  "file_count": 14,
+  "note": "update-only, all unrelated existing files preserved"
+}

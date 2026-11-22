@@ -1,13 +1,13 @@
 # H Publications — Release Roadmap and Progress Register
 
-**Updated:** 22 November 2026 · v0.10  
+**Updated:** 22 November 2026 · v0.11  
 **Sequence rule:** Develop and review **one publication at a time**. After completing the recommended literature programme, plan and launch the Fellowship's YouTube/video channel. No concurrent video production is assumed.
 
 ## Working order
 
 | Order | Publication | Current stage | Approval to move on |
 |---|---|---|---|
-| 1.1 | **Letters from H · No. 01 — On the People We Never Meet** | Complete editorial candidate. HTML, PDF and EPUB prepared; human sign-off/live verification pending | H reviews text and visuals; deployed downloads checked |
+| 1.1 | **Letters from H · No. 01 — On the People We Never Meet** | Editorially refined to 1.0-RC2. HTML, PDF and EPUB prepared; human sign-off/live verification pending | H reviews text and visuals; deployed downloads checked |
 | 1.2 | **Letters from H · No. 02 — When Good Choices Lead to Bad Outcomes** | Planned; not drafted | Issue 001 approved |
 | 1.3 | **Letters from H · No. 03 — What Do We Owe to Strangers?** | Planned; not drafted | Issue 002 approved; distinct ethical argument from issue 001 |
 | 2 | **The Five Values** | Proposed 10–15-page illustrated beginner booklet | Three Letters complete; editorial concept signed off |
@@ -45,3 +45,7 @@ The initial programme's *Letters from H* collection is intended to remain open t
 **Preserved:** approved logo, cover editions of *The Book of Chance*, the entire book text, reflection journals, interest forms, membership status, fundraising boundaries and no-charge reading.
 
 **Not completed:** independent human editorial review, live deployed website checks, e-reader compatibility on physical devices, certified PDF accessibility/assistive technology testing, rights/legal sign-off for a commercial print edition, and founder sign-off. No fundraising or member programme has been launched by this update.
+
+## Issue 001 — v0.11 revision
+
+Refined the first Letter without adding a new title or changing its core argument. The revised work is 1.0-RC2 (editorial candidate). The detailed editorial record is `docs/Letter_001_Editorial_Review_RC2.md`. No video production or second Letter has started.
