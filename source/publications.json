@@ -22,7 +22,8 @@
           "epub": "files/The_Book_of_Chance_Dark.epub",
           "pdf": "files/The_Book_of_Chance_Dark_PDF_Reader_Proof.pdf"
         }
-      ]
+      ],
+      "status": "author-approved digital release · 23 November 2026"
     }
   ],
   "planned": [
@@ -86,7 +87,7 @@
         "url": "letters/on-the-people-we-never-meet/",
         "pdf": "files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.pdf",
         "epub": "files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.epub",
-        "status": "editorially revised candidate — founder approval and live check outstanding"
+        "status": "author-approved digital release · 23 November 2026"
       },
       {
         "id": "BOC-LFH-002",
@@ -94,7 +95,7 @@
         "url": "letters/when-good-choices-lead-to-bad-outcomes/",
         "pdf": "files/letters/Letters_from_H_02_When_Good_Choices_Lead_to_Bad_Outcomes.pdf",
         "epub": "files/letters/Letters_from_H_02_When_Good_Choices_Lead_to_Bad_Outcomes.epub",
-        "status": "editorially revised candidate — founder approval and live check outstanding"
+        "status": "author-approved digital release · 23 November 2026"
       },
       {
         "id": "BOC-LFH-003",
@@ -102,7 +103,7 @@
         "url": "letters/what-do-we-owe-to-strangers/",
         "pdf": "files/letters/Letters_from_H_03_What_Do_We_Owe_to_Strangers.pdf",
         "epub": "files/letters/Letters_from_H_03_What_Do_We_Owe_to_Strangers.epub",
-        "status": "editorially revised candidate — founder approval and live check outstanding"
+        "status": "author-approved digital release · 23 November 2026"
       }
     ]
   },
@@ -114,7 +115,7 @@
       "series": "The Book of Chance — Companions",
       "subtitle": "Hope · Acceptance · Reflection · Growth · Community",
       "edition": "1.0-RC1",
-      "status": "editorial candidate; founder sign-off and live check outstanding",
+      "status": "author-approved digital release · 23 November 2026",
       "language": "en-NZ",
       "date_prepared": "2026-11-22",
       "source": "source/booklets/the-five-values.md",
@@ -130,7 +131,7 @@
       "author": "H",
       "series": "The Book of Chance — Companions",
       "edition": "v0.2",
-      "status": "editorial candidate; cover approved; manuscript author sign-off and live check outstanding",
+      "status": "author-approved digital release · 23 November 2026",
       "language": "en-NZ",
       "date_prepared": "2026-11-22",
       "source": "source/booklets/the-little-book-of-possibilities.md",
@@ -150,7 +151,7 @@
       "author": "H",
       "series": "The Book of Chance — Companions",
       "edition": "v0.1",
-      "status": "editorial candidate; founder approval and live testing outstanding",
+      "status": "author-approved digital release · 23 November 2026",
       "language": "en-NZ",
       "date_prepared": "2026-11-22",
       "source": "source/conversations/conversations-of-chance.md",
@@ -169,7 +170,7 @@
       "author": "H",
       "series": "The Book of Chance — Stories and Parables",
       "edition": "v0.2.1",
-      "status": "final copyedit candidate; external review, accessibility and live checks outstanding",
+      "status": "author-approved digital release · 23 November 2026",
       "language": "en-NZ",
       "date_prepared": "2026-11-22",
       "source": "source/parables/the-parables-of-chance.md",
@@ -189,7 +190,7 @@
       "author": "H",
       "series": "The Book of Chance — Introductory guides",
       "edition": "v0.2",
-      "status": "approved for website staging; independent review and accessibility checks outstanding",
+      "status": "author-approved digital release · 23 November 2026",
       "language": "en-NZ",
       "date_prepared": "2026-11-22",
       "source": "source/guides/beginners-guide-to-confluent-humanism.md",
@@ -208,7 +209,7 @@
       "subtitle": "Twenty-Six Questions About Confluent Humanism and the Fellowship of Chance",
       "edition": "v0.3",
       "author": "H",
-      "status": "editorial candidate, approved for website staging only",
+      "status": "author-approved digital release · 23 November 2026",
       "url": "questions/",
       "cover": "assets/resources/questions-about-chance-cover.webp",
       "pdf": "files/resources/Questions_About_Chance_FAQ_Editorial_Proof_v0.3.pdf",
@@ -223,7 +224,7 @@
     "title": "Guided Reading Journey",
     "url": "journey/",
     "source": "source/resources/guided-reading-journey.json",
-    "status": "Website staging candidate; review and live verification pending",
+    "status": "Released reading resource; no account or tracking",
     "paths": 8,
     "steps_per_path": 3,
     "collects_personal_data": false

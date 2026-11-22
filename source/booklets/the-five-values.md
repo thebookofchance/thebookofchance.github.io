@@ -3,7 +3,7 @@
 *Hope · Acceptance · Reflection · Growth · Community*
 
 *A companion to The Book of Chance*  
-*By H · BOC-BKL-001 · Editorial candidate 1.0-RC1 · 22 November 2026*
+*By H · BOC-BKL-001 · Author-approved digital edition 1.0 · Released 23 November 2026*
 
 ## A compass, not a scorecard
 
@@ -198,4 +198,4 @@ A final question: **Which value helps you see what matters now, and which value 
 
 Every scene in this booklet is **fictional and illustrative**. No case is presented as a verified account or a testimonial. The examples are not operational promises from the developing Fellowship. Where the underlying philosophical convictions are contested, reasonable readers may disagree. H's byline represents authorship, not infallibility.
 
-**Publication identity:** BOC-BKL-001 · First editorial candidate 1.0-RC1 · 22 November 2026 · Language en-NZ. Free to read or download without registration, payment or membership. Digital edition prepared for editorial approval; printed editions would require separate production and rights checks.
+**Publication identity:** BOC-BKL-001 · Digital edition 1.0 · Released 23 November 2026 · Language en-NZ. Free to read or download without registration, payment or membership. Digital edition released with H’s approval; printed editions require separate production and rights checks.

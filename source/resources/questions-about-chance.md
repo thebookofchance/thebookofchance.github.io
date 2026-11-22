@@ -5,7 +5,7 @@
 **By H**  
 *The Book of Chance · Public reader resources*
 
-**Revised editorial candidate v0.3 · 22 November 2026 · BOC-FAQ-001**
+**Author-approved digital edition v0.3 · Released 23 November 2026 · BOC-FAQ-001**
 
 ---
 
@@ -187,7 +187,7 @@ A future Fellowship must say plainly what it can do, what it cannot do, and when
 
 If you are new, begin with ***A Beginner's Guide to Confluent Humanism*** for a short explanation, then ***The Book of Chance*** for the full philosophical argument. ***The Five Values*** explores the five values in depth; ***The Little Book of Possibilities*** considers what makes opportunities genuinely available. For questions to explore alone or with others, try ***Conversations of Chance***. For fiction, read ***The Parables of Chance***, and for individual ethical arguments, see ***Letters from H***.
 
-The books and supplementary resources are collected in the [online Library](https://thebookofchance.github.io/downloads/). Some editions are still labelled editorial candidates. Reading them never requires agreement, registration or payment.
+The books and supplementary resources are collected in the [online Library](https://thebookofchance.github.io/downloads/). These digital editions have H’s approval for public reading. Reading them never requires agreement, registration or payment.
 
 **A further question is welcome.** If this FAQ gets something wrong, leaves out an important objection or describes a plan that later changes, it should be corrected openly and the edition dated. No fictional “reader question” should be presented as though it came from an actual person.
 
@@ -199,7 +199,7 @@ The books and supplementary resources are collected in the [online Library](http
 
 ## A note on sources, status and authorship
 
-This FAQ is a public-facing **editorial candidate**, checked against *Fellowship of Chance Foundational Identity v1.0-RC2* and *Identity and Values Charter RC2*, alongside *A Beginner's Guide to Confluent Humanism v0.2*, the current *Book of Chance* texts and *The Book of Chance Publications Standard 1.0-RC1*. The RC2 identity and charter are themselves founder-review candidates, not adopted operating policies. The questions are editorially composed, not collected from real readers. The text was prepared and revised with AI assistance for H’s review.
+This FAQ is a public-facing **author-approved reference**, checked against *Fellowship of Chance Foundational Identity v1.0-RC2* and *Identity and Values Charter RC2*, alongside *A Beginner's Guide to Confluent Humanism v0.2*, the current *Book of Chance* texts and *The Book of Chance Publications Standard 1.0-RC1*. The RC2 identity and charter are themselves founder-review candidates, not adopted operating policies. The questions are editorially composed, not collected from real readers. The text was prepared and revised with AI assistance and approved for release by H.
 
 **Edition:** v0.3 · 22 November 2026 · Revised after a simulated multi-perspective reader review  
 **Catalogue:** BOC-FAQ-001 · Language: en-NZ  

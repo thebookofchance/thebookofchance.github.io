@@ -100,8 +100,8 @@ def build_pdf(markup):
     <h1>The Parables of Chance</h1>
     <div class="subtitle">Twelve Stories about Fortune, Choice<br>and the Lives We Share</div>
     <div class="rule"></div><div class="mark">H</div>
-    <p class="edition">Editorial candidate v0.2.1 · 22 November 2026<br>For author review · Not final or print ready</p></div>'''
-    html=f'<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>The Parables of Chance — editorial proof v0.2.1</title><style>{CSS}</style></head><body>{first}{markup}</body></html>'
+    <p class="edition">Author-approved digital edition v0.2.1 · Released 23 November 2026<br>Not certified for print production</p></div>'''
+    html=f'<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>The Parables of Chance — digital edition v0.2.1</title><style>{CSS}</style></head><body>{first}{markup}</body></html>'
     (WORK/'typeset.html').write_text(html,encoding='utf8')
     out=OUTPUT/'The_Parables_of_Chance_Editorial_Proof_v0.2.1.pdf'
     HTML(string=html,base_url=ROOT.as_uri()+'/').write_pdf(out,pdf_variant='pdf/ua-1')
@@ -110,9 +110,9 @@ def build_pdf(markup):
     temp=out.with_name(out.stem+'-metadata.pdf')
     with fitz.open(out) as doc:
         m=doc.metadata.copy()
-        m.update({'title':'The Parables of Chance — editorial proof v0.2.1',
+        m.update({'title':'The Parables of Chance — digital edition v0.2.1',
                   'author':'H', 'subject':'Twelve Stories about Fortune, Choice and the Lives We Share',
-                  'keywords':'literary fiction, philosophy, chance, editorial candidate',
+                  'keywords':'literary fiction, philosophy, chance, parables',
                   'creator':'The Book of Chance editorial production'})
         doc.set_metadata(m)
         doc.xref_set_key(doc.pdf_catalog(),'Lang','(en-NZ)')

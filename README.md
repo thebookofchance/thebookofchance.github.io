@@ -1,68 +1,59 @@
-# The Book of Chance — Website v0.25
+# The Book of Chance — Website v0.31
 
-A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, private reflection practices, downloadable resources, and the proposed Fellowship of Chance.
+A static GitHub Pages website for the free literature of Confluent Humanism, optional private reflection resources and information about the *proposed* Fellowship of Chance.
 
 **Public site:** https://thebookofchance.github.io/  
-**Website release:** v0.25 — Reading Room and interactive Library presentation (22 November 2026)
+**Literature release:** 23 November 2026, author-approved by H.  
+**Website update:** v0.31 — literature digital release, canonical indexing, release register.
 
-## Site structure
+## Published digital literature
 
-| Destination | Purpose |
-| --- | --- |
-| `/` | Book-led homepage, weekly reflection entry and current focus |
-| `/reader/` | Paginated in-browser eReader for nine literature titles, chapter contents and device-only reading place |
-| `/read/` | Entire book: twelve readings, sections, notes and original illustrations |
-| `/reflect/` | Private guided reflection editor, weekly question rotation and offline guides |
-| `/downloads/` | Book editions, three Letters, new Five Values illustrated booklet, four journal editions and fillable worksheets |
-| `/booklets/the-five-values/` | Complete illustrated text of *The Five Values* with direct PDF and EPUB downloads |
-| `/booklets/the-little-book-of-possibilities/` | Companion book on conditions and accessible opportunities |
-| `/publications/conversations-of-chance/` | Twelve-discussion companion for individuals and groups |
-| `/publications/parables-of-chance/` | Twelve original fictional parables; staged final copyedit candidate v0.2.1 |
-| `/publications/beginners-guide-to-confluent-humanism/` | Nine-section Beginner’s Guide v0.2; 13-page PDF proof, EPUB and full HTML reader; editorial candidate |
-| `/journey/` | Eight source-verified guided reading paths, three stops per theme; no accounts, quiz or progress tracking |
-| `/questions/` | Questions About Chance: 26 searchable answers across five themes, with free PDF/EPUB proof downloads; editorial candidate |
-| `/letters/` | Three standalone philosophical Letters from H, with online reading and PDF/EPUB downloads |
-| `/community/` | Proposed Fellowship, reasons to participate, future funding principles and a Fellowship interest form |
-| `/focus/` | Current organisational development goal, roadmap, potential funding criteria and deferred Chance Campaigns |
-| `/print/` | Planned physical editions and a **separate** print-interest form |
-| `/about/` | Philosophy, book and author information |
-| `/privacy/` | Formspree interest-list and private reflection privacy information |
+The Library includes nine author-approved works: *The Book of Chance* (Light/Dark editions), the three *Letters from H*, *The Five Values*, *Conversations of Chance*, *The Little Book of Possibilities*, *The Parables of Chance*, and *A Beginner's Guide to Confluent Humanism*. *Questions About Chance* is an additional released reader FAQ. These works are free to read or download, and no belief or membership is required.
 
-## Honesty about what exists
+The `journey/` Guided Reading Journey has eight optional routes; the `reader/` interface provides paginated reading across the nine Library titles. The Reading Room remains `noindex` because it duplicates the canonical publication texts; the individual published literature pages, FAQ and Guided Reading Journey are indexable and in the sitemap.
 
-- **Prepared digital content:** The complete free book, three Letters, the new Five Values illustrated companion, two book cover editions, private reflection workspace, reflection journals, a rotating archive of twelve questions and two interest registration forms (once the owner's Formspree endpoints are configured on the live site).
-- **Not yet operating:** Formal Fellowship membership, active mentorship, local Fellowships, practical hardship assistance, scheduled events, charitable fundraising, payments, book orders or a real charity selection wheel.
-- **Ordinary future membership is intended to be free.** Giving is voluntary and cannot purchase luck, influence or priority support.
-- The founder reports that the two live Formspree interest forms work; private submissions and actual endpoint configuration were **not independently verified** in this release.
-- Readers do not need to register or donate to read or use any current resource. The existing interest forms request adult (18+) confirmation for the Fellowship, while the reading site remains publicly accessible.
+## Main routes
 
-## Deploy update-only ZIPs
+- `/` — Homepage and starting points for reading
+- `/downloads/` — Library catalogue and PDF/EPUB downloads
+- `/reader/` — Paged eReader; device-local reading place
+- `/read/` — Original book and its twelve readings
+- `/letters/` — The three published Letters from H
+- `/booklets/` and `/publications/` — Companion books and Guide
+- `/questions/` — The searchable 26-question FAQ
+- `/journey/` — Eight Guided Reading Journeys
+- `/reflect/` — Optional private reflection resources
+- `/community/`, `/focus/`, `/print/` — Future Fellowship plans and interest forms
+- `/about/`, `/privacy/` — About and privacy information
 
-The current versioned `Book_of_Chance_Website_Update_Only_v0.25.zip` contains changed and new files **only**. Extract it and upload its contents to the existing GitHub Pages repository, replacing files with the same paths and **without deleting other files**.
+## Scope and trust
 
-**Do not overwrite or publish private information.** `assets/forms-config.js` (the file containing your working Formspree endpoint identifiers and public contact email) has intentionally **not** been included or modified.
+- Author approval does **not** certify PDF/UA conformance, substitute for independent accessibility testing, or imply endorsement by external reviewers. Tagged PDFs, EPUBs and HTML alternatives are available.
+- The Fellowship's Council, formal membership, mentorship, hardship programme, payments and charitable programmes are **not** operational. No such service is activated by publication release.
+- The site owner's real form submission checks were reported as successful on 23 November 2026; this update does not change `assets/forms-config.js` and does not independently re-verify delivery.
+- Earlier filenames containing `Editorial_Proof` are retained for URL continuity. The **contents and public labels** now identify these as approved digital editions.
+- `docs/Literature_Release_Register_v0.31.json` records release identities and file hashes; `docs/Literature_Release_QA_v0.31.json` records local checks.
 
-Check the accepted favicon/logo, both form flows and the `/reflect/` download feature after deployment.
+## Deploy the update-only ZIP
 
-## Edit and regenerate
+Extract `Book_of_Chance_Website_Update_Only_v0.31_Literature_Release.zip` at the **root** of your existing repository, preserving paths and replacing files with the same name. **Do not delete unrelated existing files.** The ZIP does not include the existing form configuration.
 
-- The canonical book source remains `source/manuscript.md`; do not edit generated `read/` pages directly.
-- The available/planned publication catalogue is `source/publications.json`. It includes free practice guides, the first three Letters and The Five Values as editorial candidate.
-- Weekly questions live in `source/reflection-prompts.json` and follow a repeating 12-week cycle starting Monday, 23 November 2026.
-- The current goal, supporting page and homepage callouts are maintained through `scripts/v07_enhancements.py`.
-- The site generator is `scripts/build_site.py`; it includes the source-driven publication/reader integrations through v0.25. Run `python scripts/audit_journey_v024.py` after regenerating HTML to check links and reading-path anchors.
+After GitHub Pages finishes deploying, verify the homepage and Library badges, at least one PDF/EPUB download, the FAQ and Reading Journey, a mobile eReader page, and your established forms. Search indexing is permitted by the site metadata but not immediate or guaranteed.
+
+## Rebuilding the site
 
 ```bash
 python -m pip install -r scripts/requirements.txt
 python scripts/build_site.py
-python scripts/audit_journey_v024.py
-python scripts/build_reflection_pdfs.py
-python scripts/build_five_values.py  # only when manuscript changes; before build_site.py
 ```
 
-The routine site generator does not alter existing PDF/EPUB editions, the original book illustrations, or accepted brand symbols. The separate booklet builder intentionally regenerates its own cover, diagrams, PDF and EPUB after a source revision. It also leaves existing form service configuration alone. Run a local web server (e.g. `python -m http.server 8000`) for normal browser testing outside a restricted environment.
+The standard generator applies `scripts/v031_release.py` at the end to preserve canonical release metadata and indexing. Approved cover assets are hash-checked through the existing production scripts. Regenerating a PDF/EPUB edition is a separate intentional operation and may change the exact registered file hash; update the release register if you do so.
 
-## Project record
+## Historical project record (superseded status descriptions)
+
+The following development notes document the earlier production stages. Any references to editorial-candidate status, planned releases or earlier website versions below are **historical** and do not override the current v0.31 release register.
+
+
 
 **`docs/Website_Development_Log.md`** is the canonical change log: all v0.8 additions, intentionally deferred features, testing boundaries and future maintenance instructions are recorded there.
 

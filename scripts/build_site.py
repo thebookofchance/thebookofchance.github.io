@@ -261,3 +261,7 @@ info['public_terminology_standard'] = 'docs/Public_Terminology_Standard_v1.0.md'
 (ROOT/'SITE_CONTENT_MANIFEST.json').write_text(json.dumps(info,indent=2),encoding='utf8')
 print('generated sections',len(sections),'readings',len(reader_ids),'figures',sum(s['figure_count'] for s in sections))
 print('section titles',[(s['slug'],s['title']) for s in sections]);print('root',ROOT)
+
+# v0.31: Retain approved release statuses and index settings across future site builds.
+from v031_release import apply_release_v031
+apply_release_v031(ROOT)

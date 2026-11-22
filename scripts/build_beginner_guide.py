@@ -77,13 +77,13 @@ a{color:#286CB8;text-decoration:underline}
 '''
 front='''<section class="opening"><div class="label">The Book of Chance · Introductory Guides</div>
 <h1>A Beginner's Guide<br>to Confluent Humanism</h1><p class="subtitle">Chance, Choice and the Lives We Share</p>
-<p class="meta">By H · BOC-GDE-001 · Editorial candidate v0.2 · 22 November 2026</p></section>'''
+<p class="meta">By H · BOC-GDE-001 · Author-approved digital edition v0.2 · Released 23 November 2026</p></section>'''
 source='<html lang="en-NZ"><head><meta charset="utf-8"><title>'+escape(TITLE)+'</title><style>'+css+'</style></head><body><div class="cover"><img src="'+COVER_PNG.as_uri()+'" alt="Cover: A Beginner&#39;s Guide to Confluent Humanism by H"></div>'+front+html+'</body></html>'
 ( ROOT/'_build_beginner_guide/_guide_typeset.html').write_text(source,encoding='utf8')
 HTML(string=source,base_url=ROOT.as_uri()+'/').write_pdf(str(PDF),pdf_variant='pdf/ua-1')
 with fitz.open(PDF) as pdf:
     md=pdf.metadata
-    md.update({'title':TITLE,'author':'H','subject':'Introductory guide to Confluent Humanism — editorial candidate v0.2','keywords':'The Book of Chance, Confluent Humanism, Fellowship of Chance, beginner guide'})
+    md.update({'title':TITLE,'author':'H','subject':'Introductory guide to Confluent Humanism — digital edition v0.2','keywords':'The Book of Chance, Confluent Humanism, Fellowship of Chance, beginner guide'})
     pdf.set_metadata(md)
     tmp=ROOT/'_build_beginner_guide/_guide_meta.pdf'
     pdf.save(str(tmp),garbage=4,deflate=True)
@@ -96,7 +96,7 @@ subprocess.run(['pandoc',str(SRC),'-f','markdown+smart','-t','epub3','--standalo
  '--metadata=title:A Beginner\'s Guide to Confluent Humanism','--metadata=subtitle:Chance, Choice and the Lives We Share',
  '--metadata=author:H','--metadata=lang:en-NZ',
  '--metadata=description:An introduction to Confluent Humanism, chance, meaningful choice, five values and the proposed Fellowship of Chance.',
- '--metadata=rights:Free access intended. Editorial candidate. Republication rights pending.',
+ '--metadata=rights:Free public reading and download. Republication requires permission.',
  '--epub-cover-image',str(COVER_PNG),'--css',str(css_epub),'-o',str(EPUB)],capture_output=True,text=True,check=True)
 with zipfile.ZipFile(EPUB) as epub:
     assert epub.testzip() is None

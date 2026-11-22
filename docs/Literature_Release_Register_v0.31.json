@@ -1,0 +1,142 @@
+{
+  "release": "Author-approved digital publication release v0.31",
+  "approved_by": "H (user confirmation in project conversation)",
+  "approval_date": "2026-11-23",
+  "scope": "Nine library titles plus Questions About Chance FAQ",
+  "status": "Author-approved digital editions; no independent accessibility certification or external editorial endorsement claimed",
+  "items": [
+    {
+      "id": "book-of-chance",
+      "title": "The Book of Chance",
+      "edition": "Light Edition",
+      "pdf": "files/The_Book_of_Chance_Light_PDF_Reader_Proof.pdf",
+      "pdf_sha256": "5c75e1c938c21b938044c66f8a4e28e8945348d5a7bb09fad1a5bbab75b4c770",
+      "pdf_pages": 113,
+      "epub": "files/The_Book_of_Chance_Light.epub",
+      "epub_sha256": "a21904ecd5d9c5fa149b3ada17ea79b6512d974e4dbbf73d010e90bca7c21fdf",
+      "cover": "assets/covers/light-cover.webp",
+      "cover_sha256": "6de28e3ac146314a654c2b4274ce31bd8eaac6d8cb8a7c1743448d8bf7160b0f"
+    },
+    {
+      "id": "book-of-chance",
+      "title": "The Book of Chance",
+      "edition": "Dark Edition",
+      "pdf": "files/The_Book_of_Chance_Dark_PDF_Reader_Proof.pdf",
+      "pdf_sha256": "faeb2a63de654b05b4fd2bd8f6208fca50fbda87a54674874e485d0e18c5ca69",
+      "pdf_pages": 113,
+      "epub": "files/The_Book_of_Chance_Dark.epub",
+      "epub_sha256": "1c49ee1687303213c4b8a5fb00b372da09cec77555ff18e2c337777d7bfda8db",
+      "cover": "assets/covers/dark-cover.webp",
+      "cover_sha256": "d9e9044ceb9da99369bd74f3051f68be630d2fcfc2d5b4500ff481fa62fc59a6"
+    },
+    {
+      "id": "BOC-LFH-001",
+      "title": "On the People We Never Meet",
+      "edition": "Digital edition",
+      "pdf": "files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.pdf",
+      "pdf_sha256": "f69edd0537e19874e6e3ce77f8a73de25a624e9e74ea3cde93a21d4a1f7b5500",
+      "pdf_pages": 11,
+      "epub": "files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.epub",
+      "epub_sha256": "5e761272a7ae82a39ef3ec1b712bfc05d0b683f93275e4d2bce2f0b537b52d81",
+      "cover": "assets/letters/lfh-001-cover.webp",
+      "cover_sha256": "bef7d694917e0028e81d1dd13836a3aaa02cbdf02a8f04a51b2900446441c0f2"
+    },
+    {
+      "id": "BOC-LFH-002",
+      "title": "When Good Choices Lead to Bad Outcomes",
+      "edition": "Digital edition",
+      "pdf": "files/letters/Letters_from_H_02_When_Good_Choices_Lead_to_Bad_Outcomes.pdf",
+      "pdf_sha256": "269e6d8f5f2c2bb951d91da6480a1fd159ad127b97547e6bc3a3444e7565e1ea",
+      "pdf_pages": 11,
+      "epub": "files/letters/Letters_from_H_02_When_Good_Choices_Lead_to_Bad_Outcomes.epub",
+      "epub_sha256": "f42cbb6f5bec39c3019965a5028236fedf42871d724015a5ca7385ba1fdb2cb2",
+      "cover": "assets/letters/lfh-002-cover.webp",
+      "cover_sha256": "0e05e11df49994dfd319c17c2c7119acaf4d77bad9b8dbf07d50c5b153cf0589"
+    },
+    {
+      "id": "BOC-LFH-003",
+      "title": "What Do We Owe to Strangers?",
+      "edition": "Digital edition",
+      "pdf": "files/letters/Letters_from_H_03_What_Do_We_Owe_to_Strangers.pdf",
+      "pdf_sha256": "04b7924304b45575d98574d78c54979282fe66eb514d5ce2a36088aef99f5595",
+      "pdf_pages": 12,
+      "epub": "files/letters/Letters_from_H_03_What_Do_We_Owe_to_Strangers.epub",
+      "epub_sha256": "7112389f3a1256220c77a48610650f6ef6e3ba32e6c82de6ebab508e1b670623",
+      "cover": "assets/letters/lfh-003-cover.webp",
+      "cover_sha256": "76bb4ab8d07cbff6033b69f6cb31d50c9ee5a1d8d2131f9e4484339c939647fa"
+    },
+    {
+      "id": "BOC-BKL-001",
+      "title": "The Five Values",
+      "edition": "Digital edition",
+      "pdf": "files/booklets/The_Five_Values.pdf",
+      "pdf_sha256": "22cc5ceeb8dce6cfae583c424759a0cbf1725e30f5535c72f441a9f348ae0969",
+      "pdf_pages": 17,
+      "epub": "files/booklets/The_Five_Values.epub",
+      "epub_sha256": "e8a2662b0fb03f5777e7612f9822a80ca09c0d1c3be81c9afbbd443d649019f7",
+      "cover": "assets/booklets/the-five-values-cover.webp",
+      "cover_sha256": "4dc9cd3e30c63e12af56fdb344d2fe25b6a2b8ed5e102a14a612b5fe5c6d8f8c"
+    },
+    {
+      "id": "BOC-BKL-002",
+      "title": "The Little Book of Possibilities",
+      "edition": "Digital edition",
+      "pdf": "files/booklets/The_Little_Book_of_Possibilities_Editorial_Proof_v0.2.pdf",
+      "pdf_sha256": "5ba9577369b0f61dc4e5bc87fcbf9a9e5856e5a9d51ad8540baa8475106c23ed",
+      "pdf_pages": 42,
+      "epub": "files/booklets/The_Little_Book_of_Possibilities_Editorial_Proof_v0.2.epub",
+      "epub_sha256": "ffd74d53e64f5fe7cbc34299d16b6ff9f81e871f87ecc5e9533ece39c5646e4a",
+      "cover": "assets/booklets/the-little-book-of-possibilities-cover.webp",
+      "cover_sha256": "a1ce8570290af48d091b91c999b80fab54d6fb9548f1ae19144463a1b234331a"
+    },
+    {
+      "id": "BOC-CNV-001",
+      "title": "Conversations of Chance",
+      "edition": "Digital edition",
+      "pdf": "files/conversations/Conversations_of_Chance_Editorial_Proof_v0.1.pdf",
+      "pdf_sha256": "99d9a151dee4f81ebda2ec5ca101fed60ebaff2acbef97804c4d36cefc1755dd",
+      "pdf_pages": 53,
+      "epub": "files/conversations/Conversations_of_Chance_Editorial_Proof_v0.1.epub",
+      "epub_sha256": "48b88aaadb982aa00c4b6b737fd76e2b8deea377b64f1971b762f7ad8db25f4a",
+      "cover": "assets/publications/conversations-of-chance-cover.webp",
+      "cover_sha256": "2b1333b5730bade4fec79565488ecd34006f45b1c1afc81a94ee080401c9dce0"
+    },
+    {
+      "id": "BOC-PAR-001",
+      "title": "The Parables of Chance",
+      "edition": "Digital edition",
+      "pdf": "files/parables/The_Parables_of_Chance_Editorial_Proof_v0.2.1.pdf",
+      "pdf_sha256": "e0f9787c172f558cb3e198e396e80c4e97575ed11b9b1c0e9842ea763f4fbcbe",
+      "pdf_pages": 69,
+      "epub": "files/parables/The_Parables_of_Chance_Editorial_Proof_v0.2.1.epub",
+      "epub_sha256": "6d2a81a88cb79e70037aa498f551041c46a72bbad3834241a22e62d3dcd263d5",
+      "cover": "assets/publications/parables-of-chance-cover.webp",
+      "cover_sha256": "3ea2d05e9f0bde0088f81565a1b353997e2afe9cf87c58796770235d32a0054c"
+    },
+    {
+      "id": "BOC-GDE-001",
+      "title": "A Beginner's Guide to Confluent Humanism",
+      "edition": "Digital edition",
+      "pdf": "files/guides/A_Beginners_Guide_to_Confluent_Humanism_Editorial_Proof_v0.2.pdf",
+      "pdf_sha256": "474ccd812d5597550caae59775d0b261fc303dfb1c9342503e4845ba3858675e",
+      "pdf_pages": 13,
+      "epub": "files/guides/A_Beginners_Guide_to_Confluent_Humanism_Editorial_Proof_v0.2.epub",
+      "epub_sha256": "9d3e9f6eda3488b391dc5e1306fee858588544bd1c66725b40f67ff8d3868b84",
+      "cover": "assets/guides/beginners-guide-to-confluent-humanism-cover.webp",
+      "cover_sha256": "d38181a239ac444ae99aee1fcef53802bb63beee9fe463ad9174123322b065e8"
+    },
+    {
+      "id": "BOC-FAQ-001",
+      "title": "Questions About Chance",
+      "edition": "Digital edition",
+      "pdf": "files/resources/Questions_About_Chance_FAQ_Editorial_Proof_v0.3.pdf",
+      "pdf_sha256": "59b17c021994c7254e1809c80659fd38913b117da5486008bae14c144c5fba55",
+      "pdf_pages": 17,
+      "epub": "files/resources/Questions_About_Chance_FAQ_Editorial_Proof_v0.3.epub",
+      "epub_sha256": "8ec6fb955112edb6c48f909e0f698682ef446b7c814e7b8648b145fa33df74e7",
+      "cover": "assets/resources/questions-about-chance-cover.webp",
+      "cover_sha256": "c661c534e9c16622ac66008ecd2ac7a8e1d75d257b2fdeaf958a014d9effbad6"
+    }
+  ],
+  "notes": "Filename stems including Editorial_Proof are retained for URL continuity; page text and metadata describe the current author-approved digital release."
+}

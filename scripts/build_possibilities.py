@@ -117,12 +117,12 @@ def make_pdf():
         if 'Editorial and Authorship Record' in (ptag.find_previous('h2').get_text(' ',strip=True) if ptag.find_previous('h2') else ''):
             ptag['class']=['editorial-end']
     title=f'''<div class="cover"><img alt="Cover: The Little Book of Possibilities by H" src="{(ART/f'{COVER}.png').as_uri()}"></div>
-<div class="titlepage"><p class="kicker">The Book of Chance · Companion collection</p><h1>The Little Book<br>of Possibilities</h1><p class="subtitle">On Small Openings and the Conditions We Create</p><p class="byline">H</p><p class="status">Editorial reader’s proof v0.2 · Prepared 22 November 2026<br>For author review. This is not a final release or print-ready interior.<br>Copyright, imprint, ISBN and publication rights remain to be confirmed.</p></div>'''
+<div class="titlepage"><p class="kicker">The Book of Chance · Companion collection</p><h1>The Little Book<br>of Possibilities</h1><p class="subtitle">On Small Openings and the Conditions We Create</p><p class="byline">H</p><p class="status">Author-approved digital edition v0.2 · Released 23 November 2026<br>Not certified as a print-ready interior.<br>ISBN, registered imprint and republication permissions require separate confirmation.</p></div>'''
     html=f'<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>{escape(TITLE)}</title><style>{CSS}</style></head><body>{title}<section class="main-content">{str(soup)}</section></body></html>'
     HTML(string=html,base_url=ROOT.as_uri()+'/').write_pdf(str(PDF),pdf_variant='pdf/ua-1')
     with fitz.open(PDF) as _document:
         metadata = _document.metadata
-        metadata.update({'title': TITLE, 'author':'H','subject':SUBTITLE + ' — editorial proof v0.2','keywords':'The Book of Chance; Confluent Humanism; possibilities; editorial candidate'})
+        metadata.update({'title': TITLE, 'author':'H','subject':SUBTITLE + ' — digital edition v0.2','keywords':'The Book of Chance; Confluent Humanism; possibilities; digital edition'})
         _document.set_metadata(metadata)
         _tmp=PDF.with_suffix('.meta.pdf')
         _document.save(_tmp,garbage=4,deflate=True)
@@ -136,8 +136,8 @@ def make_epub():
     cmd=['pandoc',str(S),'-f','markdown+smart','-t','epub3','--standalone','--toc','--toc-depth=2','--split-level=1',
          '--epub-cover-image',str(ART/f'{COVER}.png'),
          '--metadata=title:'+TITLE,'--metadata=subtitle:'+SUBTITLE,'--metadata=author:H','--metadata=lang:en-NZ',
-         '--metadata=rights:Editorial candidate, publication details pending.',
-         '--metadata=edition:v0.2', '--metadata=description:Editorial candidate v0.2 — substantively revised 22 November 2026.',
+         '--metadata=rights:Free digital reading and download. Republication requires permission.',
+         '--metadata=edition:v0.2', '--metadata=description:Author-approved digital edition v0.2 — released 23 November 2026.',
          '--css',str(css),'-o',str(EPUB)]
     subprocess.run(cmd,capture_output=True,text=True,check=True)
     assert zipfile.ZipFile(EPUB).testzip() is None

@@ -4,7 +4,7 @@
 
 **H**  
 *The Book of Chance · Introductory Guides*  
-**BOC-GDE-001 · Editorial candidate v0.2 · 22 November 2026**
+**BOC-GDE-001 · Author-approved digital edition v0.2 · Released 23 November 2026**
 
 *An introduction to a developing philosophy and the proposed Fellowship of Chance. Free to read without membership or agreement.*
 
@@ -162,7 +162,7 @@ There is no required reading order. Choose the route that suits your interest:
 
 If you want more on everyday opportunities and barriers, ***The Little Book of Possibilities*** expands that theme. The ***Letters from H*** explore individual ethical questions. No path makes someone a better reader.
 
-The current collection is available through [The Book of Chance website](https://thebookofchance.github.io/). The site's Library brings the works together and marks the status of editorial candidates where relevant.
+The current collection is available through [The Book of Chance website](https://thebookofchance.github.io/). The site's Library brings the released works together for free reading and download.
 
 You may finish this guide with a question rather than an answer. You may conclude that chance means something different to you. You may carry away only the practical thought that people do not begin from equal conditions, and that a thoughtful action can sometimes widen another life.
 
@@ -176,10 +176,10 @@ That is enough to begin a conversation.
 
 ## A note on this edition
 
-This guide is an **introductory companion**, not a replacement for *The Book of Chance* or an approved constitution. It draws on *Foundational Identity v1.0-RC1* and *Identity and Values Charter RC1*, both review candidates, and refers to the existing published or staged literature as at 22 November 2026. Proposed organisational details may change before any programme begins.
+This guide is an **introductory companion**, not a replacement for *The Book of Chance* or an approved constitution. It draws on the updated *Foundational Identity v1.0-RC2* and *Identity and Values Charter RC2*, both still proposed organisational references rather than adopted operating policies, and refers to the literature released on 23 November 2026. Proposed organisational details may change before any programme begins.
 
-The opening course example is fictional and is used only to illustrate the difference between a nominal and a practically accessible opportunity. The philosophical claim of fundamental chance is presented as a belief, not empirical proof. Ethics are grounded in arguments about dignity, care and the value of existence, not deduced from randomness. This text was prepared with AI assistance for editorial review under the pseudonymous byline H.
+The opening course example is fictional and is used only to illustrate the difference between a nominal and a practically accessible opportunity. The philosophical claim of fundamental chance is presented as a belief, not empirical proof. Ethics are grounded in arguments about dignity, care and the value of existence, not deduced from randomness. This text was prepared with AI assistance under the pseudonymous byline H and approved for public release by H.
 
-**Edition:** v0.2 · 22 November 2026 · Revised editorial candidate; author approval, independent human review, accessibility and live publication checks outstanding.  
+**Edition:** v0.2 · Author-approved digital release, 23 November 2026. Independent editorial endorsement and certified accessibility are not claimed.  
 **Catalogue ID:** BOC-GDE-001 · Language: en-NZ  
 **Access:** Intended to remain freely readable without registration or payment. Please link to the official edition when sharing; broader republication terms remain to be confirmed.

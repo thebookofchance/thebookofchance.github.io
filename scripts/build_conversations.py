@@ -90,12 +90,12 @@ def build_pdf() -> int:
     <div class="title-page"><div class="eyebrow">The Book of Chance · Discussion companion 01</div>
     <h1 class="page-title">Conversations of Chance</h1>
     <p class="subtitle">Twelve Discussions for an Uncertain Life · H</p>
-    <p class="front-meta">Editorial proof v0.1 · Prepared 22 November 2026</p>
+    <p class="front-meta">Author-approved digital edition v0.1 · Released 23 November 2026</p>
     <hr class="front-rule">
-    <p class="front-note">A discussion companion to <cite>The Book of Chance</cite>. This edition is designed for private reading, informal discussion and editorial review. It includes twelve stand-alone conversations, an open ending, a one-page host's reference and authorship notes.</p>
+    <p class="front-note">A discussion companion to <cite>The Book of Chance</cite>. This edition is designed for public reading, informal discussion and reflective dialogue. It includes twelve stand-alone conversations, an open ending, a one-page host's reference and authorship notes.</p>
     <p class="front-note">The thought experiments are fictional and are included to help readers examine ideas rather than to report events. No registration, donation or membership is required to read or share the publication links.</p>
     </div>'''
-    page = f'<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>Conversations of Chance — editorial proof</title><style>{css}</style></head><body>{title_page}{str(soup)}</body></html>'
+    page = f'<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>Conversations of Chance — digital edition</title><style>{css}</style></head><body>{title_page}{str(soup)}</body></html>'
     HTML(string=page, base_url=ROOT.as_uri() + '/').write_pdf(str(PDF),pdf_variant='pdf/ua-1')
     set_pdf_info(PDF,'Conversations of Chance','Twelve Discussions for an Uncertain Life')
     info = subprocess.run(['pdfinfo', str(PDF)], capture_output=True, text=True, check=True).stdout
@@ -110,7 +110,7 @@ def build_epub() -> None:
         'pandoc', str(SOURCE), '-f', 'markdown+smart', '-t', 'epub3', '--standalone',
         '--toc', '--toc-depth=2', '--split-level=1', '--epub-title-page=true',
         '--metadata=title:Conversations of Chance', '--metadata=subtitle:Twelve Discussions for an Uncertain Life',
-        '--metadata=author:H', '--metadata=lang:en-NZ', '--metadata=rights:Editorial proof; public review edition.',
+        '--metadata=author:H', '--metadata=lang:en-NZ', '--metadata=rights:Free digital reading and download; republication requires permission.',
         '--epub-cover-image', str(COVER_PNG), '--css', str(epub_css), '-o', str(EPUB)
     ], capture_output=True, text=True, check=True)
     assert zipfile.ZipFile(EPUB).testzip() is None

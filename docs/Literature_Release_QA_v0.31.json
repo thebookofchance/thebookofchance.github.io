@@ -1,0 +1,20 @@
+{
+  "version": "0.31",
+  "html_pages_checked": 45,
+  "local_file_links_checked": 1391,
+  "anchors_checked": 246,
+  "broken": [],
+  "edition_pairs_checked": 11,
+  "sitemap_new_public_pages": [
+    "booklets/the-little-book-of-possibilities/",
+    "publications/conversations-of-chance/",
+    "publications/beginners-guide-to-confluent-humanism/",
+    "publications/parables-of-chance/",
+    "questions/",
+    "journey/"
+  ],
+  "reader_noindex_preserved": true,
+  "old_public_candidate_statuses_remaining": 0,
+  "user_form_confirmation": "reported working; not rechecked directly",
+  "independent_accessibility_compliance": "not verified"
+}

@@ -15,9 +15,9 @@ This is a proposed companion to *The Book of Chance*, written for people who wan
 
 Confluent Humanism is a developing philosophical outlook associated with the proposed Fellowship of Chance. It holds, as a philosophical conviction rather than an established scientific finding, that chance is fundamental and the future is not fully predetermined. It also takes meaningful agency, causal conditions, human dignity, the value of the living world and shared responsibility seriously. None of these conversations claims to prove a metaphysical position, promise favourable luck or determine how anyone must interpret their life.
 
-The examples and thought experiments in this book are imagined; they are not verified testimonies. H is a pseudonymous authorial byline, not a supernatural or infallible authority. This text was developed with AI assistance and is presented for human editorial review. When this edition was prepared, the Fellowship's Council, registered community, mentorship and hardship-assistance programmes were proposed rather than operational. A reader need not register, donate or adopt these beliefs to use this guide.
+The examples and thought experiments in this book are imagined; they are not verified testimonies. H is a pseudonymous authorial byline, not a supernatural or infallible authority. This text was developed with AI assistance and was approved by H for public digital release on 23 November 2026. When this edition was prepared, the Fellowship's Council, registered community, mentorship and hardship-assistance programmes were proposed rather than operational. A reader need not register, donate or adopt these beliefs to use this guide.
 
-This editorial manuscript is not yet a published or print-ready edition. Publication rights, final production assets and the status of the associated organisation require separate confirmation. Substantive future revisions should carry dated explanations.
+This is an author-approved digital edition released on 23 November 2026. Print production, republication permissions and the status of the associated organisation require separate confirmation. Substantive future revisions will carry dated explanations.
 
 ---
 
@@ -649,6 +649,6 @@ This page is a simple reminder for people using the discussions informally. It i
 
 **The Book of Chance** is the public foundational work to which these twelve conversations correspond. Supplementary study resources can accompany it, but nobody should have to register or pay to read the complete foundational teachings.
 
-**Authorship and status.** The manuscript is written and curated under the pseudonym H with AI assistance. Fictional thought experiments are identified as such; no character should be presented as a verified member or actual beneficiary. This is an editorial candidate prepared on 22 November 2026, not proof of an established Council, community service, financial fund or institutional endorsement. Any public edition should carry its own current status, disclosure, publication details and revision record.
+**Authorship and status.** The manuscript is written and curated under the pseudonym H with AI assistance. Fictional thought experiments are identified as such; no character should be presented as a verified member or actual beneficiary. This author-approved edition was released on 23 November 2026. It is not evidence of an established Council, community service, financial fund or institutional endorsement. The digital edition records its authorship and revision history.
 
 **Editorial record — v0.1 (22 November 2026).** First complete draft of *Conversations of Chance*: twelve stand-alone sessions corresponding to the twelve readings of *The Book of Chance*, each with an opening consideration, imagined dilemma, discussion questions, optional reflection, Act of Possibility and host guidance. Prepared for founder review, accuracy and sensitivity review, accessibility checking and subsequent typesetting.

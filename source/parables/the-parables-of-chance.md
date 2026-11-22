@@ -6,7 +6,7 @@
 *An original collection of philosophical fiction*  
 *The Book of Chance · Stories and Parables · BOC-PAR-001*
 
-**Final copyedit candidate · v0.2.1 · 22 November 2026 · For author review**
+**Author-approved digital edition · v0.2.1 · Released 23 November 2026**
 
 ---
 
@@ -16,7 +16,7 @@ These twelve stories are fiction. Their characters, settings and events have bee
 
 *The Parables of Chance* is a literary companion to *The Book of Chance*. The stories are informed by questions associated with Confluent Humanism: the circumstances we inherit, the limits of prediction, the consequences of choice, and the ways our lives affect others. They do not attempt to prove a metaphysical theory of chance. No ending offers a guaranteed moral reward. Readers may disagree about a character's choices—or decide that the important question is one the story does not answer.
 
-H is a pseudonymous authorial byline, not a source of special authority. The collection was developed with AI assistance under human direction and remains an editorial candidate requiring author approval and independent review. The Fellowship of Chance is an organisation in development; no membership programme, hardship fund or mentoring service is implied to exist by these fictional stories. Reading does not require agreement, payment, registration or disclosure.
+H is a pseudonymous authorial byline, not a source of special authority. The collection was developed with AI assistance under human direction and has been approved by H for digital publication. Independent editorial endorsement has not been claimed. The Fellowship of Chance is an organisation in development; no membership programme, hardship fund or mentoring service is implied to exist by these fictional stories. Reading does not require agreement, payment, registration or disclosure.
 
 ---
 
@@ -1086,10 +1086,10 @@ Each question is optional and may be answered privately, discussed with another 
 
 *The Parables of Chance* is a set of original fictional stories developed under the pseudonymous byline H with generative AI assistance and human editorial direction. Characters, dialogue, places and incidents are invented for this manuscript and are not presented as factual testimony. The writing is open to interpretation, criticism and revision.
 
-**Working edition:** v0.2.1, copyedited 22 November 2026. This manuscript is an editorial candidate, not a final approved publication or print-ready interior. Rights, production, accessibility and independent editorial review still require verification. No publication date, ISBN, registered publisher, active Fellowship programme or organisational endorsement is claimed by this document.
+**Digital edition:** v0.2.1, copyedited 22 November 2026 and released 23 November 2026 with H’s approval. This edition is not certified for accessibility or print production. No ISBN, registered publisher, active Fellowship programme or organisational endorsement is claimed.
 
 **Editorial record — v0.1 (22 November 2026):** First complete twelve-story collection of fictional situations. No story requires the reader to join or support an institution.
 
-**Editorial record — v0.2 (22 November 2026):** Replaced Story 6's choir-revival premise with *The Unmeasured Salt*; repaired the apricot growing and employment timeline, and revised the handling of archival originals and access copies; deepened lasting costs or disagreement in Stories 3, 7, 9 and 11; strengthened the mapping error's consequences, setting detail and several narrative endings; renamed the first story's protagonist to avoid confusion with another book. The cover remains the existing v0.1 proposal, unchanged. This remains a simulated-review candidate, not a final released edition.
+**Editorial record — v0.2 (22 November 2026):** Replaced Story 6's choir-revival premise with *The Unmeasured Salt*; repaired the apricot growing and employment timeline, and revised the handling of archival originals and access copies; deepened lasting costs or disagreement in Stories 3, 7, 9 and 11; strengthened the mapping error's consequences, setting detail and several narrative endings; renamed the first story's protagonist to avoid confusion with another book. The cover was subsequently revised and approved for public release on 23 November 2026.
 
 **Editorial record — v0.2.1 (22 November 2026):** Corrected two continuity details; updated export metadata. The cover and story structure are unchanged.

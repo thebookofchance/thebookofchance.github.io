@@ -1,5 +1,5 @@
 {
-  "website_version": "0.26",
+  "website_version": "0.31",
   "source": "Book_of_Chance_Illustrated_Manuscript_v0.12.md",
   "source_sha256": "27fe17a36b5a0cd96a2516dfaaef4e3f0b4692b700d2be192bd8bbc77e3e3682",
   "chapters": 24,
@@ -36,14 +36,14 @@
     "files/reflection/The_Possibility_Journal_Fillable.pdf"
   ],
   "letters_series_available": 3,
-  "letters_series_status": "Three editorial candidates; human approval and live deployment verification pending",
+  "letters_series_status": "Author-approved public release · 23 November 2026",
   "letters_publication": "BOC-LFH-001",
   "publication_standard": "docs/Publications_Standard_v1.0_RC1.md",
   "latest_letter_id": "BOC-LFH-003",
   "latest_letter_edition": "1.0-RC2",
   "latest_companion_id": "BOC-BKL-002",
   "companion_page_count_pdf": 17,
-  "companion_status": "Editorial candidate; approval and deployed verification outstanding",
+  "companion_status": "Author-approved public release · 23 November 2026",
   "values_booklet": {
     "online": "booklets/the-five-values/",
     "pdf": "files/booklets/The_Five_Values.pdf",
@@ -51,7 +51,7 @@
   },
   "video_programme": "Deferred; site introduction integrated",
   "latest_discussion_id": "BOC-CNV-001",
-  "conversations_status": "Editorial candidate; H approval and live deployment testing outstanding",
+  "conversations_status": "Author-approved public release · 23 November 2026",
   "conversations": {
     "online": "publications/conversations-of-chance/",
     "pdf": "files/conversations/Conversations_of_Chance_Editorial_Proof_v0.1.pdf",
@@ -60,7 +60,7 @@
     "sessions": 12
   },
   "publications_represented_in_library": 8,
-  "possibilities_status": "Editorial candidate v0.2; cover approved; author approval, accessibility and live checks pending",
+  "possibilities_status": "Author-approved public release · 23 November 2026",
   "possibilities": {
     "online": "booklets/the-little-book-of-possibilities/",
     "pdf": "files/booklets/The_Little_Book_of_Possibilities_Editorial_Proof_v0.2.pdf",
@@ -90,7 +90,7 @@
   ],
   "library_search": "Local catalogue title and topic filter; no remote service",
   "home_publication_promotions": "Consolidated into one cover-led collection grid",
-  "editorial_release_gate": "Unchanged; noindex on pending editorial candidates preserved",
+  "editorial_release_gate": "Author-approved public release · 23 November 2026",
   "introductory_guide": {
     "id": "BOC-GDE-001",
     "source": "source/guides/beginners-guide-to-confluent-humanism.md",
@@ -101,7 +101,7 @@
     "pdf_pages": 13
   },
   "guide_status": "Approved for website staging; independent human review, accessibility and live deployment checks pending",
-  "sitemap_publication_gate": "Noindex on the guide until formal release approval",
+  "sitemap_publication_gate": "Author-approved public release · 23 November 2026",
   "faq_resource": {
     "id": "BOC-FAQ-001",
     "url": "questions/",
@@ -111,8 +111,8 @@
     "questions": 26,
     "themes": 5
   },
-  "faq_status": "Revised editorial candidate v0.3, staged noindex; cover and final release approval pending",
-  "resources_stage": "Questions About Chance FAQ staged; next guided reading journey",
+  "faq_status": "Author-approved public release · 23 November 2026",
+  "resources_stage": "Author-approved public release · 23 November 2026",
   "guided_reading_journey": {
     "url": "journey/",
     "source": "source/resources/guided-reading-journey.json",
@@ -120,7 +120,7 @@
     "steps_per_path": 3,
     "search_or_quiz": "None",
     "progress": "Temporary browser-page state only",
-    "status": "Staged noindex; release checks to follow"
+    "status": "Released reading resource"
   },
   "literature_approval_status": "Not changed; separate review phase to follow",
   "reading_room": {
@@ -140,5 +140,10 @@
     "1.0-RC2",
     "1.0-RC2"
   ],
-  "public_terminology_standard": "docs/Public_Terminology_Standard_v1.0.md"
+  "public_terminology_standard": "docs/Public_Terminology_Standard_v1.0.md",
+  "literature_release": "Author-approved digital release, 23 November 2026",
+  "literature_titles_approved": 9,
+  "faq_approved": true,
+  "forms_acceptance": "User reports deployed forms functioning; not independently retested by this release script",
+  "accessibility": "Tagged PDF exports; full assistive-technology testing and formal PDF/UA conformance not independently verified"
 }

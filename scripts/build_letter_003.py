@@ -57,7 +57,7 @@ def build_letter_003():
     page=f'''<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>{escape(item['title'])} — Letters from H No. 03</title><style>{css}</style></head><body>
         <div class="cover"><img alt="Cover: What Do We Owe to Strangers by H" src="{cover.with_suffix('.png').as_uri()}"></div>
         <div class="start"><div class="eyebrow">Letters from H · No. 03</div><h1>{escape(item['title'])}</h1><p class="subtitle">{escape(item['subtitle'])} · H</p></div>
-        {article}<p class="edition">The Book of Chance · Letters from H · BOC-LFH-003<br>Editorial candidate, version {escape(item['edition'])} · Prepared 22 November 2026<br>Free to read or download without membership or payment. Share a link to the original source.</p></body></html>'''
+        {article}<p class="edition">The Book of Chance · Letters from H · BOC-LFH-003<br>Author-approved digital edition {escape(item['edition'])} · Released 23 November 2026<br>Free to read or download without membership or payment. Share a link to the original source.</p></body></html>'''
     HTML(string=page,base_url=ROOT.as_uri()+'/').write_pdf(str(pdf),pdf_variant='pdf/ua-1')
     set_pdf_info(pdf,item['title'],'Letters from H · No. 03')
     epubcss=ROOT/'source/letters/epub-letter.css'

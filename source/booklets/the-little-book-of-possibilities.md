@@ -5,7 +5,7 @@
 
 *A companion to The Book of Chance*
 
-**Editorial manuscript · v0.2 · 22 November 2026 · Substantive revision for author review**
+**Author-approved digital edition · v0.2 · Released 23 November 2026**
 
 ---
 
@@ -15,7 +15,7 @@ This book asks what makes an opportunity genuinely usable, rather than merely im
 
 *The Little Book of Possibilities* is a standalone companion to *The Book of Chance*. Its scenes are fictional invitations to examine practical decisions, not reports of actual people, studies or Fellowship programmes. The philosophy of Confluent Humanism informs its questions; the ethical case for dignity and fairness does not follow automatically from a belief about randomness.
 
-H is a pseudonymous authorial voice, open to criticism. This is an editorial candidate, not a final publication. The Fellowship of Chance remains an organisation in development; no mentoring or hardship service is being offered through this book. Reading requires no membership, donation, disclosure or agreement. Further details on language, intellectual context and production status appear at the end.
+H is a pseudonymous authorial voice, open to criticism. This digital edition has been approved by H for public reading. The Fellowship of Chance remains an organisation in development; no mentoring or hardship service is being offered through this book. Reading requires no membership, donation, disclosure or agreement. Further details on language, intellectual context and production status appear at the end.
 
 ---
 
@@ -433,17 +433,17 @@ The following references are offered for readers who wish to explore some of the
 - **Feminist Perspectives on Autonomy**, *Stanford Encyclopedia of Philosophy* (archived Spring 2021 edition). An overview of relational autonomy and the effects of social power on self-direction. [Read the archived entry](https://plato.stanford.edu/archives/spr2021/entries/feminism-autonomy/)
 - **Virginia Held, *The Ethics of Care: Personal, Political, and Global*** (Oxford University Press, 2006). An extended philosophical account of care, relationships and their wider moral significance. [Publisher information](https://academic.oup.com/book/2881)
 
-**Within the collection:** *The Book of Chance: On the Lives We Inherit and the Futures We Shape*; *The Five Values* (editorial candidate); *Conversations of Chance* (editorial candidate); and *Letters from H*, No. 02, *When Good Choices Lead to Bad Outcomes*. These cross-references distinguish rather than replace other works; no unapproved title is represented here as a released edition.
+**Within the collection:** *The Book of Chance: On the Lives We Inherit and the Futures We Shape*; *The Five Values*; *Conversations of Chance*; and *Letters from H*, No. 02, *When Good Choices Lead to Bad Outcomes*. These cross-references distinguish rather than replace other works; the referenced works are independently readable within the collection.
 
 ## Editorial and Authorship Record
 
 **Catalogue identity:** BOC-BKL-002 · *The Little Book of Possibilities: On Small Openings and the Conditions We Create* · H · English (New Zealand).
 
-**Status:** Editorial candidate v0.2 · 22 November 2026. Substantively revised manuscript and reader proofs for author review; not a final release, independently certified edition or print-ready master. Any public release date, publishing rights, ISBN, imprint or physical edition will need separate confirmation. **Cover:** v0.1 artwork accepted by H and retained without modification.
+**Status:** Author-approved digital edition v0.2 · Released 23 November 2026. This release is not independently certified for accessibility or print production. Any ISBN, physical edition, publishing rights for republication or registered imprint will require separate confirmation. **Cover:** v0.1 artwork accepted by H and retained without modification.
 
 **Origin of scenes:** Every specific vignette in this book is fictional and illustrative, not a verified personal account. Readers are invited to question its assumptions and to compare it with evidence where decisions have real consequences.
 
-**Authorship and production:** Prepared under the pseudonym H with generative AI assistance and human-directed editorial development. H's identity is an authorial byline, not a source of special spiritual authority. Final editorial approval remains outstanding.
+**Authorship and production:** Prepared under the pseudonym H with generative AI assistance and human-directed editorial development. H's identity is an authorial byline, not a source of special spiritual authority. H approved the digital edition for release on 23 November 2026.
 
 **Revision record:** v0.1 (22 November 2026) — First complete manuscript. Introduced practical opportunity, consent, refusal, small repairs, learning, fair processes, rest, the living world and durable access.
 

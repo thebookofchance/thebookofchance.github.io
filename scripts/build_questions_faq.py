@@ -42,7 +42,7 @@ for i,m in enumerate(qre):
                       'category':category['title'],'answer_markdown':answer})
 assert [q['number'] for q in questions]==list(range(1,27))
 DATA.write_text(json.dumps({'title':'Questions About Chance','subtitle':'Twenty-Six Questions About Confluent Humanism and the Fellowship of Chance',
-                            'id':'BOC-FAQ-001','edition':'v0.3','status':'editorial candidate',
+                            'id':'BOC-FAQ-001','edition':'v0.3','status':'author-approved digital edition',
                             'source_documents':['Foundational Identity v1.0-RC2','Identity and Values Charter RC2','A Beginners Guide to Confluent Humanism v0.2','Publications Standard 1.0-RC1'],
                             'categories':[{'id':c['id'],'title':c['title']} for c in categories],
                             'questions':questions},ensure_ascii=False,indent=2)+'\n',encoding='utf8')
@@ -90,10 +90,10 @@ a{color:#286CB8;text-decoration:none}
 .faq-section:last-of-type{break-before:page}
 '''
 cover_url=COVER.as_uri()
-page=f'''<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>Questions About Chance — Editorial Proof</title><style>{css}</style></head><body><div class="cover"><img src="{cover_url}" alt="Cover: Questions About Chance by H"/></div><div class="opening">THE BOOK OF CHANCE · PUBLIC READER RESOURCES</div>{print_body}</body></html>'''
+page=f'''<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>Questions About Chance — Digital Edition</title><style>{css}</style></head><body><div class="cover"><img src="{cover_url}" alt="Cover: Questions About Chance by H"/></div><div class="opening">THE BOOK OF CHANCE · PUBLIC READER RESOURCES</div>{print_body}</body></html>'''
 HTML(string=page,base_url=ROOT.as_uri()+'/').write_pdf(str(PDF),pdf_variant='pdf/ua-1')
 with fitz.open(PDF) as pdf:
-    pdf.set_metadata({'title':'Questions About Chance — Editorial Proof v0.3','author':'H','subject':'Twenty-Six Questions About Confluent Humanism and the Fellowship of Chance','keywords':'Confluent Humanism, Fellowship of Chance, FAQ, chance, ethics'})
+    pdf.set_metadata({'title':'Questions About Chance — Digital Edition v0.3','author':'H','subject':'Twenty-Six Questions About Confluent Humanism and the Fellowship of Chance','keywords':'Confluent Humanism, Fellowship of Chance, FAQ, chance, ethics'})
     pdf.save(str(WORK/'_pdf_tmp.pdf'),garbage=4,deflate=True)
 (WORK/'_pdf_tmp.pdf').replace(PDF)
 
@@ -104,7 +104,7 @@ subprocess.run(['pandoc',str(SOURCE),'-f','markdown+smart','-t','epub3','--stand
                 '--toc','--toc-depth=2','--split-level=2',
                 '--metadata=title:Questions About Chance','--metadata=subtitle:Twenty-Six Questions About Confluent Humanism and the Fellowship of Chance',
                 '--metadata=author:H','--metadata=lang:en-NZ',
-                '--metadata=rights:Editorial candidate; publication permissions to be confirmed.',
+                '--metadata=rights:Free public reading and download; republication requires permission.',
                 '--epub-cover-image',str(COVER),'--css',str(EPUBCSS),'-o',str(EPUB)],capture_output=True,text=True,check=True)
 with zipfile.ZipFile(EPUB) as z:
     assert z.testzip() is None

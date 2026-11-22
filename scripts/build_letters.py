@@ -55,7 +55,7 @@ def build():
     book_html=f'''<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>On the People We Never Meet — Letters from H No. 01</title><style>{css}</style></head><body>
     <div class="cover"><img alt="Cover: On the People We Never Meet by H" src="{COVER.with_suffix('.png').as_uri()}"></div>
     <div class="start"><div class="eyebrow">Letters from H · No. 01</div><h1>On the People We Never Meet</h1><p class="subtitle">A letter on unseen lives and shared responsibility · H</p></div>
-    {article}<p class="edition">The Book of Chance · Letters from H · BOC-LFH-001<br>Editorial candidate, version {META["edition"]} · Revised 22 November 2026<br>Free to read and share by linking to the published source. No membership or payment required.</p>
+    {article}<p class="edition">The Book of Chance · Letters from H · BOC-LFH-001<br>Author-approved digital edition {META["edition"]} · Released 23 November 2026<br>Free to read and share by linking to the published source. No membership or payment required.</p>
     </body></html>'''
     HTML(string=book_html,base_url=ROOT.as_uri()+'/').write_pdf(str(PDF), pdf_variant='pdf/ua-1')
     set_pdf_info(PDF,'On the People We Never Meet','Letters from H · No. 01')
@@ -119,7 +119,7 @@ def build_letter_002():
     source_html=f'''<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"><title>{item['title']} — Letters from H No. 02</title><style>{css}</style></head><body>
     <div class="cover"><img alt="Cover: When Good Choices Lead to Bad Outcomes by H" src="{cover.with_suffix('.png').as_uri()}"></div>
     <div class="start"><div class="eyebrow">Letters from H · No. 02</div><h1>{item['title']}</h1><p class="subtitle">{item['subtitle']} · H</p></div>
-    {article}<p class="edition">The Book of Chance · Letters from H · BOC-LFH-002<br>Editorial candidate, version {item['edition']} · Prepared 22 November 2026<br>Free to read or download without membership or payment. Share a link to the original source.</p></body></html>'''
+    {article}<p class="edition">The Book of Chance · Letters from H · BOC-LFH-002<br>Author-approved digital edition {item['edition']} · Released 23 November 2026<br>Free to read or download without membership or payment. Share a link to the original source.</p></body></html>'''
     HTML(string=source_html,base_url=ROOT.as_uri()+'/').write_pdf(str(pdf),pdf_variant='pdf/ua-1')
     set_pdf_info(pdf,item['title'],'Letters from H · No. 02')
     css_path=ROOT/'source/letters/epub-letter.css'
