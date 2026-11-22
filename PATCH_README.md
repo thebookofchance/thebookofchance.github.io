@@ -1,21 +1,39 @@
-# Website v0.8 — Changed-files GitHub patch
+# The Book of Chance Website — v0.9 update-only patch
 
-This is an **update-only ZIP**, not a complete website. It is intended to install **on top of v0.7**.
+**Upload these files to your existing GitHub Pages repository**, preserving the folders and replacing matching paths. Do not delete anything else from the repository. This is **not a full-site ZIP**.
 
-1. Extract the archive.
-2. Upload its contents to your existing GitHub Pages repository root, keeping the folder structure. Replace files of the same name.
-3. **Do not delete other website files.** Your live `assets/forms-config.js` and its Formspree endpoints are intentionally excluded. The accepted website logo, cover images, entire book and book downloads are also excluded.
-4. Once deployed, test Reflect, the Library, the journal PDF and each worksheet. Test that PDF form answers can be saved in your preferred PDF reader. Test Fellowship and print-interest forms as a separate deployment smoke check.
-5. Existing TXT templates remain in your repository if already present, but are no longer linked publicly. They may be removed later after verifying no external links use them.
+## This update contains
 
-## Release highlights
-- Clearly clickable reflection cards and clearer page navigation
-- Free 28-page fillable Reflection Journal and 3 A4 fillable PDF worksheets
-- Online editor: **Save/print as PDF**; no more TXT export
-- Library Journal feature; more useful homepage shortcuts
-- PDF generation source and ongoing production/development notes
+- Refined 48-page **Reflection Journal**, now with matching Light and Dark editions (same interior)
+- New 40-page **Daily Reflection Journal** and 40-page **Possibility Journal**, with distinct reflection practices
+- Redesigned 48-page printer-oriented layout study (not a commercial print master)
+- New cover previews under `assets/journals/`
+- Updated `/downloads/`, `/reflect/`, homepage journal copy and journal collection catalogue
+- PDF generation source, website overlay and automated verification script
+- Publishing design / physical edition notes and website development log
 
-### Important limitations
-The 28-page PDF includes editable fields, but some mobile viewers have limited form-saving support. Use a compatible PDF reader. The included print-layout proof is **not** a commercial print master, and there is no physical journal sale or donation request.
+## This update does NOT include or alter
 
-See `docs/Website_Development_Log.md` for all changes and test results.
+- `assets/forms-config.js` or any Formspree identifiers
+- The approved site logo and favicon
+- The foundational book's EPUB, PDF, illustrations, cover images or manuscript
+- Any other unchanged HTML pages
+
+## After upload
+
+1. Visit `/downloads/` and test all four journal buttons.
+2. Visit `/reflect/` and verify that the journal feature and PDF worksheet links work.
+3. Confirm that both Formspree lists still work and that the site logo is unchanged.
+4. Open a new journal in a PDF reader with form support, type an innocuous sample entry, save, close and reopen it.
+5. Check actual mobile/desktop display; only source-level/static verification is claimed for v0.9.
+
+## Rebuild
+
+```bash
+python -m pip install -r scripts/requirements.txt
+python scripts/build_reflection_pdfs.py
+python scripts/build_site.py
+python scripts/audit_v09.py
+```
+
+The journaling resources remain free and private by default. No paid hardcopies, donation flows or fundraising elements are added. The current print-oriented proof is not approved by any printer.

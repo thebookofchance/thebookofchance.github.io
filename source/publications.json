@@ -40,9 +40,27 @@
   "resources": [
     {
       "id": "reflection-journal",
-      "title": "The Reflection Journal",
+      "title": "The Reflection Journal — Light Edition",
       "kind": "Free fillable journal PDF",
       "file": "files/reflection/The_Reflection_Journal_Fillable.pdf"
+    },
+    {
+      "id": "reflection-journal-dark",
+      "title": "The Reflection Journal — Dark Edition",
+      "kind": "Free fillable journal PDF",
+      "file": "files/reflection/The_Reflection_Journal_Dark_Fillable.pdf"
+    },
+    {
+      "id": "daily-reflection-journal",
+      "title": "The Daily Reflection Journal",
+      "kind": "Free fillable journal PDF",
+      "file": "files/reflection/The_Daily_Reflection_Journal_Fillable.pdf"
+    },
+    {
+      "id": "possibility-journal",
+      "title": "The Possibility Journal",
+      "kind": "Free fillable journal PDF",
+      "file": "files/reflection/The_Possibility_Journal_Fillable.pdf"
     },
     {
       "id": "chance",

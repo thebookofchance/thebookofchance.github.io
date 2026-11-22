@@ -1,9 +1,9 @@
-# The Book of Chance — Website v0.8
+# The Book of Chance — Website v0.9
 
 A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, private reflection practices, downloadable resources, and the proposed Fellowship of Chance.
 
 **Public site:** https://thebookofchance.github.io/  
-**Website release:** v0.8 (22 November 2026)
+**Website release:** v0.9 (22 November 2026)
 
 ## Site structure
 
@@ -12,7 +12,7 @@ A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, 
 | `/` | Book-led homepage, weekly reflection entry and current focus |
 | `/read/` | Entire book: twelve readings, sections, notes and original illustrations |
 | `/reflect/` | Private guided reflection editor, weekly question rotation and offline guides |
-| `/downloads/` | Free Light/Dark EPUB and PDF editions, plus three downloadable templates |
+| `/downloads/` | Free Light/Dark EPUB and PDF editions, plus three downloadable A4 worksheets and a four-edition journal collection |
 | `/community/` | Proposed Fellowship, reasons to participate, future funding principles and a Fellowship interest form |
 | `/focus/` | Current organisational development goal, roadmap, potential funding criteria and deferred Chance Campaigns |
 | `/print/` | Planned physical editions and a **separate** print-interest form |
@@ -29,7 +29,7 @@ A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, 
 
 ## Deploy update-only ZIPs
 
-The `Book_of_Chance_Website_Update_Only_v0.8.zip` package contains changed and new files **only**. Extract it and upload its contents to the existing GitHub Pages repository, replacing files with the same paths and **without deleting other files**.
+The `Book_of_Chance_Website_Update_Only_v0.9.zip` package contains changed and new files **only**. Extract it and upload its contents to the existing GitHub Pages repository, replacing files with the same paths and **without deleting other files**.
 
 **Do not overwrite or publish private information.** `assets/forms-config.js` (the file containing your working Formspree endpoint identifiers and public contact email) has intentionally **not** been included or modified.
 
@@ -46,7 +46,8 @@ Check the accepted favicon/logo, both form flows and the `/reflect/` download fe
 ```bash
 python -m pip install -r scripts/requirements.txt
 python scripts/build_site.py
-python scripts/audit_v07.py
+python scripts/build_reflection_pdfs.py
+python scripts/audit_v09.py
 ```
 
 The generator does not generate or modify ebook editions, original artwork or the approved brand symbols. It also leaves existing form service configuration alone. Run a local web server (e.g. `python -m http.server 8000`) for normal browser testing outside a restricted environment.
@@ -61,10 +62,22 @@ The generator does not generate or modify ebook editions, original artwork or th
 ## v0.8 reflection release
 
 - The Reflect page includes three complete clickable cards, in-page shortcuts and a browser print/save-as-PDF editor.
-- The Library contains **The Reflection Journal** (28-page fillable PDF) and three editable A4 PDF worksheets.
+- The Library now contains a **48-page complete journal** (Light/Dark) and two focused **40-page companion journals**, alongside three fillable A4 worksheets.
 - `scripts/build_reflection_pdfs.py` generates the PDFs; `scripts/build_site.py` builds the website and then applies the v0.8 page enhancements.
 - `scripts/audit_v08.py` checks the 33 pages, references, JavaScript syntax and form-field presence.
 - The journal print-layout proof is an editorial sample, **not** approved for commercial print distribution.
 - Existing Formspree endpoints, logo and book files must be preserved when applying the update-only ZIP.
 
 See `docs/Website_Development_Log.md` and `docs/Reflection_Journal_Production_Notes.md`.
+
+## v0.9 journal series
+
+- Main complete Reflection Journal — **48 pages**, in **Light and Dark** cover editions, with identical interiors.
+- The Daily Reflection Journal — **40 pages**, a focused personal reflection practice.
+- The Possibility Journal — **40 pages**, focusing on voluntary support, consent and boundaries.
+- Four fully fillable journal PDFs, plus three separate A4 fillable worksheets and a non-fillable print-layout study.
+- `scripts/build_journal_series.py` contains the series' reproducible contents and vector cover treatment.
+- `docs/Journal_Series_Editorial_and_Print_Plan.md` explains the series and printer readiness gates.
+- Digital editions are free and **no physical journals are on sale**.
+
+The patch preserves the approved logo and live Formspree configuration. The owner must merge changed files into the existing repository without deleting unrelated files.

@@ -219,7 +219,13 @@ def journal(path,print_edition=False):
 if __name__=='__main__':
     for k,filename in [('chance','The_Reflection_of_Chance_Fillable.pdf'),('action','The_Act_of_Possibility_Fillable.pdf'),('week','A_Week_of_Possibilities_Fillable.pdf')]:
         single_worksheet(OUT/filename,k)
-    journal(OUT/'The_Reflection_Journal_Fillable.pdf')
-    journal(OUT/'The_Reflection_Journal_Print_Layout_Proof.pdf',True)
+    # Journal series v0.9 is built by the separate, publication-specific script.
+    from build_journal_series import core, daily, possibility, preview
+    core(OUT/'The_Reflection_Journal_Fillable.pdf')
+    core(OUT/'The_Reflection_Journal_Dark_Fillable.pdf',dark=True)
+    daily(OUT/'The_Daily_Reflection_Journal_Fillable.pdf')
+    possibility(OUT/'The_Possibility_Journal_Fillable.pdf')
+    core(OUT/'The_Reflection_Journal_Print_Layout_Proof.pdf',print_proof=True)
+    for file,name in [('The_Reflection_Journal_Fillable.pdf','reflection-light'),('The_Reflection_Journal_Dark_Fillable.pdf','reflection-dark'),('The_Daily_Reflection_Journal_Fillable.pdf','daily'),('The_Possibility_Journal_Fillable.pdf','possibility')]:preview(OUT/file,name)
     for p in OUT.glob('*.pdf'):
         print(p.name, f'{p.stat().st_size/1024:.1f} KiB')

@@ -220,6 +220,8 @@ from v07_enhancements import apply_v07
 apply_v07(ROOT, document, SVG_ARROW, info)
 from v08_enhancements import apply_v08
 apply_v08(ROOT, info)
+from v09_enhancements import apply_v09
+apply_v09(ROOT, info)
 (ROOT/'SITE_CONTENT_MANIFEST.json').write_text(json.dumps(info,indent=2),encoding='utf8')
 print('generated sections',len(sections),'readings',len(reader_ids),'figures',sum(s['figure_count'] for s in sections))
 print('section titles',[(s['slug'],s['title']) for s in sections]);print('root',ROOT)

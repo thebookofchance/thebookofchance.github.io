@@ -1,11 +1,36 @@
 {
-  "pages": 33,
-  "links_checked": 933,
-  "pdfs": 5,
-  "issues": [],
-  "visual": "chromium set_content: desktop/mobile/tablet; direct navigation blocked",
-  "pdf_fill_test": "a sample AcroForm field was edited, saved and read back successfully",
-  "browser_pdf_print_test": "sample typed response included in an actual browser-generated PDF",
-  "live_form_tests": "not repeated; founder previously reported live submissions functioning",
-  "logo_and_book_assets": "preserved unchanged"
+  "version": "v0.9",
+  "tested_date": "2026-11-22",
+  "html_pages": 33,
+  "local_links_anchors_assets_checked": 941,
+  "journal_pdfs": {
+    "complete_light": {
+      "pages": 48,
+      "fields": 116
+    },
+    "complete_dark": {
+      "pages": 48,
+      "fields": 116
+    },
+    "daily": {
+      "pages": 40,
+      "fields": 116
+    },
+    "possibility": {
+      "pages": 40,
+      "fields": 110
+    }
+  },
+  "print_layout_proof": {
+    "pages": 48,
+    "fields": 0
+  },
+  "pdf_form_fill_and_reopen": "PASS",
+  "light_dark_interior_text_identity": "PASS",
+  "javascript_syntax": "PASS",
+  "static_link_audit": "PASS",
+  "browser_device_regression": "NOT_COMPLETED",
+  "live_github_formspree": "NOT_TESTED",
+  "accessibility_certification": "NOT_DONE",
+  "commercial_print_proof": "NOT_DONE"
 }

@@ -1,5 +1,5 @@
 {
-  "website_version": "0.8",
+  "website_version": "0.9",
   "source": "Book_of_Chance_Illustrated_Manuscript_v0.12.md",
   "source_sha256": "25331f87d8f27f9f1c0638d22239ea11756479c3ce3d22cf52adc52a9f050538",
   "chapters": 24,
@@ -22,8 +22,17 @@
   "fellowship_donations_enabled": false,
   "charity_campaign_running": false,
   "form_endpoints": "Not altered; existing deployment settings must be preserved",
-  "reflection_journal_pages": 28,
+  "reflection_journal_pages": 48,
   "fillable_pdf_resources": 4,
   "website_reflection_export": "browser print/save as PDF",
-  "paperback_sales_active": false
+  "paperback_sales_active": false,
+  "journal_titles": 3,
+  "journal_digital_editions": 4,
+  "physical_journals_available": false,
+  "journal_files": [
+    "files/reflection/The_Reflection_Journal_Fillable.pdf",
+    "files/reflection/The_Reflection_Journal_Dark_Fillable.pdf",
+    "files/reflection/The_Daily_Reflection_Journal_Fillable.pdf",
+    "files/reflection/The_Possibility_Journal_Fillable.pdf"
+  ]
 }

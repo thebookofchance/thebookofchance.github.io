@@ -1,5 +1,32 @@
 # The Book of Chance — Website Development Log
 
+## v0.9 — Reflection Journal publication series · 22 November 2026
+
+**Editorial purpose.** Align the standalone journals with The Book of Chance's established Light/Dark cover treatment and make their interiors publication-quality companions. Avoid creating many cosmetic journals without distinct use cases.
+
+### Deliverables
+- Replaced the previous 28-page prototype with a **48-page complete Reflection Journal**, presented in **Light and Dark** covers. Both have the same interior and 116 fillable fields.
+- Created the **40-page Daily Reflection Journal** (116 fillable fields): fourteen two-page reflections, two weekly reviews and four open pages.
+- Created the **40-page Possibility Journal** (110 fillable fields): consent/safeguarding introduction, twelve guided Acts of Possibility, three follow-up reflections and five open pages.
+- Updated the **48-page print-layout study** (no form fields; not commercially print-ready). Kept the three separate A4 fillable worksheets.
+- Developed a restrained, cohesive publication series based on the existing book's flowing paths, serif hierarchy, charcoal/blue and H identity. The approved site emblem, book artwork and book PDFs/EPUBs remain untouched.
+- Updated `/downloads/` with a real journal collection (four downloads across three titles); updated the `/reflect/` feature to show the actual cover art and all-edition link; corrected the homepage count from 28 to 48 pages.
+- Extended `source/publications.json` with all four downloadable editions and added the reproducible generator `scripts/build_journal_series.py` and `scripts/v09_enhancements.py` website overlay.
+- Added `docs/Journal_Series_Editorial_and_Print_Plan.md` to plan physical production without implying books are on sale.
+
+### Verification and limits
+- 33 generated HTML pages; 941 local links/assets/anchors checked. No broken references.
+- PDF lengths and AcroForm widgets verified (48/48/40/40 pages; 116/116/116/110 fields). Test value saved and reopened. Light/Dark interior text matches page for page. Print proof has zero form fields.
+- The main PDF's cover, introduction, section entry and closure pages were rendered and inspected. The four-cover gallery was generated from actual PDF pages.
+- No full browser screenshot regression was completed (headless Chromium navigation stalled in this environment). Live GitHub Pages deployment, mobile PDF reader compatibility, print proofing and accessibility certification remain unverified.
+- Forms have intentionally been left untouched, and the patch excludes `assets/forms-config.js`.
+
+### Publishing policy
+The series remains free in PDF. A physical edition could later support publishing costs, but requires printer proofs, pricing and fulfilment setup. No donation or paywall access is introduced. More variants should only be created in response to demonstrable reader use or a new distinct reflective purpose.
+
+---
+
+
 **Maintained record:** Started 22 November 2026  
 **Current release:** Website v0.8  
 **Project:** https://thebookofchance.github.io/  
