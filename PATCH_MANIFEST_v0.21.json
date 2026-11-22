@@ -1,0 +1,108 @@
+{
+  "patch_version": "0.21",
+  "required_base": "0.20",
+  "type": "new-or-modified-files-only",
+  "files": [
+    {
+      "path": "PATCH_README.md",
+      "bytes": 1741,
+      "sha256": "3b26cd7c2472f66a356a39156242df4ea68a94219f04eb530f48bc8fd5919e1d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 13512,
+      "sha256": "76dd06cfb938091d4ae0a4bcc4518bfb27246620839d4b95a4f3027853f171b4"
+    },
+    {
+      "path": "SITE_CONTENT_MANIFEST.json",
+      "bytes": 5054,
+      "sha256": "357d60367d9e9d33413e5ed56bc3dd68b62871a960d506a0d51fdd38dfa18dce"
+    },
+    {
+      "path": "assets/guides/beginners-guide-to-confluent-humanism-cover.png",
+      "bytes": 107856,
+      "sha256": "1f2d9660a14a0984e86dd1cf202f8aa5212bb02bafa700242efad06c6067592f"
+    },
+    {
+      "path": "assets/guides/beginners-guide-to-confluent-humanism-cover.svg",
+      "bytes": 2443,
+      "sha256": "1dece7d9e41a4574ab30db7a537476f62c907aa7d44d7ae6ecab0ccb436a72d4"
+    },
+    {
+      "path": "assets/guides/beginners-guide-to-confluent-humanism-cover.webp",
+      "bytes": 56412,
+      "sha256": "1fda63bf73f1dac25df931a986e7843683c304a321533ab97798030b1efd7997"
+    },
+    {
+      "path": "assets/site.css",
+      "bytes": 107312,
+      "sha256": "86b460354938b92e508edbbc9daae4b495df73b3f2f36ed8cc15da1a49f14e3a"
+    },
+    {
+      "path": "docs/Publications_Roadmap_and_Progress.md",
+      "bytes": 11908,
+      "sha256": "376a4114d53634f0f1baee5a2fa8fa5f380ce5919e2086e7afd0baadd0ebf864"
+    },
+    {
+      "path": "docs/Website_v0.21_Beginners_Guide_and_QA.md",
+      "bytes": 3500,
+      "sha256": "a5db79962145af6d0cad8dcd5d3df6cbc1489158ade9322b90b8847c05ed6d85"
+    },
+    {
+      "path": "downloads/index.html",
+      "bytes": 28639,
+      "sha256": "cabae2cc301d54e33c86244f64660676f00f5f5ab1b41811ee3e195fca66b7fa"
+    },
+    {
+      "path": "files/guides/A_Beginners_Guide_to_Confluent_Humanism_Editorial_Proof_v0.2.epub",
+      "bytes": 113827,
+      "sha256": "a5b8eef5b1608034020a6846eda3385edceeee057ca622e275e5371ee266a018"
+    },
+    {
+      "path": "files/guides/A_Beginners_Guide_to_Confluent_Humanism_Editorial_Proof_v0.2.pdf",
+      "bytes": 75422,
+      "sha256": "fd886b4bedd01a7ad8b0fecd28b49047693fc9390e013a6bebbf7caa7ffd4745"
+    },
+    {
+      "path": "index.html",
+      "bytes": 15253,
+      "sha256": "149b776688e6e1707d11fa12650fc8ffd8c8d053bc3b4723dae46c46e22c03f9"
+    },
+    {
+      "path": "publications/beginners-guide-to-confluent-humanism/index.html",
+      "bytes": 29063,
+      "sha256": "27f9452ad67729c678658bbe73c21eea9a67d1646b4e2609c63ec1c897cc164e"
+    },
+    {
+      "path": "scripts/build_beginner_guide.py",
+      "bytes": 8941,
+      "sha256": "2cd14449e8f5cf80e9ea31f1a54ad38f178730d46521b79d30271ecc4436acbe"
+    },
+    {
+      "path": "scripts/build_site.py",
+      "bytes": 54967,
+      "sha256": "956221944bd014a54b3aa6af470be747c257e4e048efb89742e27b1eff3fadc4"
+    },
+    {
+      "path": "scripts/v021_beginner_guide.py",
+      "bytes": 12224,
+      "sha256": "b3579f4a5883110545313863270b45902dd97b53a18229913e56590da1626534"
+    },
+    {
+      "path": "source/guides/beginners-guide-to-confluent-humanism.md",
+      "bytes": 18945,
+      "sha256": "3bf95e460051ddee84ea5250349f5017838d2240effcb0b25f0f0579636dba99"
+    },
+    {
+      "path": "source/publications.json",
+      "bytes": 8316,
+      "sha256": "7c4ec32662dcb2741ad1bbcb866fe822bd4c74c55e799045c28ff5ae6b642217"
+    }
+  ],
+  "exclusions": [
+    "assets/forms-config.js",
+    "all unchanged files",
+    "existing publication PDFs and EPUBs"
+  ],
+  "contents_note": "Includes source-driven beginner guide, a 13-page PDF proof, EPUB and unchanged approved-for-staging cover"
+}

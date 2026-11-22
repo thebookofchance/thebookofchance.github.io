@@ -1,9 +1,9 @@
-# The Book of Chance — Website v0.19
+# The Book of Chance — Website v0.21
 
 A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, private reflection practices, downloadable resources, and the proposed Fellowship of Chance.
 
 **Public site:** https://thebookofchance.github.io/  
-**Website release:** v0.19 — editorial publication staging (22 November 2026)
+**Website release:** v0.21 — introductory guide staging and Library refinement (22 November 2026)
 
 ## Site structure
 
@@ -17,6 +17,7 @@ A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, 
 | `/booklets/the-little-book-of-possibilities/` | Companion book on conditions and accessible opportunities |
 | `/publications/conversations-of-chance/` | Twelve-discussion companion for individuals and groups |
 | `/publications/parables-of-chance/` | Twelve original fictional parables; staged final copyedit candidate v0.2.1 |
+| `/publications/beginners-guide-to-confluent-humanism/` | Nine-section Beginner’s Guide v0.2; 13-page PDF proof, EPUB and full HTML reader; editorial candidate |
 | `/letters/` | Three standalone philosophical Letters from H, with online reading and PDF/EPUB downloads |
 | `/community/` | Proposed Fellowship, reasons to participate, future funding principles and a Fellowship interest form |
 | `/focus/` | Current organisational development goal, roadmap, potential funding criteria and deferred Chance Campaigns |
@@ -126,3 +127,24 @@ The newly prepared **Conversations of Chance** discussion companion is presented
 `publications/parables-of-chance/` presents the complete twelve-story fiction collection, PDF and EPUB proofs, and its established literary cover. `source/parables/the-parables-of-chance.md` is the editable canonical text. Run `python scripts/build_parables.py` only to rebuild its exports; normal site rebuilding uses `python scripts/build_site.py`, including the `v019_parables` integration. The stories are visibly fictional and do not imply working Fellowship services.
 
 The v0.19 ZIP is an update-only patch: upload changed files over the current repository, preserving paths, and do not delete or replace existing unrelated content. Private and working form configuration is not included. This edition remains an editorial candidate, not a fully verified public release.
+
+
+## v0.21 — A Beginner’s Guide to Confluent Humanism
+
+The short introductory guide is now available as a complete HTML reader at
+`publications/beginners-guide-to-confluent-humanism/`, with the reviewed v0.2
+PDF and EPUB. It uses the approved-for-staging v0.1 visual cover without changes.
+The homepage gives newcomers a short “Start here” link and makes the guide the
+first item in the compact collection. The Library has nine titles (six books /
+companions and three Letters), all searchable with the existing local-only
+filter. The main book editions, journals and forms remain unchanged.
+
+The canonical manuscript is `source/guides/beginners-guide-to-confluent-humanism.md`.
+Regenerate the publication exports only when intended with
+`python scripts/build_beginner_guide.py`; regenerate site HTML with
+`python scripts/build_site.py`. The `v021_beginner_guide.py` stage runs after
+v0.20 and does not enable any membership, payment or form changes.
+
+The guide is a revised editorial candidate approved for website staging,
+not independently approved as a final accessible release. Its page is set
+to `noindex,follow` until formal release checks are completed.

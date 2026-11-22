@@ -1,5 +1,5 @@
 {
-  "website_version": "0.20",
+  "website_version": "0.21",
   "source": "Book_of_Chance_Illustrated_Manuscript_v0.12.md",
   "source_sha256": "997a36f2aa8265129ea7ec8638a95783065c8fc7649f5505023a243f569384e9",
   "chapters": 24,
@@ -49,7 +49,7 @@
     "pdf": "files/booklets/The_Five_Values.pdf",
     "epub": "files/booklets/The_Five_Values.epub"
   },
-  "video_programme": "Not started; site refinement only",
+  "video_programme": "Deferred; site introduction integrated",
   "latest_discussion_id": "BOC-CNV-001",
   "conversations_status": "Editorial candidate; H approval and live deployment testing outstanding",
   "conversations": {
@@ -81,7 +81,7 @@
     "stories": 12,
     "pdf_pages": 69
   },
-  "library_index_count": 8,
+  "library_index_count": 9,
   "library_categories": [
     "Books",
     "Letters",
@@ -91,6 +91,17 @@
   "library_search": "Local catalogue title and topic filter; no remote service",
   "home_publication_promotions": "Consolidated into one cover-led collection grid",
   "editorial_release_gate": "Unchanged; noindex on pending editorial candidates preserved",
+  "introductory_guide": {
+    "id": "BOC-GDE-001",
+    "source": "source/guides/beginners-guide-to-confluent-humanism.md",
+    "url": "publications/beginners-guide-to-confluent-humanism/",
+    "cover": "assets/guides/beginners-guide-to-confluent-humanism-cover.webp",
+    "pdf": "files/guides/A_Beginners_Guide_to_Confluent_Humanism_Editorial_Proof_v0.2.pdf",
+    "epub": "files/guides/A_Beginners_Guide_to_Confluent_Humanism_Editorial_Proof_v0.2.epub",
+    "pdf_pages": 13
+  },
+  "guide_status": "Approved for website staging; independent human review, accessibility and live deployment checks pending",
+  "sitemap_publication_gate": "Noindex on the guide until formal release approval",
   "correction_status": "Targeted editorial revisions; no independent human reader test",
   "book_editorial_source": "source/manuscript.md",
   "letter_editions": [

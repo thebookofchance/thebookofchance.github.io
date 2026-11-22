@@ -1,6 +1,6 @@
 # H Publications — Release Roadmap and Progress Register
 
-**Updated:** 22 November 2026 · v0.19 (The Parables of Chance v0.2.1 final copyedit staged; external and live checks pending)  
+**Updated:** 22 November 2026 · v0.21 (Beginner’s Guide v0.2 staged on the website; further release checks pending)  
 **Sequence rule:** Develop and review **one publication at a time**. After completing the recommended literature programme, plan and launch the Fellowship's YouTube/video channel. No concurrent video production is assumed.
 
 ## Working order
@@ -15,6 +15,13 @@
 | 4 | **The Little Book of Possibilities** | **Editorial candidate v0.2:** 12 chapters, approved cover, 42-page PDF proof and EPUB; manuscript approval and live checks pending | H reviews v0.2 text; independent human review, accessibility and live downloads verified |
 | 5 | **The Parables of Chance** | **Final copyedit candidate v0.2.1:** twelve original stories, retained cover, 69-page PDF proof, EPUB and full online reader staged; author, external, accessibility and live checks pending | Obtain final H sign-off and independent reader feedback, verify specialist details and accessible downloads, test live deployment |
 | 6 | **Fellowship YouTube / video channel** | **Deferred by owner** until above recommended publications are finished | Library programme complete; then plan content format, voice and distribution |
+
+## Introductory resources
+
+- **A Beginner’s Guide to Confluent Humanism (BOC-GDE-001):** v0.2 introductory companion staged on the website in v0.21: free 13-page PDF proof, EPUB and full nine-section HTML reader, with a cover consistent with the existing visual publishing system. Reader-simulation revisions completed; approved for web staging, not certified as a fully reviewed final release.
+- **Questions About Chance (FAQ):** proposed next, not drafted or available.
+- **Guided Reading Journey:** proposed website resource, not implemented.
+- **Fellowship Principles and Boundaries:** proposed public resource, not implemented.
 
 The initial programme's *Letters from H* collection is intended to remain open to future occasional issues after the first three, but does not need to become a fixed weekly output commitment.
 

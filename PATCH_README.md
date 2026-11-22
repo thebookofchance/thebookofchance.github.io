@@ -1,39 +1,25 @@
-# The Book of Chance — v0.20 UPDATE ONLY
+# The Book of Chance — Website v0.21 UPDATE ONLY
 
-**Required base:** v0.19 website with *The Parables of Chance* integrated.
-**Format:** Changed/new files only. Do not replace the whole repository.
+**Required base:** v0.20 website (with the Library search/filter refinement).  
+**Contents:** only new and changed files, not a full repository.
 
-## Install on GitHub Pages
+## Installation
 
-1. Extract `Book_of_Chance_Website_Update_Only_v0.20.zip`.
-2. Copy the contents of the ZIP directly into the **root** of your existing GitHub repository, preserving the paths. Replace matching files, but do not delete other files.
-3. Commit the changes and let GitHub Pages deploy. Do not change the configured branch or publishing directory.
-4. Check `/` and `/downloads/` on the live site with a hard refresh, then test on a phone.
+1. Extract `Book_of_Chance_Website_Update_Only_v0.21.zip`.
+2. Upload all extracted files and folders to the **root** of your existing GitHub repository, preserving the folder structure and replacing matching files.
+3. Keep all other existing files; **do not delete** anything not included in the ZIP.
+4. Commit and allow GitHub Pages to deploy, then test the homepage, Library, guide reading page and downloads on desktop and mobile.
 
-The patch **does not include** `assets/forms-config.js`, original publication files, manuscripts, the theme script, or any interest-list endpoints.
+## Changes
 
-## What changed
+- Complete new introductory reader: `publications/beginners-guide-to-confluent-humanism/`.
+- The reviewed 13-page PDF, EPUB and unmodified visual-system cover are included.
+- A new “Start here” link and feature on the homepage, plus nine-item searchable Library catalogue (six books/companions and three Letters).
+- Added source manuscript, guide build script, reproducible v0.21 website integration stage and updated catalogue/roadmap.
+- Preserved the foundational book, existing companion publications, three Letters, journals, themes, forms and all existing navigation routes.
 
-- Homepage: replaced five full-width book promotions with one compact, cover-led literary collection.
-- Library: an index of all **eight publications**, including the foundational book, four additional book-length works and three Letters.
-- Library browsing: local-only search by title/theme; filter All, Books or Letters. Journals and worksheets remain below the catalogue with prominent navigation shortcuts.
-- Improved light/dark subtle text contrast and keyboard-visible filter controls.
-- Removed the outdated placeholder for future readings from the Library.
-- Preserved all existing publication reader routes, PDF/EPUB links, bookmarks, core book editions, and all legacy anchor targets.
-- Rebuild-safe `scripts/v020_library_refinement.py` stage. Unapproved candidate pages remain `noindex` and excluded from `sitemap.xml`.
+**Status:** Revised editorial candidate staged for reading, not an independently approved final release. The guide page is `noindex,follow` and deliberately excluded from the sitemap pending formal release checks.
 
-## Manual checks after deployment
+**Excluded:** `assets/forms-config.js`, existing publication PDFs/EPUBs, and other unchanged resources. Form submission and live GitHub Pages delivery were not tested from the local test environment.
 
-- Home navigation and link to the Library, and all five small cover cards.
-- Library search for “strangers” and an unmatched term, then All / Books / Letters filters.
-- Jump from Library shortcuts to the foundational book, Letters, journals and worksheets.
-- Mobile menu, light/dark toggle, and reading pages on both light and dark themes.
-- At least one PDF and EPUB download in a real browser/device.
-- Reflection workspace and the existing two interest forms, including consent and successful provider response, **only through an authorised test**.
-- Confirm whether editorial candidate status and `noindex` are still intended before promoting the titles publicly.
-
-## Limitations
-
-Local browser interactions and layout were tested using injected HTML/CSS/JS because direct navigation to the local server was blocked by the testing environment. **This is not verification of the deployed GitHub Pages website or of Formspree delivery.** The patch does not mark any publication as formally approved.
-
-See `docs/Website_v0.20_Refinement_and_QA.md` for details.
+See `docs/Website_v0.21_Beginners_Guide_and_QA.md` for the validation report.
