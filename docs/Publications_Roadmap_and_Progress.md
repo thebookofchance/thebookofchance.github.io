@@ -1,6 +1,6 @@
 # H Publications — Release Roadmap and Progress Register
 
-**Updated:** 22 November 2026 · v0.14 (targeted editorial correction pass; no human reader pilot)  
+**Updated:** 22 November 2026 · v0.15 (first illustrated companion booklet; no human reader pilot)  
 **Sequence rule:** Develop and review **one publication at a time**. After completing the recommended literature programme, plan and launch the Fellowship's YouTube/video channel. No concurrent video production is assumed.
 
 ## Working order
@@ -10,8 +10,8 @@
 | 1.1 | **Letters from H · No. 01 — On the People We Never Meet** | Editorially refined to 1.0-RC2. HTML, PDF and EPUB prepared; human sign-off/live verification pending | H reviews text and visuals; deployed downloads checked |
 | 1.2 | **Letters from H · No. 02 — When Good Choices Lead to Bad Outcomes** | Draft complete; 1.0-RC1 PDF, EPUB and web reading prepared; author/live approval pending | Text and design approved; live downloads verified |
 | 1.3 | **Letters from H · No. 03 — What Do We Owe to Strangers?** | Full 1.0-RC1 editorial candidate prepared; HTML/PDF/EPUB complete; H approval and live verification pending | Review for fairness and publishable voice; check deployed downloads |
-| 2 | **The Five Values** | Proposed 10–15-page illustrated beginner booklet | Three Letters complete; editorial concept signed off |
-| 3 | **Conversations of Chance** | Proposed guide to twelve optional facilitated discussion sessions | The Five Values published; safeguarding and facilitation boundaries reviewed |
+| 2 | **The Five Values** | **Editorial candidate 1.0-RC1 complete:** 3,500-word source, 17-page illustrated PDF, EPUB, full HTML reading page | H approves wording and visual design; deployed PDF/EPUB and page verified |
+| 3 | **Conversations of Chance** | **Next:** Proposed guide to twelve optional facilitated discussion sessions | The Five Values published; safeguarding and facilitation boundaries reviewed |
 | 4 | **The Little Book of Possibilities** | Proposed 40–60-page accessible companion | Discussion guide published; original contribution distinguished from main book |
 | 5 | **The Parables of Chance** | Proposed illustrated fiction collection, approx. 60–90 pages | Other publications complete; each story labelled as fiction; rights reviewed |
 | 6 | **Fellowship YouTube / video channel** | **Deferred by owner** until above recommended publications are finished | Library programme complete; then plan content format, voice and distribution |
@@ -69,3 +69,11 @@ The archive now lists three Letters. The homepage and Library link to issue 003 
 ## v0.14 — Targeted simulated-review corrections
 
 Following the source-grounded simulated review, amended the foundational manuscript, all three Letters and the journal privacy/pause language. The Letter candidates are now RC3/RC2/RC2 respectively; the book retains its title and artwork but has a revised editorial text. No independent human reader testing is claimed. Completion of a technical audit is not proof of reader comprehension, accessibility or an H-approved final release. See `docs/Editorial_Corrections_v0.14.md` for passage-by-passage rationale and residual gates.
+
+## v0.15 — The Five Values illustrated companion
+
+**BOC-BKL-001 — The Five Values** is the next title prepared after the initial three Letters. The source manuscript is `source/booklets/the-five-values.md`, linked explicitly to the current book manuscript and the draft five-value charter. It contains six original vector/raster illustrations and a separate literary cover (seven graphics including cover). Its five sections use distinct fictional situations plus optional prompts; the concluding section addresses tensions among values. The booklet does not invent active Fellowship services or require payment, membership or private disclosure.
+
+Production: `scripts/build_five_values.py` writes `files/booklets/The_Five_Values.pdf`, `files/booklets/The_Five_Values.epub` and web assets. `scripts/v015_five_values.py` provides website integration and is called after the three Letters. This new booklet is a full web reading page, PDF and EPUB, and a featured Library/Home publication. It is an **editorial candidate**, pending H approval and a live website / actual e-reader check.
+
+**Next after H approves the booklet:** *Conversations of Chance*. The Little Book of Possibilities and The Parables of Chance follow before work begins on YouTube/video, as agreed.

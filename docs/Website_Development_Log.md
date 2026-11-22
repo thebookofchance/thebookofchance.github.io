@@ -239,3 +239,14 @@ It also introduces **Chance Campaigns**, a deferred idea for externally vetted c
 Updated the book's explanation of fundamental chance in Reading IV; refined all three Letters for concrete variety and stronger positive claims; removed the specific Fellowship fundraising aside from Letter 03; improved visible permission to skip journal questions and shared-device privacy warnings. Rebuilt book Light/Dark PDF and EPUB, all Letter PDF/EPUB assets, journal PDF editions and three A4 worksheets. The accepted branding and Formspree configuration are unchanged.
 
 Local QA: 37 pages, 1,021 local reference checks; EPUB integrity; 7 fillable PDF checks and sample save/reopen; selected page raster previews. **No real-reader pilot was run; founder approval and live publication checks remain outstanding.** Full details: `docs/Editorial_Corrections_v0.14.md` and `docs/Editorial_Corrections_v0.14_QA.json`.
+
+
+## v0.15 — The Five Values companion booklet (22 November 2026)
+
+- Prepared an illustrated 3,500-word philosophical companion under BOC-BKL-001. The five values are taught as complementary questions, never a hierarchy or compulsory measure of a reader's worth. Fictional scenes are explicitly identified.
+- New full free HTML reading route `/booklets/the-five-values/`, with visible value jump links and primary PDF/EPUB actions. Feature added to Library and homepage; no extra top-level navigation item.
+- Produced original vector-backed line diagrams for Hope, Acceptance, Reflection, Growth, Community, and situations where values interact. Original cover design matches the charcoal/blue serif publication family without replicating the foundational book cover or altering the official logo.
+- Produced 17-page, 6×9-inch typeset PDF and reflowable EPUB from one Markdown source. Fixed PDF is a digital reader edition, not an approved commercial printing master.
+- Expanded the release/catalogue metadata, sitemap, roadmap, and editorial documentation. Reproducible generators were added.
+- Kept all existing books, Letters, reflection journals and working form configuration unchanged. See `docs/Five_Values_Editorial_Review_RC1.md` and `docs/Five_Values_QA_v0.15.json`.
+- Residual gates: founder approval, true deployed website checks, ebook-reader compatibility and screen-reader accessibility. No human reader study occurred.

@@ -105,5 +105,23 @@
         "status": "editorially revised candidate — founder approval and live check outstanding"
       }
     ]
-  }
+  },
+  "booklets": [
+    {
+      "id": "BOC-BKL-001",
+      "title": "The Five Values",
+      "author": "H",
+      "series": "The Book of Chance — Companions",
+      "subtitle": "Hope · Acceptance · Reflection · Growth · Community",
+      "edition": "1.0-RC1",
+      "status": "editorial candidate; founder sign-off and live check outstanding",
+      "language": "en-NZ",
+      "date_prepared": "2026-11-22",
+      "source": "source/booklets/the-five-values.md",
+      "url": "booklets/the-five-values/",
+      "cover": "assets/booklets/the-five-values-cover.webp",
+      "pdf": "files/booklets/The_Five_Values.pdf",
+      "epub": "files/booklets/The_Five_Values.epub"
+    }
+  ]
 }

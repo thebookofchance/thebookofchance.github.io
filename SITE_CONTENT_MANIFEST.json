@@ -1,5 +1,5 @@
 {
-  "website_version": "0.14",
+  "website_version": "0.15",
   "source": "Book_of_Chance_Illustrated_Manuscript_v0.12.md",
   "source_sha256": "997a36f2aa8265129ea7ec8638a95783065c8fc7649f5505023a243f569384e9",
   "chapters": 24,
@@ -41,6 +41,15 @@
   "publication_standard": "docs/Publications_Standard_v1.0_RC1.md",
   "latest_letter_id": "BOC-LFH-003",
   "latest_letter_edition": "1.0-RC2",
+  "latest_companion_id": "BOC-BKL-001",
+  "companion_page_count_pdf": 17,
+  "companion_status": "Editorial candidate; approval and deployed verification outstanding",
+  "values_booklet": {
+    "online": "booklets/the-five-values/",
+    "pdf": "files/booklets/The_Five_Values.pdf",
+    "epub": "files/booklets/The_Five_Values.epub"
+  },
+  "video_programme": "Deferred until after planned publications",
   "correction_status": "Targeted editorial revisions; no independent human reader test",
   "book_editorial_source": "source/manuscript.md",
   "letter_editions": [

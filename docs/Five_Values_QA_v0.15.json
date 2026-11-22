@@ -1,0 +1,30 @@
+{
+  "website": "0.15",
+  "publication": "BOC-BKL-001",
+  "status": "editorial_candidate",
+  "source_word_count": 3501,
+  "html_pages": 38,
+  "local_refs_checked": 1064,
+  "missing_local_refs": [],
+  "pdf_pages": 17,
+  "pdf_page_size_pt": [
+    432.0,
+    648.0
+  ],
+  "pdf_text_on_interior_pages": true,
+  "pdf_values_present": true,
+  "booklet_figures": 6,
+  "epub_archive_error": null,
+  "epub_mimetype": "application/epub+zip",
+  "epub_raster_images_including_cover": 7,
+  "protected_files_tested": 27,
+  "changed_protected_files": [],
+  "manual_browser_check": "Standalone inline Chrome layout tests at 1365, 768 and 390 px; 9 checks passed; direct navigation blocked by environment",
+  "pending": [
+    "H editorial approval",
+    "deployed Github Pages check",
+    "real EPUB reader and PDF screen reader checks",
+    "commercial print production proof",
+    "independent human reader response (unavailable)"
+  ]
+}

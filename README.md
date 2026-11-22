@@ -1,9 +1,9 @@
-# The Book of Chance — Website v0.13
+# The Book of Chance — Website v0.15
 
 A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, private reflection practices, downloadable resources, and the proposed Fellowship of Chance.
 
 **Public site:** https://thebookofchance.github.io/  
-**Website release:** v0.13 (22 November 2026)
+**Website release:** v0.15 (22 November 2026)
 
 ## Site structure
 
@@ -12,7 +12,8 @@ A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, 
 | `/` | Book-led homepage, weekly reflection entry and current focus |
 | `/read/` | Entire book: twelve readings, sections, notes and original illustrations |
 | `/reflect/` | Private guided reflection editor, weekly question rotation and offline guides |
-| `/downloads/` | Book editions, three freely readable Letters, four journal editions and separate fillable worksheets |
+| `/downloads/` | Book editions, three Letters, new Five Values illustrated booklet, four journal editions and fillable worksheets |
+| `/booklets/the-five-values/` | Complete illustrated text of *The Five Values* with direct PDF and EPUB downloads |
 | `/letters/` | Three standalone philosophical Letters from H, with online reading and PDF/EPUB downloads |
 | `/community/` | Proposed Fellowship, reasons to participate, future funding principles and a Fellowship interest form |
 | `/focus/` | Current organisational development goal, roadmap, potential funding criteria and deferred Chance Campaigns |
@@ -22,7 +23,7 @@ A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, 
 
 ## Honesty about what exists
 
-- **Available today:** The complete free book, two cover editions, private reflection workspace, three text templates, a rotating archive of twelve questions and two interest registration forms (once the owner's Formspree endpoints are configured on the live site).
+- **Prepared digital content:** The complete free book, three Letters, the new Five Values illustrated companion, two book cover editions, private reflection workspace, reflection journals, a rotating archive of twelve questions and two interest registration forms (once the owner's Formspree endpoints are configured on the live site).
 - **Not yet operating:** Formal Fellowship membership, active mentorship, local Fellowships, practical hardship assistance, scheduled events, charitable fundraising, payments, book orders or a real charity selection wheel.
 - **Ordinary future membership is intended to be free.** Giving is voluntary and cannot purchase luck, influence or priority support.
 - The founder reports that the two live Formspree interest forms work; private submissions and actual endpoint configuration were **not independently verified** in this release.
@@ -30,7 +31,7 @@ A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, 
 
 ## Deploy update-only ZIPs
 
-The `Book_of_Chance_Website_Update_Only_v0.13.zip` package contains changed and new files **only**. Extract it and upload its contents to the existing GitHub Pages repository, replacing files with the same paths and **without deleting other files**.
+The `Book_of_Chance_Website_Update_Only_v0.15.zip` package contains changed and new files **only**. Extract it and upload its contents to the existing GitHub Pages repository, replacing files with the same paths and **without deleting other files**.
 
 **Do not overwrite or publish private information.** `assets/forms-config.js` (the file containing your working Formspree endpoint identifiers and public contact email) has intentionally **not** been included or modified.
 
@@ -39,19 +40,19 @@ Check the accepted favicon/logo, both form flows and the `/reflect/` download fe
 ## Edit and regenerate
 
 - The canonical book source remains `source/manuscript.md`; do not edit generated `read/` pages directly.
-- The available/planned publication catalogue is `source/publications.json`. It includes three downloadable practice guides as available resources.
+- The available/planned publication catalogue is `source/publications.json`. It includes free practice guides, the first three Letters and The Five Values as editorial candidate.
 - Weekly questions live in `source/reflection-prompts.json` and follow a repeating 12-week cycle starting Monday, 23 November 2026.
 - The current goal, supporting page and homepage callouts are maintained through `scripts/v07_enhancements.py`.
-- The site generator is `scripts/build_site.py`, which currently regenerates 37 HTML pages and the sitemap. It incorporates the publication integration scripts through v0.13.
+- The site generator is `scripts/build_site.py`, which currently regenerates 38 HTML pages and the sitemap. It incorporates the publication integrations through v0.15, including `scripts/v015_five_values.py`.
 
 ```bash
 python -m pip install -r scripts/requirements.txt
 python scripts/build_site.py
 python scripts/build_reflection_pdfs.py
-python scripts/audit_letter_003.py
+python scripts/build_five_values.py  # only when manuscript changes; before build_site.py
 ```
 
-The generator does not generate or modify ebook editions, original artwork or the approved brand symbols. It also leaves existing form service configuration alone. Run a local web server (e.g. `python -m http.server 8000`) for normal browser testing outside a restricted environment.
+The routine site generator does not alter existing PDF/EPUB editions, the original book illustrations, or accepted brand symbols. The separate booklet builder intentionally regenerates its own cover, diagrams, PDF and EPUB after a source revision. It also leaves existing form service configuration alone. Run a local web server (e.g. `python -m http.server 8000`) for normal browser testing outside a restricted environment.
 
 ## Project record
 
@@ -101,6 +102,12 @@ The patch preserves the approved logo and live Formspree configuration. The owne
 - Integrated the whole text into a new route `/letters/what-do-we-owe-to-strangers/`, and refreshed the Library, homepage, archive and sitemap.
 - The three-Letter opening collection is now prepared, but each issue remains an editorial candidate until H approves it and the deployed site is checked.
 - Generators: `python scripts/build_letter_003.py` builds issue 003 deliberately; `python scripts/build_site.py` updates site pages and only makes issue assets if missing.
-- Tests: `python scripts/audit_letter_003.py`, plus the record in `docs/Letter_003_QA_Report.json`.
+- Tests: `python scripts/build_five_values.py  # only when manuscript changes; before build_site.py`, plus the record in `docs/Letter_003_QA_Report.json`.
 - The accepted logo, Formspree configuration, foundational book, journal files and previous Letters are unchanged.
 - The next planned publication is **The Five Values**. Video/YouTube production remains deferred until the agreed literature programme is complete.
+
+## New booklet, v0.15
+
+The canonical source is `source/booklets/the-five-values.md`. Its 17-page PDF reader edition, EPUB and original illustrations are available under `files/booklets/` and `assets/booklets/`. The full text is on `/booklets/the-five-values/` with clearly clickable value navigation and direct download buttons.
+
+This is **BOC-BKL-001 · 1.0-RC1** and awaits founder approval and live device review. The booklet's digital PDF is not a commercial print-ready interior. For editorial details see `docs/Five_Values_Editorial_Review_RC1.md`. YouTube/video development remains deferred until the literature plan is completed.
