@@ -1,36 +1,26 @@
 {
-  "version": "v0.9",
-  "tested_date": "2026-11-22",
-  "html_pages": 33,
-  "local_links_anchors_assets_checked": 941,
-  "journal_pdfs": {
-    "complete_light": {
-      "pages": 48,
-      "fields": 116
-    },
-    "complete_dark": {
-      "pages": 48,
-      "fields": 116
-    },
-    "daily": {
-      "pages": 40,
-      "fields": 116
-    },
-    "possibility": {
-      "pages": 40,
-      "fields": 110
-    }
-  },
-  "print_layout_proof": {
-    "pages": 48,
-    "fields": 0
-  },
-  "pdf_form_fill_and_reopen": "PASS",
-  "light_dark_interior_text_identity": "PASS",
-  "javascript_syntax": "PASS",
-  "static_link_audit": "PASS",
-  "browser_device_regression": "NOT_COMPLETED",
-  "live_github_formspree": "NOT_TESTED",
-  "accessibility_certification": "NOT_DONE",
-  "commercial_print_proof": "NOT_DONE"
+  "website_version": "0.20",
+  "baseline_version": "0.19",
+  "audit_date": "2026-11-22",
+  "scope": "Local source and injected-browser QA, not live GitHub Pages",
+  "html_files_scanned": 42,
+  "local_link_occurrences": 1101,
+  "missing_local_targets": 0,
+  "broken_section_anchors": 0,
+  "library_titles": 8,
+  "library_books": 5,
+  "library_letters": 3,
+  "search_and_filter": "PASS: local JavaScript tested at four viewport widths",
+  "theme_and_mobile_menu": "PASS: injected-browser interaction tests",
+  "viewport_widths_tested_px": [1440, 820, 390, 320],
+  "horizontal_overflow_found": false,
+  "theme_subtle_contrast_ratio_light": 5.92,
+  "theme_subtle_contrast_ratio_dark": 8.63,
+  "protected_form_config_unchanged": true,
+  "previous_publication_exports_unchanged": true,
+  "candidate_noindex_and_sitemap_exclusion_preserved": true,
+  "live_deployment_verified": false,
+  "form_submission_verified": false,
+  "independent_accessibility_test_completed": false,
+  "notes": "Direct browser navigation blocked by environment; tests used injected HTML/CSS/JS. This is not live HTTP or external-service verification."
 }

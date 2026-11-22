@@ -1,5 +1,5 @@
 {
-  "website_version": "0.19",
+  "website_version": "0.20",
   "source": "Book_of_Chance_Illustrated_Manuscript_v0.12.md",
   "source_sha256": "997a36f2aa8265129ea7ec8638a95783065c8fc7649f5505023a243f569384e9",
   "chapters": 24,
@@ -49,14 +49,7 @@
     "pdf": "files/booklets/The_Five_Values.pdf",
     "epub": "files/booklets/The_Five_Values.epub"
   },
-  "video_programme": "Deferred until publication programme release gates are complete",
-  "correction_status": "Targeted editorial revisions; no independent human reader test",
-  "book_editorial_source": "source/manuscript.md",
-  "letter_editions": [
-    "1.0-RC3",
-    "1.0-RC2",
-    "1.0-RC2"
-  ],
+  "video_programme": "Not started; site refinement only",
   "latest_discussion_id": "BOC-CNV-001",
   "conversations_status": "Editorial candidate; H approval and live deployment testing outstanding",
   "conversations": {
@@ -67,8 +60,7 @@
     "sessions": 12
   },
   "publications_represented_in_library": 8,
-  "conversations_page_count_pdf": 53,
-  "possibilities_status": "Editorial candidate v0.2; cover approved; manuscript sign-off, accessibility and live checks outstanding",
+  "possibilities_status": "Editorial candidate v0.2; cover approved; author approval, accessibility and live checks pending",
   "possibilities": {
     "online": "booklets/the-little-book-of-possibilities/",
     "pdf": "files/booklets/The_Little_Book_of_Possibilities_Editorial_Proof_v0.2.pdf",
@@ -79,14 +71,31 @@
     "pdf_pages": 42
   },
   "latest_story_id": "BOC-PAR-001",
-  "parables_status": "Final copyedit candidate v0.2.1; pending H sign-off, independent human review, accessibility and live deployment checks",
+  "parables_status": "Final copyedit candidate v0.2.1; external and author sign-off, accessibility and live checks outstanding",
   "parables": {
     "online": "publications/parables-of-chance/",
     "pdf": "files/parables/The_Parables_of_Chance_Editorial_Proof_v0.2.1.pdf",
     "epub": "files/parables/The_Parables_of_Chance_Editorial_Proof_v0.2.1.epub",
-    "source": "source/parables/the-parables-of-chance.md",
     "cover": "assets/publications/parables-of-chance-cover.webp",
+    "source": "source/parables/the-parables-of-chance.md",
     "stories": 12,
     "pdf_pages": 69
-  }
+  },
+  "library_index_count": 8,
+  "library_categories": [
+    "Books",
+    "Letters",
+    "Journals",
+    "Worksheets"
+  ],
+  "library_search": "Local catalogue title and topic filter; no remote service",
+  "home_publication_promotions": "Consolidated into one cover-led collection grid",
+  "editorial_release_gate": "Unchanged; noindex on pending editorial candidates preserved",
+  "correction_status": "Targeted editorial revisions; no independent human reader test",
+  "book_editorial_source": "source/manuscript.md",
+  "letter_editions": [
+    "1.0-RC3",
+    "1.0-RC2",
+    "1.0-RC2"
+  ]
 }

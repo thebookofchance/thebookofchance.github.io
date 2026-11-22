@@ -1,0 +1,76 @@
+{
+  "version": "0.20",
+  "base": "0.19",
+  "update_only": true,
+  "files": [
+    {
+      "path": "index.html",
+      "action": "modified",
+      "bytes": 14942,
+      "sha256": "09cb3a73c988cb2d0d62de0e776303efcb61f5bfb9a48da94c5cba0bfd601180"
+    },
+    {
+      "path": "downloads/index.html",
+      "action": "modified",
+      "bytes": 26728,
+      "sha256": "556c40c32f686d2ff8b03e96b952291f9310840fda4c8c0c3b13c4eb5a92ac2f"
+    },
+    {
+      "path": "assets/site.css",
+      "action": "modified",
+      "bytes": 102399,
+      "sha256": "2095e5d94d61bc96795305322da0cf6c427dc01257c436a3835d5e853bfd3f79"
+    },
+    {
+      "path": "assets/library.js",
+      "action": "added",
+      "bytes": 2059,
+      "sha256": "fd3f452b1c1d3e1f4cc600240e5ae577cdf6893248f59d3e99d15824bd46e45e"
+    },
+    {
+      "path": "scripts/build_site.py",
+      "action": "modified",
+      "bytes": 54881,
+      "sha256": "e396e42b1939ac28aa59fa1865dda4a135ee6a886627dab2af1b06b958e055ec"
+    },
+    {
+      "path": "scripts/v020_library_refinement.py",
+      "action": "added",
+      "bytes": 13547,
+      "sha256": "f97b23816c9a53dfdb3c5e6c629ab1d6e94d56eff6f3e0233e353ab41e03dfa4"
+    },
+    {
+      "path": "SITE_CONTENT_MANIFEST.json",
+      "action": "modified",
+      "bytes": 4360,
+      "sha256": "93fae8f0a00ee264c5ff94a4dc02d802cb946a755df3cc2245c68c150d3ad86d"
+    },
+    {
+      "path": "SITE_QA_REPORT.json",
+      "action": "modified",
+      "bytes": 1124,
+      "sha256": "6562ca3243b8466ff279fa7740fb509d04a3cd0aab7ed93193396dac5b5647ba"
+    },
+    {
+      "path": "PATCH_README.md",
+      "action": "modified",
+      "bytes": 2755,
+      "sha256": "cbc4b800470e83ec4b58369c34c48eaa978dccd40127e8e199225d7d35cebc20"
+    },
+    {
+      "path": "docs/Website_v0.20_Refinement_and_QA.md",
+      "action": "added",
+      "bytes": 4586,
+      "sha256": "fc1f80ba3c9fe288763308c5b3f17a20b80cbee2982c2a5b2d97f5381f4fb772"
+    },
+    {
+      "path": "docs/Website_Development_Log.md",
+      "action": "modified",
+      "bytes": 30311,
+      "sha256": "bd8e8e6f1f56187f420f54f77bda2b0d7f03223b6caf18e83227a8c31ec18c25"
+    }
+  ],
+  "form_config_included": false,
+  "editorial_approvals_changed": false,
+  "local_testing_only": true
+}

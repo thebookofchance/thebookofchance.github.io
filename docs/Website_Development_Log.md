@@ -279,3 +279,7 @@ Local QA: 37 pages, 1,021 local reference checks; EPUB integrity; 7 fillable PDF
 - Corrected the duration in Story 3, the committee speaker in Story 9, and PDF Author/Subject/language metadata.
 - **Editorial staging, not approved release:** pending final author sign-off, independent human reading, accessibility and setting-specific checks, and live GitHub Pages verification.
 - No change to forms configuration, approved book and letter assets, journal content, brand mark, membership status or funding controls.
+
+## v0.20 — Focused collection discovery and accessibility refinement (22 November 2026)
+
+After the literature programme's website integrations, replaced five repeated homepage publication promotions with one cover-led collection panel and redesigned the long Library sequence into a compact eight-publication catalogue, with Books/Letters filtering and local-only topic search. Retained the foundational Light/Dark editions, journals, worksheets and all existing reading pages. Improved low-contrast subtle text tokens; preserved candidate `noindex` and sitemap exclusions even across rebuilds. No change to form endpoints or publishing approvals. See `docs/Website_v0.20_Refinement_and_QA.md` for QA and live-verification limitations.

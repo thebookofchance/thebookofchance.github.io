@@ -1,21 +1,39 @@
-# Book of Chance — v0.19 UPDATE ONLY (Parables of Chance)
+# The Book of Chance — v0.20 UPDATE ONLY
 
-**Required base:** existing v0.18 website. This is NOT the complete repository.
+**Required base:** v0.19 website with *The Parables of Chance* integrated.
+**Format:** Changed/new files only. Do not replace the whole repository.
 
-## Install
-1. Extract `Book_of_Chance_Website_Update_Only_v0.19.zip`.
-2. Upload the files/folders **inside** the ZIP to the root of your existing GitHub Pages repository, preserving their relative paths. Replace matching files; do not remove files absent from this patch.
-3. Do not overwrite, remove or publish your existing `assets/forms-config.js` (the patch does not include it).
-4. After GitHub Pages deploys, visit `/publications/parables-of-chance/` and `/downloads/#parables-of-chance`.
-5. Verify both downloads, the homepage cover/card, theme and mobile navigation, the original book, previous companions and Letters, and the two existing interest forms.
+## Install on GitHub Pages
 
-## v0.19 contents
-- *The Parables of Chance* BOC-PAR-001, **final copyedit candidate v0.2.1**, twelve complete original stories in HTML, PDF and EPUB.
-- Minimal continuity corrections to Stories 3 and 9; **H** populated as PDF Author; EPUB cover preserved. The cover SVG, PNG and WEBP are byte-for-byte the same as the earlier proposed artwork.
-- Dedicated webpage, homepage feature, Library entry, downloadable exports, site styles, metadata and regenerable source/build scripts.
-- Final copyedit notes, production QA and updated roadmap.
+1. Extract `Book_of_Chance_Website_Update_Only_v0.20.zip`.
+2. Copy the contents of the ZIP directly into the **root** of your existing GitHub repository, preserving the paths. Replace matching files, but do not delete other files.
+3. Commit the changes and let GitHub Pages deploy. Do not change the configured branch or publishing directory.
+4. Check `/` and `/downloads/` on the live site with a hard refresh, then test on a phone.
 
-## Stage, do not automatically label released
-The reader page intentionally has `<meta name="robots" content="noindex,follow">` and is not included in `sitemap.xml` because explicit release approval, independent human and specialist review, accessibility and live checks remain outstanding. The live site will still allow anyone with the link to read it after upload.
+The patch **does not include** `assets/forms-config.js`, original publication files, manuscripts, the theme script, or any interest-list endpoints.
 
-This patch contains **only changed/new files compared to the provided v0.18 baseline**. No form configuration, private files, original book editions, previous companion manuscripts or unrelated generated assets are included.
+## What changed
+
+- Homepage: replaced five full-width book promotions with one compact, cover-led literary collection.
+- Library: an index of all **eight publications**, including the foundational book, four additional book-length works and three Letters.
+- Library browsing: local-only search by title/theme; filter All, Books or Letters. Journals and worksheets remain below the catalogue with prominent navigation shortcuts.
+- Improved light/dark subtle text contrast and keyboard-visible filter controls.
+- Removed the outdated placeholder for future readings from the Library.
+- Preserved all existing publication reader routes, PDF/EPUB links, bookmarks, core book editions, and all legacy anchor targets.
+- Rebuild-safe `scripts/v020_library_refinement.py` stage. Unapproved candidate pages remain `noindex` and excluded from `sitemap.xml`.
+
+## Manual checks after deployment
+
+- Home navigation and link to the Library, and all five small cover cards.
+- Library search for “strangers” and an unmatched term, then All / Books / Letters filters.
+- Jump from Library shortcuts to the foundational book, Letters, journals and worksheets.
+- Mobile menu, light/dark toggle, and reading pages on both light and dark themes.
+- At least one PDF and EPUB download in a real browser/device.
+- Reflection workspace and the existing two interest forms, including consent and successful provider response, **only through an authorised test**.
+- Confirm whether editorial candidate status and `noindex` are still intended before promoting the titles publicly.
+
+## Limitations
+
+Local browser interactions and layout were tested using injected HTML/CSS/JS because direct navigation to the local server was blocked by the testing environment. **This is not verification of the deployed GitHub Pages website or of Formspree delivery.** The patch does not mark any publication as formally approved.
+
+See `docs/Website_v0.20_Refinement_and_QA.md` for details.
