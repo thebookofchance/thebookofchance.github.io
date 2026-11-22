@@ -1,65 +1,58 @@
-# The Book of Chance — Website Prototype v0.4
+# The Book of Chance — Website v0.7
 
-**A GitHub Pages-ready static site** for the complete illustrated book, its free digital formats, and the developing Fellowship of Chance.
+A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, private reflection practices, downloadable resources, and the proposed Fellowship of Chance.
 
-## What changed in v0.4
+**Public site:** https://thebookofchance.github.io/  
+**Website release:** v0.7 (22 November 2026)
 
-- **New faithful circular-lattice identity:** the large header and footer mark is based on the founding sketch (a circle crossed by straight diagonal paths), with restrained blue accents. The browser favicon, standalone vector, social/avatar-size image and header now use the same design. The mark is kept as editable SVG at `assets/logo-master.svg`.
-- **Fellowship page:** `/community/` now explains the proposed community's purpose, values, genuine relationship-building, mentorship, collective projects, support priorities and the future Follower/Member/Senior Member structure. This is an inviting explanation **without pretending the community has already opened**.
-- **Expandable library:** `/downloads/` is now a catalogue. The Book of Chance remains the featured available publication; future categories for reflections, guides and further writings are clearly labelled as **in development**, not available for download.
-- **Catalogue source:** Edit `source/publications.json` to manage available and planned publication entries. Existing EPUB/PDF files are unchanged.
-- **Navigation:** A clearly named *Fellowship* destination and a *Library* destination have been added to desktop and mobile menus, and the homepage now links to the community vision.
-- The complete manuscript, 12 readings, all six book illustrations, covers, EPUBs and PDFs are **unchanged** from v0.3.
+## Site structure
 
-## Install on GitHub Pages
+| Destination | Purpose |
+| --- | --- |
+| `/` | Book-led homepage, weekly reflection entry and current focus |
+| `/read/` | Entire book: twelve readings, sections, notes and original illustrations |
+| `/reflect/` | Private guided reflection editor, weekly question rotation and offline guides |
+| `/downloads/` | Free Light/Dark EPUB and PDF editions, plus three downloadable templates |
+| `/community/` | Proposed Fellowship, reasons to participate, future funding principles and a Fellowship interest form |
+| `/focus/` | Current organisational development goal, roadmap, potential funding criteria and deferred Chance Campaigns |
+| `/print/` | Planned physical editions and a **separate** print-interest form |
+| `/about/` | Philosophy, book and author information |
+| `/privacy/` | Formspree interest-list and private reflection privacy information |
 
-1. **Extract the ZIP**. It contains the site files at its top level (`index.html`, `assets/`, `community/`, `read/`, `downloads/`, `print/`, `about/`, `files/`, `source/`, `scripts/`).
-2. Upload those files and folders into the **root** of your existing `TheBookOfChance` website repository, replacing older files with the same paths. Do **not** upload the ZIP itself or nest everything in another directory.
-3. Wait for GitHub Pages to deploy, then open `https://thebookofchance.github.io/` and test the Fellowship and Library links. If the old favicon persists, force-refresh or test in a private browsing window; browsers cache icons aggressively.
-4. Test at phone width and on desktop. The logo is now larger, and the navigation switches to a menu on smaller screens.
+## Honesty about what exists
 
-## Future publishing additions
+- **Available today:** The complete free book, two cover editions, private reflection workspace, three text templates, a rotating archive of twelve questions and two interest registration forms (once the owner's Formspree endpoints are configured on the live site).
+- **Not yet operating:** Formal Fellowship membership, active mentorship, local Fellowships, practical hardship assistance, scheduled events, charitable fundraising, payments, book orders or a real charity selection wheel.
+- **Ordinary future membership is intended to be free.** Giving is voluntary and cannot purchase luck, influence or priority support.
+- The founder reports that the two live Formspree interest forms work; private submissions and actual endpoint configuration were **not independently verified** in this release.
+- Readers do not need to register or donate to read or use any current resource. The existing interest forms request adult (18+) confirmation for the Fellowship, while the reading site remains publicly accessible.
 
-`source/publications.json` includes the current book plus three future categories. To publish another work:
+## Deploy update-only ZIPs
 
-1. Place **real files** in `files/` and the real cover artwork in `assets/covers/` (or another stable asset path).
-2. Add an `available` entry with title, subtitle, summary and edition file paths, following the existing example. The generator validates that referenced EPUB/PDF files exist.
-3. Run `python -m pip install -r scripts/requirements.txt` once, then `python scripts/build_site.py` in the project root to rebuild the catalogue and site pages.
-4. Don't list an unpublished work as downloadable. Keep plans under the `planned` group until actually released.
+The `Book_of_Chance_Website_Update_Only_v0.7.zip` package contains changed and new files **only**. Extract it and upload its contents to the existing GitHub Pages repository, replacing files with the same paths and **without deleting other files**.
 
-**Note:** `build_site.py` regenerates the static site pages from `source/manuscript.md`, its cover/artwork source files and `source/publications.json`. It does not remake EPUB/PDF files, change the manuscript or accept any user data.
+**Do not overwrite or publish private information.** `assets/forms-config.js` (the file containing your working Formspree endpoint identifiers and public contact email) has intentionally **not** been included or modified.
 
-## Important readiness boundaries
+Check the accepted favicon/logo, both form flows and the `/reflect/` download feature after deployment.
 
-The site is a **prototype**, not an active Fellowship enrolment or fundraising service. There is **no member signup, live interest register, email collection, donation processor or paid pre-order form**. The future member spaces, mentorship services, Local Fellowships and support arrangements described on `/community/` have not launched. Members are intended to be adult (18+) with free registration when ready. The website remains open to readers of all ages without registration.
+## Edit and regenerate
 
-The book and its digital downloads remain freely accessible. PDFs are still labelled reader proofs because physical-print and final digital-accessibility checks are outstanding. Official Member registration, privacy policies, safeguarding and service procedures should be completed **before** a real signup form is added.
-
-The local preference on `/print/` only records a cover choice in the visitor's browser; it is not a reservation.
-
-## Local testing
-
-Run a simple HTTP server from the extracted site root:
+- The canonical book source remains `source/manuscript.md`; do not edit generated `read/` pages directly.
+- The available/planned publication catalogue is `source/publications.json`. It includes three downloadable practice guides as available resources.
+- Weekly questions live in `source/reflection-prompts.json` and follow a repeating 12-week cycle starting Monday, 23 November 2026.
+- The current goal, supporting page and homepage callouts are maintained through `scripts/v07_enhancements.py`.
+- The site generator is `scripts/build_site.py`, which regenerates all 33 HTML pages and the sitemap. Its source reflects v0.7 additions.
 
 ```bash
-python -m http.server 8000
+python -m pip install -r scripts/requirements.txt
+python scripts/build_site.py
+python scripts/audit_v07.py
 ```
 
-Then open `http://localhost:8000/`. No framework, remote fonts, analytics, accounts or application server are required. Reading preferences are stored locally in the browser.
+The generator does not generate or modify ebook editions, original artwork or the approved brand symbols. It also leaves existing form service configuration alone. Run a local web server (e.g. `python -m http.server 8000`) for normal browser testing outside a restricted environment.
 
-## Files worth knowing
+## Project record
 
-| Path | Purpose |
-| --- | --- |
-| `index.html` | Book-led homepage, with a discreet link to the Fellowship |
-| `community/index.html` | New Fellowship community overview |
-| `downloads/index.html` | Expandable publication catalogue |
-| `source/publications.json` | Data for available and planned publications |
-| `assets/brand-mark.svg` | Clean symbol for use within the website |
-| `assets/logo-master.svg` | Editable standalone emblem reference |
-| `assets/favicon.svg` | Browser favicon |
-| `assets/brand-avatar-512.png` | Large square icon for profiles and phone shortcuts |
-| `scripts/build_site.py` | Rebuilds pages from the manuscript and catalogue |
-| `SITE_QA_REPORT.json` | Automated checks and remaining limitations |
+**`docs/Website_Development_Log.md`** is the canonical change log: all v0.7 additions, intentionally deferred features, testing boundaries and future maintenance instructions are recorded there.
 
-**Visual-browser testing remains a manual launch gate:** the browser automation runner in this environment is blocked from local pages. Static HTML, link, asset and JavaScript validation can still be completed.
+`SITE_QA_REPORT.json` records the latest source checks and environmental limits. The inlined-browser visual tests passed across three sizes, but this does **not** replace checking the deployed website or testing live Formspree submissions.

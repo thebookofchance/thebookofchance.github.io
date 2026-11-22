@@ -1,5 +1,5 @@
 {
-  "website_version": "0.5",
+  "website_version": "0.7",
   "source": "Book_of_Chance_Illustrated_Manuscript_v0.12.md",
   "source_sha256": "25331f87d8f27f9f1c0638d22239ea11756479c3ce3d22cf52adc52a9f050538",
   "chapters": 24,
@@ -7,11 +7,19 @@
   "illustration_placements": 6,
   "epub_files": 2,
   "pdf_reader_proofs": 2,
-  "interest_form_live": false,
-  "email_collected": false,
   "interest_forms_built": 2,
-  "form_endpoints_configured": false,
+  "form_configuration": "preserved externally; not verified in source",
   "fellowship_membership_open": false,
   "library_available_publications": 1,
-  "library_planned_categories": 3
+  "library_planned_categories": 2,
+  "new_pages": [
+    "reflect/",
+    "focus/"
+  ],
+  "rotation": "twelve curated weekly prompts, repeating",
+  "local_private_reflection_workspace": true,
+  "downloadable_reflection_guides": 3,
+  "fellowship_donations_enabled": false,
+  "charity_campaign_running": false,
+  "form_endpoints": "Not altered; existing deployment settings must be preserved"
 }

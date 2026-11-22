@@ -32,14 +32,29 @@
       "summary": "Occasional essays exploring questions raised by the book, considering new examples and other philosophical perspectives."
     },
     {
-      "category": "Personal practice",
-      "title": "Reflection guides & journals",
-      "summary": "Optional prompts and formats for thinking through circumstances, choices, learning and the possibilities ahead."
-    },
-    {
       "category": "Community learning",
       "title": "Further readings",
       "summary": "Future discussions and supplementary texts that draw connections with established ideas and contemporary experiences."
+    }
+  ],
+  "resources": [
+    {
+      "id": "reflection-of-chance",
+      "title": "The Reflection of Chance",
+      "kind": "Practice template",
+      "file": "files/reflection/reflection-of-chance.txt"
+    },
+    {
+      "id": "act-of-possibility",
+      "title": "The Act of Possibility",
+      "kind": "Practice template",
+      "file": "files/reflection/act-of-possibility.txt"
+    },
+    {
+      "id": "weekly-review",
+      "title": "A Week of Possibilities",
+      "kind": "Practice template",
+      "file": "files/reflection/weekly-review.txt"
     }
   ]
 }

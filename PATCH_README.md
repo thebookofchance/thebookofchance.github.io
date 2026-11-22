@@ -1,33 +1,33 @@
-# Book of Chance — website v0.5 update-only patch
+# Book of Chance Website v0.7 — Changed-files patch
 
-This ZIP contains only changed/new files. It updates an existing v0.4 website with the accepted v0.4.2 logo already applied. It does NOT include the manuscript, covers, EPUBs, PDFs, or any older book assets.
+This is **not** a complete website export. It contains **only files created or modified since v0.6**.
 
-## What has been built
-- Fellowship adult interest form (email, optional pseudonym, explicit consent; not official membership).
-- Physical-book interest form (email, Light/Dark, intended copies, optional country, separate explicit consent; not an order or reservation).
-- Separate privacy notice and no shared subscription between lists.
-- Error/success messaging that only claims success when Formspree responds successfully.
-- Both submit buttons default to DISABLED. The site does not collect personal information until you activate the endpoint and public contact email.
+## Install on GitHub Pages
 
-## Activate (requires your action)
-1. With H's dedicated email account, create TWO SEPARATE forms at https://formspree.io/ — one for Fellowship interest and one for print interest.
-2. Review the service's current terms and the project's privacy notice, including any overseas data handling. Confirm it is appropriate for your audience and privacy obligations.
-3. Edit `assets/forms-config.js`: provide `contactEmail` (the actual H-owned public contact email), `fellowshipEndpoint` and `printEndpoint` from your Formspree dashboard. Example endpoint shape: `https://formspree.io/f/XXXXXXXX` (do not copy this placeholder!).
-4. Upload the PATCH files to the existing GitHub Pages repository root, preserving their folder structure. Replace only matching paths; do not delete other files.
-5. Test each form with a real test email. Verify the result actually appears in its own Formspree account/form, confirmation displays only after success, privacy requests go to the right address, and wrong/blocked requests show errors. Check at mobile widths and in light/dark theme.
-6. Confirm that no preview content overpromises member services, books, dates or print targets. Do not open paid pre-orders using these forms.
+1. Extract the ZIP locally.
+2. Upload **the contents** (including folders such as `read`, `reflect`, `focus`, `assets`, `source`, `docs` and `scripts`) to the root of your *existing* `thebookofchance.github.io` repository.
+3. Overwrite files with matching names. **Do not delete any other files already in the repository.**
+4. Keep the existing `assets/forms-config.js` from your working live site. **It is intentionally not in this ZIP.**
+5. When GitHub Pages finishes publishing, test Home, Reflect, Fellowship, Library and Current Focus, and test the two existing registration forms.
 
-## No server, no secret keys
-`assets/forms-config.js` is public on GitHub Pages. Put public form endpoint URLs in it, never an API secret or password. Formspree will store response submissions independently from GitHub; this site does not store personal data in source files. Review Formspree's account security, spam protection and submission/retention settings.
+## Most important changes
 
-## Privacy and consent
-- These lists are strictly separate; consent is required individually.
-- Fellowship interest is 18+ initially. Optional display names may be pseudonyms.
-- The print list requests no delivery address and does not charge or reserve stock.
-- The privacy notice is a draft requiring H's factual review before forms are activated. In particular, consider cross-border handling under New Zealand privacy law.
+- Fellowship registration CTA now visible in the first screen.
+- Three programme-card icons redesigned in a consistent line-art style.
+- `reflect/` provides a private reflection editor, a 12-question weekly cycle and three downloadable practice sheets.
+- `focus/` explains the current organisational goal, roadmap and deferred chance-based charity campaign concept.
+- Home and Library direct readers to usable activities and resources.
+- Sitewide navigation, social metadata and sitemap updated.
+- `docs/Website_Development_Log.md` records changes, decisions, status and future maintenance tasks.
 
-## Source generator
-`scripts/build_site.py` has been updated to preserve the accepted emblem and regenerate these pages and the privacy notice. It does not update the digital books. If re-running the generator, review all generated pages before deploying.
+## What isn't included
 
-## Validation
-Static HTML links, form labels, age and consent checkboxes, default disabled state, JS syntax and configuration gate have been checked. No live provider submission was conducted because H has not supplied connected form endpoints; browser/device tests remain to be completed.
+Book manuscripts, PDF/EPUB editions, cover files, logo, image assets and **Formspree endpoints** have not been changed or included.
+
+There is **no active donation campaign**, paid membership or live charity wheel. The Fellowship remains in development; ordinary membership is intended to be free.
+
+## Testing
+
+The local source passed 919 link and asset checks and 15 inlined Chromium visual tests. Automated HTTP navigation to localhost was blocked by the test environment; the deployed website and live form delivery still need checking.
+
+Full change history and next steps: `docs/Website_Development_Log.md`.

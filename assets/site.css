@@ -209,3 +209,117 @@ html[data-theme="dark"] img[src*="brand-mark.svg"] { filter: invert(1); }
 .support-first-goal h3{font-size:clamp(26px,3vw,38px);line-height:1.2;margin:14px 0 0}
 .support-first-goal p{font-size:14px;line-height:1.8;color:var(--muted);margin:0}
 @media(max-width:760px){.support-first-goal{grid-template-columns:1fr;gap:14px;padding:25px;margin:0 0 35px}}
+
+/* v0.7 — Live philosophy hub: useful practices, current focus, guided returns.
+   Only content and usability additions; the approved emblem and book artwork are unchanged. */
+html{scroll-padding-top:22px}
+.work-icon-art{color:var(--ink);display:block;height:70px;width:70px;margin:0 0 10px}
+.work-icon-art svg{display:block;width:70px;height:70px;max-width:100%}
+.community-hero-v6 .button-line .btn-primary{background:var(--blue);border-color:var(--blue);color:#fff}
+.community-hero-v6 .button-line .btn-primary:hover{background:var(--ink);border-color:var(--ink)}
+.community-practice-bar{border-block:1px solid var(--line);padding:37px 0 43px;display:flex;gap:34px;align-items:center;justify-content:space-between}
+.community-practice-bar h2{font-size:clamp(27px,3vw,38px);margin:11px 0}
+.community-practice-bar p{max-width:680px;font-size:13px;color:var(--muted);margin-bottom:0}
+.community-practice-bar .button-line{flex-shrink:0}
+.home-practice{padding-bottom:34px}
+.home-practice-grid,.reflection-options,.practice-downloads,.library-resource-grid,.focus-roadmap,.focus-support-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.home-practice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.home-practice-card{display:flex;flex-direction:column;align-items:flex-start;min-height:285px;border:1px solid var(--line);padding:clamp(26px,3vw,40px);background:var(--surface);transition:border-color .2s,transform .2s;color:var(--ink)}
+.home-practice-card:hover{border-color:var(--blue);transform:translateY(-3px);color:var(--ink)}
+.card-overline,.practice-index,.library-resource-grid article>span,.focus-roadmap article>span{font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--blue)}
+.home-practice-card h3{font-size:clamp(28px,3vw,37px);margin:26px 0 10px;line-height:1.16}
+.home-practice-card p{font-size:13px;color:var(--muted);max-width:460px}
+.home-practice-card .text-link{margin-top:auto}
+.library-resources{padding-top:80px;padding-bottom:80px;border-block:1px solid var(--line)}
+.library-resource-grid article{border:1px solid var(--line);padding:28px;display:flex;flex-direction:column;align-items:flex-start;min-height:270px;background:var(--surface)}
+.library-resource-grid h3{font-size:27px;line-height:1.17;margin:20px 0 10px}
+.library-resource-grid p{font-size:13px;color:var(--muted)}
+.library-resource-grid .text-link{margin-top:auto}
+.library-tool-link{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:27px 0 0}
+.library-tool-link p{font-size:13px;line-height:1.75;color:var(--muted);max-width:650px;margin:0}
+.library-tool-link .btn{flex-shrink:0}
+.reflect-hero,.focus-hero{padding-bottom:65px}
+.reflect-hero .button-line,.focus-hero .button-line{margin-top:25px}
+.weekly-practice{display:grid;grid-template-columns:minmax(0,1fr) 260px;align-items:center;gap:55px;background:var(--surface);border:1px solid var(--line);padding:clamp(26px,4.5vw,58px)}
+.weekly-practice h2{font-size:clamp(34px,4vw,52px);margin:14px 0}
+.weekly-practice-copy>p:not(.practice-rotation){font:normal clamp(19px,2.2vw,26px)/1.5 var(--serif);color:var(--ink-2);max-width:680px}
+.weekly-practice-copy p.weekly-action{font:normal 14px/1.75 var(--sans);color:var(--muted)}
+.weekly-practice-copy .practice-rotation{font-size:11px;color:var(--muted);margin-top:15px}
+.weekly-mark svg{width:100%;height:auto;max-width:250px;color:var(--ink)}
+.quiet-button{background:none;color:var(--blue);border:0;font-size:12px;padding:12px 0;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.reflection-options article{border-top:2px solid var(--line);padding:29px 5px 22px 0;display:flex;flex-direction:column;align-items:flex-start}
+.reflection-options h3{font-size:29px;line-height:1.14;margin:22px 0 12px}
+.reflection-options p{font-size:13px;color:var(--muted);margin:0 0 24px}
+.reflection-options .text-link{border:0;background:transparent;padding:0;margin-top:auto;cursor:pointer}
+.reflect-workspace-wrap{background:var(--surface-2);border-block:1px solid var(--line);padding:80px 0}
+.reflect-workspace-grid{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:clamp(30px,6vw,85px);align-items:start}
+.workspace-context h2{font-size:clamp(35px,3.6vw,47px);margin:17px 0}
+.workspace-context p{font-size:13px;line-height:1.8;color:var(--muted)}
+.workspace-context strong{color:var(--ink)}
+.workspace-context .workspace-note{font-style:italic;font-family:var(--serif);font-size:18px;color:var(--ink-2)}
+.workspace-panel{background:var(--surface);border:1px solid var(--line);padding:clamp(22px,3.3vw,40px)}
+#chance-reflection-form>label{display:block;font-size:12px;font-weight:700;margin-bottom:8px}
+#reflection-mode{display:block;min-height:46px;width:100%;padding:11px;border:1px solid var(--line);color:var(--ink);background:var(--bg)}
+.reflection-field{margin-top:27px}
+.reflection-field label{display:block;font-family:var(--serif);font-size:23px;line-height:1.3}
+.reflection-field p{font-size:12px;line-height:1.6;color:var(--muted);margin:7px 0 10px}
+.reflection-field textarea{width:100%;padding:13px;resize:vertical;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:14px/1.7 var(--sans);min-height:100px}
+.reflection-field textarea:focus-visible,#reflection-mode:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.workspace-actions{margin-top:28px;display:flex;flex-wrap:wrap;gap:11px;align-items:center}
+.workspace-feedback{font-size:12px;min-height:25px;color:var(--muted);margin:17px 0 0}
+.practice-downloads>a{display:flex;flex-direction:column;gap:11px;background:var(--surface);border:1px solid var(--line);padding:27px 25px;min-height:185px;color:var(--ink)}
+.practice-downloads>a:hover{border-color:var(--blue);color:var(--ink)}
+.practice-downloads a span{font-size:10px;color:var(--blue);text-transform:uppercase;letter-spacing:.12em;font-weight:700}
+.practice-downloads a strong{font:normal 25px/1.2 var(--serif)}
+.practice-downloads a small{font-size:12px;color:var(--muted);margin-top:auto}
+.prompt-archive{border-top:1px solid var(--line);padding:50px 0 0;margin-top:70px;display:grid;grid-template-columns:.85fr 1.15fr;gap:55px}
+.prompt-archive h3{font-size:32px;margin:0 0 12px}
+.prompt-archive p{font-size:13px;color:var(--muted)}
+.prompt-archive details{border:1px solid var(--line);background:var(--surface);padding:18px 24px;align-self:start}
+.prompt-archive summary{font-size:13px;color:var(--blue);font-weight:600;cursor:pointer}
+.prompt-list{padding-left:21px;display:grid;gap:14px;color:var(--ink-2)}
+.prompt-list li{font-size:12px;line-height:1.6}
+.prompt-list li strong{display:block;color:var(--ink)}
+.prompt-list li span{display:block;color:var(--muted)}
+.reflect-end{border-top:1px solid var(--line);display:grid;grid-template-columns:.5fr 1.6fr auto;gap:24px;padding-top:45px;align-items:start}
+.reflect-end h2{font-size:34px;margin:0 0 12px}
+.reflect-end p{font-size:13px;color:var(--muted)}
+.focus-primary{border:1px solid var(--line);padding:clamp(28px,4vw,54px);display:grid;grid-template-columns:1.3fr .7fr;gap:55px;background:var(--surface)}
+.focus-primary h2,.focus-support h2{font-size:clamp(35px,4vw,51px);line-height:1.14;margin:18px 0}
+.focus-primary p,.focus-support-inner>p,.focus-last p{font-size:14px;color:var(--muted);line-height:1.9;max-width:750px}
+.focus-primary p strong,.focus-disclaimer strong{color:var(--ink)}
+.focus-primary .button-line{margin-top:28px;align-items:center}
+.focus-primary aside{border-left:1px solid var(--line);padding-left:35px}
+.focus-status{display:inline-block;border:1px solid var(--blue);color:var(--blue);font-size:11px;letter-spacing:.04em;padding:8px 10px}
+.focus-primary aside h3{font-size:25px;margin:22px 0 15px}
+.focus-primary aside ul{padding-left:19px;margin:0 0 22px;color:var(--ink-2);font-size:13px;line-height:1.85}
+.focus-primary aside p{font-size:11px}
+.focus-roadmap article{border-top:2px solid var(--line);padding:25px 12px 15px 0;display:flex;flex-direction:column;align-items:flex-start}
+.focus-roadmap h3{font-size:28px;margin:22px 0 10px;line-height:1.18}
+.focus-roadmap p,.focus-support-grid p{font-size:13px;line-height:1.8;color:var(--muted)}
+.focus-roadmap .text-link{margin-top:auto}
+.focus-support{background:var(--surface-2);border-block:1px solid var(--line);padding:80px 0}
+.focus-support-inner{max-width:1250px}
+.focus-support-grid{margin-top:44px}
+.focus-support-grid article{border-top:1px solid var(--line);padding-top:20px}
+.focus-support-grid article>span{color:var(--blue);font-size:11px;font-weight:700}
+.focus-support-grid h3{font-size:24px;margin:14px 0 8px}
+.focus-disclaimer{border-left:2px solid var(--blue);padding-left:20px;margin-top:35px;max-width:950px!important}
+.chance-framework{display:grid;grid-template-columns:320px 1fr;gap:58px;align-items:center}
+.chance-wheel-drawing{background:var(--surface);border:1px solid var(--line);padding:32px 28px;text-align:center;display:flex;flex-direction:column;gap:8px}
+.chance-wheel-drawing svg{max-width:260px;width:100%;height:auto;color:var(--ink)}
+.chance-wheel-drawing span{font-size:10px;color:var(--muted)}
+.chance-framework h3{font-size:30px;margin:0 0 17px}
+.chance-framework p{font-size:14px;color:var(--muted);max-width:730px}
+.chance-framework p strong{color:var(--ink)}
+.focus-last{border-top:1px solid var(--line);padding-top:48px;display:flex;justify-content:space-between;align-items:center;gap:30px}
+.focus-last h2{font-size:34px;margin:12px 0}
+.focus-last p{max-width:640px;margin-bottom:0}
+.focus-last .button-line{justify-content:flex-end;max-width:520px}
+#reflection-print-sheet{display:none}
+/* The seventh menu item needs breathing room; use the accessible menu earlier. */
+@media(max-width:1190px){.header-shell{min-height:83px}.main-nav{display:none;position:absolute;top:83px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--surface);padding:13px 30px 20px;box-shadow:0 14px 24px rgba(0,0,0,.08);border-bottom:1px solid var(--line)}.main-nav.open{display:flex}.nav-link{padding:13px 0;font-size:14px}.nav-link.current::after{right:auto;width:40px}.menu-toggle{display:grid}}
+@media(max-width:980px){.community-practice-bar,.library-tool-link,.focus-last{align-items:flex-start;flex-direction:column}.weekly-practice{grid-template-columns:minmax(0,1fr) 180px;gap:18px}.reflect-workspace-grid,.focus-primary{grid-template-columns:1fr}.focus-primary aside{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:25px}.reflect-end{grid-template-columns:1fr 1fr}.reflect-end>.btn{grid-column:2;justify-self:start}}
+@media(max-width:720px){.home-practice-grid,.reflection-options,.practice-downloads,.library-resource-grid,.focus-roadmap,.focus-support-grid,.prompt-archive{grid-template-columns:1fr}.home-practice-card{min-height:240px}.weekly-practice{grid-template-columns:1fr}.weekly-mark{display:none}.reflect-workspace-wrap{padding:52px 0}.reflect-end{grid-template-columns:1fr}.reflect-end>.btn{grid-column:auto}.chance-framework{grid-template-columns:1fr;gap:25px}.chance-wheel-drawing{max-width:350px}.focus-last .button-line{justify-content:flex-start}.focus-support{padding:55px 0}}
+@media(max-width:500px){.community-practice-bar .button-line .btn,.focus-last .button-line .btn{width:100%}.weekly-practice{padding:22px}.workspace-actions{flex-direction:column;align-items:stretch}.workspace-actions .btn{width:100%}}
+@media print{body:has(#reflection-print-sheet) .site-header,body:has(#reflection-print-sheet) .site-footer,body:has(#reflection-print-sheet) main{display:none!important}body:has(#reflection-print-sheet) #reflection-print-sheet{display:block!important;white-space:pre-wrap;font:12pt/1.5 Georgia,serif;color:#111;word-wrap:break-word;margin:0;padding:15mm}body:has(#reflection-print-sheet){background:white;color:#111}}
