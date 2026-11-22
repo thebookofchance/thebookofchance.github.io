@@ -1,0 +1,12 @@
+{
+  "version": "v0.28",
+  "title": "Letters from H 01 cover fix",
+  "changed_files": [
+    "PATCH_README.md",
+    "assets/letters/lfh-001-cover.png",
+    "assets/letters/lfh-001-cover.webp",
+    "files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.epub",
+    "files/letters/Letters_from_H_01_On_the_People_We_Never_Meet.pdf",
+    "source/letters/lfh-001-cover.svg"
+  ]
+}
