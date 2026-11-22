@@ -1,0 +1,68 @@
+{
+  "website_version": "0.23",
+  "source_base": "v0.22 terminology update",
+  "resource_id": "BOC-FAQ-001",
+  "title": "Questions About Chance",
+  "edition": "v0.3",
+  "status": "editorial candidate staged; noindex until approval",
+  "questions": 26,
+  "themes": 5,
+  "pdf_pages": 17,
+  "pdf_author": "H",
+  "source_aligned_with": [
+    "Fellowship of Chance Foundational Identity v1.0-RC2 (candidate)",
+    "Identity and Values Charter RC2 (candidate)",
+    "Beginner Guide v0.2",
+    "Publication Standard RC1",
+    "Public Terminology Standard v1.0"
+  ],
+  "local_link_scan": {
+    "html_files_including_private_build_proofs": 47,
+    "link_occurrences": 1204,
+    "missing_relative_targets": 0,
+    "missing_section_anchors": 0,
+    "metadata_warnings_on_public_pages": 0
+  },
+  "browser_check": {
+    "screen_widths_px": [
+      320,
+      390,
+      820,
+      1440
+    ],
+    "pages": [
+      "home",
+      "library",
+      "faq"
+    ],
+    "horizontal_overflow": false,
+    "faq_search": "passed",
+    "faq_filters": "passed",
+    "faq_expand": "passed",
+    "faq_empty_state": "passed",
+    "theme_toggle": "passed",
+    "mobile_menu": "passed"
+  },
+  "export_check": {
+    "pdf_open": "passed",
+    "pdf_render_pages": 17,
+    "pdf_blank_interiors": 0,
+    "epub_archive_integrity": "passed",
+    "cover": "unapproved concept; retained unchanged"
+  },
+  "outstanding": [
+    "H text and cover approval",
+    "Independent human reader review",
+    "Accessibility and assistive technology tests",
+    "Live GitHub Pages and optional interest-form tests",
+    "Release/noindex decision",
+    "Open public supplementary-access and Senior Member contribution policies"
+  ],
+  "scope_exclusions": [
+    "No changes to Formspree configuration",
+    "No membership activation",
+    "No donation or financial service activation",
+    "No revision to books or Letters",
+    "No full website redesign"
+  ]
+}

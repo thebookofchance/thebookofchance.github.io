@@ -241,13 +241,15 @@ from v020_library_refinement import apply_v020
 apply_v020(ROOT, info)
 from v021_beginner_guide import apply_v021
 apply_v021(ROOT, document, markdown, info)
-info.update({'website_version':'0.22','correction_status':'Terminology consistency revision; no independent human reader test','book_editorial_source':'source/manuscript.md','letter_editions':[e['edition'] for e in json.loads((ROOT/'source/letters/catalogue.json').read_text('utf8'))['available']]})
+from v023_questions_faq import apply_v023
+apply_v023(ROOT, document, markdown, info)
+info.update({'website_version':'0.23','correction_status':'Terminology consistency revision; no independent human reader test','book_editorial_source':'source/manuscript.md','letter_editions':[e['edition'] for e in json.loads((ROOT/'source/letters/catalogue.json').read_text('utf8'))['available']]})
 (ROOT/'SITE_CONTENT_MANIFEST.json').write_text(json.dumps(info,indent=2),encoding='utf8')
 # Public-facing copy must not inherit the retired gaming shorthand from old drafts.
 import re
-for public_source in (ROOT/'source/manuscript.md', ROOT/'source/conversations/conversations-of-chance.md', ROOT/'source/guides/beginners-guide-to-confluent-humanism.md'):
+for public_source in (ROOT/'source/manuscript.md', ROOT/'source/conversations/conversations-of-chance.md', ROOT/'source/guides/beginners-guide-to-confluent-humanism.md', ROOT/'source/resources/questions-about-chance.md'):
  assert not re.search(r'\bRNG\b',public_source.read_text('utf8'),flags=re.IGNORECASE),public_source
-for output in [ROOT/'read/note-on-language/index.html',ROOT/'publications/conversations-of-chance/index.html',ROOT/'publications/beginners-guide-to-confluent-humanism/index.html',ROOT/'search-index.json']:
+for output in [ROOT/'read/note-on-language/index.html',ROOT/'publications/conversations-of-chance/index.html',ROOT/'publications/beginners-guide-to-confluent-humanism/index.html',ROOT/'search-index.json',ROOT/'questions/index.html']:
  assert not re.search(r'\bRNG\b',output.read_text('utf8'),flags=re.IGNORECASE),output
 info['public_terminology_standard'] = 'docs/Public_Terminology_Standard_v1.0.md'
 (ROOT/'SITE_CONTENT_MANIFEST.json').write_text(json.dumps(info,indent=2),encoding='utf8')

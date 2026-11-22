@@ -1,5 +1,5 @@
 {
-  "website_version": "0.22",
+  "website_version": "0.23",
   "source": "Book_of_Chance_Illustrated_Manuscript_v0.12.md",
   "source_sha256": "27fe17a36b5a0cd96a2516dfaaef4e3f0b4692b700d2be192bd8bbc77e3e3682",
   "chapters": 24,
@@ -102,6 +102,17 @@
   },
   "guide_status": "Approved for website staging; independent human review, accessibility and live deployment checks pending",
   "sitemap_publication_gate": "Noindex on the guide until formal release approval",
+  "faq_resource": {
+    "id": "BOC-FAQ-001",
+    "url": "questions/",
+    "source": "source/resources/questions-about-chance.md",
+    "pdf": "files/resources/Questions_About_Chance_FAQ_Editorial_Proof_v0.3.pdf",
+    "epub": "files/resources/Questions_About_Chance_FAQ_Editorial_Proof_v0.3.epub",
+    "questions": 26,
+    "themes": 5
+  },
+  "faq_status": "Revised editorial candidate v0.3, staged noindex; cover and final release approval pending",
+  "resources_stage": "Questions About Chance FAQ staged; next guided reading journey",
   "correction_status": "Terminology consistency revision; no independent human reader test",
   "book_editorial_source": "source/manuscript.md",
   "letter_editions": [

@@ -200,5 +200,22 @@
       "pages_pdf": 13,
       "sections": 9
     }
+  ],
+  "reader_resources": [
+    {
+      "id": "BOC-FAQ-001",
+      "title": "Questions About Chance",
+      "subtitle": "Twenty-Six Questions About Confluent Humanism and the Fellowship of Chance",
+      "edition": "v0.3",
+      "author": "H",
+      "status": "editorial candidate, approved for website staging only",
+      "url": "questions/",
+      "cover": "assets/resources/questions-about-chance-cover.webp",
+      "pdf": "files/resources/Questions_About_Chance_FAQ_Editorial_Proof_v0.3.pdf",
+      "epub": "files/resources/Questions_About_Chance_FAQ_Editorial_Proof_v0.3.epub",
+      "source": "source/resources/questions-about-chance.md",
+      "questions": 26,
+      "themes": 5
+    }
   ]
 }

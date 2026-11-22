@@ -19,8 +19,8 @@
 ## Introductory resources
 
 - **A Beginner’s Guide to Confluent Humanism (BOC-GDE-001):** v0.2 introductory companion staged on the website in v0.21: free 13-page PDF proof, EPUB and full nine-section HTML reader, with a cover consistent with the existing visual publishing system. Reader-simulation revisions completed; approved for web staging, not certified as a fully reviewed final release.
-- **Questions About Chance (FAQ):** proposed next, not drafted or available.
-- **Guided Reading Journey:** proposed website resource, not implemented.
+- **Questions About Chance (FAQ, BOC-FAQ-001):** 26-question, five-theme v0.3 editorial candidate, reviewed with simulated reader lenses and staged as an online searchable FAQ in website v0.23, with optional 17-page PDF and EPUB. H cover/text approval, independent reading, accessibility and live checks remain outstanding.
+- **Guided Reading Journey:** next proposed website resource, not implemented.
 - **Fellowship Principles and Boundaries:** proposed public resource, not implemented.
 
 The initial programme's *Letters from H* collection is intended to remain open to future occasional issues after the first three, but does not need to become a fixed weekly output commitment.
@@ -97,3 +97,7 @@ Website: `publications/conversations-of-chance/` with site-wide header/footer an
 ## The Little Book of Possibilities — v0.18 website integration
 
 The accepted v0.1 cover was used unchanged. The substantially revised v0.2 manuscript, 42-page PDF proof, EPUB and full online reader are now represented in the website Library and homepage. The website displays editorial-candidate status; manuscript approval is **not** implied. The next planned title is *The Parables of Chance*. Independent human review, PDF accessibility tagging, e-reader testing, rights checks, and live deployment verification remain outstanding.
+
+## v0.23 — Questions About Chance (review-stage website resource)
+
+The FAQ is a separate **public reader resource**, not a tenth book. Its 26 source-grounded questions cover philosophical foundations, choice and fairness, daily practice, faith, and institutional safeguards. The v0.2 candidate underwent an AI-simulated review; seven targeted answers and the source/edition notes were revised to v0.3. The Council, membership and practical programmes remain proposals, not services. The FAQ page is staged at `/questions/` with search and five topic filters; PDF/EPUB are provided for offline reading. The cover is a concept awaiting H approval. `noindex,follow` remains until editorial release approval. A staged URL is publicly viewable if uploaded. Source: `source/resources/questions-about-chance.md`; data: `source/resources/questions-about-chance.json`; renderer: `scripts/v023_questions_faq.py`; exports: `scripts/build_questions_faq.py`. The **next** reader resource is the Guided Reading Journey, after the FAQ passes release review.

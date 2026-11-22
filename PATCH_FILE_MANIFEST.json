@@ -1,60 +1,162 @@
 {
-  "version": "0.9",
-  "update_only": true,
-  "paths": [
-    "PATCH_README.md",
-    "README.md",
-    "index.html",
-    "downloads/index.html",
-    "reflect/index.html",
-    "assets/site.css",
-    "assets/journals/reflection-light.webp",
-    "assets/journals/reflection-dark.webp",
-    "assets/journals/daily.webp",
-    "assets/journals/possibility.webp",
-    "files/reflection/The_Reflection_Journal_Fillable.pdf",
-    "files/reflection/The_Reflection_Journal_Dark_Fillable.pdf",
-    "files/reflection/The_Daily_Reflection_Journal_Fillable.pdf",
-    "files/reflection/The_Possibility_Journal_Fillable.pdf",
-    "files/reflection/The_Reflection_Journal_Print_Layout_Proof.pdf",
-    "docs/Reflection_Journal_Production_Notes.md",
-    "docs/Journal_Series_Editorial_and_Print_Plan.md",
-    "docs/Website_Development_Log.md",
-    "source/publications.json",
-    "scripts/build_journal_series.py",
-    "scripts/build_reflection_pdfs.py",
-    "scripts/v09_enhancements.py",
-    "scripts/build_site.py",
-    "scripts/audit_v09.py",
-    "SITE_CONTENT_MANIFEST.json",
-    "SITE_QA_REPORT.json"
+  "patch": "v0.23",
+  "base": "v0.22",
+  "updated_files": 25,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "8f17e3cce83fce9286c111e68f80e42df95949fc92093b03d4dbadbf00e3dc80",
+      "bytes": 14271,
+      "action": "replace"
+    },
+    {
+      "path": "SITE_CONTENT_MANIFEST.json",
+      "sha256": "944498c253a5841ee704af77cfcbb87e2dbe41957cd4cb6ae1ef54631f0034b7",
+      "bytes": 5670,
+      "action": "replace"
+    },
+    {
+      "path": "about/index.html",
+      "sha256": "9cde3ef6baf3328b56753529d67188e64084ecef2da489b4b76d0d18e95466f4",
+      "bytes": 6097,
+      "action": "replace"
+    },
+    {
+      "path": "assets/faq.js",
+      "sha256": "06051a8e5b3c2173f8c55e55d792005e09460982f6174cf3bd61a0b5fa5bf821",
+      "bytes": 2131,
+      "action": "add"
+    },
+    {
+      "path": "assets/resources/questions-about-chance-cover.png",
+      "sha256": "8b67704f0643ec02db7a358a9babcd6d7f346940e557fce25780dc42e46656b1",
+      "bytes": 96172,
+      "action": "add"
+    },
+    {
+      "path": "assets/resources/questions-about-chance-cover.svg",
+      "sha256": "e99f1aabe0872a9bbbd5edfc0a50fb500e8493aa8ce83ede4c61eb09481d0238",
+      "bytes": 1954,
+      "action": "add"
+    },
+    {
+      "path": "assets/resources/questions-about-chance-cover.webp",
+      "sha256": "3557fd66fd55b5cf52a61c0f59e410cc989a2f428497e1cb6fa0736957104f73",
+      "bytes": 46814,
+      "action": "add"
+    },
+    {
+      "path": "assets/site.css",
+      "sha256": "970bfa18a3b3198fe89ec066233f102faea62eebb3b1062fb0741c7ddce98c90",
+      "bytes": 113931,
+      "action": "replace"
+    },
+    {
+      "path": "docs/FAQ_Editorial_Revision_Record_v0.3.md",
+      "sha256": "3e692dd8de4a8b9384deae248849406f76b4bbf635bfb401e638626763764f86",
+      "bytes": 1477,
+      "action": "add"
+    },
+    {
+      "path": "docs/FAQ_Simulated_Reader_Review_v0.3.md",
+      "sha256": "d71e86a61e4ac778d3b0074a2e4f67683c3292d533efb2e9d762e2434069de4d",
+      "bytes": 13356,
+      "action": "add"
+    },
+    {
+      "path": "docs/FAQ_Website_v0.23_QA.json",
+      "sha256": "9feb629c735dfd763e36120eb47f1d13d01b18bfdabf0b6eeffa184932362c84",
+      "bytes": 1907,
+      "action": "add"
+    },
+    {
+      "path": "docs/Publications_Roadmap_and_Progress.md",
+      "sha256": "154779e3837fa1339bf5574903758528de2ddcc066b337fcfba97829229def3f",
+      "bytes": 13206,
+      "action": "replace"
+    },
+    {
+      "path": "docs/Website_Development_Log.md",
+      "sha256": "8ca712de6b7778930101f8beb2ab23bb7d7a0332ad780e223482b21def951fc1",
+      "bytes": 31075,
+      "action": "replace"
+    },
+    {
+      "path": "downloads/index.html",
+      "sha256": "82301b58a505c177ffb30b42c56b64087b5d728e932038e33e4ee46d5bffc19e",
+      "bytes": 29181,
+      "action": "replace"
+    },
+    {
+      "path": "files/resources/Questions_About_Chance_FAQ_Editorial_Proof_v0.3.epub",
+      "sha256": "9c95e746323146f5d582886e8b5b9da44cd19a2f3ba1b00e71a1d7706a601603",
+      "bytes": 110234,
+      "action": "add"
+    },
+    {
+      "path": "files/resources/Questions_About_Chance_FAQ_Editorial_Proof_v0.3.pdf",
+      "sha256": "426c54b622cf5ed83579ba73523553bfa2f09ae5cfcbe11d06826b73f82a3e96",
+      "bytes": 172376,
+      "action": "add"
+    },
+    {
+      "path": "index.html",
+      "sha256": "ca0d114f5b7fa631b592f70e2597fa6ac29150a142db00862ce9ea2e73e18d92",
+      "bytes": 15380,
+      "action": "replace"
+    },
+    {
+      "path": "publications/beginners-guide-to-confluent-humanism/index.html",
+      "sha256": "8c65443c780861054faaabf12f80e00a217cc03c4e0ea5d85194aec435df9261",
+      "bytes": 28745,
+      "action": "replace"
+    },
+    {
+      "path": "questions/index.html",
+      "sha256": "6901b95b5f2521fe7334b4517ab2f3bb729acc90bc12ff682ba7c1b56189dab6",
+      "bytes": 57661,
+      "action": "add"
+    },
+    {
+      "path": "scripts/build_questions_faq.py",
+      "sha256": "752e86117485c4bd508607bbe0efcdc4f903f9a07f9275726d027368a546a6f0",
+      "bytes": 9270,
+      "action": "add"
+    },
+    {
+      "path": "scripts/build_site.py",
+      "sha256": "ef94871fb24ff86fe9c10599afbe9d7422cf35be888f33ee87af41a32527e918",
+      "bytes": 55963,
+      "action": "replace"
+    },
+    {
+      "path": "scripts/v023_questions_faq.py",
+      "sha256": "42846dc4908cb6c3866a6a54d4178ee99e7be8ff171f86a53ab5a866ef0e7d61",
+      "bytes": 10436,
+      "action": "add"
+    },
+    {
+      "path": "source/publications.json",
+      "sha256": "600ed15c9d49ca2b663156f3d86948fee4bc7fa73ebdc0fec6c388727b3c9ed6",
+      "bytes": 9010,
+      "action": "replace"
+    },
+    {
+      "path": "source/resources/questions-about-chance.json",
+      "sha256": "a29cb2ef4cc6c8c5850c9bedd98871e052d84da873b56410629497e01c5d6130",
+      "bytes": 23846,
+      "action": "add"
+    },
+    {
+      "path": "source/resources/questions-about-chance.md",
+      "sha256": "3cada4b6e2df7e982a8d7e1edb2107e771f89f1d7cb4d8759557c5bd75b160c1",
+      "bytes": 22118,
+      "action": "add"
+    }
   ],
-  "sha256": {
-    "PATCH_README.md": "c31e8033a8606c0d3834e6d4eeb437c9111c0f1428f4fe2a72073dcab6128694",
-    "README.md": "56a39a77cd3fc2b5d4a685906edd96f722f5ab5de7189444267d0c9610699a0d",
-    "index.html": "001af6ef319be610e563dd8f665437b731f1ed25af40a9594548130111124da8",
-    "downloads/index.html": "90d910b74c40a5e55aed3d3628072d0ee6b0c7b983b294e6986189cf1ccb1dbc",
-    "reflect/index.html": "bd571e1e3d5def8043ab42ec5e2c61bb5822ea0ca23359bfce9f4d9a57f98d17",
-    "assets/site.css": "ef18ee10b6617cb235a99edb210f318e8a492d7c511fc63402d1ed182eaaea04",
-    "assets/journals/reflection-light.webp": "f4eaaba93fb4b07deca423bfbc3d1260ad1f631200bf9deb092767f95c6386e7",
-    "assets/journals/reflection-dark.webp": "f89f5500e8beaa573052f16ae88d6bd3e1de809812815d157c61c9aef3298075",
-    "assets/journals/daily.webp": "f9f136839179af83a241aea077d912138545c0a300aad5d854e520e5a7813734",
-    "assets/journals/possibility.webp": "fc0dd2cbba323d3cfb595d5a7c79c3844577dfc393136df8d3c4ccefa5804765",
-    "files/reflection/The_Reflection_Journal_Fillable.pdf": "433b012925dbe3e86dae56ebb8bf677de783dcf940b090681583623b7c0a3cf6",
-    "files/reflection/The_Reflection_Journal_Dark_Fillable.pdf": "a9b4f0ff66c89de67648b668a5265eeb1f02ef4245bbfecfeae4dedb58ab61fe",
-    "files/reflection/The_Daily_Reflection_Journal_Fillable.pdf": "bec4af8e3e503ca869008df1652435093e745362d8c591cd4b982c49bc25820d",
-    "files/reflection/The_Possibility_Journal_Fillable.pdf": "6d5be69ab79478ecbffce333d77e69cbd7eaa672973e1684633ddad1068eed3a",
-    "files/reflection/The_Reflection_Journal_Print_Layout_Proof.pdf": "9f76fc0995fccac34f1635883d37ebed89d3170c4db886f50425b1bff9ebe527",
-    "docs/Reflection_Journal_Production_Notes.md": "1538b3efdc1ac2ee7f1c79ce6943271f04dbf99a3fbdb9cd8adc0c22b0f416bc",
-    "docs/Journal_Series_Editorial_and_Print_Plan.md": "2c340fcf2353d7eaa335aa12beb5bbf16330ea6ed08ee56c0ad99f86f2869c8a",
-    "docs/Website_Development_Log.md": "f8ebbb5aea1bd595701dc93a33db0155906812185becd8b245dad4a99b486c5e",
-    "source/publications.json": "f5db3529842f7f8abfd56f7a86fd8d7d2156a239525b2d496ca860c8021e85ce",
-    "scripts/build_journal_series.py": "4defc15332ceee9a204e1fde11f3249c3de5d264d5494388d3ac6c9766c83929",
-    "scripts/build_reflection_pdfs.py": "6e5763943c7254a81b07d270e1f2a3b366aaee7fe4a62775690f2f94cd5e0306",
-    "scripts/v09_enhancements.py": "7c0a124a13e5b34227d1dc77df8ce15b9bea7f75ea390486e1c5bbb8da84a9bf",
-    "scripts/build_site.py": "06e624a53881c3333998562d3bc9a874b330b20af5b37fc4cafaf76b4288a42b",
-    "scripts/audit_v09.py": "e0fec89efc770b1753d8136394eccaa3d71bf97f9085d524381ed6789e88c35c",
-    "SITE_CONTENT_MANIFEST.json": "d7330ddbcf97820938a0684d7f68a7bf2a6e1e9728b28855f689ff2209066b5a",
-    "SITE_QA_REPORT.json": "413ca338f7300cb9fef289196a6124a8b724f2ea7a69ae144cbec7e363bddfd5"
-  }
+  "excluded_configuration": [
+    "assets/forms-config.js"
+  ],
+  "site_version": "0.23",
+  "faq_status": "editorial candidate; not indexed"
 }

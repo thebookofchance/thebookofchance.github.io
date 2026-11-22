@@ -3,7 +3,7 @@
 A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, private reflection practices, downloadable resources, and the proposed Fellowship of Chance.
 
 **Public site:** https://thebookofchance.github.io/  
-**Website release:** v0.21 — introductory guide staging and Library refinement (22 November 2026)
+**Website release:** v0.23 — introductory guide staging and Library refinement (22 November 2026)
 
 ## Site structure
 
@@ -18,6 +18,7 @@ A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, 
 | `/publications/conversations-of-chance/` | Twelve-discussion companion for individuals and groups |
 | `/publications/parables-of-chance/` | Twelve original fictional parables; staged final copyedit candidate v0.2.1 |
 | `/publications/beginners-guide-to-confluent-humanism/` | Nine-section Beginner’s Guide v0.2; 13-page PDF proof, EPUB and full HTML reader; editorial candidate |
+| `/questions/` | Questions About Chance: 26 searchable answers across five themes, with free PDF/EPUB proof downloads; editorial candidate |
 | `/letters/` | Three standalone philosophical Letters from H, with online reading and PDF/EPUB downloads |
 | `/community/` | Proposed Fellowship, reasons to participate, future funding principles and a Fellowship interest form |
 | `/focus/` | Current organisational development goal, roadmap, potential funding criteria and deferred Chance Campaigns |
@@ -148,3 +149,7 @@ v0.20 and does not enable any membership, payment or form changes.
 The guide is a revised editorial candidate approved for website staging,
 not independently approved as a final accessible release. Its page is set
 to `noindex,follow` until formal release checks are completed.
+
+## v0.23 — Questions About Chance
+
+`questions/` provides a non-tracking, searchable FAQ with native expandable answers and five category filters. The FAQ has a proposed cover, 17-page PDF, EPUB, and canonical manuscript/structured data in `source/resources/`. Its status is editorial candidate and the page is `noindex,follow` until H approves the text and cover and remaining independent/accessibility checks are completed. Run `python scripts/build_questions_faq.py` only when intentionally regenerating the PDF/EPUB, then `python scripts/build_site.py` for HTML. No membership or donation service is activated.
