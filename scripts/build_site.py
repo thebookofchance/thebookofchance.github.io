@@ -99,7 +99,7 @@ for s in sections:
  search.append({'slug':s['slug'],'title':s['display'],'label':s['label'],'text':text,'summary':text[:270]})
 (ROOT/'search-index.json').write_text(json.dumps(search,ensure_ascii=False,separators=(',',':')),encoding='utf8')
 
-BRAND='''<svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" fill="none"><circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="1.35"/><path d="M8 13L31 28M8 26L29 10M13 31L25 7M8 19L31 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M12 8L29 31M9 30L32 13" stroke="var(--blue)" stroke-width="1.7" stroke-linecap="round"/></svg>'''
+BRAND='''<svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" fill="none"><circle cx="20" cy="20" r="17.3" stroke="currentColor" stroke-width="1.35"/><path d="M7.6 26.2L17.9 12.2M11.1 30.2L21.7 15.8M15.4 33.9L25.6 20.0M20.0 36.3L30.2 22.4M27.8 31.7L34.4 22.8" stroke="currentColor" stroke-width="1.45" stroke-linecap="round"/><path d="M5.6 13.8L18.1 29.5M8.7 9.4L22.0 26.4M13.2 6.6L27.2 24.1M18.6 4.9L31.3 20.8M25.1 6.3L34.4 18.0" stroke="currentColor" stroke-width="1.45" stroke-linecap="round"/><path d="M7.9 13.9L20.0 29.4M20.1 35.4L34.5 15.1" stroke="var(--blue)" stroke-width="1.8" stroke-linecap="round"/></svg>'''
 SVG_ARROW='<svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 
 
@@ -170,7 +170,7 @@ about=f'''<section class="shell page-hero about-hero"><span class="eyebrow">Abou
 (ROOT/'about'/'index.html').write_text(document('About',about,base='../',active='about',desc='About Confluent Humanism, H and The Book of Chance: a philosophical synthesis exploring chance, agency and shared ethical responsibility.'),encoding='utf8')
 
 # Favicon - an original lightweight website mark derived from the approved intersecting-path theme.
-(ASSETS/'favicon.svg').write_text('''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#f7f7f3"/><circle cx="32" cy="32" r="24" fill="none" stroke="#1e2a35" stroke-width="2.5"/><path d="M13 19L47 46M14 43L48 15M23 52L40 11M12 30L49 35" stroke="#1e2a35" stroke-width="2.5" stroke-linecap="round"/><path d="M22 13L44 50M16 49L51 22" stroke="#2874ca" stroke-width="3" stroke-linecap="round"/></svg>''',encoding='utf8')
+(ASSETS/'favicon.svg').write_text('''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#f7f7f3"/><circle cx="32" cy="32" r="27.7" fill="none" stroke="#1e2a35" stroke-width="2.4"/><path d="M12 42L28 20M17 48L33 26M24 54L39 33M31 58L47 36M43 50L55 34" stroke="#1e2a35" stroke-width="2.35" stroke-linecap="round"/><path d="M9 22L28 46M14 16L33 40M20 12L40 37M28 9L46 32M38 12L55 26" stroke="#1e2a35" stroke-width="2.35" stroke-linecap="round"/><path d="M12 22L32 47M32 57L55 24" stroke="#2874ca" stroke-width="2.8" stroke-linecap="round"/></svg>''',encoding='utf8')
 
 # A full text corpus validation before creating the ZIP.
 assert sum(s['figure_count'] for s in sections)==6, [(s['slug'],s['figure_count']) for s in sections]
