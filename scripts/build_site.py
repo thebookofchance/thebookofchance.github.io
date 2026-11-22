@@ -218,6 +218,8 @@ for s in sections:
 info={'website_version':'0.7','source':'Book_of_Chance_Illustrated_Manuscript_v0.12.md','source_sha256':hashlib.sha256(SRC.read_bytes()).hexdigest(),'chapters':len(sections),'readings':len(reader_ids),'illustration_placements':sum(s['figure_count'] for s in sections),'epub_files':2,'pdf_reader_proofs':2,'interest_forms_built':2,'form_configuration':'preserved externally; not verified in source','fellowship_membership_open':False,'library_available_publications':len(catalogue['available']),'library_planned_categories':len(catalogue['planned'])}
 from v07_enhancements import apply_v07
 apply_v07(ROOT, document, SVG_ARROW, info)
+from v08_enhancements import apply_v08
+apply_v08(ROOT, info)
 (ROOT/'SITE_CONTENT_MANIFEST.json').write_text(json.dumps(info,indent=2),encoding='utf8')
 print('generated sections',len(sections),'readings',len(reader_ids),'figures',sum(s['figure_count'] for s in sections))
 print('section titles',[(s['slug'],s['title']) for s in sections]);print('root',ROOT)

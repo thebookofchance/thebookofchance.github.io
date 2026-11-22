@@ -71,6 +71,7 @@
     });
     select.value = key;
     setStatus(`Ready: ${template.title}. Your writing stays in this tab.`);
+    document.getElementById('reflection-blank-pdf')?.setAttribute('href', {chance:'../files/reflection/The_Reflection_of_Chance_Fillable.pdf',action:'../files/reflection/The_Act_of_Possibility_Fillable.pdf',week:'../files/reflection/A_Week_of_Possibilities_Fillable.pdf'}[key]);
   }
 
   function askChange(next) {
@@ -92,36 +93,53 @@
     select.focus({preventScroll:true});
   }));
 
-  function asText() {
-    const mode=templates[select.dataset.active];
-    const answers = [...questions.querySelectorAll('textarea')].map((t, i) => {
-      const question = mode.questions[i][0];
-      return `${i + 1}. ${question}\n${t.value.trim() || '(No answer written)'}\n`;
-    });
-    return `${mode.title}\nA private reflection — The Book of Chance\n\n${answers.join('\n')}\nNo one is required to share this reflection.\nhttps://thebookofchance.github.io/reflect/\n`;
-  }
-  document.getElementById('reflection-download')?.addEventListener('click', () => {
-    const file = new Blob([asText()], {type:'text/plain;charset=utf-8'});
-    const url=URL.createObjectURL(file);
-    const link=document.createElement('a');
-    link.href=url;
-    link.download=`book-of-chance-${select.dataset.active}-reflection.txt`;
-    document.body.append(link);
-    link.click();
-    link.remove();
-    window.setTimeout(() => URL.revokeObjectURL(url), 1500);
-    setStatus('Your text file was prepared for download. Your responses remain in this tab until cleared or closed.');
-  });
-  document.getElementById('reflection-print')?.addEventListener('click', () => {
-    let sheet = document.getElementById('reflection-print-sheet');
-    if (!sheet) {
-      sheet = document.createElement('pre');
-      sheet.id = 'reflection-print-sheet';
-      sheet.setAttribute('aria-hidden','true');
-      document.body.append(sheet);
+  // Print the current typed responses in the journal's editorial style.
+  // Visitors can choose "Save as PDF" in the browser print dialog. This
+  // does not upload their private answers or require any third-party library.
+  const pdfFiles = {
+    chance: '../files/reflection/The_Reflection_of_Chance_Fillable.pdf',
+    action: '../files/reflection/The_Act_of_Possibility_Fillable.pdf',
+    week: '../files/reflection/A_Week_of_Possibilities_Fillable.pdf'
+  };
+  function updateBlankLink() {
+    const link=document.getElementById('reflection-blank-pdf');
+    if (link) {
+      link.href=pdfFiles[select.dataset.active];
+      link.setAttribute('aria-label',`Download blank fillable PDF: ${templates[select.dataset.active].title}`);
     }
-    sheet.textContent = asText();
-    setStatus('Use your browser print dialog to print or save the reflection as a PDF.');
+  }
+  updateBlankLink();
+  select.addEventListener('change',updateBlankLink);
+  document.querySelectorAll('[data-pick-template]').forEach(button => button.addEventListener('click',updateBlankLink));
+  document.getElementById('reflection-print')?.addEventListener('click', () => {
+    document.getElementById('reflection-print-sheet')?.remove();
+    const sheet=document.createElement('article');
+    sheet.id='reflection-print-sheet';
+    sheet.setAttribute('aria-label','Printable reflection');
+    const eyebrow=document.createElement('div');
+    eyebrow.className='print-sheet-eyebrow';
+    eyebrow.textContent='THE BOOK OF CHANCE / A PRIVATE REFLECTION';
+    const heading=document.createElement('h1');
+    heading.textContent=templates[select.dataset.active].title;
+    const subtitle=document.createElement('p');
+    subtitle.className='print-sheet-subtitle';
+    subtitle.textContent='The Reflection Journal · By H · '+new Date().toLocaleDateString();
+    sheet.append(eyebrow,heading,subtitle);
+    [...questions.querySelectorAll('textarea')].forEach((input,i) => {
+      const section=document.createElement('section');
+      section.className='print-answer';
+      const question=document.createElement('h2');
+      question.textContent=`${i+1}. ${templates[select.dataset.active].questions[i][0]}`;
+      const answer=document.createElement('p');
+      answer.textContent=input.value.trim() || '—';
+      section.append(question,answer);
+      sheet.append(section);
+    });
+    const footer=document.createElement('p');
+    footer.className='print-sheet-footer';
+    footer.textContent='Private by default. No one is required to share this reflection.';
+    sheet.append(footer);document.body.append(sheet);
+    setStatus('Choose “Save as PDF” or a printer in the browser print dialog. For an editable PDF form, use the blank fillable worksheet instead.');
     window.print();
   });
   document.getElementById('reflection-clear')?.addEventListener('click', () => {

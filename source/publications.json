@@ -39,22 +39,28 @@
   ],
   "resources": [
     {
-      "id": "reflection-of-chance",
+      "id": "reflection-journal",
+      "title": "The Reflection Journal",
+      "kind": "Free fillable journal PDF",
+      "file": "files/reflection/The_Reflection_Journal_Fillable.pdf"
+    },
+    {
+      "id": "chance",
       "title": "The Reflection of Chance",
-      "kind": "Practice template",
-      "file": "files/reflection/reflection-of-chance.txt"
+      "kind": "Fillable PDF worksheet",
+      "file": "files/reflection/The_Reflection_of_Chance_Fillable.pdf"
     },
     {
-      "id": "act-of-possibility",
+      "id": "action",
       "title": "The Act of Possibility",
-      "kind": "Practice template",
-      "file": "files/reflection/act-of-possibility.txt"
+      "kind": "Fillable PDF worksheet",
+      "file": "files/reflection/The_Act_of_Possibility_Fillable.pdf"
     },
     {
-      "id": "weekly-review",
+      "id": "week",
       "title": "A Week of Possibilities",
-      "kind": "Practice template",
-      "file": "files/reflection/weekly-review.txt"
+      "kind": "Fillable PDF worksheet",
+      "file": "files/reflection/A_Week_of_Possibilities_Fillable.pdf"
     }
   ]
 }

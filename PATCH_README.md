@@ -1,33 +1,21 @@
-# Book of Chance Website v0.7 — Changed-files patch
+# Website v0.8 — Changed-files GitHub patch
 
-This is **not** a complete website export. It contains **only files created or modified since v0.6**.
+This is an **update-only ZIP**, not a complete website. It is intended to install **on top of v0.7**.
 
-## Install on GitHub Pages
+1. Extract the archive.
+2. Upload its contents to your existing GitHub Pages repository root, keeping the folder structure. Replace files of the same name.
+3. **Do not delete other website files.** Your live `assets/forms-config.js` and its Formspree endpoints are intentionally excluded. The accepted website logo, cover images, entire book and book downloads are also excluded.
+4. Once deployed, test Reflect, the Library, the journal PDF and each worksheet. Test that PDF form answers can be saved in your preferred PDF reader. Test Fellowship and print-interest forms as a separate deployment smoke check.
+5. Existing TXT templates remain in your repository if already present, but are no longer linked publicly. They may be removed later after verifying no external links use them.
 
-1. Extract the ZIP locally.
-2. Upload **the contents** (including folders such as `read`, `reflect`, `focus`, `assets`, `source`, `docs` and `scripts`) to the root of your *existing* `thebookofchance.github.io` repository.
-3. Overwrite files with matching names. **Do not delete any other files already in the repository.**
-4. Keep the existing `assets/forms-config.js` from your working live site. **It is intentionally not in this ZIP.**
-5. When GitHub Pages finishes publishing, test Home, Reflect, Fellowship, Library and Current Focus, and test the two existing registration forms.
+## Release highlights
+- Clearly clickable reflection cards and clearer page navigation
+- Free 28-page fillable Reflection Journal and 3 A4 fillable PDF worksheets
+- Online editor: **Save/print as PDF**; no more TXT export
+- Library Journal feature; more useful homepage shortcuts
+- PDF generation source and ongoing production/development notes
 
-## Most important changes
+### Important limitations
+The 28-page PDF includes editable fields, but some mobile viewers have limited form-saving support. Use a compatible PDF reader. The included print-layout proof is **not** a commercial print master, and there is no physical journal sale or donation request.
 
-- Fellowship registration CTA now visible in the first screen.
-- Three programme-card icons redesigned in a consistent line-art style.
-- `reflect/` provides a private reflection editor, a 12-question weekly cycle and three downloadable practice sheets.
-- `focus/` explains the current organisational goal, roadmap and deferred chance-based charity campaign concept.
-- Home and Library direct readers to usable activities and resources.
-- Sitewide navigation, social metadata and sitemap updated.
-- `docs/Website_Development_Log.md` records changes, decisions, status and future maintenance tasks.
-
-## What isn't included
-
-Book manuscripts, PDF/EPUB editions, cover files, logo, image assets and **Formspree endpoints** have not been changed or included.
-
-There is **no active donation campaign**, paid membership or live charity wheel. The Fellowship remains in development; ordinary membership is intended to be free.
-
-## Testing
-
-The local source passed 919 link and asset checks and 15 inlined Chromium visual tests. Automated HTTP navigation to localhost was blocked by the test environment; the deployed website and live form delivery still need checking.
-
-Full change history and next steps: `docs/Website_Development_Log.md`.
+See `docs/Website_Development_Log.md` for all changes and test results.

@@ -1,23 +1,11 @@
 {
-  "website_version": "0.7",
-  "html_pages": 33,
-  "local_links_and_assets_checked": 919,
+  "pages": 33,
+  "links_checked": 933,
+  "pdfs": 5,
   "issues": [],
-  "browser_test": "blocked: Error('Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:46121/community/\\nCall log:\\n  - navigating to \"http://127.0.0.1:46121/community/\", waiting until \"domcontentloaded\"\\n')",
-  "browser_screenshots": [],
-  "live_form_submissions_tested": false,
-  "production_deployment_checked": false,
-  "local_inlined_browser_test": "15 page/viewport combinations (home, fellowship, reflection, focus, library x desktop/tablet/mobile); no horizontal overflow or JS errors",
-  "interaction_tests": {
-    "reflection_text_download": "pass",
-    "clear": "pass",
-    "template_switch": "pass",
-    "weekly_prompt_change": "pass",
-    "mobile_menu": "pass",
-    "programme_icons": "pass"
-  },
-  "original_book_files_unchanged": true,
-  "accepted_logo_unchanged": true,
-  "existing_formspree_config_unchanged": true,
-  "local_http_browser_navigation": "blocked by administrator; inlined render used instead"
+  "visual": "chromium set_content: desktop/mobile/tablet; direct navigation blocked",
+  "pdf_fill_test": "a sample AcroForm field was edited, saved and read back successfully",
+  "browser_pdf_print_test": "sample typed response included in an actual browser-generated PDF",
+  "live_form_tests": "not repeated; founder previously reported live submissions functioning",
+  "logo_and_book_assets": "preserved unchanged"
 }

@@ -323,3 +323,94 @@ html{scroll-padding-top:22px}
 @media(max-width:720px){.home-practice-grid,.reflection-options,.practice-downloads,.library-resource-grid,.focus-roadmap,.focus-support-grid,.prompt-archive{grid-template-columns:1fr}.home-practice-card{min-height:240px}.weekly-practice{grid-template-columns:1fr}.weekly-mark{display:none}.reflect-workspace-wrap{padding:52px 0}.reflect-end{grid-template-columns:1fr}.reflect-end>.btn{grid-column:auto}.chance-framework{grid-template-columns:1fr;gap:25px}.chance-wheel-drawing{max-width:350px}.focus-last .button-line{justify-content:flex-start}.focus-support{padding:55px 0}}
 @media(max-width:500px){.community-practice-bar .button-line .btn,.focus-last .button-line .btn{width:100%}.weekly-practice{padding:22px}.workspace-actions{flex-direction:column;align-items:stretch}.workspace-actions .btn{width:100%}}
 @media print{body:has(#reflection-print-sheet) .site-header,body:has(#reflection-print-sheet) .site-footer,body:has(#reflection-print-sheet) main{display:none!important}body:has(#reflection-print-sheet) #reflection-print-sheet{display:block!important;white-space:pre-wrap;font:12pt/1.5 Georgia,serif;color:#111;word-wrap:break-word;margin:0;padding:15mm}body:has(#reflection-print-sheet){background:white;color:#111}}
+
+/* v0.8: clearer navigational hierarchy and discoverable interactive controls */
+.site-header{position:sticky;top:0;z-index:70;box-shadow:0 3px 14px rgba(35,45,50,.025)}
+.nav-link.current{color:var(--blue);font-weight:700}
+.nav-link.current::after{height:2px;bottom:1px}
+.nav-link:focus-visible,.practice-card:focus-visible,.pdf-download-card:focus-visible,.library-resource-card:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+html{scroll-padding-top:122px}
+#choose-a-practice,#reflection-workspace,#reflection-journal,#reflection-guides,#practice-guides{scroll-margin-top:110px}
+.section-shortcuts{display:flex;align-items:center;flex-wrap:wrap;gap:9px;padding:15px 0 26px;margin-top:-8px}
+.section-shortcuts>span{font-size:10px;font-weight:750;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);padding-right:8px}
+.section-shortcuts>a{display:inline-flex;align-items:center;padding:9px 13px;font-size:12px;font-weight:650;min-height:36px;border:1px solid var(--line);border-radius:3px;background:var(--surface);color:var(--ink-2);transition:border-color .15s,background .15s}
+.section-shortcuts>a:hover{border-color:var(--blue);background:var(--blue-tint);color:var(--ink)}
+.reflection-options{gap:16px}
+.practice-card{display:flex;flex-direction:column;align-items:flex-start;appearance:none;text-align:left;min-height:341px;width:100%;padding:25px 26px;background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--blue);color:var(--ink);box-shadow:0 7px 23px rgba(28,42,55,.035);transition:transform .18s,border-color .18s,box-shadow .18s,background .18s;cursor:pointer}
+.practice-card:hover{transform:translateY(-4px);box-shadow:0 14px 33px rgba(28,42,55,.12);border-color:var(--blue);background:var(--surface)}
+.practice-card-symbol{display:block;width:50px;height:50px;margin:15px 0 6px;color:var(--ink)}
+.practice-card-symbol svg{width:100%;height:100%}
+.practice-card>strong{font:normal 28px/1.15 var(--serif);letter-spacing:-.02em;margin:8px 0 12px}
+.practice-card-description{font:13px/1.7 var(--sans);color:var(--muted);margin-bottom:24px}
+.practice-card-cta{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0 0;border-top:1px solid var(--line);color:var(--blue);font-size:12px;font-weight:750;width:100%;margin-top:auto}
+.practice-card-cta span{font-size:22px;line-height:1}
+.practice-card:hover .practice-card-cta span{transform:translate(2px,-2px)}
+.pdf-download-card{min-height:220px!important;border-top:3px solid var(--blue)!important;box-shadow:0 7px 23px rgba(28,42,55,.03);transition:transform .2s,box-shadow .2s,border-color .2s}
+.pdf-download-card:hover{transform:translateY(-3px);box-shadow:0 14px 27px rgba(28,42,55,.1)}
+.pdf-download-card em{font-size:13px;font-style:normal;color:var(--muted)}
+.pdf-download-card small{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid var(--line);padding-top:14px;width:100%;color:var(--blue)!important;font-weight:700}
+.pdf-download-card small b{font-size:20px}
+.library-resource-card{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--blue);min-height:255px;padding:28px;display:flex;flex-direction:column;align-items:flex-start;color:var(--ink);transition:transform .2s,border-color .2s,box-shadow .2s}
+.library-resource-card:hover{transform:translateY(-3px);border-color:var(--blue);box-shadow:0 16px 34px rgba(28,42,55,.1);color:var(--ink)}
+.library-resource-card>span{font-size:10px;letter-spacing:.1em;color:var(--blue);font-weight:700}
+.library-resource-card h3{font-size:27px;line-height:1.15;margin:23px 0 11px}
+.library-resource-card p{font-size:13px;color:var(--muted)}
+.library-resource-card .resource-card-cta{display:flex;align-items:center;justify-content:space-between;width:100%;padding-top:14px;border-top:1px solid var(--line);margin-top:auto;color:var(--blue);font-size:12px}
+.library-resource-card .resource-card-cta span{font-size:20px}
+.home-practice-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.home-practice-card{min-height:300px}
+.home-practice-card .text-link{border-top:1px solid var(--line);padding-top:17px;width:100%}
+.journal-feature{background:var(--surface-2);border-block:1px solid var(--line);padding:76px 0;margin-top:22px}
+.journal-feature-inner{display:grid;grid-template-columns:minmax(270px,.7fr) minmax(0,1.2fr);align-items:center;gap:clamp(35px,7vw,95px)}
+.journal-cover{display:flex;flex-direction:column;aspect-ratio:2/3;max-width:350px;background:#fffdf8;border:1px solid #dde0dc;box-shadow:13px 20px 33px rgba(21,33,42,.15);padding:35px 30px 26px;color:#26313b}
+.journal-cover>span{color:#286cb8;letter-spacing:.1em;font-weight:700;font-size:10px}
+.journal-cover-mark{margin:13px auto 10px;width:76%;}
+.journal-cover-mark svg{display:block;width:100%;height:auto}
+.journal-cover h3{font:normal clamp(36px,4vw,49px)/1.1 var(--serif);margin:auto 0 14px}
+.journal-cover small{color:#68747c;border-top:1px solid #dde0dc;padding-top:15px;font-size:9px;letter-spacing:.045em}
+.journal-copy h2{font-size:clamp(37px,4.2vw,57px);line-height:1.13;margin:18px 0 22px}
+.journal-copy p,.library-journal-copy p{color:var(--muted);font-size:14px;line-height:1.85}
+.journal-copy ul{padding-left:20px;color:var(--ink-2);font-size:13px;line-height:2;margin:22px 0 28px}
+.journal-note{font-size:11px!important;line-height:1.65!important;margin-top:21px;color:var(--muted)}
+.library-journal{margin:65px 0 5px;padding:40px 48px;border:1px solid var(--line);background:var(--surface-2);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(230px,.7fr);gap:55px;align-items:center}
+.library-journal h2{font-size:clamp(36px,4vw,52px);margin:15px 0 18px}
+.library-journal p strong{color:var(--ink)}
+.library-journal small{display:block;font-size:11px;line-height:1.6;color:var(--muted);margin-top:19px}
+.library-journal-art{display:grid;place-items:center}
+.mini-journal{display:flex;flex-direction:column;background:#fffdf8;color:#26313b;aspect-ratio:2/3;padding:29px 28px 20px;max-width:265px;width:100%;box-shadow:12px 14px 35px rgba(14,28,43,.14);border:1px solid #dde0dc;transform:rotate(3deg)}
+.mini-journal>span{font-size:9px;color:#286cb8;letter-spacing:.05em;font-weight:700}
+.mini-journal>strong{font:normal 33px/1.09 var(--serif);margin:33px 0 7px}
+.mini-journal svg{width:80%;height:100px;margin:0 auto}
+.mini-journal i{margin-top:auto;border-top:1px solid #d6dfdf;padding-top:10px;font:italic 18px var(--serif)}
+.back-to-top{position:fixed;bottom:24px;right:24px;z-index:90;padding:11px 14px;border:1px solid var(--line);border-radius:3px;color:var(--ink);background:var(--surface);box-shadow:0 8px 28px rgba(0,0,0,.12);font-size:12px;font-weight:700;opacity:0;pointer-events:none;transition:opacity .2s}
+.back-to-top.is-visible{opacity:1;pointer-events:auto}
+.back-to-top:hover{border-color:var(--blue);color:var(--blue)}
+#reflection-print-sheet{display:none}
+@media(max-width:980px){.journal-feature-inner{grid-template-columns:280px minmax(0,1fr);gap:35px}.library-journal{grid-template-columns:minmax(0,1fr) 220px;gap:20px}}
+@media(max-width:760px){.home-practice-grid{grid-template-columns:1fr}.journal-feature-inner,.library-journal{grid-template-columns:1fr}.journal-cover{width:100%;max-width:270px}.journal-feature{padding:48px 0}.library-journal{padding:28px;gap:30px}.library-journal-art{display:none}.section-shortcuts{padding-bottom:21px}.section-shortcuts>span{width:100%}.section-shortcuts>a{font-size:11px}.practice-card{min-height:270px}.journal-copy .button-line .btn{width:100%}}
+@media(prefers-reduced-motion:reduce){.practice-card,.pdf-download-card,.library-resource-card,.back-to-top{transition:none!important}.practice-card:hover,.pdf-download-card:hover,.library-resource-card:hover{transform:none}}
+@media print{
+ @page{size:A4;margin:18mm}
+ body:has(#reflection-print-sheet) .site-header,body:has(#reflection-print-sheet) .site-footer,body:has(#reflection-print-sheet) main,body:has(#reflection-print-sheet) .back-to-top{display:none!important}
+ body:has(#reflection-print-sheet){background:white!important;color:#26313b!important}
+ body:has(#reflection-print-sheet) #reflection-print-sheet{display:block!important;font-family:Georgia,serif;margin:0!important;padding:0!important;color:#26313b!important;white-space:normal!important;font-size:11pt}
+ #reflection-print-sheet .print-sheet-eyebrow{font:700 8pt Arial,sans-serif;letter-spacing:.09em;color:#286cb8;border-bottom:1pt solid #c9d2d6;padding-bottom:13pt}
+ #reflection-print-sheet h1{font:normal 28pt Georgia,serif;margin:20pt 0 7pt!important;letter-spacing:0}
+ #reflection-print-sheet .print-sheet-subtitle{font:9pt Arial,sans-serif;color:#65747f;margin:0 0 24pt}
+ #reflection-print-sheet .print-answer{break-inside:avoid;page-break-inside:avoid;padding:12pt 0 13pt;border-top:1pt solid #d5dfdf}
+ #reflection-print-sheet h2{font:normal 15pt Georgia,serif;margin:0 0 9pt}
+ #reflection-print-sheet .print-answer p{font:11pt/1.55 Georgia,serif;white-space:pre-wrap;overflow-wrap:anywhere;color:#26313b;margin:0}
+ #reflection-print-sheet .print-sheet-footer{font:italic 9pt Georgia,serif;color:#63717c;margin-top:22pt;border-top:1pt solid #d5dfdf;padding-top:10pt}
+}
+
+/* On intermediate desktop widths keep primary destinations visible instead of
+   hiding the entire navigation in a collapsed menu. */
+@media (min-width:1000px) and (max-width:1190px){
+ .header-shell{gap:13px}
+ .brand{gap:7px}
+ .brand-mark{width:36px;height:36px}
+ .brand-text{font-size:11px}
+ .main-nav{display:flex!important;position:static!important;flex-direction:row;align-items:center;gap:15px;background:transparent;padding:0;box-shadow:none;border:0}
+ .main-nav .nav-link{padding:12px 0;font-size:11px}
+ .menu-toggle{display:none!important}
+}

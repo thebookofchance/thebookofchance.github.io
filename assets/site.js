@@ -151,4 +151,15 @@
       }
     });
   });
+  // Useful on long reading and Fellowship pages; no network or persistence.
+  const topButton=document.createElement('button');
+  topButton.type='button';
+  topButton.className='back-to-top';
+  topButton.textContent='↑ Back to top';
+  topButton.setAttribute('aria-label','Back to top of page');
+  document.body.append(topButton);
+  const updateTopButton=()=>topButton.classList.toggle('is-visible',window.scrollY>650);
+  window.addEventListener('scroll',updateTopButton,{passive:true});
+  updateTopButton();
+  topButton.addEventListener('click',()=>window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));
 })();

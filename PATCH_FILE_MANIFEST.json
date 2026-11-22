@@ -1,315 +1,127 @@
 {
-  "release": "0.7",
-  "type": "update-only",
-  "base_website": "v0.6 (including the already accepted v0.4.2 emblem and v0.5 forms)",
-  "changed_files": 50,
-  "protected_unchanged_files": [
-    "assets/forms-config.js",
-    "assets/brand-mark.svg",
-    "assets/favicon.svg",
-    "assets/logo-master.svg",
-    "source/manuscript.md"
-  ],
-  "files": [
+  "release": "The Book of Chance website v0.8 update-only",
+  "base": "v0.7",
+  "changed_files": 24,
+  "items": [
     {
       "path": "PATCH_README.md",
-      "action": "new",
-      "size_bytes": 2034,
-      "sha256": "a3f6abf6000c1d34a0d9719d2fe963a74b29819a190409d9770bc30f473fd62f"
+      "bytes": 1641,
+      "sha256": "480b05a0dd87cf70beb2ff684fd29ed21f474ae91190389af5d9cbd1c334f859"
     },
     {
       "path": "README.md",
-      "action": "modified",
-      "size_bytes": 4361,
-      "sha256": "2ee30e5d9c8b6a0d92b12d840939d4e7049ef984306b0f5c38963b525dff8e78"
+      "bytes": 5170,
+      "sha256": "b9a89b9c350546e754b4947215950e9f54f54596a79efe695fc54da0e789ac80"
     },
     {
       "path": "SITE_CONTENT_MANIFEST.json",
-      "action": "modified",
-      "size_bytes": 861,
-      "sha256": "9ef1261360bcf89e17cf6266c8e797216d6ab8633b2fdea3e6c898e93505b52f"
+      "bytes": 1021,
+      "sha256": "bf4ac411ea99c37fc15e4edc20c528b04dfd12c5ade5d18a12473f9c218d83d6"
     },
     {
       "path": "SITE_QA_REPORT.json",
-      "action": "modified",
-      "size_bytes": 1053,
-      "sha256": "b5d2c8e0b91d5b1f8729e7489de82e4477d9905c98039f220355436361826adb"
-    },
-    {
-      "path": "about/index.html",
-      "action": "modified",
-      "size_bytes": 5924,
-      "sha256": "caf5ea233d4a22c264a04ee7e8a02157ee8dce61bfd6617b91f6404a5d356c0b"
+      "bytes": 489,
+      "sha256": "27ab4b95602217fd5abc8103e90fa26e52639ac0d33b7514d290ff03a9c75225"
     },
     {
       "path": "assets/reflect.js",
-      "action": "new",
-      "size_bytes": 8029,
-      "sha256": "edf03a0968e04b888c55a5114f24928ace375975123d68d7cbccf2bc3b9ef74c"
+      "bytes": 9385,
+      "sha256": "eef01a13f4af236870d3f7e697bd701c728d778c02a841db6ce5fec9107f7c51"
     },
     {
       "path": "assets/site.css",
-      "action": "modified",
-      "size_bytes": 53900,
-      "sha256": "5e23c216d69759afa456acf5fc26d8443ffff2b29a8bdeef82f636300a5805b5"
+      "bytes": 63679,
+      "sha256": "de8dc1fecb7106fd7e5a58131e4a8aa94a36589c455eb5aaba1f9e28a7631fd4"
     },
     {
-      "path": "community/index.html",
-      "action": "modified",
-      "size_bytes": 20661,
-      "sha256": "f993e0d408da9301342ad37be95942bfa12d64940e5546df849544eca0aa3988"
+      "path": "assets/site.js",
+      "bytes": 11717,
+      "sha256": "b4d371a5cb358947aac2ae29ccb1a56809cc68134c5961f11efbb508e31b4ae2"
+    },
+    {
+      "path": "docs/Reflection_Journal_Production_Notes.md",
+      "bytes": 2752,
+      "sha256": "640e56a5856f6414e567c9dd1d9a81800061fb0a9b5ce7786b45101471f5b4c9"
     },
     {
       "path": "docs/Website_Development_Log.md",
-      "action": "new",
-      "size_bytes": 10517,
-      "sha256": "7b0eb618df873424c8a75b7e6dec6f48ec2628286ec5319eba6d6f3dbd039bfc"
+      "bytes": 16243,
+      "sha256": "445b72d2975bf28ddf6716029424d981ae330df8aa93b56cb9a698bfdfa457b0"
     },
     {
       "path": "downloads/index.html",
-      "action": "modified",
-      "size_bytes": 9183,
-      "sha256": "8f8f342c8be97f92476bb9fae5d396e5aed4af7d22e616f2c143c44df1c15f0c"
+      "bytes": 11019,
+      "sha256": "cb4bd4da317daec83e33979ef12124e23ca73f1537f7118cd97b4c5a17b14473"
     },
     {
-      "path": "files/reflection/act-of-possibility.txt",
-      "action": "new",
-      "size_bytes": 793,
-      "sha256": "a0c5ebd9013373411583c860665f82f18ad480aaeee78fc2b781d91a6ef491a3"
+      "path": "files/reflection/A_Week_of_Possibilities_Fillable.pdf",
+      "bytes": 69921,
+      "sha256": "19b8a88a2de31021104cea9b51506f9c868a1545e02527be29e735cc93ca0c7a"
     },
     {
-      "path": "files/reflection/reflection-of-chance.txt",
-      "action": "new",
-      "size_bytes": 756,
-      "sha256": "c6d2150cce19ce57934da54501a994d6213f06620f568db7ceab709b3352d59e"
+      "path": "files/reflection/The_Act_of_Possibility_Fillable.pdf",
+      "bytes": 69960,
+      "sha256": "4c058f456f05d5e1a26e8c8f160accd1348dac68b877fa5dc0405587fbcb3209"
     },
     {
-      "path": "files/reflection/weekly-review.txt",
-      "action": "new",
-      "size_bytes": 722,
-      "sha256": "1f6b03c912713b12bb4c1fda1dcdedec6309e1a568c3452ed84260cc9b7c5547"
+      "path": "files/reflection/The_Reflection_Journal_Fillable.pdf",
+      "bytes": 184373,
+      "sha256": "d94101f1d6d2210d2eb1b084b8906435b7a116fb4f79a748f865c2d348892f16"
     },
     {
-      "path": "focus/index.html",
-      "action": "new",
-      "size_bytes": 9496,
-      "sha256": "930b5bdd1a1be31c1c440b8fad76836f1f68c782b1745de79b8cd6eaae0cff6d"
+      "path": "files/reflection/The_Reflection_Journal_Print_Layout_Proof.pdf",
+      "bytes": 116018,
+      "sha256": "6723fa1b75fda1dcad2bd57068387cf1843519552ff031050b31eb7a2b3f342e"
+    },
+    {
+      "path": "files/reflection/The_Reflection_of_Chance_Fillable.pdf",
+      "bytes": 69913,
+      "sha256": "f9179b95c0e50d822c01be50889daa1278778b2c1a72d9719f7887dd82c2f59d"
     },
     {
       "path": "index.html",
-      "action": "modified",
-      "size_bytes": 10721,
-      "sha256": "4241d3dd72dee43b7eb34a34037aebd406dd3cb0b3b2314148f07a8d69dc0408"
-    },
-    {
-      "path": "print/index.html",
-      "action": "modified",
-      "size_bytes": 9025,
-      "sha256": "aa2ed697bda284e6797621c78569b2582e05e74dfe3f910836d9daea15a9619b"
+      "bytes": 11044,
+      "sha256": "23db57d96921ec73751416e9e83e5b1f24833e53ea638423f9464ad0c5ea232d"
     },
     {
       "path": "privacy/index.html",
-      "action": "modified",
-      "size_bytes": 7475,
-      "sha256": "24d44249bf99a43606c494e9a8f4201e6c91a0540e759202a1a179738c569bf6"
-    },
-    {
-      "path": "read/action-within-uncertainty/index.html",
-      "action": "modified",
-      "size_bytes": 15367,
-      "sha256": "a012783995243207609e35990506a5cc7484e4db39805e2d031e56ac3ada0d3d"
-    },
-    {
-      "path": "read/afterword/index.html",
-      "action": "modified",
-      "size_bytes": 7141,
-      "sha256": "8e94a107e2b3a78f6848e54a5729bfdc31d1c515f60a1de55d0354cfe6f3e32a"
-    },
-    {
-      "path": "read/arrival/index.html",
-      "action": "modified",
-      "size_bytes": 13779,
-      "sha256": "27c7cdd87c0c1875cada50c0f9d3b150f001d6d270879aafd17515ebe2296dbb"
-    },
-    {
-      "path": "read/death-and-the-unknown/index.html",
-      "action": "modified",
-      "size_bytes": 12447,
-      "sha256": "4c923b55f5a24a4fff7cf8d774ad52f6711ce67b4301d57946935f088fc0ae44"
-    },
-    {
-      "path": "read/fellowship/index.html",
-      "action": "modified",
-      "size_bytes": 14936,
-      "sha256": "8aea79253930611b422d7dc0cfdae32a610058d218ee956f3ac8c7090360e849"
-    },
-    {
-      "path": "read/fortune-and-hardship/index.html",
-      "action": "modified",
-      "size_bytes": 13812,
-      "sha256": "c47b17ae2df0e0f530f8a49b60f701016de86b9f80acca8a742559f0634275a1"
-    },
-    {
-      "path": "read/further-reading/index.html",
-      "action": "modified",
-      "size_bytes": 12482,
-      "sha256": "95eaf3a8de15e086c16bb7a2f11d9704a2fa6cae33c0ccf11a3da2e2a7dd0e55"
-    },
-    {
-      "path": "read/hope/index.html",
-      "action": "modified",
-      "size_bytes": 12202,
-      "sha256": "fe9410a29f35d9544cee429617e67f6a2eb7cf9681076a64f396538b76d9f831"
-    },
-    {
-      "path": "read/index.html",
-      "action": "modified",
-      "size_bytes": 10312,
-      "sha256": "50b1695acc59c832f4aaed30e54001ddf765a261d46e611e285dd79c99d8e066"
-    },
-    {
-      "path": "read/introduction/index.html",
-      "action": "modified",
-      "size_bytes": 9634,
-      "sha256": "eacc48732b97bb42762ce111776311be012393ef31f8b8ccf3e47fca1ed365d9"
-    },
-    {
-      "path": "read/note-on-language/index.html",
-      "action": "modified",
-      "size_bytes": 8559,
-      "sha256": "c3452de17080526aabc99d72910d1c33e5b023cf7be4fe02bdbd3494619c2cf0"
-    },
-    {
-      "path": "read/note-on-the-fellowship/index.html",
-      "action": "modified",
-      "size_bytes": 6050,
-      "sha256": "c9bf75d2b38fb849140a40ce0ca9054d6961e2df9c40adf5917a42f2ea130701"
-    },
-    {
-      "path": "read/note-on-this-edition/index.html",
-      "action": "modified",
-      "size_bytes": 5473,
-      "sha256": "f39bbfd901abab11b18b9005c793791e2e31e6f81d2f67bb5ba62dd3d8bdb07a"
-    },
-    {
-      "path": "read/note-to-reader/index.html",
-      "action": "modified",
-      "size_bytes": 7226,
-      "sha256": "c73a584e69d28f9333483c0b89fa24895baa3eb273e794a8745a2e274026c4ea"
-    },
-    {
-      "path": "read/part-one/index.html",
-      "action": "modified",
-      "size_bytes": 5546,
-      "sha256": "818b0e637310fdf6f094d1f2e642015a30a4c67305abc160098e4e12768ffa0c"
-    },
-    {
-      "path": "read/part-three/index.html",
-      "action": "modified",
-      "size_bytes": 5678,
-      "sha256": "ec308633917ad50d64c103de9163f88bbe4918dcf101e550efd80d1fd31f86cc"
-    },
-    {
-      "path": "read/part-two/index.html",
-      "action": "modified",
-      "size_bytes": 5713,
-      "sha256": "7a190d0851ae53263a15ded2f1f3fd93ed0b4fc6387cdb9d4cf3a4725cd93aef"
-    },
-    {
-      "path": "read/reader-resources/index.html",
-      "action": "modified",
-      "size_bytes": 5296,
-      "sha256": "92a28cd62b6c4ffed6dbdb550c65a600b87991ce72ffcb534b4a57e7d51b6897"
-    },
-    {
-      "path": "read/reflection-and-growth/index.html",
-      "action": "modified",
-      "size_bytes": 14118,
-      "sha256": "8d1c59247575f6162266e0c00a7fa0e551fd3e2b52eee268dc5ec4bbf899ffec"
-    },
-    {
-      "path": "read/shared-fortune/index.html",
-      "action": "modified",
-      "size_bytes": 15856,
-      "sha256": "15f21488f5d611aa2a492b7e59e4b3a3682f6d04c99ea2ef9a7a3cc9f4f7d9b0"
-    },
-    {
-      "path": "read/stewardship/index.html",
-      "action": "modified",
-      "size_bytes": 12989,
-      "sha256": "be2522fc5fc2aa05864139ec319dee39ab123e3030df7abee3aec30c2baa6b48"
-    },
-    {
-      "path": "read/the-living-world/index.html",
-      "action": "modified",
-      "size_bytes": 16849,
-      "sha256": "7ed670199ecd339b3a9c89fdb00086eeb457fd60aa958104350aff47f932219b"
-    },
-    {
-      "path": "read/the-open-future/index.html",
-      "action": "modified",
-      "size_bytes": 15735,
-      "sha256": "2c86f9382f1cb76240f8586354200a2e5d53261760850b7a61566d85ad4c1160"
-    },
-    {
-      "path": "read/the-unfolding/index.html",
-      "action": "modified",
-      "size_bytes": 11914,
-      "sha256": "f4d9e1787e1f2227e7daa5ff781613c5d7d4776d658234a6fd2ba6d369fc8a84"
-    },
-    {
-      "path": "read/ways-of-reflecting/index.html",
-      "action": "modified",
-      "size_bytes": 8007,
-      "sha256": "50c023f9fbc2c2f10be12fdae60e99e816c28e162c15f8231cd71a47891705e4"
+      "bytes": 7612,
+      "sha256": "b6ce2da8da3a5e39f83e4b55fe55de6b5732dd1100fc7bdb0ad0c6e58fc030d5"
     },
     {
       "path": "reflect/index.html",
-      "action": "new",
-      "size_bytes": 13977,
-      "sha256": "fa74469d62bb969ba5466b1b1ea0571c1ae475570e8a6b8f412a06a3491f558a"
+      "bytes": 17868,
+      "sha256": "4e95560b9bed068f0e9d3d85d2a8ba211f6e0fb9e13010d30a000f2eec0a9aa6"
     },
     {
-      "path": "robots.txt",
-      "action": "new",
-      "size_bytes": 78,
-      "sha256": "b7a6a7165cf6da4a64c8fdfae0b49c1ae373aed4ec25f5054963f6df72de1f3c"
+      "path": "scripts/audit_v08.py",
+      "bytes": 2213,
+      "sha256": "8d8a11af0078219d19d573124c543f59e36af08f8f33735d297fb4413ebfa4b4"
     },
     {
-      "path": "scripts/audit_v07.py",
-      "action": "new",
-      "size_bytes": 6272,
-      "sha256": "0dac0985859ba3771023707656bb38e42e4e0d7a87c4c6d3dab31a434d118c81"
+      "path": "scripts/build_reflection_pdfs.py",
+      "bytes": 13604,
+      "sha256": "132d91a23c83fb9f8a33b478a2484a83c06fc1f5537d901cc47f1589c6c42f92"
     },
     {
       "path": "scripts/build_site.py",
-      "action": "modified",
-      "size_bytes": 53696,
-      "sha256": "4f30f7163f768fe2b0ab8217d48956959457258301341da3b55aeefbe07afdb1"
+      "bytes": 53757,
+      "sha256": "36d4775a33b47b4cd98451aba6c035794379a9da498d6baa968c4f8e46871b6c"
     },
     {
-      "path": "scripts/v07_enhancements.py",
-      "action": "new",
-      "size_bytes": 23088,
-      "sha256": "32f229b5e9db99763922ba72ed655a4d315af034a57680eeba91f77b7849575c"
+      "path": "scripts/requirements.txt",
+      "bytes": 122,
+      "sha256": "7f914cd72d409aab9db0a6dde66203683269eccdbaff73d0b356a70c1b40be7a"
     },
     {
-      "path": "sitemap.xml",
-      "action": "new",
-      "size_bytes": 2605,
-      "sha256": "a1f9d2134582da1db89f1c3ddc53e78445d7e1e1bb57b7e58cb6cb6a59306a4b"
+      "path": "scripts/v08_enhancements.py",
+      "bytes": 12193,
+      "sha256": "8654a6c31239244bd012c4a3ece1a17d01b0bd8b8aa214e9fe8f6e0fbc6e8829"
     },
     {
       "path": "source/publications.json",
-      "action": "modified",
-      "size_bytes": 2171,
-      "sha256": "b8848bb91c3afc1233e768a7fcec05fa1dcfd988d29d2ded6734508c9423abfe"
-    },
-    {
-      "path": "source/reflection-prompts.json",
-      "action": "new",
-      "size_bytes": 2523,
-      "sha256": "2004038c1a68fae622a94d0afd15b1906f8b181c32b07b2d334cb8c7c644f287"
+      "bytes": 2396,
+      "sha256": "8f46c445908736bd731b7265850779d159522b148212a50f5128464c124cd328"
     }
   ]
 }

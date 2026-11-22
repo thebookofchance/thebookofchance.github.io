@@ -1,7 +1,7 @@
 # The Book of Chance — Website Development Log
 
 **Maintained record:** Started 22 November 2026  
-**Current release:** Website v0.7  
+**Current release:** Website v0.8  
 **Project:** https://thebookofchance.github.io/  
 **Principle:** Publication first; the Fellowship grows through useful, voluntary participation rather than financial or social pressure.
 
@@ -15,6 +15,39 @@
 | v0.5 | Separate Formspree interest forms for Fellowship and print editions; privacy notice | Founder reports forms working live; deployment credentials not inspected here |
 | v0.6 | More persuasive Fellowship page, first-year development priorities, support concept, honesty about unlaunched services | Completed in earlier release |
 | **v0.7** | Private reflection workspace; curated weekly question; three downloadable guides; Current Focus and roadmap; high-visibility Fellowship registration CTA; designed programme icons; homepage return paths; Library resources; discoverability metadata and sitemap | Built, source-checked and inline-browser interaction-tested; live deployment still to verify |
+| **v0.8** | Clear clickable practice cards; section navigation; fillable Reflection Journal and A4 worksheets; browser save/print PDF; library journal release; back-to-top; PDF production source | Built and tested locally; production deployment to verify |
+
+## v0.8 — Reflection Journal and navigation improvements
+
+**Motivation:** The v0.7 practice choices looked like plain text and the TXT worksheet downloads felt unfinished. The new release prioritises usable, consistent publications and explicit actions, not more empty pages.
+
+### What changed
+
+1. **Reflection options become complete clickable buttons.** Each has a distinct charcoal/blue diagram, a framed interactive surface, an explicit action strip, keyboard focus and hover states. Clicking a tile selects the practice and takes the visitor to the online workspace. All three are real buttons, not decorative cards.
+2. **Navigation gains local section shortcuts.** The Reflect and Library pages each have a labelled compact table of contents. The main header stays visible when scrolling; the active page is clearer. A back-to-top button appears on long pages after scrolling. Mobile navigation retains its existing menu behaviour.
+3. **The Reflection Journal is published as a free PDF.** `files/reflection/The_Reflection_Journal_Fillable.pdf` is a 28-page, 6x9-inch interior with 78 editable AcroForm fields. It has a front cover, how-to page, three practice divisions, four daily entries, three action entries, four weekly entries, and a closing reflection. All entries are private; the PDF is filled and saved on the visitor's own device. A printer proof file exists separately for future development (`The_Reflection_Journal_Print_Layout_Proof.pdf`); it is explicitly **not** a production-ready print master.
+4. **Three editable individual sheets replace the TXT links.** The Daily, Action and Weekly guides are separate A4, single-page fillable PDFs with six editable fields each (date and five questions). They remain free and printable. Existing old TXT files need not be deleted for the update to work but are no longer linked publicly.
+5. **Online editor no longer produces `.txt` files.** Its primary action uses the browser print dialog with a branded reflection output that contains the visitor's actual text; readers can select "Save as PDF" or print. A secondary action downloads a **blank fillable PDF** matching the selected practice. Browser-print output is a formatted static record, distinct from the editable blank worksheet.
+6. **Library and homepage have meaningful entry points.** The Library now features the Journal as a genuine companion publication and makes the three entire worksheet cards actionable. The homepage adds a third path to the new Journal alongside weekly reflection and Current Focus. No sale or pre-order claim is made for the journal.
+7. **Privacy language updated.** Online writing remains in the browser tab and is not submitted to the Fellowship or Formspree. Downloadable PDF content is edited and saved locally. No journal entries, analytics or payments are collected.
+
+### Future physical journal planning
+
+- Digital interior trim: **6 × 9 inches**, a possible size for future physical editions. Consistent type, running page labels, repeated practice sections and ample blank writing areas support a print-adaptable interior.
+- Digital edition is intentionally short (28 pages) and only a **prototype for physical production**. Before selling a book, assess whether a longer 80–120-page journal is warranted, confirm binder/printer minimum page counts, paper stock and ruling, required margins and gutter, cover/spine calculations, bleed/trim, barcode/ISBN requirements, proof copies and shipping/returns.
+- Print proof currently has 28 pages and no AcroForm widgets. It is not a distributor-approved print master, and no physical edition is for sale.
+- The source generator is `scripts/build_reflection_pdfs.py`. It uses ReportLab and locally available Liberation fonts at build time; the fonts themselves are not distributed. Install dependencies with `pip install -r scripts/requirements.txt` and run the generator again after changing a prompt or layout. Keep the browser prompts (`assets/reflect.js`) aligned with the PDF prompts (`scripts/build_reflection_pdfs.py`).
+
+### Verification
+
+- 33 HTML pages; 933 local links/anchors/assets checked with no broken paths.
+- Desktop (1366px), tablet (820px) and mobile (390px) inline-browser tests confirmed responsive layout without horizontal overflow, card selection, correct blank-PDF mapping, PDF print-sheet content, mobile navigation and Library links.
+- All five new PDF files opened successfully. The digital journal has 78 form widgets and the three sheets have six each; the unfillable print layout proof has none. Form values saved successfully in a local PDF test. Sample pages were rendered and visually inspected.
+- **Limitations:** Browser URL navigation to local files or localhost is blocked in this environment; responsive tests inlined the actual HTML, CSS and JavaScript. Real PDF form behaviour may differ by reader (e.g. some embedded mobile viewers cannot save filled AcroForms). Live deployment, external Formspree submissions, printing and accessibility technology testing remain unverified.
+
+### Release handling
+
+The update-only ZIP includes only new or modified files relative to v0.7 and deliberately excludes the approved logo, all Book of Chance manuscript files, book EPUBs/PDFs, the two registration forms' config file (`assets/forms-config.js`), and existing cover images. Extract contents to the GitHub repository root without deleting unrelated files. The final release file list and checksums are in the ZIP manifest.
 
 ## v0.7 — Full change record
 
