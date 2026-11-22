@@ -1,5 +1,5 @@
 {
-  "website_version": "0.23",
+  "website_version": "0.24",
   "source": "Book_of_Chance_Illustrated_Manuscript_v0.12.md",
   "source_sha256": "27fe17a36b5a0cd96a2516dfaaef4e3f0b4692b700d2be192bd8bbc77e3e3682",
   "chapters": 24,
@@ -113,6 +113,16 @@
   },
   "faq_status": "Revised editorial candidate v0.3, staged noindex; cover and final release approval pending",
   "resources_stage": "Questions About Chance FAQ staged; next guided reading journey",
+  "guided_reading_journey": {
+    "url": "journey/",
+    "source": "source/resources/guided-reading-journey.json",
+    "themes": 8,
+    "steps_per_path": 3,
+    "search_or_quiz": "None",
+    "progress": "Temporary browser-page state only",
+    "status": "Staged noindex; release checks to follow"
+  },
+  "literature_approval_status": "Not changed; separate review phase to follow",
   "correction_status": "Terminology consistency revision; no independent human reader test",
   "book_editorial_source": "source/manuscript.md",
   "letter_editions": [

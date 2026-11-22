@@ -1,9 +1,9 @@
-# The Book of Chance — Website v0.21
+# The Book of Chance — Website v0.24
 
 A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, private reflection practices, downloadable resources, and the proposed Fellowship of Chance.
 
 **Public site:** https://thebookofchance.github.io/  
-**Website release:** v0.23 — introductory guide staging and Library refinement (22 November 2026)
+**Website release:** v0.24 — Guided Reading Journey staged as a reader resource (22 November 2026)
 
 ## Site structure
 
@@ -18,6 +18,7 @@ A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, 
 | `/publications/conversations-of-chance/` | Twelve-discussion companion for individuals and groups |
 | `/publications/parables-of-chance/` | Twelve original fictional parables; staged final copyedit candidate v0.2.1 |
 | `/publications/beginners-guide-to-confluent-humanism/` | Nine-section Beginner’s Guide v0.2; 13-page PDF proof, EPUB and full HTML reader; editorial candidate |
+| `/journey/` | Eight source-verified guided reading paths, three stops per theme; no accounts, quiz or progress tracking |
 | `/questions/` | Questions About Chance: 26 searchable answers across five themes, with free PDF/EPUB proof downloads; editorial candidate |
 | `/letters/` | Three standalone philosophical Letters from H, with online reading and PDF/EPUB downloads |
 | `/community/` | Proposed Fellowship, reasons to participate, future funding principles and a Fellowship interest form |
@@ -36,7 +37,7 @@ A static, GitHub Pages-ready website for the free illustrated *Book of Chance*, 
 
 ## Deploy update-only ZIPs
 
-The `Book_of_Chance_Website_Update_Only_v0.15.zip` package contains changed and new files **only**. Extract it and upload its contents to the existing GitHub Pages repository, replacing files with the same paths and **without deleting other files**.
+The current versioned `Book_of_Chance_Website_Update_Only_v0.24.zip` contains changed and new files **only**. Extract it and upload its contents to the existing GitHub Pages repository, replacing files with the same paths and **without deleting other files**.
 
 **Do not overwrite or publish private information.** `assets/forms-config.js` (the file containing your working Formspree endpoint identifiers and public contact email) has intentionally **not** been included or modified.
 
@@ -48,11 +49,12 @@ Check the accepted favicon/logo, both form flows and the `/reflect/` download fe
 - The available/planned publication catalogue is `source/publications.json`. It includes free practice guides, the first three Letters and The Five Values as editorial candidate.
 - Weekly questions live in `source/reflection-prompts.json` and follow a repeating 12-week cycle starting Monday, 23 November 2026.
 - The current goal, supporting page and homepage callouts are maintained through `scripts/v07_enhancements.py`.
-- The site generator is `scripts/build_site.py`, which currently regenerates 38 HTML pages and the sitemap. It incorporates the publication integrations through v0.15, including `scripts/v015_five_values.py`.
+- The site generator is `scripts/build_site.py`; it includes the source-driven publication/reader integrations through v0.24. Run `python scripts/audit_journey_v024.py` after regenerating HTML to check links and reading-path anchors.
 
 ```bash
 python -m pip install -r scripts/requirements.txt
 python scripts/build_site.py
+python scripts/audit_journey_v024.py
 python scripts/build_reflection_pdfs.py
 python scripts/build_five_values.py  # only when manuscript changes; before build_site.py
 ```

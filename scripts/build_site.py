@@ -243,7 +243,9 @@ from v021_beginner_guide import apply_v021
 apply_v021(ROOT, document, markdown, info)
 from v023_questions_faq import apply_v023
 apply_v023(ROOT, document, markdown, info)
-info.update({'website_version':'0.23','correction_status':'Terminology consistency revision; no independent human reader test','book_editorial_source':'source/manuscript.md','letter_editions':[e['edition'] for e in json.loads((ROOT/'source/letters/catalogue.json').read_text('utf8'))['available']]})
+from v024_reading_journey import apply_v024
+apply_v024(ROOT, document, info)
+info.update({'website_version':'0.24','correction_status':'Terminology consistency revision; no independent human reader test','book_editorial_source':'source/manuscript.md','letter_editions':[e['edition'] for e in json.loads((ROOT/'source/letters/catalogue.json').read_text('utf8'))['available']]})
 (ROOT/'SITE_CONTENT_MANIFEST.json').write_text(json.dumps(info,indent=2),encoding='utf8')
 # Public-facing copy must not inherit the retired gaming shorthand from old drafts.
 import re

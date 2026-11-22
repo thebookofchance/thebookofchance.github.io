@@ -217,5 +217,15 @@
       "questions": 26,
       "themes": 5
     }
-  ]
+  ],
+  "guided_reading_journey": {
+    "id": "BOC-RES-JOURNEY-001",
+    "title": "Guided Reading Journey",
+    "url": "journey/",
+    "source": "source/resources/guided-reading-journey.json",
+    "status": "Website staging candidate; review and live verification pending",
+    "paths": 8,
+    "steps_per_path": 3,
+    "collects_personal_data": false
+  }
 }

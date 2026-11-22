@@ -1,0 +1,103 @@
+{
+  "edition": "v0.1",
+  "status": "website-staging candidate",
+  "source_policy": "Curated paths through existing published online readings; no new philosophical claims or altered source texts",
+  "paths": [
+    {
+      "id": "begin",
+      "title": "Begin with the ideas",
+      "prompt": "I'm curious, but I'm new to this philosophy.",
+      "description": "Meet the central ideas before choosing a longer book.",
+      "reflection": "Which idea interests you most, and which one would you want to question?",
+      "steps": [
+        {"stage": "A gentle beginning", "type": "Introductory guide", "title": "An invitation, not an entrance exam", "source": "A Beginner's Guide to Confluent Humanism", "href": "publications/beginners-guide-to-confluent-humanism/#an-invitation-not-an-entrance-exam", "why": "Start with an invitation to explore without agreeing to everything."},
+        {"stage": "The first question", "type": "Foundational reading", "title": "Arrival", "source": "The Book of Chance", "href": "read/arrival/", "why": "Consider how beginnings and conditions we did not choose shape our possibilities."},
+        {"stage": "Five ways of responding", "type": "Companion guide", "title": "A compass, not a scorecard", "source": "The Five Values", "href": "booklets/the-five-values/#intro", "why": "Meet Hope, Acceptance, Reflection, Growth and Community as complementary values."}
+      ]
+    },
+    {
+      "id": "uncertainty",
+      "title": "Uncertainty and hope",
+      "prompt": "I want to think about a future I cannot predict.",
+      "description": "Explore possibility without turning hope into a guarantee.",
+      "reflection": "What is still uncertain here, and what is one thing you can realistically influence?",
+      "steps": [
+        {"stage": "What an open future means", "type": "Foundational reading", "title": "The Open Future", "source": "The Book of Chance", "href": "read/the-open-future/", "why": "Explore the difference between the unknown and what may not yet be settled."},
+        {"stage": "Hope without certainty", "type": "Companion guide", "title": "Hope", "source": "The Five Values", "href": "booklets/the-five-values/#hope", "why": "Consider hope alongside present limits, grief and the need for support."},
+        {"stage": "A question to discuss", "type": "Discussion companion", "title": "A Hope Without a Guarantee", "source": "Conversations of Chance · Conversation 7", "href": "publications/conversations-of-chance/#conversation-7-a-hope-without-a-guarantee", "why": "Test what responsible encouragement could look like in an uncertain situation."}
+      ]
+    },
+    {
+      "id": "fairness",
+      "title": "Fairness and circumstance",
+      "prompt": "I'm thinking about why people start from different places.",
+      "description": "Look at unequal conditions without reducing anyone to their circumstances.",
+      "reflection": "When have I mistaken an available option for an opportunity everyone could actually use?",
+      "steps": [
+        {"stage": "Where we begin", "type": "Foundational reading", "title": "Arrival", "source": "The Book of Chance", "href": "read/arrival/", "why": "Notice what we inherit before our first choices."},
+        {"stage": "An opportunity in practice", "type": "Practical companion", "title": "The Weight of a Starting Place", "source": "The Little Book of Possibilities · Chapter 3", "href": "booklets/the-little-book-of-possibilities/#3-the-weight-of-a-starting-place", "why": "Ask whether an opportunity is genuinely accessible, not just formally offered."},
+        {"stage": "See it in a story", "type": "Fictional story", "title": "Two Flood Marks", "source": "The Parables of Chance · Story 2", "href": "publications/parables-of-chance/#2-two-flood-marks", "why": "Follow a fictional community facing different losses after the same event."}
+      ]
+    },
+    {
+      "id": "decisions",
+      "title": "Choices and consequences",
+      "prompt": "I want to think about responsibility when outcomes go wrong.",
+      "description": "Separate a sound decision from the result that follows it.",
+      "reflection": "How could I assess a decision using what was reasonably knowable at the time?",
+      "steps": [
+        {"stage": "Acting without control", "type": "Foundational reading", "title": "Action Within Uncertainty", "source": "The Book of Chance", "href": "read/action-within-uncertainty/", "why": "Consider meaningful action within limits and responsibilities."},
+        {"stage": "A longer argument", "type": "Letter from H", "title": "When Good Choices Lead to Bad Outcomes", "source": "Letters from H · No. 02", "href": "letters/when-good-choices-lead-to-bad-outcomes/", "why": "Examine why a difficult result does not automatically prove a careless decision."},
+        {"stage": "Discuss a dilemma", "type": "Discussion companion", "title": "When Good Choices Fail", "source": "Conversations of Chance · Conversation 3", "href": "publications/conversations-of-chance/#conversation-3-when-good-choices-fail", "why": "Compare hindsight, accountability and fairness in an imagined scenario."}
+      ]
+    },
+    {
+      "id": "growth",
+      "title": "Learning and growth",
+      "prompt": "I'm interested in changing, learning or trying something new.",
+      "description": "Treat growth as developing capacities, not proving personal worth.",
+      "reflection": "What would help make a small learning opportunity accessible and sustainable?",
+      "steps": [
+        {"stage": "Define growth", "type": "Companion guide", "title": "Growth", "source": "The Five Values", "href": "booklets/the-five-values/#growth", "why": "Explore personal, intellectual, emotional and social development."},
+        {"stage": "Learning together", "type": "Practical companion", "title": "Learning Without a Ladder", "source": "The Little Book of Possibilities · Chapter 8", "href": "booklets/the-little-book-of-possibilities/#8-learning-without-a-ladder", "why": "Consider reciprocal learning without ranking people by expertise or status."},
+        {"stage": "Look back without scoring yourself", "type": "Foundational reading", "title": "Reflection and Growth", "source": "The Book of Chance", "href": "read/reflection-and-growth/", "why": "Notice what experience may teach without treating every setback as personal failure."}
+      ]
+    },
+    {
+      "id": "community",
+      "title": "Connection and generosity",
+      "prompt": "I'm interested in how people can help one another.",
+      "description": "Consider the value—and the boundaries—of sharing good fortune.",
+      "reflection": "What kind of help could I offer or request without creating an unwanted obligation?",
+      "steps": [
+        {"stage": "Recognise what we share", "type": "Foundational reading", "title": "Shared Fortune", "source": "The Book of Chance", "href": "read/shared-fortune/", "why": "Consider what knowledge, safety, time or connection might make possible."},
+        {"stage": "Examine our obligations", "type": "Letter from H", "title": "What Do We Owe to Strangers?", "source": "Letters from H · No. 03", "href": "letters/what-do-we-owe-to-strangers/", "why": "Explore the scope and limits of responsibility to people we have not met."},
+        {"stage": "Imagine belonging", "type": "Discussion companion", "title": "A Place Without a Price", "source": "Conversations of Chance · Conversation 9", "href": "publications/conversations-of-chance/#conversation-9-a-place-without-a-price", "why": "Discuss dignity, access and what membership should not demand."}
+      ]
+    },
+    {
+      "id": "living-world",
+      "title": "The wider living world",
+      "prompt": "I'm curious about our responsibilities beyond other people.",
+      "description": "Reflect on living systems and the effects of human choices.",
+      "reflection": "Whose interests—including non-human lives—might be missing from a decision?",
+      "steps": [
+        {"stage": "The wider view", "type": "Foundational reading", "title": "The Living World", "source": "The Book of Chance", "href": "read/the-living-world/", "why": "Explore why the living world matters beyond its immediate usefulness to us."},
+        {"stage": "A difficult balance", "type": "Discussion companion", "title": "Beyond the Human Circle", "source": "Conversations of Chance · Conversation 10", "href": "publications/conversations-of-chance/#conversation-10-beyond-the-human-circle", "why": "Consider how human needs and ecological responsibilities can come into tension."},
+        {"stage": "See it in a story", "type": "Fictional story", "title": "The Path Through the Reeds", "source": "The Parables of Chance · Story 10", "href": "publications/parables-of-chance/#10-the-path-through-the-reeds", "why": "Encounter a fictional decision involving a shared path and an ecosystem."}
+      ]
+    },
+    {
+      "id": "belief",
+      "title": "Belief and the unknown",
+      "prompt": "I have questions about religion, evidence or what follows life.",
+      "description": "Make room for conviction, uncertainty and respectful disagreement.",
+      "reflection": "Which of my beliefs are personal convictions, and which are claims I would want evidence to test?",
+      "steps": [
+        {"stage": "Ask a direct question", "type": "Reader FAQ", "title": "Is the Fellowship of Chance a religion?", "source": "Questions About Chance · Question 2", "href": "questions/#q02", "why": "Begin with a straightforward explanation of the proposed community's identity."},
+        {"stage": "Explore freedom of belief", "type": "Introductory guide", "title": "Is this a religion, a philosophy or a community?", "source": "A Beginner's Guide · Section 7", "href": "publications/beginners-guide-to-confluent-humanism/#7-is-this-a-religion-a-philosophy-or-a-community", "why": "Explore what agreement and participation do—and do not—require."},
+        {"stage": "Where knowledge ends", "type": "Foundational reading", "title": "Death and the Unknown", "source": "The Book of Chance", "href": "read/death-and-the-unknown/", "why": "Consider mortality and uncertainty without requiring a shared answer."}
+      ]
+    }
+  ]
+}

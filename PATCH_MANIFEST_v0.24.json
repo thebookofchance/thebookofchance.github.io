@@ -1,0 +1,32 @@
+{
+  "website_version": "0.24",
+  "base_version": "0.23",
+  "update_only": true,
+  "changed_file_count": 21,
+  "files": [
+    "PATCH_README.md",
+    "README.md",
+    "SITE_CONTENT_MANIFEST.json",
+    "assets/journey.js",
+    "assets/site.css",
+    "docs/Literature_Release_Approval_Checklist_v0.24.md",
+    "docs/Publications_Roadmap_and_Progress.md",
+    "docs/Website_Development_Log.md",
+    "docs/Website_v0.24_Guided_Reading_Journey_QA.md",
+    "downloads/index.html",
+    "index.html",
+    "journey/index.html",
+    "publications/beginners-guide-to-confluent-humanism/index.html",
+    "questions/index.html",
+    "read/index.html",
+    "scripts/audit_journey_v024.py",
+    "scripts/build_site.py",
+    "scripts/v024_reading_journey.py",
+    "source/publications.json",
+    "source/resources/guided-reading-journey.json",
+    "PATCH_MANIFEST_v0.24.json"
+  ],
+  "source_content_unchanged": true,
+  "forms_config_unchanged": true,
+  "release_status": "Guided journey staged noindex; literature approval remains pending"
+}

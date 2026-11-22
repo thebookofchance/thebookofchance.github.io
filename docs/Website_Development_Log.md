@@ -287,3 +287,8 @@ After the literature programme's website integrations, replaced five repeated ho
 ## v0.23 — Questions About Chance (FAQ resource staging)
 
 Source-driven online FAQ with 26 questions in five themes, optional 17-page PDF/EPUB, concept cover, local-only search, theme filtering, and native expandable answers. Linked unobtrusively from home, Library, About and Beginner Guide. Updated FAQ to v0.3 following a simulated reader review; corrected RC2 source/edition notes and clarified current versus proposed activities. No member accounts, fundraising or new forms. The page is `noindex,follow` pending H, independent-reader, accessibility and live checks. The original nine-publication catalogue count remains unchanged; the FAQ is a separate reader resource. See `docs/FAQ_Simulated_Reader_Review_v0.3.md` and `docs/FAQ_Website_v0.23_QA.json`.
+
+
+## v0.24 — Guided Reading Journey (22 November 2026)
+
+Added a new source-driven `/journey/` route offering eight themed paths, each with three direct, verified links to existing chapters, letters, stories or FAQ questions. Editorial prompts, no quiz, and no collected personal answers; optional ephemeral in-page progress only. The design reuses the existing cover system, typography and light/dark theme. Linked quietly from Home, Library, Beginner's Guide, FAQ and main book contents. No source manuscript or existing download modified. The journey is staged `noindex,follow`; literature editorial-candidate notes stay untouched pending the next per-title release review. See `docs/Website_v0.24_Guided_Reading_Journey_QA.md` and `docs/Literature_Release_Approval_Checklist_v0.24.md`.

@@ -1,6 +1,6 @@
 # H Publications — Release Roadmap and Progress Register
 
-**Updated:** 22 November 2026 · v0.21 (Beginner’s Guide v0.2 staged on the website; further release checks pending)  
+**Updated:** 22 November 2026 · v0.24 (Guided Reading Journey staged; complete literature release review is next)  
 **Sequence rule:** Develop and review **one publication at a time**. After completing the recommended literature programme, plan and launch the Fellowship's YouTube/video channel. No concurrent video production is assumed.
 
 ## Working order
@@ -20,7 +20,7 @@
 
 - **A Beginner’s Guide to Confluent Humanism (BOC-GDE-001):** v0.2 introductory companion staged on the website in v0.21: free 13-page PDF proof, EPUB and full nine-section HTML reader, with a cover consistent with the existing visual publishing system. Reader-simulation revisions completed; approved for web staging, not certified as a fully reviewed final release.
 - **Questions About Chance (FAQ, BOC-FAQ-001):** 26-question, five-theme v0.3 editorial candidate, reviewed with simulated reader lenses and staged as an online searchable FAQ in website v0.23, with optional 17-page PDF and EPUB. H cover/text approval, independent reading, accessibility and live checks remain outstanding.
-- **Guided Reading Journey:** next proposed website resource, not implemented.
+- **Guided Reading Journey:** v0.24 staged: eight themes, three verified text-specific stops per path, private optional progress, no account or personal-data collection; remains `noindex` pending review.
 - **Fellowship Principles and Boundaries:** proposed public resource, not implemented.
 
 The initial programme's *Letters from H* collection is intended to remain open to future occasional issues after the first three, but does not need to become a fixed weekly output commitment.

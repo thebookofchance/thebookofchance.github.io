@@ -1,39 +1,43 @@
-# Book of Chance — Update Only v0.23: Questions About Chance
+# The Book of Chance — Website Update-Only v0.24
 
-**Base:** Existing v0.22 website (public vocabulary update)
-**Patch type:** Add/replace only; do not delete other repository files.
+**Base:** The existing v0.23 website with Questions About Chance.  
+**Update:** Guided Reading Journey — a source-driven navigation resource for newcomers.  
+**Patch type:** Add/replace only. Do not delete existing website files.
 
-## Installation
+## Install on GitHub Pages
 
-Extract this ZIP into the **root of your existing** `thebookofchance.github.io` repository. Preserve folder paths and replace matching files. Do **not** upload a containing parent folder or overwrite your current form settings. Commit/push the changed files and verify GitHub Pages deployed.
+1. Extract this ZIP locally.
+2. Upload the **contents** of the extracted folder to the root of the existing `thebookofchance.github.io` repository. Keep folder paths exactly as supplied. Do not upload a separate parent folder.
+3. Replace files with matching names. Do **not** delete any other files.
+4. Commit and allow GitHub Pages to redeploy.
+5. Visit `/journey/`, choose a theme, follow its three readings, mark one as explored, reset it, switch themes, and test dark mode and mobile navigation.
+6. Verify the links in the homepage, Library, Beginner's Guide, FAQ and main book contents. Confirm the forms and all existing books still work on the live site.
 
-## What changed
+## Contents of the update
 
-- New `questions/` reader page for *Questions About Chance*, with 26 questions in five themes, local-only search, expandable answers, and PDF/EPUB links.
-- Original FAQ revised to editorial candidate v0.3, with a simulated reader review and explicit RC2 source references.
-- Proposed editorial cover (not yet H-approved) in three web/print formats; 17-page PDF and EPUB proof.
-- Quiet links from homepage, Library, About and the Beginner's Guide. **The Library still counts nine books/essays; the FAQ is a separate reader resource.**
-- Canonical FAQ Markdown/JSON, reproducible scripts and updated roadmap, source manifest and QA report.
+- `journey/index.html`: responsive, cover-led Guided Reading Journey with eight themes and 24 verified stops.
+- `source/resources/guided-reading-journey.json`: editable theme and reading route catalogue.
+- `scripts/v024_reading_journey.py`: reproducible website integration and chapter-anchor validator.
+- `assets/journey.js`: temporary page-only progress, route selection, reset and deep links. No answers stored or sent.
+- `assets/site.css`: scoped styles for the new reading journey.
+- Quiet discovery links added to the homepage, Library, Beginner's Guide, FAQ and main book contents.
+- Updated website/roadmap metadata, QA documentation and release-approval checklist.
 
-## Not changed
+## What this patch does not do
 
-No changes to `assets/forms-config.js`, the existing publication PDFs or EPUBs, private journal responses, registration, donations, membership policies, logo, or main book covers. No new analytics or external search service.
+- It does **not** rewrite literature, PDF/EPUB exports, approved covers, founding documents, the form configuration or any membership/financial policies.
+- It does **not** remove editorial-candidate or proof labels, or index draft publications. The new journey is also staged `noindex,follow` until release review.
+- It does **not** introduce accounts, a quiz, scores, analytics, new storage or an external API.
 
-## Staging status
+## Next, as agreed
 
-The FAQ is visible to anyone with the URL once uploaded; `noindex,follow` only requests search engines not to index it. It is *not* access control. H wording/cover approval, independent human reading, accessibility testing and live verification are pending. Proposed Council, membership, mentorship, charity and hardship assistance have **not** launched.
+Perform the **per-publication release approval audit** described in `docs/Literature_Release_Approval_Checklist_v0.24.md`. Only change a given work's editorial-candidate notes, search indexing, edition labels and publication metadata after its actual editorial, cover, accessibility and live tests are complete and H has approved it.
 
-## Post-deployment quick check
-
-1. Visit `/questions/`, open Question 7, try searches for `prayer` and `donations`, select `Faith` and `Fellowship` filters, then clear.
-2. Check PDF and EPUB downloads open and the guide/Library/Home/About links resolve.
-3. Try narrow mobile width, keyboard Tab/Enter, and dark mode.
-4. Confirm the site shows correct proposed-service status and that the existing forms still work, without submitting sensitive information as a test.
-5. Do not remove `noindex` or describe the cover as approved until formal sign-off.
-
-## Builders
+## Rebuild and audit
 
 ```bash
-python scripts/build_questions_faq.py  # only if FAQ manuscript changes
-python scripts/build_site.py           # regenerate HTML from sources
+python scripts/build_site.py
+python scripts/audit_journey_v024.py
 ```
+
+Live GitHub Pages and interest-form behaviour must be tested after deployment; local build and simulated browser checks are not substitutes for live verification.
